@@ -21,7 +21,7 @@
         </p>
 </header>
 <article id="what" typeof="schema:ScholarlyArticle" resource="#">
-    <h1>An overview of MMORPGs</h1>
+    <h1> Developing a MMORPG using Photon Unity Server</h1>
     <section>
         <ol>            
             <li property="schema:contributor" typeof="sa:ContributorRole">
@@ -43,10 +43,34 @@
     <section typeof="sa:Abstract" id="abstract">
         <h2>Abstract</h2>
         <p>
-       </p>
-        <p>
-           </p>
+                This paper will explain how multiplayer can be implemented using Untiy as game engine and Photon’s networking functionality.
+                The main purposes of this paper is to offer info about implementing a dedicated server, connecting clients to it, spawning and synchronizing virtual players on the network.
+        </p>
     </section>
    
+    
+    <section typeof="introduction" id="doc-introduction">
+            <h2>Unity and Photon Server</h2>
+            <p>
+                    Unity is a cross-platform game engine developed by Unity Technologies, which is primarily used to develop both three-dimensional and two-dimensional video games and simulations for computers, consoles, and mobile devices. 
+            </p>
+            <p>
+                    Photon is a on-premises real-time socket server and cross platform multiplayer game development framework that is extremely fast and very simple to use.
+            </p>
+
+            <section id="protocols">
+                <h3>Protocols of Photon Server</h3>
+                <p>
+                    <li><strong>reliable UDP</strong> (based on eNET) and specially tuned for Client-2-Server architectures</li>
+                    <li>Binary Tcp</li>
+                    <li>Web Sockets</li>
+                    <li>Http</li>
+                </p>
+
+                <p>The transfer protocol is very lean and slim. Photon wraps up the networking layer of each client platform for you. Have your game clients communicate cross-platform and across protocols. Put your data in hashtables and just send it. Photon does the de-/serialization, you dont!</p>
+            </section>
+     </section>
+
+
 </body>
 </html>
