@@ -1,0 +1,9 @@
+to do list:
+	-make ontology owl 
+	- turtle
+	- exp
+	- restrictii 
+	- exemple de caractere
+	- remove possesion/ personage
+
+	
