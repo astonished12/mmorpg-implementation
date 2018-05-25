@@ -1,5 +1,0 @@
-D:\MMORPG-project\Client-project\MMORPG-Client\Assets\Plugins\PhotonMMORPG.Common.dll
-D:\MMORPG-project\Client-project\MMORPG-Client\Assets\Plugins\PhotonMMORPG.Common.pdb
-D:\MMORPG-project\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\obj\Debug\PhotonMMORPG.Common.csproj.CoreCompileInputs.cache
-D:\MMORPG-project\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\obj\Debug\PhotonMMORPG.Common.dll
-D:\MMORPG-project\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\obj\Debug\PhotonMMORPG.Common.pdb
