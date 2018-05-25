@@ -1,0 +1,52 @@
+# =============== #
+# Unity generated #
+# =============== #
+Client-project/MMORPG-Client/[Tt]emp/
+Client-project/MMORPG-Client/[Oo]bj/
+Client-project/MMORPG-Client/[Bb]uild
+Client-project/MMORPG-Client/[Bb]uilds/
+Client-project/MMORPG-Client/[Ll]ibrary/
+Client-project/MMORPG-Client/sysinfo.txt
+Client-project/MMORPG-Client/*.stackdump
+Client-project/MMORPG-Client/Assets/AssetStoreTools*
+Client-project/MMORPG-Client/*.apk
+Client-project/MMORPG-Client/*.unitypackage
+Client-project/MMORPG-Client/ClientExe
+Client-project/MMORPG-Client/ClientWeb
+
+
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+Client-project/MMORPG-Client/[Ee]xported[Oo]bj/
+Client-project/MMORPG-Client/.vs/
+Client-project/MMORPG-Client/*.userprefs
+Client-project/MMORPG-Client/*.csproj
+Client-project/MMORPG-Client/*.pidb
+Client-project/MMORPG-Client/*.pidb.meta
+Client-project/MMORPG-Client/*.suo
+Client-project/MMORPG-Client/*.sln*
+Client-project/MMORPG-Client/*.user
+Client-project/MMORPG-Client/*.unityproj
+Client-project/MMORPG-Client/*.booproj
+Client-project/MMORPG-Client/.consulo/
+Client-project/MMORPG-Client/*.tmp
+Client-project/MMORPG-Client/*.svd
+ 
+# ============ #
+# OS generated #
+# ============ #
+Client-project/MMORPG-Client/.DS_Store*
+Client-project/MMORPG-Client/._*
+Client-project/MMORPG-Client/.Spotlight-V100
+Client-project/MMORPG-Client/.Trashes
+Client-project/MMORPG-Client/Icon?
+Client-project/MMORPG-Client/ehthumbs.db
+Client-project/MMORPG-Client/[Tt]humbs.db
+Client-project/MMORPG-Client/[Dd]esktop.ini
+Client-project/MMORPG-Client/Corridor/Library/ShaderCache/
+Client-project/MMORPG-Client/Corridor/Library/metadata/
+
+
+Server-project/Photon-OnPremise-Server-SDK_v4-0-29-11263
