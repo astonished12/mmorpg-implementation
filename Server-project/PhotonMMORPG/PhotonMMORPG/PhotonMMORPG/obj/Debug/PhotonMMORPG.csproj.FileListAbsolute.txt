@@ -1,0 +1,15 @@
+D:\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServerMMORPG\PhotonMMORPG.dll
+D:\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServerMMORPG\PhotonMMORPG.pdb
+D:\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServerMMORPG\bin\PhotonMMORPG.dll
+D:\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServerMMORPG\bin\PhotonMMORPG.pdb
+D:\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.csproj.CoreCompileInputs.cache
+D:\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.csproj.CopyComplete
+D:\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.dll
+D:\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.pdb
+D:\MMORPG-project\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServerMMORPG\bin\PhotonMMORPG.dll
+D:\MMORPG-project\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServerMMORPG\bin\PhotonMMORPG.pdb
+D:\MMORPG-project\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.csprojResolveAssemblyReference.cache
+D:\MMORPG-project\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.csproj.CoreCompileInputs.cache
+D:\MMORPG-project\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.csproj.CopyComplete
+D:\MMORPG-project\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.dll
+D:\MMORPG-project\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.pdb
