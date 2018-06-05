@@ -59,6 +59,14 @@
             </p>
     </section>
 
+    
+    <figure typeof="sa:Image">
+        <img src="public/resources/photon-server-architecture.png">
+        <figcaption>
+            <center> Photon High Level Architecture  </center>
+        </figcaption>
+    </figure>
+
     <section id="protocols">
         <h3>Protocols of Photon Server</h3>
         <p>
@@ -83,15 +91,44 @@
        <h3>Starting Photon</h3>
        <p>In the "deploy" folder you will find a folder per application and some folders starting with "bin".
             Open one of these two:  
-    <li><string>bin_Win32</string>: Windows Vista and up</li>
-    <li><string>bin_Win64</string>: 64 bit Windows Vista and up</li>
+    <li><strong>bin_Win32</strong>: Windows Vista and up</li>
+    <li><strong>bin_Win64</strong>: 64 bit Windows Vista and up</li>
     </p>
         <p>In either folder, you will find the actual Photon executable. You can start this with command-line arguments or you can use PhotonControl.
         Start PhotonControl.exe and confirm the admin rights for this application. They are needed for the option to setup Photon as a Service.  
     </p>    
 </section>
 
+<figure typeof="sa:Image">
+    <img src="public/resources/photoncontrol.png">
+    <figcaption>
+        <center>Start application server as service </center>
+    </figcaption>
+</figure>
 
+<section id="implementing">
+    <h3>Build server application</h3>
+    <p>
+        Using Visual Studio, create a new class library project MyServer. After this
+        is important to add references to <strong>ExitGamesLibs.dll, Photon.SocketServer.dll, PhotonHostRuntimeInterfaces.dll</strong>
+and loggings dll's <strong>log4net.dll, ExitGame.Logging.Log4Net.dll </strong>.
+    </p> 
+    <p>
+    Next step is to create an class that inherits from Photon.SocketServer.ApplicationBase. This class is the core luncher of the server and contains a reference to log4net object that will be used in logging.
+    </p>
+</section>
+    <p>The server project deal with game logic of every client, chat operations and game world.
+        The game logic defines how a client can interact with the server. It implements operations, events, and anything that the server does by itself.
+    </p>
+    <p>
+            An operation is Photon's equivalent to a remote procedure call. Photon clients use operation calls for anything they want to get done.
+            Operations and all of their parameters are defined in the <strong>PhotonMMORPG.Common</strong> project. Clients can call any operation by setting up a hashtable with keys and values fitting the operation's conventions. The client and server frameworks take care of serialization, transfer and deserialization.
+    </p>
 
+    <p>
+            Photon Events are messages for clients. Each event is typed by a byte code and carries game updates. The Lite Application defines several events but it's possible to define custom events purely on the client side.
+
+            Unlike operation results, a received event is most likely caused another client's operation call. This means: Events might arrive anytime. Lite sends events when someone joins or leaves a room.
+    </p>
 </body>
 </html>
