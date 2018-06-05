@@ -44,7 +44,7 @@
         <h2>Abstract</h2>
         <p>
                 This paper will explain how multiplayer can be implemented using Untiy as game engine and Photon’s networking functionality.
-                The main purposes of this paper is to offer info about implementing a dedicated server, connecting clients to it, spawning and synchronizing virtual players on the network.
+                The main purposes of this is to offer info about implementing a dedicated server, connecting clients to it, spawning and synchronizing virtual players on the network.
         </p>
     </section>
    
@@ -57,19 +57,40 @@
             <p>
                     Photon is a on-premises real-time socket server and cross platform multiplayer game development framework that is extremely fast and very simple to use.
             </p>
+    </section>
 
-            <section id="protocols">
-                <h3>Protocols of Photon Server</h3>
-                <p>
-                    <li><strong>reliable UDP</strong> (based on eNET) and specially tuned for Client-2-Server architectures</li>
-                    <li>Binary Tcp</li>
-                    <li>Web Sockets</li>
-                    <li>Http</li>
-                </p>
+    <section id="protocols">
+        <h3>Protocols of Photon Server</h3>
+        <p>
+            <li><strong>reliable UDP</strong> (based on eNET) and specially tuned for Client-2-Server architectures</li>
+            <li>Binary Tcp</li>
+            <li>Web Sockets</li>
+            <li>Http</li>
+        </p>
 
-                <p>The transfer protocol is very lean and slim. Photon wraps up the networking layer of each client platform for you. Have your game clients communicate cross-platform and across protocols. Put your data in hashtables and just send it. Photon does the de-/serialization, you dont!</p>
-            </section>
-     </section>
+        <p>The transfer protocol is very lean and slim. Photon wraps up the networking layer of each client platform for you. Have your game clients communicate cross-platform and across protocols. Put your data in hashtables and just send it. Photon does the de-/serialization, you dont!</p>
+    </section>
+
+    <section id="started">
+        <h3>Download server sdk and prepare structure </h3>
+        <p>
+        Photon is extremely easy to install and start. The SDK includes ready-to-use binaries which can be up and running within 5 minutes.
+        The Photon Server SDKs are available on the official page and comes as self-extracting executable.
+       </p>
+        <p> The server package ca be extracted to any place - preferably an empty folder prepared beforehand. 
+            The extraction creates several folders. The "deploy" folder contains the binaries. This is what you need at least to run Photon. The folders doc, lib and src-server (applications) are for development.
+        </p>
+       <h3>Starting Photon</h3>
+       <p>In the "deploy" folder you will find a folder per application and some folders starting with "bin".
+            Open one of these two:  
+    <li><string>bin_Win32</string>: Windows Vista and up</li>
+    <li><string>bin_Win64</string>: 64 bit Windows Vista and up</li>
+    </p>
+        <p>In either folder, you will find the actual Photon executable. You can start this with command-line arguments or you can use PhotonControl.
+        Start PhotonControl.exe and confirm the admin rights for this application. They are needed for the option to setup Photon as a Service.  
+    </p>    
+</section>
+
 
 
 </body>
