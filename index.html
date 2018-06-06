@@ -115,8 +115,12 @@ and loggings dll's <strong>log4net.dll, ExitGame.Logging.Log4Net.dll </strong>.
     </p> 
     <p>
     Next step is to create an class that inherits from Photon.SocketServer.ApplicationBase. This class is the core luncher of the server and contains a reference to log4net object that will be used in logging.
-    </p>
-</section>
+    Every client request is handled by an special class inhterited from ClientPeer.
+</p>
+
+    
+    <h4>Operation concept</h4>
+
     <p>The server project deal with game logic of every client, chat operations and game world.
         The game logic defines how a client can interact with the server. It implements operations, events, and anything that the server does by itself.
     </p>
@@ -125,10 +129,15 @@ and loggings dll's <strong>log4net.dll, ExitGame.Logging.Log4Net.dll </strong>.
             Operations and all of their parameters are defined in the <strong>PhotonMMORPG.Common</strong> project. Clients can call any operation by setting up a hashtable with keys and values fitting the operation's conventions. The client and server frameworks take care of serialization, transfer and deserialization.
     </p>
 
-    <p>
-            Photon Events are messages for clients. Each event is typed by a byte code and carries game updates. The Lite Application defines several events but it's possible to define custom events purely on the client side.
+    <h4>Event concept</h4>
 
+    <p>
+            Photon Events are messages for clients. Each event is typed by a byte code and carries game updates.
             Unlike operation results, a received event is most likely caused another client's operation call. This means: Events might arrive anytime. Lite sends events when someone joins or leaves a room.
     </p>
+
+    <h3>Build client application</h3>
+
+    </section>
 </body>
 </html>
