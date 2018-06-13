@@ -31,9 +31,7 @@ public class Chat : MonoBehaviour {
 
     private void OnGUI()
     {
-        GUI.Label(new Rect(0,0,100,20),(String.Format("{0} RTT   {1} VAR", PhotonServer.Instance.PhotonPeer.RoundTripTime, PhotonServer.Instance.PhotonPeer.RoundTripTimeVariance)));
-
-        GUI.Label(new Rect(5, 25, 300, 300), chatLog);
+        GUI.Label(new Rect(5, 5, 300, 300), chatLog);
 
         message = GUI.TextField(new Rect(5, 320, 200, 20), message);
 

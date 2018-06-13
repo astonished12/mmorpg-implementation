@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class PhotonServer : MonoBehaviour, IPhotonPeerListener
 {
-    private const string CONNECTION_STRING = "52.47.135.164:5055";
+    private const string CONNECTION_STRING = "localhost:5055";
     private const string APP_NAME = "MyCoolServer";
 
     private static PhotonServer _instance;
@@ -19,7 +19,7 @@ public class PhotonServer : MonoBehaviour, IPhotonPeerListener
 
     public List<Player> Players = new List<Player>();
 
-    public PhotonPeer PhotonPeer { get; set; }
+    private PhotonPeer PhotonPeer { get; set; }
 
     public string CharacterName { get; set; }
 
@@ -57,9 +57,7 @@ public class PhotonServer : MonoBehaviour, IPhotonPeerListener
     void Update()
     {
         if (PhotonPeer != null)
-        {
             PhotonPeer.Service();
-        }
     }
 
     void OnApplicationQuit()
