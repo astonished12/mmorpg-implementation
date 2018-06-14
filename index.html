@@ -206,13 +206,44 @@ and loggings dll's <strong>log4net.dll, ExitGame.Logging.Log4Net.dll </strong>.
     <figure typeof="sa:Image">
         <img src="public/resources/animator.png">
         <figcaption>
-            <center>Sync operations of main character</center>
+            <center>Animator controller</center>
         </figcaption>
     </figure>
     
-        
-    
     </section>
+
+    <section id="conclusion">
+        <h2>Conclusion & Future considerations </h2>
+        The traditional approach to host an MMOG is a client-server architecture. 
+        This,however, provides a single point of failure, increases latency and can cause possible bottleneck.
+        At a higher level, this consists of a single server connected to one or many clients
+        over the Internet. More important the players do not need to know any information of the game universe outside their
+        area of interest. This lead us to a new approach : adapting the Client-Server architecture to P2P one.  
+    </section>
+
     
+    <section typeof="sa:ReferenceList" id="references">
+        <h2>References</h2>
+        <dl>
+
+            <dt> 
+                Photon Server Intro
+            </dt>
+            <dd id="ref-ionic" typeof="schema:CreativeWork"
+                resource="https://doc.photonengine.com/en-us/onpremise/current/getting-started/photon-server-intro">
+                <cite property="schema:name">
+                    <a href="https://doc.photonengine.com/en-us/onpremise/current/getting-started/photon-server-intro">
+                        Photon Server Intro
+                     </a>
+                </cite>,
+                by
+                <span property="schema:author" typeof="schema:Organization">
+                    <span property="schema:name">Photon</span>
+                </span>
+            </dd>
+        
+        </dl>
+    </section>
+
 </body>
 </html>
