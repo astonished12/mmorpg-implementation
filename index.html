@@ -61,7 +61,7 @@
 
     
     <figure typeof="sa:Image">
-        <img src="public/resources/photon-server-architecture.png">
+        <img src="public/resources/photon_server_architecture.png">
         <figcaption>
             <center> Photon High Level Architecture  </center>
         </figcaption>
@@ -100,7 +100,7 @@
 </section>
 
 <figure typeof="sa:Image">
-    <img src="public/resources/photoncontrol.png">
+    <img src="public/resources/photon_control.png">
     <figcaption>
         <center>Start application server as service </center>
     </figcaption>
@@ -182,14 +182,34 @@ and loggings dll's <strong>log4net.dll, ExitGame.Logging.Log4Net.dll </strong>.
     of a massive multiplayer online role-playing game (MMORPG). Every operation performed by client 
     will be procesed by server and synchronized to all participants.
 
+    <h4>Character input and animator component</h4>
     </p>
+        The player will control his own character and based on server decisions will modify the game state as we told.
+        Every active character has an movement script and there in a loop will be waiting for movement inputs.
+        This script allow the player to use the WASD and arrow keys, a controller pad or other device to move the player.   
     </p>
+
+    
     <figure typeof="sa:Image">
         <img src="public/resources/move_animator.png">
         <figcaption>
             <center>Sync operations of main character</center>
         </figcaption>
     </figure>
+
+    <p>
+        The Animator component is used to assign animation to a GameObject in your scene in our case to character gameobject.
+         The Animator component requires a reference to an Animator Controller which defines which animation clips to use, and controls when and how to blend and transition between them.
+    </p>
+
+    
+    <figure typeof="sa:Image">
+        <img src="public/resources/animator.png">
+        <figcaption>
+            <center>Sync operations of main character</center>
+        </figcaption>
+    </figure>
+    
         
     
     </section>
