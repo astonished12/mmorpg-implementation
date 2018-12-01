@@ -1,6 +1,56 @@
 # =============== #
 # Unity generated #
 # =============== #
+Client-project/MMORPG-Client-Framework/[Tt]emp/
+Client-project/MMORPG-Client-Framework/[Oo]bj/
+Client-project/MMORPG-Client-Framework/[Bb]uild
+Client-project/MMORPG-Client-Framework/[Bb]uilds/
+Client-project/MMORPG-Client-Framework/[Ll]ibrary/
+Client-project/MMORPG-Client-Framework/sysinfo.txt
+Client-project/MMORPG-Client-Framework/*.stackdump
+Client-project/MMORPG-Client-Framework/Assets/AssetStoreTools*
+Client-project/MMORPG-Client-Framework/*.apk
+Client-project/MMORPG-Client-Framework/*.unitypackage
+Client-project/MMORPG-Client-Framework/ClientExe
+Client-project/MMORPG-Client-Framework/ClientWeb
+
+
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+Client-project/MMORPG-Client-Framework/[Ee]xported[Oo]bj/
+Client-project/MMORPG-Client-Framework/.vs/
+Client-project/MMORPG-Client-Framework/*.userprefs
+Client-project/MMORPG-Client-Framework/*.csproj
+Client-project/MMORPG-Client-Framework/*.pidb
+Client-project/MMORPG-Client-Framework/*.pidb.meta
+Client-project/MMORPG-Client-Framework/*.suo
+Client-project/MMORPG-Client-Framework/*.sln*
+Client-project/MMORPG-Client-Framework/*.user
+Client-project/MMORPG-Client-Framework/*.unityproj
+Client-project/MMORPG-Client-Framework/*.booproj
+Client-project/MMORPG-Client-Framework/.consulo/
+Client-project/MMORPG-Client-Framework/*.tmp
+Client-project/MMORPG-Client-Framework/*.svd
+ 
+# ============ #
+# OS generated #
+# ============ #
+Client-project/MMORPG-Client-Framework/.DS_Store*
+Client-project/MMORPG-Client-Framework/._*
+Client-project/MMORPG-Client-Framework/.Spotlight-V100
+Client-project/MMORPG-Client-Framework/.Trashes
+Client-project/MMORPG-Client-Framework/Icon?
+Client-project/MMORPG-Client-Framework/ehthumbs.db
+Client-project/MMORPG-Client-Framework/[Tt]humbs.db
+Client-project/MMORPG-Client-Framework/[Dd]esktop.ini
+Client-project/MMORPG-Client-Framework/Corridor/Library/ShaderCache/
+Client-project/MMORPG-Client-Framework/Corridor/Library/metadata/
+
+# =============== #
+# Unity generated #
+# =============== #
 Client-project/MMORPG-Client/[Tt]emp/
 Client-project/MMORPG-Client/[Oo]bj/
 Client-project/MMORPG-Client/[Bb]uild

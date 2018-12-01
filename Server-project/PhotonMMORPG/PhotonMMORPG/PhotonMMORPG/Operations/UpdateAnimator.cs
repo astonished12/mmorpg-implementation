@@ -6,7 +6,7 @@ using Photon.SocketServer;
 using Photon.SocketServer.Rpc;
 using PhotonMMORPG.Common;
 
-namespace PhotonMMORPG.Operations
+namespace GameServer
 {
     class UpdateAnimator : BaseOperation
     {

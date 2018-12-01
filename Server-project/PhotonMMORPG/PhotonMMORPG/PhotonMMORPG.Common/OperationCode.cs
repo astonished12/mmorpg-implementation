@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PhotonMMORPG.Common
 {
-    public enum OperationCode:byte
+    public enum OperationCode : byte
     {
         Login,
         GetRecentChatMessages,

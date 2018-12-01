@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using GameServer;
 using Photon.SocketServer;
 using Photon.SocketServer.Rpc;
 using PhotonMMORPG.Common;
 
-namespace PhotonMMORPG.Operations
+namespace GameServer
 {
     class ChatMessage : BaseOperation
     {

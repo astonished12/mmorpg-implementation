@@ -1,0 +1,7 @@
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServerMMORPG\bin\GameServer.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServerMMORPG\bin\GameServer.pdb
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\GameServer.csprojAssemblyReference.cache
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\GameServer.csproj.CoreCompileInputs.cache
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\GameServer.csproj.CopyComplete
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\GameServer.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\GameServer.pdb

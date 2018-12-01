@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class PhotonServer : MonoBehaviour, IPhotonPeerListener
 {
-    private const string CONNECTION_STRING = "localhost:5055";
+    private const string CONNECTION_STRING = "localhost:5057";
     private const string APP_NAME = "MyCoolServer";
 
     private static PhotonServer _instance;
@@ -306,6 +306,8 @@ public class PhotonServer : MonoBehaviour, IPhotonPeerListener
 
     #region Up-level API
 
+
+    
     public void SendLoginOperation(string name)
     {
         PhotonPeer.OpCustom((byte)OperationCode.Login,

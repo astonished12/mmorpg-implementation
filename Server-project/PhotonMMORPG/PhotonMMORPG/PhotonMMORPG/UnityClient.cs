@@ -6,10 +6,9 @@ using ExitGames.Logging.Log4Net;
 using log4net.Config;
 using System.Collections.Generic;
 using PhotonMMORPG.Common;
-using PhotonMMORPG.Operations;
 using System.Linq;
 
-namespace PhotonMMORPG
+namespace GameServer
 {
      public class UnityClient: ClientPeer
     {

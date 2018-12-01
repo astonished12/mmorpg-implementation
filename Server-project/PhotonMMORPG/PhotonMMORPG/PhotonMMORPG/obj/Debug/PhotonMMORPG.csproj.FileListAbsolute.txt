@@ -13,3 +13,10 @@ D:\MMORPG-project\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debu
 D:\MMORPG-project\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.csproj.CopyComplete
 D:\MMORPG-project\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.dll
 D:\MMORPG-project\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.pdb
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServerMMORPG\bin\PhotonMMORPG.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServerMMORPG\bin\PhotonMMORPG.pdb
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.csprojResolveAssemblyReference.cache
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.csproj.CoreCompileInputs.cache
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.csproj.CopyComplete
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG\obj\Debug\PhotonMMORPG.pdb

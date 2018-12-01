@@ -38,6 +38,7 @@ public class World : MonoBehaviour
         {
             var p = PhotonServer.Instance.Players.FirstOrDefault(
                 n => n.CharacterName.Equals(PhotonServer.Instance.CharacterName));
+
             if (p != null)
             {
                 localPlayer = p;
