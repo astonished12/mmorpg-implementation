@@ -5,7 +5,7 @@ D:\MMORPG-project\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\o
 D:\MMORPG-project\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\obj\Debug\PhotonMMORPG.Common.pdb
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Client-project\MMORPG-Client\Assets\Plugins\PhotonMMORPG.Common.dll
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Client-project\MMORPG-Client\Assets\Plugins\PhotonMMORPG.Common.pdb
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\obj\Debug\PhotonMMORPG.Common.csprojAssemblyReference.cache
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\obj\Debug\PhotonMMORPG.Common.csproj.CoreCompileInputs.cache
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\obj\Debug\PhotonMMORPG.Common.dll
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\obj\Debug\PhotonMMORPG.Common.pdb
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\obj\Debug\PhotonMMORPG.Common.csprojAssemblyReference.cache

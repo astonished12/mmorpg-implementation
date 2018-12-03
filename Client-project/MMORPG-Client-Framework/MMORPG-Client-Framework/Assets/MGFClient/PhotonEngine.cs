@@ -64,6 +64,12 @@ public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
         State.OnUpdate();
     }
 
+    private void OnApplicationQuit()
+    {
+        Disconnect();
+        Instance = null;
+    }
+
     public void Disconnect()
     {
         if (Peer != null && Peer.PeerState == PeerStateValue.Connected)
@@ -178,6 +184,6 @@ public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
 
     public void SendRequest(OperationRequest request)
     {
-        Peer.OpCustom(request, true, 0, UseEncryption);
+        State.SendRequest(request, true, 0, UseEncryption);
     }
 }
