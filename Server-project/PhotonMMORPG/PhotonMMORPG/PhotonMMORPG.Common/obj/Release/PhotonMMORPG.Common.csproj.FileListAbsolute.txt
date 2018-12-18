@@ -1,0 +1,6 @@
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\bin\Release\PhotonMMORPG.Common.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\bin\Release\PhotonMMORPG.Common.pdb
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\obj\Release\PhotonMMORPG.Common.csprojAssemblyReference.cache
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\obj\Release\PhotonMMORPG.Common.csproj.CoreCompileInputs.cache
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\obj\Release\PhotonMMORPG.Common.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\PhotonMMORPG.Common\obj\Release\PhotonMMORPG.Common.pdb

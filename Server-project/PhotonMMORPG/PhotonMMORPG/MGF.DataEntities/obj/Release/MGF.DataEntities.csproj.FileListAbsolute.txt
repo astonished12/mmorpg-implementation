@@ -1,0 +1,16 @@
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\bin\Release\MGF.DataEntities.dll.config
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\bin\Release\MGF.DataEntities.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\bin\Release\MGF.DataEntities.pdb
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\bin\Release\EntityFramework.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\bin\Release\EntityFramework.SqlServer.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\bin\Release\MySql.Data.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\bin\Release\MySql.Data.Entity.EF6.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\bin\Release\EntityFramework.xml
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\bin\Release\EntityFramework.SqlServer.xml
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\bin\Release\MySql.Data.xml
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\bin\Release\MySql.Data.Entity.EF6.xml
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\obj\Release\MGF.DataEntities.csprojAssemblyReference.cache
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\obj\Release\MGF.DataEntities.csproj.CoreCompileInputs.cache
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\obj\Release\MGF.DataEntities.csproj.CopyComplete
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\obj\Release\MGF.DataEntities.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.DataEntities\obj\Release\MGF.DataEntities.pdb

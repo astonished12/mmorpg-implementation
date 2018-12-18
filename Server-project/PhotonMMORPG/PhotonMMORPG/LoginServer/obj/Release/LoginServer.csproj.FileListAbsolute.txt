@@ -1,0 +1,2 @@
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\LoginServer\obj\Release\LoginServer.csprojAssemblyReference.cache
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\LoginServer\obj\Release\LoginServer.csproj.CoreCompileInputs.cache
