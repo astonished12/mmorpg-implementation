@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace MGF.Domain
         private string name;
 
         private List<Stat> stats;
-
+        private static Character nullValue = new Character();
         #endregion
 
         #region Properties
@@ -88,8 +89,43 @@ namespace MGF.Domain
         {
             if (null == stats)
             {
-                stats = IsNew || 0 == id ? new List<Stat>() : CharacterMapper.LoadStats(this);
+                stats = (IsNew || 0 == id)
+                    ? new List<Stat>() 
+                    : CharacterMapper.LoadStats(this).ToList();
             }
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (null == obj)
+            {
+                return false;
+            }
+
+            Character other = obj as Character;
+            if (null == other)
+            {
+                return false;
+            }
+
+            return this.GetHashCode().Equals(other.GetHashCode()) &&
+                   this.Stats.SequenceEqual(other.Stats);
+        }
+
+        public override int GetHashCode()
+        {
+            return this.ToString().GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return String.Format(CultureInfo.CurrentCulture, "{0}: {1} {2}",
+                this.GetType(), this.Name, this.Id);
+        }
+
+        public static Character NullValue
+        {
+            get { return nullValue; }
         }
     }
     #endregion

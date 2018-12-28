@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,10 @@ namespace MGF.Domain
         private string name;
         private int value;
 
+        private static Stat nullValue = new Stat();
+
+        private int characterId;
+        private Character character;
         #endregion
 
         #region Properties
@@ -58,7 +63,8 @@ namespace MGF.Domain
         public int Value
         {
             get { return value; }
-            set {
+            set
+            {
                 if (null == value)
                 {
                     value = 0;
@@ -71,14 +77,32 @@ namespace MGF.Domain
                 }
             }
         }
-      
+
+        public int CharacterId
+        {
+            get { return characterId; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(CharacterId));
+                }
+
+                if (this.characterId != value)
+                {
+                    this.characterId = value;
+                    PropertyHasChanged(nameof(CharacterId));
+                }
+            }
+        }
+
         #endregion
 
-        #region Constructs
+            #region Constructs
 
         public Stat()
         {
-            
+
         }
 
         public Stat(int id, string name, int value)
@@ -93,8 +117,40 @@ namespace MGF.Domain
 
         #region Methods
         //BUSSINESS LOGIC
-        #endregion
+        public override bool Equals(object obj)
+        {
+            if (null == obj)
+            {
+                return false;
+            }
 
+            Stat other = obj as Stat;
+            if (null == other)
+            {
+                return false;
+            }
+
+            return this.GetHashCode().Equals(other.GetHashCode());
+        }
+
+        public override int GetHashCode()
+        {
+            return this.ToString().GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return String.Format(CultureInfo.CurrentCulture, "{0}: {1} - {3} ({2})",
+                this.GetType(), this.Name, this.Id, this.value);
+        }
+
+        public static Stat NullValue
+        {
+            get { return nullValue; }
+        }
     }
+    #endregion
+
 }
+
 
