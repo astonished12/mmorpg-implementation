@@ -4,3 +4,16 @@ D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-proje
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\obj\Debug\MGF.Domain.csproj.CoreCompileInputs.cache
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\obj\Debug\MGF.Domain.dll
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\obj\Debug\MGF.Domain.pdb
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\bin\Debug\MGF.Domain.dll.config
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\bin\Debug\EntityFramework.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\bin\Debug\MGF.DataEntities.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\bin\Debug\MySql.Data.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\bin\Debug\MGF.DataEntities.pdb
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\bin\Debug\MGF.DataEntities.dll.config
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\bin\Debug\EntityFramework.xml
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\bin\Debug\MySql.Data.Entity.EF6.xml
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\bin\Debug\MySql.Data.xml
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF.Domain\obj\Debug\MGF.Domain.csproj.CopyComplete

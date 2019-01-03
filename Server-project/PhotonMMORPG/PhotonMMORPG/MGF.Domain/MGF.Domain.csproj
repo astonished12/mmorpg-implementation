@@ -73,6 +73,7 @@
     <Compile Include="Mappers\CharacterMapper.cs" />
     <Compile Include="Mappers\MapperBase.cs" />
     <Compile Include="Mappers\StatMapper.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

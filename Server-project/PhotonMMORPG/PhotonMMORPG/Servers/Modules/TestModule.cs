@@ -5,7 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Autofac;
 using Servers.BackgroundThreads;
+using Servers.Config;
 using Servers.Handlers;
+using Servers.Handlers.Login;
+using Servers.Support;
 
 namespace Servers.Modules
 {
@@ -18,7 +21,9 @@ namespace Servers.Modules
             builder.RegisterType<TestRequestResponseHandler>().AsImplementedInterfaces();
             builder.RegisterType<TestRequestEventHandler>().AsImplementedInterfaces();
             builder.RegisterType<TestBackGroundThread>().AsImplementedInterfaces();
-            
+            builder.RegisterType<ClientCodeRemove>().AsImplementedInterfaces();
+            builder.RegisterType<ServerType>().AsImplementedInterfaces();
+            builder.RegisterType<ClientLoginFowardingRequestHandler>().AsImplementedInterfaces();
         }
     }
 }

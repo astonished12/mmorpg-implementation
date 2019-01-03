@@ -69,7 +69,7 @@ namespace Servers.BackgroundThreads
 
         public void Stop()
         {
-            throw new NotImplementedException();
+            isRunning = false;
         }
 
         public void Update(TimeSpan elapsed)

@@ -34,7 +34,7 @@ namespace MGF_Photon.Implementation.Handler
 
         public override int? SubCode
         {
-            get { return null; }
+            get { return 0; }
         }
 
         public override bool OnHandleMessage(IMessage message, IServerPeer peer)

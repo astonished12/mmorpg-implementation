@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using ExitGames.Client.Photon;
+using GameCommon;
 using UnityEngine;
 
 public class TestView : MonoBehaviour
@@ -23,7 +24,7 @@ public class TestView : MonoBehaviour
 
         OperationRequest request = new OperationRequest()
         {
-            OperationCode = 1,
+            OperationCode = (byte)MessageOperationCode.Login,
             Parameters = new Dictionary<byte, object>()
                 {{(byte) PhotonEngine.Instance.SubCodeParameterCode, 2}}
         };
