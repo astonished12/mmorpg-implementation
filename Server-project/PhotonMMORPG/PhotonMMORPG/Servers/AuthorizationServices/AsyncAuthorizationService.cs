@@ -53,5 +53,10 @@ namespace Servers.AuthorizationServices
             //Run OAuth specific code;
             return false; 
         }
+
+        public ReturnCode CreateAccount(params string[] authorizationParameters)
+        {
+            return ReturnCode.InternalServerError;
+        }
     }
 }

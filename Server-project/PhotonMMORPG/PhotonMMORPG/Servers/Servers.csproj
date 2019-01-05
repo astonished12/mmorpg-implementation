@@ -112,6 +112,7 @@
     <Compile Include="Config\ServerType.cs" />
     <Compile Include="Data\Client\CharacterData.cs" />
     <Compile Include="Handlers\Login\ClientLoginFowardingRequestHandler.cs" />
+    <Compile Include="Handlers\Login\LoginAccountCreationHandler.cs" />
     <Compile Include="Handlers\Login\LoginAuthentificationHandler.cs" />
     <Compile Include="Handlers\TestRequestEventHandler.cs" />
     <Compile Include="Handlers\TestRequestResponseHandler.cs" />

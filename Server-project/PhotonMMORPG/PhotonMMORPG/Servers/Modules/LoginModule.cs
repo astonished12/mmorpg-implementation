@@ -15,6 +15,7 @@ namespace Servers.Modules
         {
             base.Load(builder);
             builder.RegisterType<LoginAuthenticationHandler>().AsImplementedInterfaces();
+            builder.RegisterType<LoginAccountCreationHandler>().AsImplementedInterfaces();
             builder.RegisterType<UserPassAuthorizationService>().AsImplementedInterfaces();
         }
     }

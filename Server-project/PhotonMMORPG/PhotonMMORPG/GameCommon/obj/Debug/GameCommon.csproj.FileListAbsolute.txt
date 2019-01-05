@@ -11,3 +11,5 @@ D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-proje
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\GameCommon\obj\Debug\GameCommon.csproj.CopyComplete
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\GameCommon\obj\Debug\GameCommon.dll
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\GameCommon\obj\Debug\GameCommon.pdb
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Client-project\MMORPG-Client-Framework\MMORPG-Client-Framework\Assets\Plugins\GameCommon.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Client-project\MMORPG-Client-Framework\MMORPG-Client-Framework\Assets\Plugins\GameCommon.pdb

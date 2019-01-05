@@ -14,6 +14,41 @@ namespace Servers.AuthorizationServices
 {
     public class UserSaltPassAuthorizationService : IAuthorizationService
     {
+        public ReturnCode CreateAccount(params string[] authorizationParameters)
+        {
+            if (authorizationParameters.Length != 2)
+            {
+                return ReturnCode.OperationInvalid;
+            }
+
+            UserMapper userMapper = new UserMapper(); ;
+            User user = UserMapper.LoadByUserName(authorizationParameters[0]);
+
+            if (null == user)
+            {
+                //Create the user
+                var sha512 = SHA512Managed.Create();
+                var salt = Guid.NewGuid();
+                //compute hash password using hash object
+                var hashedpw = sha512.ComputeHash(Encoding.UTF8.GetBytes(authorizationParameters[1]).Concat(salt.ToByteArray()).ToArray());
+
+                user = new User()
+                {
+                    LoginName = authorizationParameters[0],
+                    PasswordHash = Convert.ToBase64String(hashedpw),
+                    Salt = Convert.ToBase64String((salt.ToByteArray()))
+                };
+                userMapper.Save(user);
+
+                return ReturnCode.Ok;
+            }
+            else
+            {
+                return ReturnCode.InvalidUserPass;
+            }
+
+        }
+
         public ReturnCode IsAuthorized(out User user, params string[] authorizationParameters)
         {
             user = null;
