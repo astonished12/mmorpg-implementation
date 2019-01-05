@@ -8,6 +8,6 @@ namespace GameCommon
 {
     public enum MessageSubCode : int
     {
-
+        LoginUserPass = 1
     }
 }

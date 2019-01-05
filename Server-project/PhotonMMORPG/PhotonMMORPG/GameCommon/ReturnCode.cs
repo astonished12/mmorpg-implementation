@@ -12,6 +12,7 @@ namespace GameCommon
         OperationInvalid = -2,
         InternalServerError = -1,
 
-        Ok = 0
+        Ok = 0,
+        InvalidUserPass
     }
 }

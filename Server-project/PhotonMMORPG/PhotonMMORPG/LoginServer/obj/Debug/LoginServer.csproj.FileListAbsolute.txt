@@ -1,7 +1,0 @@
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServerMMORPG\bin\LoginServer.dll
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServerMMORPG\bin\LoginServer.pdb
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\LoginServer\obj\Debug\LoginServer.csprojAssemblyReference.cache
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\LoginServer\obj\Debug\LoginServer.csproj.CoreCompileInputs.cache
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\LoginServer\obj\Debug\LoginServer.csproj.CopyComplete
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\LoginServer\obj\Debug\LoginServer.dll
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\LoginServer\obj\Debug\LoginServer.pdb

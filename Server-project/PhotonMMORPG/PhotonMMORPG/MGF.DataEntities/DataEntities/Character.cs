@@ -10,6 +10,10 @@ namespace MGF.DataEntities
     {
         public int Id { get; set; }
         public String Name { get; set; }
+
+        public int UserId { get; set; }
+        public User User { get; set; }
+
         public ICollection<Stat> Stats { get; set; }
     }
 }

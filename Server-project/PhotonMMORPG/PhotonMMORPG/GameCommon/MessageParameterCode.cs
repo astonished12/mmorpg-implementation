@@ -9,6 +9,9 @@ namespace GameCommon
     public enum MessageParameterCode : byte
     {
         SubCodeParameterCode = 0,// Match the same value in the config
-        PeerId
+        PeerId,
+        LoginName,
+        Password,
+        UserId
     }
 }

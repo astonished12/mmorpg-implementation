@@ -105,11 +105,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthorizationServices\AsyncAuthorizationService.cs" />
+    <Compile Include="AuthorizationServices\UserPassAuthorizationService.cs" />
+    <Compile Include="AuthorizationServices\UserSaltPassAuthorizationService.cs" />
     <Compile Include="BackgroundThreads\TestBackGroundThread.cs" />
     <Compile Include="Config\ServerType.cs" />
+    <Compile Include="Data\Client\CharacterData.cs" />
     <Compile Include="Handlers\Login\ClientLoginFowardingRequestHandler.cs" />
+    <Compile Include="Handlers\Login\LoginAuthentificationHandler.cs" />
     <Compile Include="Handlers\TestRequestEventHandler.cs" />
     <Compile Include="Handlers\TestRequestResponseHandler.cs" />
+    <Compile Include="Interfaces\IAuthorizationService.cs" />
     <Compile Include="Modules\LoginModule.cs" />
     <Compile Include="Modules\TestModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -128,6 +134,10 @@
       <Project>{9da0fddc-f74e-46f5-8c9c-4e13ac263af6}</Project>
       <Name>MGF-Photon4</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MGF.Domain\MGF.Domain.csproj">
+      <Project>{86cb5889-c824-4c2a-9945-39b1190a8ab8}</Project>
+      <Name>MGF.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -142,6 +152,7 @@
     <None Include="packages.config" />
     <None Include="TestServer.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

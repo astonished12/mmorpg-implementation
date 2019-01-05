@@ -9,6 +9,6 @@ namespace GameCommon
     public enum MessageOperationCode : byte
     {
         // which server the message is going to or coming from
-        Login
+        Login = 1
     }
 }

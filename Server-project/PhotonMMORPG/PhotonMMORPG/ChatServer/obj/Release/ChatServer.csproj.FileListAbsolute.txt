@@ -1,2 +1,0 @@
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\ChatServer\obj\Release\ChatServer.csprojAssemblyReference.cache
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\ChatServer\obj\Release\ChatServer.csproj.CoreCompileInputs.cache
