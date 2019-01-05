@@ -14,7 +14,7 @@ namespace Servers.Modules
         protected override void Load(ContainerBuilder builder)
         {
             base.Load(builder);
-            builder.RegisterType<LoginAuthentificationHandler>().AsImplementedInterfaces();
+            builder.RegisterType<LoginAuthenticationHandler>().AsImplementedInterfaces();
             builder.RegisterType<UserPassAuthorizationService>().AsImplementedInterfaces();
         }
     }

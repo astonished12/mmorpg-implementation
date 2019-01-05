@@ -12,10 +12,9 @@ namespace MGF
     [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class MGFContext : DbContext
     {
-
-        public MGFContext() : base("name=MsqlDbConnectionString")
+        public MGFContext() : base("name=MySqlDbConnectionString")
         {
-
+            Database.SetInitializer<MGFContext>(new DropCreateDatabaseIfModelChanges<MGFContext>());
         }
 #else
     public class MGFContext : DbContext
@@ -23,7 +22,7 @@ namespace MGF
 
         public MGFContext() : base("name=MsSqlDbConnectionString")
         {
-
+            
         }
 #endif
         //Define entities Here
