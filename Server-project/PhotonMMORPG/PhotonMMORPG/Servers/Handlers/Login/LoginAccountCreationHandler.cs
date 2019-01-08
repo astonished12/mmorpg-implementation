@@ -21,7 +21,6 @@ namespace Servers.Handlers.Login
     {
         private ILogger Log;
         private IAuthorizationService AuthService;
-      
         public LoginAccountCreationHandler(ILogger log, IAuthorizationService authService)
         {
             Log = log;
@@ -41,13 +40,14 @@ namespace Servers.Handlers.Login
             if (!message.Parameters.ContainsKey((byte)MessageParameterCode.LoginName) || !message.Parameters.ContainsKey((byte)MessageParameterCode.Password))
             {
                 Log.DebugFormat("Sending Invalid Operation Response");
-                response = new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "Not enough arguments", (short)ReturnCode.OperationInvalid);
+                response = new Response(Code, SubCode, new Dictionary<byte, object>() { {(byte)MessageParameterCode.SubCodeParameterCode, SubCode }, {(byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "Not enough arguments", (short)ReturnCode.OperationInvalid);
                 peer.SendMessage(response);
             }
             else
             {
-                // Use our preferred Authorization Service to check if authorized
-                // Start by seeing if an account already existts with this name
+
+                // Use our preferred Authorization Service to check accounts
+                // Start by seeing if an account already exists with this name
                 var returnCode = AuthService.CreateAccount((string)message.Parameters[(byte)MessageParameterCode.LoginName], (string)message.Parameters[(byte)MessageParameterCode.Password]);
                 if (returnCode != ReturnCode.Ok)
                 {
@@ -55,9 +55,9 @@ namespace Servers.Handlers.Login
                 }
                 else
                 {
-                    // UserPass is not good.
-                    response = new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "Account created", (short)ReturnCode.Ok);
+                    response = new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "Account Created", (short)ReturnCode.Ok);
                 }
+                peer.SendMessage(response);
             }
             return true;
         }

@@ -8,7 +8,7 @@ using MultiplayerGameFramework.Interfaces.Server;
 
 namespace MGF_Photon.Implementation.Handler
 {
-    public class RequestFowardHandler:ServerHandler, IDefaultRequestHandler<IServerPeer>
+    public class RequestFowardHandler : ServerHandler, IDefaultRequestHandler<IServerPeer>
     {
         private readonly IConnectionCollection<IClientPeer> _connectionCollection;
         private readonly ServerConfiguration _serverConfiguration;

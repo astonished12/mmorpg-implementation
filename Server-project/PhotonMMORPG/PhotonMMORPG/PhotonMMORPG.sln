@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer", "PhotonMMORPG\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonMMORPG.Common", "PhotonMMORPG.Common\PhotonMMORPG.Common.csproj", "{1F578CDF-EA51-499E-8235-66FA60617E76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplayerGameFramework", "..\MultiplayerGameFramework\MultiplayerGameFramework.csproj", "{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGF-Photon", "MGF-Photon\MGF-Photon.csproj", "{236B2D49-0286-4E15-9CA3-0E3236A96096}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGF-Photon4", "MGF-Photon4\MGF-Photon4.csproj", "{9DA0FDDC-F74E-46F5-8C9C-4E13AC263AF6}"
@@ -22,6 +20,22 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCommon", "GameCommon\GameCommon.csproj", "{208CE452-1ACC-41A8-BFEA-B3EF86B4C38C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseCreation", "DataBaseCreation\DataBaseCreation.csproj", "{1DA3F573-380B-4562-94ED-F84BB86575BE}"
+EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "PhotonSocketServer", "..\..\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonSocketServer.exe", "{2941340A-B4CF-4A27-9E4A-4E06E570837A}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonSocketServer.exe
+		RemoteMachine = DESKTOP-4FMT0IA
+		StartingDirectory = D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64
+		Arguments = /debug TestServer
+		Environment = Default
+		LaunchingEngine = fb0d4648-f776-4980-95f8-bb7f36ebc1ee
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplayerGameFramework", "MultiplayerGameFramework\MultiplayerGameFramework.csproj", "{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,30 +101,6 @@ Global
 		{1F578CDF-EA51-499E-8235-66FA60617E76}.Release|x64.Build.0 = Release|Any CPU
 		{1F578CDF-EA51-499E-8235-66FA60617E76}.Release|x86.ActiveCfg = Release|Any CPU
 		{1F578CDF-EA51-499E-8235-66FA60617E76}.Release|x86.Build.0 = Release|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Debug|x64.Build.0 = Debug|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Debug|x86.Build.0 = Debug|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLDebug|Any CPU.ActiveCfg = MySQLDebug|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLDebug|Any CPU.Build.0 = MySQLDebug|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLDebug|x64.ActiveCfg = MySQLDebug|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLDebug|x64.Build.0 = MySQLDebug|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLDebug|x86.ActiveCfg = MySQLDebug|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLDebug|x86.Build.0 = MySQLDebug|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLRelease|Any CPU.ActiveCfg = MySQLRelease|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLRelease|Any CPU.Build.0 = MySQLRelease|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLRelease|x64.ActiveCfg = MySQLRelease|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLRelease|x64.Build.0 = MySQLRelease|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLRelease|x86.ActiveCfg = MySQLRelease|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLRelease|x86.Build.0 = MySQLRelease|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Release|x64.ActiveCfg = Release|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Release|x64.Build.0 = Release|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Release|x86.ActiveCfg = Release|Any CPU
-		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Release|x86.Build.0 = Release|Any CPU
 		{236B2D49-0286-4E15-9CA3-0E3236A96096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{236B2D49-0286-4E15-9CA3-0E3236A96096}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{236B2D49-0286-4E15-9CA3-0E3236A96096}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -279,6 +269,42 @@ Global
 		{1DA3F573-380B-4562-94ED-F84BB86575BE}.Release|x64.Build.0 = Release|Any CPU
 		{1DA3F573-380B-4562-94ED-F84BB86575BE}.Release|x86.ActiveCfg = Release|Any CPU
 		{1DA3F573-380B-4562-94ED-F84BB86575BE}.Release|x86.Build.0 = Release|Any CPU
+		{2941340A-B4CF-4A27-9E4A-4E06E570837A}.Debug|Any CPU.ActiveCfg = Release|x64
+		{2941340A-B4CF-4A27-9E4A-4E06E570837A}.Debug|x64.ActiveCfg = Release|x64
+		{2941340A-B4CF-4A27-9E4A-4E06E570837A}.Debug|x86.ActiveCfg = Release|x64
+		{2941340A-B4CF-4A27-9E4A-4E06E570837A}.MySQLDebug|Any CPU.ActiveCfg = Release|x64
+		{2941340A-B4CF-4A27-9E4A-4E06E570837A}.MySQLDebug|x64.ActiveCfg = Release|x64
+		{2941340A-B4CF-4A27-9E4A-4E06E570837A}.MySQLDebug|x86.ActiveCfg = Release|x64
+		{2941340A-B4CF-4A27-9E4A-4E06E570837A}.MySQLRelease|Any CPU.ActiveCfg = Release|x64
+		{2941340A-B4CF-4A27-9E4A-4E06E570837A}.MySQLRelease|x64.ActiveCfg = Release|x64
+		{2941340A-B4CF-4A27-9E4A-4E06E570837A}.MySQLRelease|x86.ActiveCfg = Release|x64
+		{2941340A-B4CF-4A27-9E4A-4E06E570837A}.Release|Any CPU.ActiveCfg = Release|x64
+		{2941340A-B4CF-4A27-9E4A-4E06E570837A}.Release|x64.ActiveCfg = Release|x64
+		{2941340A-B4CF-4A27-9E4A-4E06E570837A}.Release|x86.ActiveCfg = Release|x64
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Debug|x64.Build.0 = Debug|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Debug|x86.Build.0 = Debug|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLDebug|Any CPU.ActiveCfg = MySQLDebug|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLDebug|Any CPU.Build.0 = MySQLDebug|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLDebug|x64.ActiveCfg = MySQLDebug|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLDebug|x64.Build.0 = MySQLDebug|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLDebug|x86.ActiveCfg = MySQLDebug|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLDebug|x86.Build.0 = MySQLDebug|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLRelease|Any CPU.ActiveCfg = MySQLRelease|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLRelease|Any CPU.Build.0 = MySQLRelease|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLRelease|x64.ActiveCfg = MySQLRelease|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLRelease|x64.Build.0 = MySQLRelease|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLRelease|x86.ActiveCfg = MySQLRelease|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.MySQLRelease|x86.Build.0 = MySQLRelease|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Release|x64.ActiveCfg = Release|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Release|x64.Build.0 = Release|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Release|x86.ActiveCfg = Release|Any CPU
+		{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

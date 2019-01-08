@@ -26,14 +26,14 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\..\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\TestServer\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MysqlDebug|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\MysqlDebug\</OutputPath>
+    <OutputPath>..\..\..\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\TestServer\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
@@ -41,7 +41,7 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MysqlRelease|AnyCPU'">
-    <OutputPath>bin\MysqlRelease\</OutputPath>
+    <OutputPath>..\..\..\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\TestServer\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
@@ -113,7 +113,7 @@
     <Compile Include="Data\Client\CharacterData.cs" />
     <Compile Include="Handlers\Login\ClientLoginFowardingRequestHandler.cs" />
     <Compile Include="Handlers\Login\LoginAccountCreationHandler.cs" />
-    <Compile Include="Handlers\Login\LoginAuthentificationHandler.cs" />
+    <Compile Include="Handlers\Login\LoginAuthenticationHandler.cs" />
     <Compile Include="Handlers\TestRequestEventHandler.cs" />
     <Compile Include="Handlers\TestRequestResponseHandler.cs" />
     <Compile Include="Interfaces\IAuthorizationService.cs" />
@@ -123,10 +123,6 @@
     <Compile Include="Support\ClientCodeRemove.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\MultiplayerGameFramework\MultiplayerGameFramework.csproj">
-      <Project>{5f2593f7-1ce8-443b-b7c2-4d1dde371324}</Project>
-      <Name>MultiplayerGameFramework</Name>
-    </ProjectReference>
     <ProjectReference Include="..\GameCommon\GameCommon.csproj">
       <Project>{208ce452-1acc-41a8-bfea-b3ef86b4c38c}</Project>
       <Name>GameCommon</Name>
@@ -139,6 +135,10 @@
       <Project>{86cb5889-c824-4c2a-9945-39b1190a8ab8}</Project>
       <Name>MGF.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MultiplayerGameFramework\MultiplayerGameFramework.csproj">
+      <Project>{5f2593f7-1ce8-443b-b7c2-4d1dde371324}</Project>
+      <Name>MultiplayerGameFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -147,7 +147,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="LoginServer.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />

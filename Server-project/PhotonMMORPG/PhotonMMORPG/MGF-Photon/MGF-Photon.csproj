@@ -183,16 +183,15 @@
     <Compile Include="PhotonApplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\MultiplayerGameFramework\MultiplayerGameFramework.csproj">
+    <ProjectReference Include="..\MultiplayerGameFramework\MultiplayerGameFramework.csproj">
       <Project>{5f2593f7-1ce8-443b-b7c2-4d1dde371324}</Project>
       <Name>MultiplayerGameFramework</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

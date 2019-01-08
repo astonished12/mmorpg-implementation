@@ -41,32 +41,23 @@ public class TestView : MonoBehaviour
 
     public void SendLoginRequest()
     {
-        OperationRequest request = new OperationRequest()
-        {
-            OperationCode = (byte)MessageOperationCode.Login,
-            Parameters = new Dictionary<byte, object>()
-                {{(byte) PhotonEngine.Instance.SubCodeParameterCode, MessageSubCode.LoginUserPass}}
-        };
-
+        OperationRequest request = new OperationRequest() { OperationCode = (byte)MessageOperationCode.Login, Parameters = new Dictionary<byte, object>() { { (byte)PhotonEngine.Instance.SubCodeParameterCode, MessageSubCode.LoginUserPass } } };
         request.Parameters.Add((byte)MessageParameterCode.LoginName, LoginUserName.text);
         request.Parameters.Add((byte)MessageParameterCode.Password, LoginPassword.text);
-
-        Debug.Log("Sending request for Login");
+        Debug.Log("Sending Request for Login");
         PhotonEngine.Instance.SendRequest(request);
+
     }
 
     public void SendNewAccountRequest()
     {
-        OperationRequest request = new OperationRequest()
-        {
-            OperationCode = (byte)MessageOperationCode.Login,
-            Parameters = new Dictionary<byte, object>()
-                {{(byte) PhotonEngine.Instance.SubCodeParameterCode, MessageSubCode.LoginNewAccount}}
-        };
-
+        OperationRequest request = new OperationRequest() { OperationCode = (byte)MessageOperationCode.Login, Parameters = new Dictionary<byte, object>() { { (byte)PhotonEngine.Instance.SubCodeParameterCode, MessageSubCode.LoginNewAccount } } };
         request.Parameters.Add((byte)MessageParameterCode.LoginName, CreateUserName.text);
         request.Parameters.Add((byte)MessageParameterCode.Password, CreatePassword.text);
-        Debug.Log("Sending request for Register");
+        Debug.Log("Sending Request for New Account");
         PhotonEngine.Instance.SendRequest(request);
     }
+
+
+
 }

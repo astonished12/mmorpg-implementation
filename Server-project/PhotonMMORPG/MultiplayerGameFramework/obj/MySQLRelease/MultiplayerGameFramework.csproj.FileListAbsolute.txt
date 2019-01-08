@@ -1,5 +1,0 @@
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\MultiplayerGameFramework\bin\MySQLRelease\MultiplayerGameFramework.dll
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\MultiplayerGameFramework\bin\MySQLRelease\MultiplayerGameFramework.pdb
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\MultiplayerGameFramework\obj\MySQLRelease\MultiplayerGameFramework.csproj.CoreCompileInputs.cache
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\MultiplayerGameFramework\obj\MySQLRelease\MultiplayerGameFramework.dll
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\MultiplayerGameFramework\obj\MySQLRelease\MultiplayerGameFramework.pdb

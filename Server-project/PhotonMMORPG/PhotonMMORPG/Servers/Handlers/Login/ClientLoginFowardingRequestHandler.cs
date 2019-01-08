@@ -31,6 +31,7 @@ namespace Servers.Handlers.Login
         public MessageType Type => MessageType.Async | MessageType.Request | MessageType.Response;
         public byte Code => (byte)MessageOperationCode.Login;
         public int? SubCode => null;
+
         public bool HandleMessage(IMessage message, IClientPeer peer)
         {
             Log.DebugFormat("Received Login Message to forward");

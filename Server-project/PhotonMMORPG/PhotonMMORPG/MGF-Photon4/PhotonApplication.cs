@@ -49,6 +49,7 @@ namespace MGF_Photon
             GlobalContext.Properties["LogFileName"] = ApplicationName;
             XmlConfigurator.ConfigureAndWatch(new FileInfo(Path.Combine(BinaryPath, "log4net.config")));
 
+            
             var config = new ConfigurationBuilder();
             config.AddXmlFile(Path.Combine(BinaryPath, ApplicationName + ".config"));
 

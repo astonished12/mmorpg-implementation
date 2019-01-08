@@ -3,6 +3,7 @@ D:\PHOTONSERVERORIGINAL\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\Servers
 D:\PHOTONSERVERORIGINAL\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\Servers.pdb
 D:\PHOTONSERVERORIGINAL\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\TestServer.config
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\TestServer\log4net.config
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\TestServer\LoginServer.config
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\TestServer\TestServer.config
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\TestServer\Servers.dll.config
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\TestServer\Servers.dll
@@ -12,4 +13,3 @@ D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-proje
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\Servers\obj\Debug\Servers.csproj.CopyComplete
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\Servers\obj\Debug\Servers.dll
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\Servers\obj\Debug\Servers.pdb
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\TestServer\LoginServer.config

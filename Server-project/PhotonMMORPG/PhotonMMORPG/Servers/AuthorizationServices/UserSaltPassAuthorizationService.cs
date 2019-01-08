@@ -68,7 +68,7 @@ namespace Servers.AuthorizationServices
             //get the salt from the user and add it to the password passed in
 
             //compute hash password using hash object
-            var hashedpw = sha512.ComputeHash(Encoding.UTF8.GetBytes(authorizationParameters[1]).Concat(Convert.FromBase64String(user.Salt)).ToArray());
+            var hashedpw = sha512.ComputeHash(Encoding.UTF8.GetBytes(authorizationParameters[1]).Concat(Convert.FromBase64String(user.Salt ?? "")).ToArray());
             if (user.PasswordHash.Equals(Convert.ToBase64String(hashedpw), StringComparison.OrdinalIgnoreCase))
             {
                 return ReturnCode.Ok;

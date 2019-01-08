@@ -11,7 +11,7 @@ using MultiplayerGameFramework.Interfaces.Server;
 
 namespace MGF_Photon.Implementation.Handler
 {
-    public class RegisterSubServerResponseHandler:ServerHandler
+    public class RegisterSubServerResponseHandler : ServerHandler
     {
         private readonly IServerApplication _serverApplication;
         public ILogger Log { get; set; }

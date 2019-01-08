@@ -189,14 +189,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\MultiplayerGameFramework\MultiplayerGameFramework.csproj">
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MultiplayerGameFramework\MultiplayerGameFramework.csproj">
       <Project>{5F2593F7-1CE8-443B-B7C2-4D1DDE371324}</Project>
       <Name>MultiplayerGameFramework</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

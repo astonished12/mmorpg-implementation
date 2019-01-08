@@ -1,8 +1,0 @@
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\MultiplayerGameFramework\bin\Debug\MultiplayerGameFramework.dll
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\MultiplayerGameFramework\bin\Debug\MultiplayerGameFramework.pdb
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\TestServer\MultiplayerGameFramework.dll
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\TestServer\MultiplayerGameFramework.pdb
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\MultiplayerGameFramework\obj\Debug\MultiplayerGameFramework.csproj.CoreCompileInputs.cache
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\MultiplayerGameFramework\obj\Debug\MultiplayerGameFramework.dll
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\MultiplayerGameFramework\obj\Debug\MultiplayerGameFramework.pdb
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\MultiplayerGameFramework\obj\Debug\MultiplayerGameFramework.csprojAssemblyReference.cache
