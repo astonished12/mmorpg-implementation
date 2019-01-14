@@ -13,8 +13,9 @@ namespace Servers.Support
     {
         public void RemoveCodes(IMessage message)
         {
-            //Do not remove any codes yet, nothing tor
+            //no spoofing
             message.Parameters.Remove((byte) MessageParameterCode.PeerId);
+            message.Parameters.Remove((byte) MessageParameterCode.UserId);
         }
     }
 }

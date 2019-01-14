@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 using Autofac;
 using Servers.BackgroundThreads;
 using Servers.Config;
+using Servers.Data.Client;
 using Servers.Handlers;
-using Servers.Handlers.Login;
+using Servers.Handlers.Proxy;
 using Servers.Support;
 
 namespace Servers.Modules
@@ -23,6 +24,7 @@ namespace Servers.Modules
             //builder.RegisterType<TestBackGroundThread>().AsImplementedInterfaces();
             builder.RegisterType<ClientCodeRemove>().AsImplementedInterfaces();
             builder.RegisterType<ServerType>().AsImplementedInterfaces();
+            builder.RegisterType<CharacterData>().AsImplementedInterfaces();
             builder.RegisterType<ClientLoginFowardingRequestHandler>().AsImplementedInterfaces();
 
         }

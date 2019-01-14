@@ -12,6 +12,7 @@ namespace GameCommon
         PeerId,
         LoginName,
         Password,
-        UserId
+        UserId,
+        Object
     }
 }

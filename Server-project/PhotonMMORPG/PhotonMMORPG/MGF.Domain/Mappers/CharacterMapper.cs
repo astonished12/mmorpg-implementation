@@ -81,6 +81,22 @@ namespace MGF.Mappers
             return domainObject;
         }
 
+        public IList<Character> LoadByUserId(int userId)
+        {
+            using (MGFContext entities = new MGFContext())
+            {
+                return entities.Characters
+                    //Not cache entities
+                    .AsNoTracking()
+                    .OrderBy(characterEntity => characterEntity.Id)
+                    .Where(characterEntity => characterEntity.UserId == userId)
+                    .ToList()
+                    .Select(characterEntity => new Character(
+                        characterEntity.Id,
+                        characterEntity.Name)).ToList();
+            }
+        }
+
         //one way mapping
         protected override void Map(Character domainObject, object entity)
         {

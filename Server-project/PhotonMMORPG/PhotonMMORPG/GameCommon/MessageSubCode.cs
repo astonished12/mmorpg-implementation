@@ -9,6 +9,7 @@ namespace GameCommon
     public enum MessageSubCode : int
     {
         LoginUserPass = 1,
-        LoginNewAccount 
+        LoginNewAccount,
+        CharacterList
     }
 }
