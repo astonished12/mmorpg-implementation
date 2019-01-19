@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using Assets.MGFClient.Implementation;
 using Assets.MGFClient.Message.Implementation;
-using Assets.MGFClient.Interfaces;
+using Assets.Scripts;
 using ExitGames.Client.Photon;
 using UnityEngine;
 
@@ -20,10 +17,9 @@ public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
     public EngineState State { get; protected set; }
     public PhotonPeer Peer { get; protected set; }
     public int Ping { get; protected set; }
-    public List<IMessageHandler> eventHandlerList { get; protected set; }
-    public List<IMessageHandler> responseHandlerList { get; protected set; }
-
-
+    public List<GameMessage> eventMessageList = new List<GameMessage>();
+    public List<GameMessage> responseMessageList = new List<GameMessage>();
+    
     void Awake()
     {
         if (Instance == null)
@@ -91,15 +87,17 @@ public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
 
     public void GatherMessageHandlers()
     {
-        var handlers =
-            from t in Assembly.GetAssembly(GetType()).GetTypes()
-                .Where(t => t.GetInterfaces().Contains(typeof(IMessageHandler)))
-            select Activator.CreateInstance(t) as IMessageHandler;
-
-        Debug.Log(string.Format("Found {0} handlers", handlers.Count()));
-        eventHandlerList = handlers.Where(h => h.Type == MessageType.Async).ToList();
-        responseHandlerList = handlers.Where(h => h.Type == MessageType.Response).ToList();
-
+        foreach (var message in Resources.LoadAll<GameMessage>(""))
+        {
+            if (message.messageType == MessageType.Async)
+            {
+                eventMessageList.Add(message);
+            }
+            else if(message.messageType == MessageType.Response)
+            {
+                responseMessageList.Add(message);
+            }
+        }
     }
 
     #region IPhotonPeerListner
@@ -111,7 +109,7 @@ public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
     public void OnEvent(EventData eventData)
     {
         var message = new Assets.MGFClient.Message.Implementation.Event(eventData.Code, (int?)eventData.Parameters[SubCodeParameterCode], eventData.Parameters);
-        var handlers = eventHandlerList.Where(h => h.Code == message.Code && h.SubCode == message.SubCode);
+        var handlers = eventMessageList.Where(h => (byte)h.code == message.Code && (int)h.subCode == message.SubCode);
         if (handlers == null || handlers.Count() == 0)
         {
             //Default handler
@@ -120,15 +118,14 @@ public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
 
         foreach (var handler in handlers)
         {
-            handler.HandleMessage(message);
+            handler.Notify(message.Parameters);
         }
     }
 
     public void OnOperationResponse(OperationResponse operationResponse)
     {
-
-        var message = new Assets.MGFClient.Message.Implementation.Response(operationResponse.OperationCode, (int?)operationResponse.Parameters[SubCodeParameterCode], operationResponse.Parameters);
-        var handlers = responseHandlerList.Where(h => h.Code == message.Code && h.SubCode == message.SubCode);
+        var message = new Response(operationResponse.OperationCode, (int?)operationResponse.Parameters[SubCodeParameterCode], operationResponse.Parameters, operationResponse.DebugMessage, operationResponse.ReturnCode);
+        var handlers = responseMessageList.Where(h => (byte)h.code == message.Code && (byte)h.subCode == message.SubCode);
         if (handlers == null || handlers.Count() == 0)
         {
             //Default handler
@@ -137,7 +134,7 @@ public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
 
         foreach (var handler in handlers)
         {
-            handler.HandleMessage(message);
+            handler.Notify(message.Parameters, message.DebugMessage, message.ReturnCode);
         }
     }
 

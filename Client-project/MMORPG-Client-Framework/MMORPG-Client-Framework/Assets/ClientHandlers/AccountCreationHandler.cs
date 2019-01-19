@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using Assets.MGFClient.Implementation;
 using Assets.MGFClient.Interfaces;
@@ -9,21 +10,11 @@ using Debug = UnityEngine.Debug;
 
 namespace Assets.ClientHandlers
 {
-    public class AccountCreationHandler: IMessageHandler
+    public class AccountCreationHandler: GameMessageHandler
     {
-        public MessageType Type
+        protected override void OnHandleMessage(Dictionary<byte, object> parameters, string debugMessage, int returnCode)
         {
-            get { return MessageType.Response; }
-        }
-
-        public byte Code => (byte) MessageOperationCode.Login;
-
-        public int? SubCode => (int?)MessageSubCode.LoginNewAccount;
-
-        public bool HandleMessage(IMessage message)
-        {
-            var response = message as Response;
-            if (response.ReturnCode == (short) ReturnCode.Ok)
+            if (returnCode == (short) ReturnCode.Ok)
             {
                 //Show the login server
                 Debug.LogFormat("Account Created Successfully");
@@ -32,10 +23,8 @@ namespace Assets.ClientHandlers
             {
                 //Show the error
                 //ShowError(response.DebugMessage);
-                Debug.LogFormat("{0}",response.DebugMessage);
+                Debug.LogFormat("{0}",debugMessage);
             }
-
-            return true;
         }
     }
 }

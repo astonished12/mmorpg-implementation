@@ -928,6 +928,7 @@ GameObject:
   - component: {fileID: 356890907}
   - component: {fileID: 356890909}
   - component: {fileID: 356890908}
+  - component: {fileID: 356890910}
   m_Layer: 5
   m_Name: LoginScreen
   m_TagString: Untagged
@@ -994,6 +995,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 356890906}
   m_CullTransparentMesh: 0
+--- !u!114 &356890910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 356890906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef6ff16e2f4c40449b235bbe8561437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: {fileID: 11400000, guid: b91d6c957c90d134589f033ff17beec9, type: 2}
 --- !u!1 &368614751
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,6 +1691,7 @@ GameObject:
   - component: {fileID: 889717616}
   - component: {fileID: 889717618}
   - component: {fileID: 889717617}
+  - component: {fileID: 889717619}
   m_Layer: 5
   m_Name: CreateNewUser
   m_TagString: Untagged
@@ -1744,6 +1758,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 889717615}
   m_CullTransparentMesh: 0
+--- !u!114 &889717619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 889717615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 131a0557252ca38489021dec315767ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: {fileID: 11400000, guid: 7b8882c0451acc341ab4841f0614c6af, type: 2}
 --- !u!1 &913156711
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,6 +2633,8 @@ MonoBehaviour:
   ApplicationName: MGF
   SubCodeParameterCode: 0
   UseEncryption: 1
+  eventMessageList: []
+  responseMessageList: []
 --- !u!4 &1356451229
 Transform:
   m_ObjectHideFlags: 0

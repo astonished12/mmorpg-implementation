@@ -1,37 +1,28 @@
-﻿using Assets.MGFClient.Implementation;
+﻿using System.Collections.Generic;
+using Assets.MGFClient.Implementation;
 using Assets.MGFClient.Interfaces;
 using Assets.MGFClient.Message.Implementation;
 using GameCommon;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Debug = UnityEngine.Debug;
 
 namespace Assets.ClientHandlers
 {
-    public class LoginUserHandler : IMessageHandler
+    public class LoginUserHandler : GameMessageHandler
     {
-        public MessageType Type
+        protected override void OnHandleMessage(Dictionary<byte, object> parameters, string debugMessage, int returnCode)
         {
-            get { return MessageType.Response; }
-        }
-
-        public byte Code => (byte)MessageOperationCode.Login;
-        public int? SubCode => (int?)MessageSubCode.LoginUserPass;
-
-        public bool HandleMessage(IMessage message)
-        {
-            var response = message as Response;
-            if (response.ReturnCode == (short)ReturnCode.Ok)
+            if (returnCode == (short)ReturnCode.Ok)
             {
                 // successful login
+                Debug.Log("Succesfull login");
                 SceneManager.LoadScene("CharacterSelect");
-
             }
             else
             {
-                //ShowError(response.DebugMessage);
+                Debug.LogFormat("{0} - {1}", this.name, debugMessage);
             }
-
-            return true;
         }
     }
 }
