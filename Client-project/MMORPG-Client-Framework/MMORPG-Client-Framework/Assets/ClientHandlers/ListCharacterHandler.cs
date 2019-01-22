@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Assets.MGFClient.Implementation;
 using Assets.MGFClient.Interfaces;
 using Assets.MGFClient.Message.Implementation;
+using Assets.Scripts;
 using GameCommon;
 using UnityEngine;
 
@@ -13,6 +14,8 @@ namespace Assets.ClientHandlers
 {
     public class ListCharacterHandler : GameMessageHandler
     {
+        public CharacterSlotController controller;
+
         protected override  void OnHandleMessage(Dictionary<byte, object> parameters, string debugMessage, int returnCode)
         {
             if (returnCode == (short)ReturnCode.Ok)

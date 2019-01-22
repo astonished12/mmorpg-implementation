@@ -54,10 +54,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ClientHandlers\AccountCreationHandler.cs" />
+     <Compile Include="Assets\ClientHandlers\CharacterCreateResponseHandler.cs" />
      <Compile Include="Assets\ClientHandlers\GameMessageHandler.cs" />
      <Compile Include="Assets\ClientHandlers\ListCharacterHandler.cs" />
      <Compile Include="Assets\ClientHandlers\LoginUserHandler.cs" />
      <Compile Include="Assets\ClientHandlers\TestHandler.cs" />
+     <Compile Include="Assets\ClientViews\CharacterCreateView.cs" />
      <Compile Include="Assets\ClientViews\CharacterSelectView.cs" />
      <Compile Include="Assets\ClientViews\TestView.cs" />
      <Compile Include="Assets\MGFClient\EngineState.cs" />
@@ -67,6 +69,8 @@
      <Compile Include="Assets\MGFClient\Message\Interfaces\IMessage.cs" />
      <Compile Include="Assets\MGFClient\Message\MessageType.cs" />
      <Compile Include="Assets\MGFClient\PhotonEngine.cs" />
+     <Compile Include="Assets\Scripts\CharacterSlot.cs" />
+     <Compile Include="Assets\Scripts\CharacterSlotController.cs" />
      <Compile Include="Assets\Scripts\GameMessage.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

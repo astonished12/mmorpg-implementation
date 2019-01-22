@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using ExitGames.Client.Photon;
 using GameCommon;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterSelectView : MonoBehaviour {
 
@@ -21,5 +22,10 @@ public class CharacterSelectView : MonoBehaviour {
         };
         Debug.Log("Sending request for character list");
         PhotonEngine.Instance.SendRequest(request);
+    }
+
+    public void CreateNewCharacter()
+    {
+        SceneManager.LoadScene("CharacterCreate");
     }
 }

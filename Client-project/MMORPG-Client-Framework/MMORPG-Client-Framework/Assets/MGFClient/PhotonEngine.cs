@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Assets.MGFClient.Implementation;
 using Assets.MGFClient.Message.Implementation;
 using Assets.Scripts;
 using ExitGames.Client.Photon;
+using GameCommon;
 using UnityEngine;
 
 public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
@@ -19,7 +21,7 @@ public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
     public int Ping { get; protected set; }
     public List<GameMessage> eventMessageList = new List<GameMessage>();
     public List<GameMessage> responseMessageList = new List<GameMessage>();
-    
+
     void Awake()
     {
         if (Instance == null)
@@ -93,7 +95,7 @@ public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
             {
                 eventMessageList.Add(message);
             }
-            else if(message.messageType == MessageType.Response)
+            else if (message.messageType == MessageType.Response)
             {
                 responseMessageList.Add(message);
             }
@@ -182,5 +184,29 @@ public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
     public void SendRequest(OperationRequest request)
     {
         State.SendRequest(request, true, 0, UseEncryption);
+    }
+
+    public void SendRequest(MessageOperationCode code, MessageSubCode subCode, params object[] parameters)
+    {
+        var request = new OperationRequest()
+        {
+            OperationCode = (byte)code,
+            Parameters = new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, subCode } }
+        };
+
+        //all paramters as pairs of 2
+        for (int i = 0; i < parameters.Length; i += 2)
+        {
+            // 
+            if (!(parameters[i] is MessageParameterCode))
+            {
+                throw new ArgumentException(string.Format("Paramter {0} is not a MessageParamterCode", i));
+            }
+            //add the pairs
+            request.Parameters.Add((byte)parameters[i], parameters[i + 1]);
+        }
+
+        //original send request
+        SendRequest(request);
     }
 }

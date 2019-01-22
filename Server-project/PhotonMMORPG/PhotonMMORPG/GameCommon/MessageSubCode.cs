@@ -10,6 +10,8 @@ namespace GameCommon
     {
         LoginUserPass = 1,
         LoginNewAccount,
-        CharacterList
+        CharacterList,
+        SelectCharacter,
+        CreateCharacter
     }
 }
