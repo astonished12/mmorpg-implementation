@@ -40,6 +40,7 @@ namespace Servers.Handlers.Proxy
             Log.DebugFormat("Found {0} login servers", 
                 loginServer.Count);
 
+
             //Add in any additional data we need before sending the message - the actual peer id of the client, any other data
             AddMessageData(message, peer);
             var login = loginServer.FirstOrDefault();
@@ -56,7 +57,10 @@ namespace Servers.Handlers.Proxy
         {
             //ensure the actual peer if of this client is sent forward
             message.Parameters.Add((byte)MessageParameterCode.PeerId, peer.PeerId.ToByteArray());
+            Log.DebugFormat("Added the following peer id {0} to message",peer.PeerId);
             message.Parameters.Add((byte)MessageParameterCode.UserId, peer.ClientData<CharacterData>().UserId);
+            Log.DebugFormat("Added the following user id {0} to message", peer.ClientData<CharacterData>().UserId);
+
         }
     }
 }

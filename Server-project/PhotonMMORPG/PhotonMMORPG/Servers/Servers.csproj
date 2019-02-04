@@ -74,6 +74,9 @@
     <Reference Include="Microsoft.Extensions.Primitives, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Primitives.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
+    <Reference Include="Omu.ValueInjecter, Version=3.1.3.0, Culture=neutral, PublicKeyToken=5692a4ecdffbe736, processorArchitecture=MSIL">
+      <HintPath>..\packages\ValueInjecter.3.1.3\lib\net45\Omu.ValueInjecter.dll</HintPath>
+    </Reference>
     <Reference Include="Photon.SocketServer">
       <HintPath>..\..\..\Photon-OnPremise-Server-SDK_v4-0-29-11263\lib\Photon.SocketServer.dll</HintPath>
     </Reference>
@@ -116,11 +119,9 @@
     <Compile Include="Handlers\Login\LoginAuthenticationHandler.cs" />
     <Compile Include="Handlers\Login\LoginCharacterListCharacterHandler.cs" />
     <Compile Include="Handlers\Proxy\LoginAuthentificationResponseHandler.cs" />
-    <Compile Include="Handlers\TestRequestEventHandler.cs" />
-    <Compile Include="Handlers\TestRequestResponseHandler.cs" />
     <Compile Include="Interfaces\IAuthorizationService.cs" />
     <Compile Include="Modules\LoginModule.cs" />
-    <Compile Include="Modules\TestModule.cs" />
+    <Compile Include="Modules\ProxyModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Support\ClientCodeRemove.cs" />
   </ItemGroup>
