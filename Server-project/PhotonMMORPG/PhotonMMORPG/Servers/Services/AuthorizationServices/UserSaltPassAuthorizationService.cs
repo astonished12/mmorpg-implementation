@@ -10,7 +10,7 @@ using MGF.Mappers;
 using Servers.Interfaces;
 using SHA512Managed = System.Security.Cryptography.SHA512Managed;
 
-namespace Servers.AuthorizationServices
+namespace Servers.Services.AuthorizationServices
 {
     public class UserSaltPassAuthorizationService : IAuthorizationService
     {

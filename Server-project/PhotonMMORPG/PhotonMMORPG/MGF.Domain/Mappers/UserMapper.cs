@@ -158,7 +158,7 @@ namespace MGF.Mappers
                     .Where(characterEntity => characterEntity.UserId == id);
                 foreach (var character in query)
                 {
-                        characters.Add(new Character(character.Id, character.Name));
+                    characters.Add(new Character(character.Id, character.Name, character.Class, character.Level, character.ExperiencePoints));
                 }
             }
 

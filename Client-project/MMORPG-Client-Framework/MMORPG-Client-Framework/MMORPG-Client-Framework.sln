@@ -1,7 +1,6 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMORPG-Client-Framework", "Assembly-CSharp.csproj", "{DB2FD3FD-F1C9-2C42-80CF-D1DD4F766248}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{DB2FD3FD-F1C9-2C42-80CF-D1DD4F766248}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

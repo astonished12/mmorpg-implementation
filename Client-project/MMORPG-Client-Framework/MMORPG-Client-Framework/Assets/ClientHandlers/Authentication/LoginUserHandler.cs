@@ -1,13 +1,9 @@
 ﻿using System.Collections.Generic;
-using Assets.MGFClient.Implementation;
-using Assets.MGFClient.Interfaces;
-using Assets.MGFClient.Message.Implementation;
 using GameCommon;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
 
-namespace Assets.ClientHandlers
+namespace ClientHandlers.Authentication
 {
     public class LoginUserHandler : GameMessageHandler
     {

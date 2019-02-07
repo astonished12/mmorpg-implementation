@@ -108,12 +108,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuthorizationServices\AsyncAuthorizationService.cs" />
-    <Compile Include="AuthorizationServices\UserPassAuthorizationService.cs" />
-    <Compile Include="AuthorizationServices\UserSaltPassAuthorizationService.cs" />
+    <Compile Include="Interfaces\ICharacterService.cs" />
+    <Compile Include="Services\AuthorizationServices\AsyncAuthorizationService.cs" />
+    <Compile Include="Services\AuthorizationServices\UserPassAuthorizationService.cs" />
+    <Compile Include="Services\AuthorizationServices\UserSaltPassAuthorizationService.cs" />
     <Compile Include="BackgroundThreads\TestBackGroundThread.cs" />
     <Compile Include="Config\ServerType.cs" />
     <Compile Include="Data\Client\CharacterData.cs" />
+    <Compile Include="Handlers\Login\LoginCharacterCreationHandler.cs" />
     <Compile Include="Handlers\Proxy\ClientLoginFowardingRequestHandler.cs" />
     <Compile Include="Handlers\Login\LoginAccountCreationHandler.cs" />
     <Compile Include="Handlers\Login\LoginAuthenticationHandler.cs" />
@@ -123,6 +125,7 @@
     <Compile Include="Modules\LoginModule.cs" />
     <Compile Include="Modules\ProxyModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CharacterService\CharacterService.cs" />
     <Compile Include="Support\ClientCodeRemove.cs" />
   </ItemGroup>
   <ItemGroup>

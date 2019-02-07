@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Assets.ClientHandlers;
 using Assets.MGFClient.Implementation;
+using ClientHandlers;
 using GameCommon;
 using UnityEngine;
 

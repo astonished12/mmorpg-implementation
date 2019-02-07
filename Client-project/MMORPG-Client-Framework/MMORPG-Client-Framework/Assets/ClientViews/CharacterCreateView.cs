@@ -17,6 +17,7 @@ public class CharacterCreateView : MonoBehaviour
 
     public void SendCharacterCreateMessage()
     {
+        Debug.Log("Sending for new character creation");
         PhotonEngine.Instance.SendRequest(MessageOperationCode.Login, MessageSubCode.CreateCharacter, MessageParameterCode.CharacterName, characterName.text, MessageParameterCode.CharacterClass, characterClass.text);
     }
 

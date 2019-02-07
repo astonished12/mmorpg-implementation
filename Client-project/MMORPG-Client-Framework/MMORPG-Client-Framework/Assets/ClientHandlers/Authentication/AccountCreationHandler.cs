@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using Assets.MGFClient.Implementation;
-using Assets.MGFClient.Interfaces;
-using Assets.MGFClient.Message.Implementation;
+﻿using System.Collections.Generic;
 using GameCommon;
-using UnityEngine;
 using Debug = UnityEngine.Debug;
 
-namespace Assets.ClientHandlers
+namespace ClientHandlers.Authentication
 {
     public class AccountCreationHandler: GameMessageHandler
     {

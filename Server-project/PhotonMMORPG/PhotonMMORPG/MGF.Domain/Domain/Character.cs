@@ -15,8 +15,15 @@ namespace MGF.Domain
 
         private int id;
         private string name;
+        private string _class;
+        private int level;
+        private decimal experiencePoints;
+
+        private int userId;
+        private User user;
 
         private List<Stat> stats;
+
         private static Character nullValue = new Character();
         #endregion
 
@@ -34,7 +41,7 @@ namespace MGF.Domain
 
                 if (id != value)
                 {
-                    Id = value;
+                    id = value;
                     PropertyHasChanged(nameof(Id));
                 }
             }
@@ -59,6 +66,78 @@ namespace MGF.Domain
             }
         }
 
+        public string Class
+        {
+            get { return _class; }
+            set
+            {
+                if (null == value)
+                {
+                    value = string.Empty;
+                }
+
+                if (_class != value)
+                {
+                    _class = value;
+                    PropertyHasChanged(nameof(Class));
+                }
+            }
+        }
+
+        public int Level
+        {
+            get { return level; }
+            set
+            {
+                if (null == value)
+                {
+                    value = 0;
+                }
+
+                if (level != value)
+                {
+                    level = value;
+                    PropertyHasChanged(nameof(Level));
+                }
+            }
+        }
+
+        public decimal ExperiencePoints
+        {
+            get { return experiencePoints; }
+            set
+            {
+                if (null == value)
+                {
+                    value = 0;
+                }
+
+                if (experiencePoints != value)
+                {
+                    experiencePoints = value;
+                    PropertyHasChanged(nameof(ExperiencePoints));
+                }
+            }
+        }
+
+        public int UserId
+        {
+            get { return userId; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(UserId));
+                }
+
+                if (this.userId != value)
+                {
+                    this.userId = value;
+                    PropertyHasChanged(nameof(UserId));
+                }
+            }
+        }
+
         public List<Stat> Stats
         {
             get
@@ -74,12 +153,18 @@ namespace MGF.Domain
 
         public Character() : base() { }
 
-        public Character(int id, string name)
+        public Character(int id, string name, string _class, int level, decimal experiencePoints)
         {
             this.id = id;
             this.name = name;
+            this.Class = _class;
+            this.Level = level;
+            this.experiencePoints = experiencePoints;
             base.MarkOld();
         }
+
+
+
         #endregion
 
         #region Methods

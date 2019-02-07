@@ -13,6 +13,9 @@ namespace GameCommon
         InternalServerError = -1,
 
         Ok = 0,
-        InvalidUserPass
+        InvalidUserPass,
+        InvalidCharacterAndClass,
+        DuplicateCharacterName,
+
     }
 }

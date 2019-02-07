@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Assets.MGFClient.Implementation;
-using Assets.MGFClient.Interfaces;
-using Assets.MGFClient.Message.Implementation;
+﻿using System.Collections.Generic;
 using Assets.Scripts;
 using GameCommon;
 using UnityEngine;
 
-namespace Assets.ClientHandlers
+namespace ClientHandlers.Character
 {
     public class ListCharacterHandler : GameMessageHandler
     {

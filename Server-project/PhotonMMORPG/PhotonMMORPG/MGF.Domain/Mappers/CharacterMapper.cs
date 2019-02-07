@@ -46,7 +46,10 @@ namespace MGF.Mappers
                     .ToList()
                     .Select(characterEntity => new Character(
                         characterEntity.Id,
-                        characterEntity.Name)).ToList();
+                        characterEntity.Name,
+                        characterEntity.Class,
+                        characterEntity.Level,
+                        characterEntity.ExperiencePoints)).ToList();
             }
         }
 
@@ -61,7 +64,7 @@ namespace MGF.Mappers
 
                 if (entity != null)
                 {
-                    characterObj = new Character(entity.Id, entity.Name);
+                    characterObj = new Character(entity.Id, entity.Name, entity.Class, entity.Level, entity.ExperiencePoints);
                 }
             }
 
@@ -93,7 +96,10 @@ namespace MGF.Mappers
                     .ToList()
                     .Select(characterEntity => new Character(
                         characterEntity.Id,
-                        characterEntity.Name)).ToList();
+                        characterEntity.Name,
+                        characterEntity.Class,
+                        characterEntity.Level,
+                        characterEntity.ExperiencePoints)).ToList();
             }
         }
 
@@ -117,6 +123,10 @@ namespace MGF.Mappers
             }
 
             characterEntity.Name = domainObject.Name;
+            characterEntity.Class = domainObject.Class;
+            characterEntity.Level = domainObject.Level;
+            characterEntity.ExperiencePoints = domainObject.ExperiencePoints;
+            characterEntity.UserId = domainObject.UserId;
             foreach (var stat in domainObject.Stats)
             {
                 DataEntities.Stat statEntity = null;
@@ -177,11 +187,28 @@ namespace MGF.Mappers
                     .Where(statEntity => statEntity.CharacterId == id);
                 foreach (var stat in query)
                 {
-                        stats.Add(new Stat(stat.StatId, stat.Name, stat.Value));
+                    stats.Add(new Stat(stat.StatId, stat.Name, stat.Value));
                 }
             }
 
             return stats;
+        }
+
+        public static Character LoadByName(string characterName)
+        {
+            Character characterObject = null;
+            using (MGFContext entities = new MGFContext())
+            {
+                DataEntities.Character entity =
+                    entities.Characters.FirstOrDefault(characterEntity => characterEntity.Name == characterName);
+
+                if (entity != null)
+                {
+                    characterObject = new Character(entity.Id, entity.Name, entity.Class, entity.Level, entity.ExperiencePoints);
+                }
+
+                return characterObject;
+            }
         }
     }
 }

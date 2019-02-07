@@ -8,7 +8,7 @@ using MGF.Domain;
 using MGF.Mappers;
 using Servers.Interfaces;
 
-namespace Servers.AuthorizationServices
+namespace Servers.Services.AuthorizationServices
 {
     public class AsyncAuthorizationService : IAuthorizationService
     {

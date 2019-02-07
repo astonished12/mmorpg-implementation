@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c5b0925d-b9db-4e0c-9364-247c9b63de1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/ClientHandlers/Character/CharacterCreateResponseHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClientHandlers/AccountCreationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ClientHandlers/Authentication/AccountCreationHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClientHandlers/AccountCreationHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ClientHandlers/Authentication/AccountCreationHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClientHandlers/CharacterCreateResponseHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClientHandlers/CharacterCreateResponseHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ClientHandlers/Character/CharacterCreateResponseHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClientHandlers/GameMessageHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ClientHandlers/GameMessageHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClientHandlers/ListCharacterHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ClientHandlers/Character/ListCharacterHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClientHandlers/ListCharacterHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ClientHandlers/Character/ListCharacterHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClientHandlers/LoginUserHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ClientHandlers/Authentication/LoginUserHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClientHandlers/LoginUserHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ClientHandlers/Authentication/LoginUserHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClientHandlers/TestHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClientHandlers/TestHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClientViews/CharacterCreateView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ClientViews/CharacterCreateView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/GameCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/GameCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CharacterCreate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CharacterCreate.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a0/a034a02f3e48a4343bbca4cb26e76497" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a0/a034a02f3e48a4343bbca4cb26e76497.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MMORPG-Client-Framework.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MMORPG-Client-Framework.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/DataBaseCreation/bin/Debug/MGF.DataEntities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/DataBaseCreation/bin/Debug/MGF.DataEntities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/DataBaseCreation/bin/Debug/MGF.DataEntities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/DataBaseCreation/bin/Debug/MGF.DataEntities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/DataBaseCreation/obj/Debug/DataBaseCreation.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/DataBaseCreation/obj/Debug/DataBaseCreation.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/ReturnCode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/ReturnCode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/MGF-Photon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/MGF-Photon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/MGF-Photon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/MGF-Photon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/obj/Debug/MGF-Photon4.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/obj/Debug/MGF-Photon4.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.DataEntities/DataEntities/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.DataEntities/DataEntities/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.DataEntities/bin/Debug/MGF.DataEntities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.DataEntities/bin/Debug/MGF.DataEntities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.DataEntities/bin/Debug/MGF.DataEntities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.DataEntities/bin/Debug/MGF.DataEntities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.DataEntities/obj/Debug/MGF.DataEntities.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.DataEntities/obj/Debug/MGF.DataEntities.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.DataEntities/obj/Debug/MGF.DataEntities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.DataEntities/obj/Debug/MGF.DataEntities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.DataEntities/obj/Debug/MGF.DataEntities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.DataEntities/obj/Debug/MGF.DataEntities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/Domain/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/Domain/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/Mappers/CharacterMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/Mappers/CharacterMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/Mappers/UserMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/Mappers/UserMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/bin/Debug/MGF.DataEntities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/bin/Debug/MGF.DataEntities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/bin/Debug/MGF.DataEntities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/bin/Debug/MGF.DataEntities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/bin/Debug/MGF.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/bin/Debug/MGF.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/bin/Debug/MGF.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/bin/Debug/MGF.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/obj/Debug/MGF.Domain.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/obj/Debug/MGF.Domain.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/obj/Debug/MGF.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/obj/Debug/MGF.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/obj/Debug/MGF.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/obj/Debug/MGF.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/PhotonMMORPG.Common/obj/Debug/PhotonMMORPG.Common.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/PhotonMMORPG.Common/obj/Debug/PhotonMMORPG.Common.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/PhotonMMORPG/obj/Debug/GameServer.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/PhotonMMORPG/obj/Debug/GameServer.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/AuthorizationServices/AsyncAuthorizationService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/AuthorizationServices/UserPassAuthorizationService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/AuthorizationServices/UserSaltPassAuthorizationService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Modules/LoginModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Modules/LoginModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Servers.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Servers.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.pdb" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="MMORPG-Client-Framework" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/ClientViews/CharacterCreateView.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+              <folding>
+                <marker date="1549561307367" expanded="false" signature="6:153" ph="..." />
+                <marker date="1549561307367" expanded="true" signature="203:814" ph="{...}" />
+                <marker date="1549561307367" expanded="true" signature="308:371" ph="{...}" />
+                <marker date="1549561307367" expanded="true" signature="417:703" ph="{...}" />
+                <marker date="1549561307367" expanded="true" signature="759:812" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Character/CharacterCreateResponseHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <marker date="1549560676047" expanded="true" signature="6:70" ph="..." />
+                <marker date="1549560676047" expanded="true" signature="106:703" ph="{...}" />
+                <marker date="1549560676047" expanded="true" signature="177:701" ph="{...}" />
+                <marker date="1549560676047" expanded="true" signature="305:695" ph="{...}" />
+                <marker date="1549560676047" expanded="true" signature="368:501" ph="{...}" />
+                <marker date="1549560676047" expanded="true" signature="518:685" ph="{...}" />
+                <marker date="1549560676047" expanded="true" signature="549:617" ph="/* Show the error ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Character/ListCharacterHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <marker date="1549560680771" expanded="true" signature="6:92" ph="..." />
+                <marker date="1549560680771" expanded="true" signature="128:767" ph="{...}" />
+                <marker date="1549560680771" expanded="true" signature="189:764" ph="{...}" />
+                <marker date="1549560680771" expanded="true" signature="370:758" ph="{...}" />
+                <marker date="1549560680771" expanded="true" signature="432:564" ph="{...}" />
+                <marker date="1549560680771" expanded="true" signature="581:748" ph="{...}" />
+                <marker date="1549560680771" expanded="true" signature="612:680" ph="/* Show the error ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameMessage.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+              <folding>
+                <marker date="1549560694391" expanded="true" signature="6:157" ph="..." />
+                <marker date="1549560694391" expanded="true" signature="183:1006" ph="{...}" />
+                <marker date="1549560694391" expanded="true" signature="255:1004" ph="{...}" />
+                <marker date="1549560694391" expanded="true" signature="528:583" ph="{...}" />
+                <marker date="1549560694391" expanded="true" signature="644:702" ph="{...}" />
+                <marker date="1549560694391" expanded="true" signature="813:998" ph="{...}" />
+                <marker date="1549560694391" expanded="true" signature="879:988" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/GameMessageHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding>
+                <marker date="1549560635155" expanded="false" signature="6:74" ph="..." />
+                <marker date="1549560635155" expanded="true" signature="100:746" ph="{...}" />
+                <marker date="1549560635155" expanded="true" signature="162:744" ph="{...}" />
+                <marker date="1549560635155" expanded="true" signature="247:304" ph="{...}" />
+                <marker date="1549560635155" expanded="true" signature="348:407" ph="{...}" />
+                <marker date="1549560635155" expanded="true" signature="516:601" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Authentication/AccountCreationHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <marker date="1549560662271" expanded="true" signature="6:84" ph="..." />
+                <marker date="1549560662271" expanded="true" signature="125:712" ph="{...}" />
+                <marker date="1549560662271" expanded="true" signature="187:710" ph="{...}" />
+                <marker date="1549560662271" expanded="true" signature="315:704" ph="{...}" />
+                <marker date="1549560662271" expanded="true" signature="378:511" ph="{...}" />
+                <marker date="1549560662271" expanded="true" signature="528:694" ph="{...}" />
+                <marker date="1549560662271" expanded="true" signature="559:627" ph="/* Show the error ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Authentication/LoginUserHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <marker date="1549560668981" expanded="true" signature="6:119" ph="..." />
+                <marker date="1549560668981" expanded="true" signature="160:711" ph="{...}" />
+                <marker date="1549560668981" expanded="true" signature="217:709" ph="{...}" />
+                <marker date="1549560668981" expanded="true" signature="345:703" ph="{...}" />
+                <marker date="1549560668981" expanded="true" signature="407:577" ph="{...}" />
+                <marker date="1549560668981" expanded="true" signature="594:693" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/ClientViews/CharacterCreateView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Authentication/LoginUserHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Character/CharacterCreateResponseHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Character/ListCharacterHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Authentication/AccountCreationHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/GameMessageHandler.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/ClientHandlers/CharacterCreateResponseHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/ClientHandlers/GameMessageHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/ClientHandlers/Authentication/AccountCreationHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/ClientHandlers/Authentication/LoginUserHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/ClientHandlers/Character/CharacterCreateResponseHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/ClientHandlers/Character/ListCharacterHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameMessage.cs" />
+        <option value="$PROJECT_DIR$/Assets/ClientViews/CharacterCreateView.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="ClientViews" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Packages" type="4e2708dd:PackagesRoot" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5b0925d-b9db-4e0c-9364-247c9b63de1a" name="Default Changelist" comment="" />
+      <created>1549476758993</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549476758993</updated>
+      <workItem from="1549476761685" duration="1598000" />
+      <workItem from="1549557695004" duration="3261000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4859000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.25302014" />
+      <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.24966443" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" sideWeight="0.5021097" side_tool="true" weight="0.24966443" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Unity" order="11" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Unit Tests" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.50067115" side_tool="true" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/TestHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/GameMessageHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <marker date="1549560635155" expanded="false" signature="6:74" ph="..." />
+            <marker date="1549560635155" expanded="true" signature="100:746" ph="{...}" />
+            <marker date="1549560635155" expanded="true" signature="162:744" ph="{...}" />
+            <marker date="1549560635155" expanded="true" signature="247:304" ph="{...}" />
+            <marker date="1549560635155" expanded="true" signature="348:407" ph="{...}" />
+            <marker date="1549560635155" expanded="true" signature="516:601" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Authentication/LoginUserHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <marker date="1549560668981" expanded="true" signature="6:119" ph="..." />
+            <marker date="1549560668981" expanded="true" signature="160:711" ph="{...}" />
+            <marker date="1549560668981" expanded="true" signature="217:709" ph="{...}" />
+            <marker date="1549560668981" expanded="true" signature="345:703" ph="{...}" />
+            <marker date="1549560668981" expanded="true" signature="407:577" ph="{...}" />
+            <marker date="1549560668981" expanded="true" signature="594:693" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Character/CharacterCreateResponseHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <marker date="1549560676047" expanded="true" signature="6:70" ph="..." />
+            <marker date="1549560676047" expanded="true" signature="106:703" ph="{...}" />
+            <marker date="1549560676047" expanded="true" signature="177:701" ph="{...}" />
+            <marker date="1549560676047" expanded="true" signature="305:695" ph="{...}" />
+            <marker date="1549560676047" expanded="true" signature="368:501" ph="{...}" />
+            <marker date="1549560676047" expanded="true" signature="518:685" ph="{...}" />
+            <marker date="1549560676047" expanded="true" signature="549:617" ph="/* Show the error ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Character/ListCharacterHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <marker date="1549560680771" expanded="true" signature="6:92" ph="..." />
+            <marker date="1549560680771" expanded="true" signature="128:767" ph="{...}" />
+            <marker date="1549560680771" expanded="true" signature="189:764" ph="{...}" />
+            <marker date="1549560680771" expanded="true" signature="370:758" ph="{...}" />
+            <marker date="1549560680771" expanded="true" signature="432:564" ph="{...}" />
+            <marker date="1549560680771" expanded="true" signature="581:748" ph="{...}" />
+            <marker date="1549560680771" expanded="true" signature="612:680" ph="/* Show the error ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameMessage.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <marker date="1549560694391" expanded="true" signature="6:157" ph="..." />
+            <marker date="1549560694391" expanded="true" signature="183:1006" ph="{...}" />
+            <marker date="1549560694391" expanded="true" signature="255:1004" ph="{...}" />
+            <marker date="1549560694391" expanded="true" signature="528:583" ph="{...}" />
+            <marker date="1549560694391" expanded="true" signature="644:702" ph="{...}" />
+            <marker date="1549560694391" expanded="true" signature="813:998" ph="{...}" />
+            <marker date="1549560694391" expanded="true" signature="879:988" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Authentication/AccountCreationHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <marker date="1549560662271" expanded="true" signature="6:84" ph="..." />
+            <marker date="1549560662271" expanded="true" signature="125:712" ph="{...}" />
+            <marker date="1549560662271" expanded="true" signature="187:710" ph="{...}" />
+            <marker date="1549560662271" expanded="true" signature="315:704" ph="{...}" />
+            <marker date="1549560662271" expanded="true" signature="378:511" ph="{...}" />
+            <marker date="1549560662271" expanded="true" signature="528:694" ph="{...}" />
+            <marker date="1549560662271" expanded="true" signature="559:627" ph="/* Show the error ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ClientViews/CharacterCreateView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding>
+            <marker date="1549561307367" expanded="false" signature="6:153" ph="..." />
+            <marker date="1549561307367" expanded="true" signature="203:814" ph="{...}" />
+            <marker date="1549561307367" expanded="true" signature="308:371" ph="{...}" />
+            <marker date="1549561307367" expanded="true" signature="417:703" ph="{...}" />
+            <marker date="1549561307367" expanded="true" signature="759:812" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

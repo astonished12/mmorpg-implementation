@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Autofac;
-using Servers.AuthorizationServices;
 using Servers.Data.Client;
 using Servers.Handlers.Login;
+using Servers.Services.AuthorizationServices;
+using Servers.Services.CharacterService;
 
 namespace Servers.Modules
 {
@@ -21,6 +22,9 @@ namespace Servers.Modules
             //builder.RegisterType<UserPassAuthorizationService>().AsImplementedInterfaces();
             builder.RegisterType<UserSaltPassAuthorizationService>().AsImplementedInterfaces();
             builder.RegisterType<LoginCharacterListCharacterHandler>().AsImplementedInterfaces();
+            builder.RegisterType<CharacterService>().AsImplementedInterfaces();
+            builder.RegisterType<LoginCharacterCreationHandler>().AsImplementedInterfaces();
+
         }
     }
 }
