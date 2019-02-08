@@ -24,6 +24,7 @@ namespace Servers.Modules
             builder.RegisterType<LoginCharacterListCharacterHandler>().AsImplementedInterfaces();
             builder.RegisterType<CharacterService>().AsImplementedInterfaces();
             builder.RegisterType<LoginCharacterCreationHandler>().AsImplementedInterfaces();
+            builder.RegisterType<LoginCharacterSelectionHandler>().AsImplementedInterfaces();
 
         }
     }

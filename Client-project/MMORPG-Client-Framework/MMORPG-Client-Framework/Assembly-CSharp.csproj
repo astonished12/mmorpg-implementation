@@ -69,6 +69,7 @@
     <Compile Include="Assets\ClientHandlers\Authentication\AccountCreationHandler.cs" />
     <Compile Include="Assets\ClientHandlers\Authentication\LoginUserHandler.cs" />
     <Compile Include="Assets\ClientHandlers\Character\CharacterCreateResponseHandler.cs" />
+    <Compile Include="Assets\ClientHandlers\Character\CharacterSelectedResponseHandler.cs" />
     <Compile Include="Assets\ClientHandlers\Character\ListCharacterResponseHandler.cs" />
     <Compile Include="Assets\ClientHandlers\GameMessageHandler.cs" />
     <Compile Include="Assets\ClientViews\CharacterCreateView.cs" />

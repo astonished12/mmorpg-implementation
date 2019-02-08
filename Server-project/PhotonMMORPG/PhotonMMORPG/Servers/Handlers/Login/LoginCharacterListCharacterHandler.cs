@@ -12,6 +12,7 @@ using MultiplayerGameFramework.Interfaces.Client;
 using MultiplayerGameFramework.Interfaces.Messaging;
 using MultiplayerGameFramework.Interfaces.Server;
 using MultiplayerGameFramework.Interfaces.Support;
+using Servers.Data.Client;
 using Servers.Interfaces;
 
 namespace Servers.Handlers.Login
@@ -31,6 +32,7 @@ namespace Servers.Handlers.Login
         public LoginCharacterListCharacterHandler(ILogger log, IConnectionCollection<IClientPeer> connectionCollection)
         {
             Log = log;
+            ConnectionCollection = connectionCollection;
         }
 
         public bool HandleMessage(IMessage message, IServerPeer peer)
@@ -38,6 +40,9 @@ namespace Servers.Handlers.Login
             //how to prevent hacking? => Proxy server removed all special codes from the client and uses its own when forwarding data
             var userId = (int) message.Parameters[(byte) MessageParameterCode.UserId];
             Log.DebugFormat("Login Character Handler List received this {0} as user id", userId);
+
+            var clientPeer = new Guid((byte[])message.Parameters[(byte)MessageParameterCode.PeerId]);
+
             var charList = new CharacterMapper().LoadByUserId(userId).Select(x => new Character
             {
                 CharacterId = x.Id,
@@ -46,6 +51,11 @@ namespace Servers.Handlers.Login
                 Level = x.Level,
                 ExperiencePoints = x.ExperiencePoints
             });
+
+            //Added characterlist to clientData (remove 1 call to db)
+            ConnectionCollection.GetPeers<IClientPeer>().FirstOrDefault(x => x.PeerId == clientPeer).ClientData<CharacterData>().Characters = charList.ToList();
+
+
             //We have a list of characters, added into a serializable object
             var returnResponse = new Response(Code, SubCode, new Dictionary<byte, object>()
             {

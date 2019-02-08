@@ -108,6 +108,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Handlers\Login\LoginCharacterSelectionHandler.cs" />
     <Compile Include="Interfaces\ICharacterService.cs" />
     <Compile Include="Services\AuthorizationServices\AsyncAuthorizationService.cs" />
     <Compile Include="Services\AuthorizationServices\UserPassAuthorizationService.cs" />

@@ -13,6 +13,7 @@
           </e>
           <e p="Character" t="Include">
             <e p="CharacterCreateResponseHandler.cs" t="Include" />
+            <e p="CharacterSelectedResponseHandler.cs" t="Include" />
             <e p="ListCharacterResponseHandler.cs" t="Include" />
           </e>
           <e p="GameMessageHandler.cs" t="Include" />

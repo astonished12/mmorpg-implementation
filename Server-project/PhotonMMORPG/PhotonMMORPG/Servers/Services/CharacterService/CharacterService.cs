@@ -10,7 +10,7 @@ using Servers.Interfaces;
 
 namespace Servers.Services.CharacterService
 {
-    public class CharacterService: ICharacterService
+    public class CharacterService : ICharacterService
     {
         public ReturnCode CreateNewCharacter(int userId, string characterName, string characterClass)
         {
@@ -28,7 +28,7 @@ namespace Servers.Services.CharacterService
             }
 
             character = new Character()
-            {   
+            {
                 UserId = userId,
                 Name = characterName,
                 Class = characterClass,
@@ -40,6 +40,5 @@ namespace Servers.Services.CharacterService
 
             return ReturnCode.Ok;
         }
-
     }
 }
