@@ -13,7 +13,7 @@
           </e>
           <e p="Character" t="Include">
             <e p="CharacterCreateResponseHandler.cs" t="Include" />
-            <e p="ListCharacterHandler.cs" t="Include" />
+            <e p="ListCharacterResponseHandler.cs" t="Include" />
           </e>
           <e p="GameMessageHandler.cs" t="Include" />
         </e>
@@ -38,8 +38,10 @@
           <e p="PhotonEngine.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="CharacterSlot.cs" t="Include" />
-          <e p="CharacterSlotController.cs" t="Include" />
+          <e p="CharacterSceneScripts" t="Include">
+            <e p="CharacterSlot.cs" t="Include" />
+            <e p="CharacterSlotController.cs" t="Include" />
+          </e>
           <e p="GameMessage.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

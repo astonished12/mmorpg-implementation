@@ -18,6 +18,12 @@ public class CharacterCreateView : MonoBehaviour
     public void SendCharacterCreateMessage()
     {
         Debug.Log("Sending for new character creation");
+        if (characterClass.text.Equals("Select a combat class"))
+        {
+            Debug.Log("Select a combat class");
+            //TO DO ALERT MESSAGE
+            return;
+        }
         PhotonEngine.Instance.SendRequest(MessageOperationCode.Login, MessageSubCode.CreateCharacter, MessageParameterCode.CharacterName, characterName.text, MessageParameterCode.CharacterClass, characterClass.text);
     }
 

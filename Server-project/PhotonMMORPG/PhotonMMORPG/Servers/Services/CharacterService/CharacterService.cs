@@ -32,7 +32,7 @@ namespace Servers.Services.CharacterService
                 UserId = userId,
                 Name = characterName,
                 Class = characterClass,
-                Level = 0,
+                Level = 1,
                 ExperiencePoints = (decimal)0
             };
 

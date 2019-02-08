@@ -45,7 +45,7 @@ namespace Servers.Handlers.Login
 
             if (returnCode == ReturnCode.DuplicateCharacterName)
             {
-                response = new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "Cannot create character", (short)ReturnCode.InvalidCharacterAndClass);
+                response = new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "A character with that name exists", (short)ReturnCode.InvalidCharacterAndClass);
             }
             else
             {

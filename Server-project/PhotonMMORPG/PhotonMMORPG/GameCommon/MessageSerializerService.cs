@@ -23,7 +23,7 @@ namespace GameCommon
             return retrunValue;
         }
 
-        protected static T DeserializeObjectOfType<T>(object objectToDeserialize) where T : class
+        public static T DeserializeObjectOfType<T>(object objectToDeserialize) where T : class
         {
             T returnValue = null;
 #if DEBUG

@@ -37,13 +37,14 @@ namespace Servers.Handlers.Login
         {
             //how to prevent hacking? => Proxy server removed all special codes from the client and uses its own when forwarding data
             var userId = (int) message.Parameters[(byte) MessageParameterCode.UserId];
-            var peerId = System.Text.Encoding.Default.GetString((byte[])message.Parameters[(byte) MessageParameterCode.PeerId]);
-            Log.DebugFormat("Login Character Handler List received this {0} as peer id", peerId);
             Log.DebugFormat("Login Character Handler List received this {0} as user id", userId);
             var charList = new CharacterMapper().LoadByUserId(userId).Select(x => new Character
             {
                 CharacterId = x.Id,
-                Name = x.Name
+                Name = x.Name,
+                Class = x.Class,
+                Level = x.Level,
+                ExperiencePoints = x.ExperiencePoints
             });
             //We have a list of characters, added into a serializable object
             var returnResponse = new Response(Code, SubCode, new Dictionary<byte, object>()

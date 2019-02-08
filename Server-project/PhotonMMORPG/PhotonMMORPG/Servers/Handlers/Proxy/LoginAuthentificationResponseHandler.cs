@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameCommon.SerializedObjects;
 
 namespace Servers.Handlers.Proxy
 {
@@ -47,7 +48,7 @@ namespace Servers.Handlers.Proxy
                 IClientPeer clientPeer = _connectionCollection.GetPeers<IClientPeer>().FirstOrDefault(p => p.PeerId == new Guid((Byte[])message.Parameters[_serverConfiguration.PeerIdCode]));
                 if (clientPeer != null)
                 {
-                    Log.DebugFormat("Found Peer matii");
+                    Log.DebugFormat("LogintAuthenticationHandler Found Peer");
 
                     var response = message as Response;
                     
@@ -55,6 +56,12 @@ namespace Servers.Handlers.Proxy
                     {
                         // Good response, get the client data and look for the userId to set it for the future.
                         clientPeer.ClientData<CharacterData>().UserId = (int)response.Parameters[(byte)MessageParameterCode.UserId];
+                        if((MessageSubCode)response.Parameters[(byte)MessageParameterCode.SubCodeParameterCode] == MessageSubCode.CharacterList)
+                        {
+                            clientPeer.ClientData<CharacterData>().Characters =
+                            (List<Character>) response.Parameters[(byte) MessageParameterCode.Object];
+                        }
+
                     }
                     // copy our response to a return response
                     Response returnResponse = new Response(Code, SubCode, message.Parameters);

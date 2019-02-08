@@ -69,7 +69,7 @@
     <Compile Include="Assets\ClientHandlers\Authentication\AccountCreationHandler.cs" />
     <Compile Include="Assets\ClientHandlers\Authentication\LoginUserHandler.cs" />
     <Compile Include="Assets\ClientHandlers\Character\CharacterCreateResponseHandler.cs" />
-    <Compile Include="Assets\ClientHandlers\Character\ListCharacterHandler.cs" />
+    <Compile Include="Assets\ClientHandlers\Character\ListCharacterResponseHandler.cs" />
     <Compile Include="Assets\ClientHandlers\GameMessageHandler.cs" />
     <Compile Include="Assets\ClientViews\CharacterCreateView.cs" />
     <Compile Include="Assets\ClientViews\CharacterSelectView.cs" />
@@ -81,8 +81,8 @@
     <Compile Include="Assets\MGFClient\Message\Interfaces\IMessage.cs" />
     <Compile Include="Assets\MGFClient\Message\MessageType.cs" />
     <Compile Include="Assets\MGFClient\PhotonEngine.cs" />
-    <Compile Include="Assets\Scripts\CharacterSlot.cs" />
-    <Compile Include="Assets\Scripts\CharacterSlotController.cs" />
+    <Compile Include="Assets\Scripts\CharacterSceneScripts\CharacterSlot.cs" />
+    <Compile Include="Assets\Scripts\CharacterSceneScripts\CharacterSlotController.cs" />
     <Compile Include="Assets\Scripts\GameMessage.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

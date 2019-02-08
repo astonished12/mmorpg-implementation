@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using GameCommon;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace ClientHandlers.Character
 {
@@ -10,8 +11,8 @@ namespace ClientHandlers.Character
         {
             if (returnCode == (short) ReturnCode.Ok)
             {
-                //Show the login server
                 Debug.LogFormat("Account Created Successfully");
+                SceneManager.LoadScene(0); // go back to select character scene
             }
             else
             {
