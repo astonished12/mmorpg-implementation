@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using GameCommon;
 using MGF.Domain;
 using MGF.Mappers;
-using Servers.Interfaces;
+using Servers.Services.Interfaces;
 using SHA512Managed = System.Security.Cryptography.SHA512Managed;
 
 namespace Servers.Services.AuthorizationServices

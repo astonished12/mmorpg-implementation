@@ -12,5 +12,7 @@ namespace Servers.Data.Client
     {
         public int UserId { get; set; }
         public List<Character> Characters { get; set; }
+        public Character SelectedCharacter { get; set; }
+        public Guid PeerId { get; set; }
     }
 }

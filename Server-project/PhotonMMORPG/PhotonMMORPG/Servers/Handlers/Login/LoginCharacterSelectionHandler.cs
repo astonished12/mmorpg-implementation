@@ -38,13 +38,16 @@ namespace Servers.Handlers.Login
         }
         public bool HandleMessage(IMessage message, IServerPeer peer)
         {
-            var clientPeer = new Guid((byte[])message.Parameters[(byte) MessageParameterCode.PeerId]);
-            Log.DebugFormat("On LoginCharacterSelectionHandler the client peer is {0}", clientPeer);
+            var clientPeerGuid = new Guid((byte[])message.Parameters[(byte) MessageParameterCode.PeerId]);
+            Log.DebugFormat("On LoginCharacterSelectionHandler the client peer is {0}", clientPeerGuid);
            
-            var clientData = ConnectionCollection.GetPeers<IClientPeer>().FirstOrDefault(x => x.PeerId == clientPeer).ClientData<CharacterData>();
+            var clientData = ConnectionCollection.GetPeers<IClientPeer>().FirstOrDefault(x => x.PeerId == clientPeerGuid).ClientData<CharacterData>();
 
             var selectedCharacter = clientData.Characters.FirstOrDefault(character => character.Name == (string) message.Parameters[(byte) MessageParameterCode.CharacterName]);
             Log.DebugFormat("The selected character is {0}",selectedCharacter.Name);
+
+            clientData.SelectedCharacter = selectedCharacter;
+            clientData.PeerId = clientPeerGuid;
 
             Response response = clientData.Characters.Count == 0
                 ? new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "You don't have a character ", (short)ReturnCode.NoExistingCharacter)

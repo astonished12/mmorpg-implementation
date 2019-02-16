@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GameCommon;
 
-namespace Servers.Interfaces
+namespace Servers.Services.Interfaces
 {
     public interface ICharacterService
     {

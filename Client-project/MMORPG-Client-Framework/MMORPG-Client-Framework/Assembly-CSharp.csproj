@@ -74,6 +74,7 @@
     <Compile Include="Assets\ClientHandlers\GameMessageHandler.cs" />
     <Compile Include="Assets\ClientViews\CharacterCreateView.cs" />
     <Compile Include="Assets\ClientViews\CharacterSelectView.cs" />
+    <Compile Include="Assets\ClientViews\SceneView.cs" />
     <Compile Include="Assets\ClientViews\TestView.cs" />
     <Compile Include="Assets\FromStore\Fantasy Lands\Demo\Scripts\CameraMouseDrag.cs" />
     <Compile Include="Assets\FromStore\Fantasy Lands\Demo\Scripts\CameraMouseRotate.cs" />
@@ -123,9 +124,9 @@
     <Compile Include="Assets\FromStore\Fantasy Lands\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\FromStore\Fantasy Lands\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\FromStore\Fantasy Lands\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
-    <Compile Include="Assets\FromStore\Warrior Pack Bundle 3 FREE\Code\IKHands.cs" />
-    <Compile Include="Assets\FromStore\Warrior Pack Bundle 3 FREE\Code\SmoothFollow.cs" />
-    <Compile Include="Assets\FromStore\Warrior Pack Bundle 3 FREE\Code\WarriorAnimationDemoFREE.cs" />
+    <Compile Include="Assets\FromStore\warrior\Code\IKHands.cs" />
+    <Compile Include="Assets\FromStore\warrior\Code\SmoothFollow.cs" />
+    <Compile Include="Assets\FromStore\warrior\Code\WarriorAnimationDemoFREE.cs" />
     <Compile Include="Assets\MGFClient\EngineState.cs" />
     <Compile Include="Assets\MGFClient\IMessageHandler.cs" />
     <Compile Include="Assets\MGFClient\Message\Implementation\Event.cs" />

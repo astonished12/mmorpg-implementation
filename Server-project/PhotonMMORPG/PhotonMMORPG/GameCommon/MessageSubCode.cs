@@ -12,6 +12,8 @@ namespace GameCommon
         LoginNewAccount,
         CharacterList,
         SelectCharacter,
-        CreateCharacter
+        CreateCharacter,
+        EnterRegion,
+        EnterWorld
     }
 }

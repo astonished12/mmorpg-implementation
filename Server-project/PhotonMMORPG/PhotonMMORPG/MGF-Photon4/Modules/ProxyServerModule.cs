@@ -32,15 +32,13 @@ namespace MGF_Photon.Modules
             builder.RegisterType<ServerHandlerList>().AsImplementedInterfaces();
             builder.RegisterType<ClientHandlerList>().AsImplementedInterfaces();
 
-
-            // Fowarding events and responsed back to client - ignore request (output error)
+            // Forwarding events and responses back to the client - ingores requests (outputs error)
             builder.RegisterType<EventFowardHandler>().AsImplementedInterfaces();
             builder.RegisterType<RequestFowardHandler>().AsImplementedInterfaces();
             builder.RegisterType<ResponseFowardHandler>().AsImplementedInterfaces();
 
             builder.RegisterType<HandleServerRegistration>().AsImplementedInterfaces();
             builder.RegisterType<ServerData>().AsImplementedInterfaces();
-
         }
     }
 }

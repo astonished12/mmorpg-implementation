@@ -12,7 +12,7 @@ namespace ClientHandlers.Character
             if (returnCode == (short) ReturnCode.Ok)
             {
                 Debug.LogFormat("Account Created Successfully");
-                SceneManager.LoadScene(0); // go back to select character scene
+                SceneManager.LoadScene(1); // go back to select character scene
             }
             else
             {

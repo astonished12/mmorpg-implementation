@@ -41,7 +41,6 @@ namespace GameServer
         {
             using (ReadLock.TryEnter(this.readerWriterLock, 1000))
             {
-
                 Clients.Add(client);
             }
         }

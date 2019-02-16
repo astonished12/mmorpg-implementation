@@ -23,7 +23,7 @@ namespace Servers.Handlers.Proxy
 
         public byte Code => (byte)MessageOperationCode.Login;
 
-        public int? SubCode => (int?)MessageSubCode.LoginUserPass;
+        public int? SubCode => null;
 
         public ILogger Log { get; private set; }
 
@@ -51,15 +51,27 @@ namespace Servers.Handlers.Proxy
                     Log.DebugFormat("LogintAuthenticationHandler Found Peer");
 
                     var response = message as Response;
-                    
+
                     if (response.ReturnCode == (short)ReturnCode.Ok)
                     {
                         // Good response, get the client data and look for the userId to set it for the future.
-                        clientPeer.ClientData<CharacterData>().UserId = (int)response.Parameters[(byte)MessageParameterCode.UserId];
-                        if((MessageSubCode)response.Parameters[(byte)MessageParameterCode.SubCodeParameterCode] == MessageSubCode.CharacterList)
+                        if (message.SubCode == (int?) MessageSubCode.LoginUserPass)
+                        {
+                            clientPeer.ClientData<CharacterData>().UserId =
+                                (int) response.Parameters[(byte) MessageParameterCode.UserId];
+                        }
+
+                        if (message.SubCode == (int?)MessageSubCode.CharacterList)
                         {
                             clientPeer.ClientData<CharacterData>().Characters =
-                            (List<Character>) response.Parameters[(byte) MessageParameterCode.Object];
+                            MessageSerializerService.DeserializeObjectOfType<List<Character>>(response.Parameters[(byte)MessageParameterCode.Object]);
+                        }
+
+                        if (message.SubCode == (int?) MessageSubCode.SelectCharacter)
+                        {
+                            clientPeer.ClientData<CharacterData>().SelectedCharacter =
+                                MessageSerializerService.DeserializeObjectOfType<Character>(response.Parameters[(byte)MessageParameterCode.Object]);
+
                         }
 
                     }

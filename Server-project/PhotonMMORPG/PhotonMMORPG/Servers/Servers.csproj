@@ -109,7 +109,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Handlers\Login\LoginCharacterSelectionHandler.cs" />
-    <Compile Include="Interfaces\ICharacterService.cs" />
+    <Compile Include="Handlers\Proxy\ClientWorldFowardingRequestHandler.cs" />
+    <Compile Include="Handlers\Regions\ClientEnterRegion.cs" />
+    <Compile Include="Handlers\World\ClientEnterWorld.cs" />
+    <Compile Include="Services\Interfaces\ICharacterService.cs" />
+    <Compile Include="Models\Interfaces\ICharacter.cs" />
+    <Compile Include="Models\Interfaces\IObject.cs" />
+    <Compile Include="Models\Interfaces\IPlayer.cs" />
+    <Compile Include="Models\Interfaces\IRegion.cs" />
+    <Compile Include="Models\Interfaces\IStat.cs" />
+    <Compile Include="Models\Interfaces\IWorld.cs" />
+    <Compile Include="Models\ObjectType.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\Position.cs" />
+    <Compile Include="Models\Region.cs" />
+    <Compile Include="Models\RegionObject.cs" />
+    <Compile Include="Models\RelationshipType.cs" />
+    <Compile Include="Models\World.cs" />
+    <Compile Include="Modules\RegionModule.cs" />
+    <Compile Include="Modules\WorldModule.cs" />
     <Compile Include="Services\AuthorizationServices\AsyncAuthorizationService.cs" />
     <Compile Include="Services\AuthorizationServices\UserPassAuthorizationService.cs" />
     <Compile Include="Services\AuthorizationServices\UserSaltPassAuthorizationService.cs" />
@@ -122,11 +140,13 @@
     <Compile Include="Handlers\Login\LoginAuthenticationHandler.cs" />
     <Compile Include="Handlers\Login\LoginCharacterListCharacterHandler.cs" />
     <Compile Include="Handlers\Proxy\LoginAuthentificationResponseHandler.cs" />
-    <Compile Include="Interfaces\IAuthorizationService.cs" />
+    <Compile Include="Services\Interfaces\IAuthorizationService.cs" />
     <Compile Include="Modules\LoginModule.cs" />
     <Compile Include="Modules\ProxyModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CharacterService\CharacterService.cs" />
+    <Compile Include="Services\Interfaces\IWorldService.cs" />
+    <Compile Include="Services\WorldServices\WorldService.cs" />
     <Compile Include="Support\ClientCodeRemove.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +173,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </None>
+    <None Include="WorldServer.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RegionServer.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="LoginServer.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
@@ -162,6 +190,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Server\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

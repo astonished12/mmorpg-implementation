@@ -13,7 +13,6 @@ using MultiplayerGameFramework.Interfaces.Messaging;
 using MultiplayerGameFramework.Interfaces.Server;
 using MultiplayerGameFramework.Interfaces.Support;
 using Servers.Data.Client;
-using Servers.Interfaces;
 
 namespace Servers.Handlers.Login
 {

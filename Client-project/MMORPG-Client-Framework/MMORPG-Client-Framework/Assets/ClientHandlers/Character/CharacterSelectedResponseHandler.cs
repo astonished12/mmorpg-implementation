@@ -17,7 +17,7 @@ namespace ClientHandlers.Character
                 
                 Debug.LogFormat("Character selected successfully. Your character is {0}", selectedCharacter.Name);
                 
-                //SceneManager.LoadScene(2); // go back to select character scene
+                SceneManager.LoadScene(3); // go back to select character scene
             }
             else
             {

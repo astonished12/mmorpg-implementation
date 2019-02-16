@@ -10,8 +10,8 @@ using GameCommon;
 using GameCommon.SerializedObjects;
 using MGF.Mappers;
 using MultiplayerGameFramework.Interfaces.Server;
-using Servers.Interfaces;
 using Servers.Services.CharacterService;
+using Servers.Services.Interfaces;
 
 namespace Servers.Handlers.Login
 {

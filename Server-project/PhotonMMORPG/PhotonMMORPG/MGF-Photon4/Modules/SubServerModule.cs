@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using MGF_Photon.Implementation;
 using MGF_Photon.Implementation.Client;
+using MGF_Photon.Implementation.Data;
 using MGF_Photon.Implementation.Handler;
 using MGF_Photon.Implementation.Server;
 using MultiplayerGameFramework.Implementation.Client;
@@ -29,7 +30,7 @@ namespace MGF_Photon.Modules
             builder.RegisterType<ErrorRequestForwardHandler>().AsImplementedInterfaces();
             builder.RegisterType<ErrorResponseForwardHandler>().AsImplementedInterfaces();
             builder.RegisterType<RegisterSubServerResponseHandler>().AsImplementedInterfaces();
-            
+
         }
     }
 }

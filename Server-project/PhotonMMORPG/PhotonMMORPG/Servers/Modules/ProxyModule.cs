@@ -26,6 +26,7 @@ namespace Servers.Modules
             builder.RegisterType<CharacterData>().AsImplementedInterfaces();
             builder.RegisterType<ClientLoginFowardingRequestHandler>().AsImplementedInterfaces();
             builder.RegisterType<LoginAuthenticationResponseHandler>().AsImplementedInterfaces();
+            builder.RegisterType<ClientWorldFowardingRequestHandler>().AsImplementedInterfaces();
 
         }
     }

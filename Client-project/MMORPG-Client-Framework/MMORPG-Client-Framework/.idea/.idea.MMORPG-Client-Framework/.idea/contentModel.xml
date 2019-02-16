@@ -24,6 +24,7 @@
         <e p="ClientViews" t="Include">
           <e p="CharacterCreateView.cs" t="Include" />
           <e p="CharacterSelectView.cs" t="Include" />
+          <e p="SceneView.cs" t="Include" />
           <e p="TestView.cs" t="Include" />
         </e>
         <e p="FromStore" t="Include">
@@ -205,7 +206,7 @@
             </e>
             <e p="readme.txt" t="Include" />
           </e>
-          <e p="Warrior Pack Bundle 3 FREE" t="Include">
+          <e p="warrior" t="Include">
             <e p="Code" t="Include">
               <e p="IKHands.cs" t="Include" />
               <e p="SmoothFollow.cs" t="Include" />

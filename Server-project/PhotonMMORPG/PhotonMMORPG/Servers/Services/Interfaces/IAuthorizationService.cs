@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using GameCommon;
 using MGF.Domain;
 
-namespace Servers.Interfaces
+namespace Servers.Services.Interfaces
 {
     public interface IAuthorizationService
     {

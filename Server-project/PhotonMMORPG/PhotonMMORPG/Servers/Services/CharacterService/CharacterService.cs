@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using GameCommon;
 using MGF.Domain;
 using MGF.Mappers;
-using Servers.Interfaces;
+using Servers.Services.Interfaces;
 
 namespace Servers.Services.CharacterService
 {

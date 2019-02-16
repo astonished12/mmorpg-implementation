@@ -6,6 +6,7 @@ using Assets.MGFClient.Message.Implementation;
 using Assets.Scripts;
 using ExitGames.Client.Photon;
 using GameCommon;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
@@ -186,7 +187,7 @@ public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
         State.SendRequest(request, true, 0, UseEncryption);
     }
 
-    public void SendRequest(MessageOperationCode code, MessageSubCode subCode, params object[] parameters)
+    public void SendRequest(MessageOperationCode code, MessageSubCode subCode, [CanBeNull] params object[] parameters)
     {
         var request = new OperationRequest()
         {
@@ -195,16 +196,18 @@ public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
         };
 
         //all paramters as pairs of 2
-        for (int i = 0; i < parameters.Length; i += 2)
-        {
-            // 
-            if (!(parameters[i] is MessageParameterCode))
+        if (parameters != null)
+            for (int i = 0; i < parameters.Length; i += 2)
             {
-                throw new ArgumentException(string.Format("Paramter {0} is not a MessageParamterCode", i));
+                // 
+                if (!(parameters[i] is MessageParameterCode))
+                {
+                    throw new ArgumentException(string.Format("Paramter {0} is not a MessageParamterCode", i));
+                }
+
+                //add the pairs
+                request.Parameters.Add((byte) parameters[i], parameters[i + 1]);
             }
-            //add the pairs
-            request.Parameters.Add((byte)parameters[i], parameters[i + 1]);
-        }
 
         //original send request
         SendRequest(request);
