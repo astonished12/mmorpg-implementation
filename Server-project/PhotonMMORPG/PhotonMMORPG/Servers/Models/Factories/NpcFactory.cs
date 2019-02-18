@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GameCommon;
 using Servers.Models.Interfaces;
 
-namespace Servers.Services.Interfaces
+namespace Servers.Models.Factories
 {
-    public interface IWorldService
+    public class NpcFactory : IFactory
     {
-        ReturnCode AddNewPlayerToWorld(IPlayer player);
+
     }
 }

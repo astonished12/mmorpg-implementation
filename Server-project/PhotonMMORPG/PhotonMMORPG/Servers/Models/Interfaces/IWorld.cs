@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameCommon;
 
 namespace Servers.Models.Interfaces
 {
@@ -10,8 +11,8 @@ namespace Servers.Models.Interfaces
     {
         int WorldTick { get; }
         IRegion GetRegion(Guid id);
-        void AddPlayer(IPlayer player);
-        void RemovePlayer(IPlayer player);
+        ReturnCode AddPlayer(IPlayer player);
+        ReturnCode RemovePlayer(IPlayer player);
     }
 
 }

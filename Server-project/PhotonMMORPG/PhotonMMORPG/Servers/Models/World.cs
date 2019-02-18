@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using ExitGames.Threading;
+using GameCommon;
 using Servers.Models.Interfaces;
 
 namespace Servers.Models
@@ -13,6 +14,7 @@ namespace Servers.Models
     {
         public static readonly World Instance = new World();
         public List<IPlayer> Clients { get; set; }
+
         private readonly ReaderWriterLockSlim readerWriterLock;
 
         public int WorldTick { get; }
@@ -28,17 +30,30 @@ namespace Servers.Models
             throw new NotImplementedException();
         }
 
-        public void AddPlayer(IPlayer player)
+        public ReturnCode AddPlayer(IPlayer player)
         {
             using (ReadLock.TryEnter(this.readerWriterLock, 1000))
             {
-                Clients.Add(player);
+                var newPlayer = Clients.FirstOrDefault(pl => pl.UserId == player.UserId);
+                ReturnCode returnCode;
+                if (null == newPlayer)
+                {
+                    Clients.Add(player);
+                    returnCode = ReturnCode.WorldAddedNewPlayer;
+                }
+                else
+                {
+                    returnCode = ReturnCode.WorldContainsPlayer;
+                }
+
+                return returnCode;
             }
         }
 
-        public void RemovePlayer(IPlayer player)
+        public ReturnCode RemovePlayer(IPlayer player)
         {
             Clients.Remove(player);
+            return ReturnCode.Ok;
         }
        
     }

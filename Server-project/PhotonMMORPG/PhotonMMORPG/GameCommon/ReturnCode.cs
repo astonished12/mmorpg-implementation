@@ -16,6 +16,8 @@ namespace GameCommon
         InvalidUserPass,
         InvalidCharacterAndClass,
         DuplicateCharacterName,
-        NoExistingCharacter
+        NoExistingCharacter,
+        WorldAddedNewPlayer,
+        WorldContainsPlayer
     }
 }
