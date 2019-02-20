@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MGF_Photon</RootNamespace>
     <AssemblyName>MGF-Photon</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -92,7 +92,7 @@
       <HintPath>..\..\..\..\..\..\..\..\Photon3ORIGINAL\ExitGames-Photon-Server-SDK_v3-4-31-10808\lib\Photon.SocketServer.dll</HintPath>
     </Reference>
     <Reference Include="PhotonHostRuntimeInterfaces">
-      <HintPath>..\..\..\..\..\..\..\..\Photon3ORIGINAL\ExitGames-Photon-Server-SDK_v3-4-31-10808\lib\PhotonHostRuntimeInterfaces.dll</HintPath>
+      <HintPath>..\..\..\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonHostRuntimeInterfaces.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />

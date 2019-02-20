@@ -14,6 +14,7 @@ namespace GameCommon
         SelectCharacter,
         CreateCharacter,
         EnterRegion,
-        EnterWorld
+        EnterWorld,
+        RequestRegion
     }
 }
