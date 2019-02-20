@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-Factories",
+      "appliesTo": "Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Models/Factories/",
+      "type": "launch"
+    }
+  ]
+}

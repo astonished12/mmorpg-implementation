@@ -112,6 +112,16 @@
     <Compile Include="Handlers\Proxy\ClientWorldFowardingRequestHandler.cs" />
     <Compile Include="Handlers\Regions\ClientEnterRegion.cs" />
     <Compile Include="Handlers\World\ClientEnterWorld.cs" />
+    <Compile Include="Models\Factories\NpcFactory.cs" />
+    <Compile Include="Models\Factories\QuestFactory.cs" />
+    <Compile Include="Models\GridWorld.cs" />
+    <Compile Include="Models\Interfaces\IFactory.cs" />
+    <Compile Include="Models\Interfaces\IQuest.cs" />
+    <Compile Include="Models\Interfaces\IWorldCache.cs" />
+    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\ItemSnapshot.cs" />
+    <Compile Include="Models\Quest.cs" />
+    <Compile Include="Models\WorldCache.cs" />
     <Compile Include="Services\Interfaces\ICharacterService.cs" />
     <Compile Include="Models\Interfaces\ICharacter.cs" />
     <Compile Include="Models\Interfaces\IObject.cs" />
