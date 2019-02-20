@@ -36,41 +36,8 @@ namespace Servers.Handlers.World
 
         public bool HandleMessage(IMessage message, IServerPeer peer)
         {
-            var playerData =
-                MessageSerializerService.DeserializeObjectOfType<CharacterData>(message.Parameters[(byte)MessageParameterCode.Object]);
-
+            var playerData = MessageSerializerService.DeserializeObjectOfType<CharacterData>(message.Parameters[(byte)MessageParameterCode.Object]);
             
-            //Response response;
-            //if (playerData != null)
-            //{
-            //    var player = new Player()
-            //    {
-            //        UserId = playerData.UserId,
-            //        ServerPeer = peer,
-            //        CharacterName = playerData.SelectedCharacter.Name,
-            //        Client = ConnectionCollection.GetPeers<IClientPeer>().FirstOrDefault(clientPeer =>
-            //            clientPeer.PeerId == (Guid)message.Parameters[(byte)MessageParameterCode.PeerId])
-            //    };
-            //    Log.DebugFormat("On Client EnterWorld:    New player added to world server {0}", player.CharacterName);
-
-            //    var returnCode = WorldService.AddNewPlayerToWorld(player);
-
-            //    if (returnCode == ReturnCode.WorldAddedNewPlayer)
-            //    {
-            //        response = new Response(Code, SubCode, new Dictionary<byte, object>(), "New player on world", (short)returnCode);
-            //    }
-            //    else
-            //    {
-            //        response = new Response(Code, SubCode, new Dictionary<byte, object>(), "Player is already in world", (short)returnCode);
-            //    }
-            //}
-            //else
-            //{
-            //    response = new Response(Code, SubCode, new Dictionary<byte, object>(), "Invalid operation", (short)ReturnCode.OperationInvalid);
-            //}
-
-            //peer.SendMessage(response);
-
             return true;
         }
     }

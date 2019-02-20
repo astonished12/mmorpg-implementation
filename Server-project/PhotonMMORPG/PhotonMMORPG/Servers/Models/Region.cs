@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Photon.SocketServer.Concurrency;
 
 namespace Servers.Models
 {
@@ -23,40 +24,28 @@ namespace Servers.Models
         public ItemSnapshot ItemSnapshot { get; private set; }
     };
 
- 
 
     public class Region : IDisposable
     {
-        private int coordX, coordY;
-        private IList<Region> neighboursRegions;
-        private bool active;
-        private Dictionary<int, RegionObject> visibleRegionObjects;
-
-        public Region(int coordX, int coordY)
+        public Region(int x, int y)
         {
-            this.coordX = coordX;
-            this.coordY = coordX;
-            visibleRegionObjects = new Dictionary<int, RegionObject>();
-            Active = true;
+            this.X = x;
+            this.Y = y;
         }
 
-        public bool Active
+        // grid cell X (debug only)
+        public int X { get; private set; }
+
+        // grid cell Y (debug only)
+        public int Y { get; private set; }
+
+        public override string ToString()
         {
-            get { return active; }
-            set
-            {
-                if (active == value)
-                    return;
-
-                active = value;
-
-                //switchAI(value);
-            }
+            return string.Format("Region({0},{1})", base.ToString(), X, Y);
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
         }
     }
 }

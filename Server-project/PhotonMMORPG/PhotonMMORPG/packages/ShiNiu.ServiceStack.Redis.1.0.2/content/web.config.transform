@@ -1,0 +1,8 @@
+﻿<configuration>
+  <configSections>
+    <section name="RedisConfig" type="ShiNiu.ServiceStack.Redis.RedisConfig,ShiNiu.ServiceStack.Redis" /> 
+  </configSections>
+
+  <RedisConfig WriteServerConStr="127.0.0.1:6379"  PassWord="123456" ReadServerConStr="127.0.0.1:6379" MaxWritePoolSize="60" MaxReadPoolSize="60" AutoStart="true" LocalCacheTime="180" RecordeLog="false">
+  </RedisConfig> 
+</configuration>
