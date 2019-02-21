@@ -12,6 +12,8 @@ using MultiplayerGameFramework.Interfaces.Server;
 using Servers.Data.Client;
 using Servers.Models;
 using Servers.Services.Interfaces;
+using ServiceStack.Redis;
+using ServiceStack.Text;
 
 namespace Servers.Handlers.World
 {
@@ -20,12 +22,17 @@ namespace Servers.Handlers.World
         private ILogger Log { get; set; }
         private IWorldService WorldService { get; set; }
         private IConnectionCollection<IClientPeer> ConnectionCollection { get; set; }
-
-        public ClientEnterWorld(ILogger log, IWorldService worldService, IConnectionCollection<IClientPeer> connectionCollection)
+        private IRedisClientsManager ClientsManager { get; set; }
+        private IRedisPubSubServer RedisPubSub { get; set; }
+             
+        public ClientEnterWorld(ILogger log, IWorldService worldService, IConnectionCollection<IClientPeer> connectionCollection,
+            IRedisClientsManager clientsManager, IRedisPubSubServer redisPubSubServer)
         {
             Log = log;
             WorldService = worldService;
             ConnectionCollection = connectionCollection;
+            ClientsManager = clientsManager;
+            RedisPubSub = redisPubSubServer;
         }
 
         public MessageType Type => MessageType.Request;
@@ -36,8 +43,7 @@ namespace Servers.Handlers.World
 
         public bool HandleMessage(IMessage message, IServerPeer peer)
         {
-            var playerData =
-                MessageSerializerService.DeserializeObjectOfType<CharacterData>(message.Parameters[(byte)MessageParameterCode.Object]);
+            var playerData = MessageSerializerService.DeserializeObjectOfType<CharacterData>(message.Parameters[(byte)MessageParameterCode.Object]);
 
             Response response;
             if (playerData != null)
@@ -51,6 +57,12 @@ namespace Servers.Handlers.World
                         clientPeer.PeerId == (Guid)message.Parameters[(byte)MessageParameterCode.PeerId])
                 };
                 Log.DebugFormat("On Client EnterWorld:    New player added to world server {0}", player.CharacterName);
+
+                using (IRedisClient redis = ClientsManager.GetClient())
+                {
+                    Log.DebugFormat("The redis client is working here on world server");
+                    //TO DO
+                }
 
                 var returnCode = WorldService.AddNewPlayerToWorld(player);
 

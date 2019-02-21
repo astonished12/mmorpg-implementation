@@ -9,7 +9,9 @@ using Servers.Config;
 using Servers.Data.Client;
 using Servers.Handlers;
 using Servers.Handlers.Proxy;
+using Servers.PubSubModels;
 using Servers.Support;
+using ServiceStack.Redis;
 
 namespace Servers.Modules
 {
@@ -27,6 +29,11 @@ namespace Servers.Modules
             builder.RegisterType<ClientLoginFowardingRequestHandler>().AsImplementedInterfaces();
             builder.RegisterType<LoginAuthenticationResponseHandler>().AsImplementedInterfaces();
             builder.RegisterType<ClientWorldFowardingRequestHandler>().AsImplementedInterfaces();
+
+            builder.Register<IRedisClientsManager>(c =>
+                new BasicRedisClientManager("localhost:6379"));
+
+            builder.RegisterType<WorldRedisPubSub>().As<IRedisPubSubServer>();
 
         }
     }
