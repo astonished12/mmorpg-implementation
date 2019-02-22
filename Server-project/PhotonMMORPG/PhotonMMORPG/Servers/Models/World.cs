@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using ExitGames.Threading;
 using GameCommon;
+using Photon.MmoDemo.Common;
 using Servers.Models.Interfaces;
 
 namespace Servers.Models
@@ -14,8 +15,15 @@ namespace Servers.Models
     {
         public static readonly World Instance = new World();
         public List<IPlayer> Clients { get; set; }
+        public GridWorld GridWorld { get; set; }
 
         private readonly ReaderWriterLockSlim readerWriterLock;
+        private readonly BoundingBox boundingBox;
+
+        //Check how to get data from unity terrain
+        private readonly int maxWidthTerrain = 1000;
+        private readonly int maxLengthTerrain = 1000;
+        
 
         public int WorldTick { get; }
 
@@ -23,11 +31,15 @@ namespace Servers.Models
         {
             Clients = new List<IPlayer>();
             readerWriterLock = new ReaderWriterLockSlim();
+            boundingBox = new BoundingBox(new Vector() { X = 0 , Y = 0 , Z = 0}, new Vector() { X = maxWidthTerrain, Y = maxLengthTerrain, Z = 0 });
+
+            //4 region => the size of tile is the terrain width and length dive 2 
+            GridWorld = new GridWorld(boundingBox, new Vector(maxWidthTerrain/2, maxLengthTerrain/2));
         }
 
-        public IRegion GetRegion(Guid id)
+        public IRegion GetRegion(Vector pos)
         {
-            throw new NotImplementedException();
+            return GridWorld.GetRegion(pos);
         }
 
         public ReturnCode AddPlayer(IPlayer player)

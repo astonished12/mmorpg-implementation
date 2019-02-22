@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Photon.SocketServer.Concurrency;
+using Servers.Models.Interfaces;
 
 namespace Servers.Models
 {
@@ -25,7 +26,7 @@ namespace Servers.Models
     };
 
 
-    public class Region : IDisposable
+    public class Region : IRegion
     {
         public Region(int x, int y)
         {
@@ -39,6 +40,15 @@ namespace Servers.Models
         // grid cell Y (debug only)
         public int Y { get; private set; }
 
+        public string Name => throw new NotImplementedException();
+
+        public Guid ZoneId => throw new NotImplementedException();
+
+        public IWorld World => throw new NotImplementedException();
+
+        public int GameTick => throw new NotImplementedException();
+
+
         public override string ToString()
         {
             return string.Format("Region({0},{1})", base.ToString(), X, Y);
@@ -46,6 +56,16 @@ namespace Servers.Models
 
         public void Dispose()
         {
+        }
+
+        public void AddObject(IObject obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RemoveObject(IObject obj)
+        {
+            throw new NotImplementedException();
         }
     }
 }
