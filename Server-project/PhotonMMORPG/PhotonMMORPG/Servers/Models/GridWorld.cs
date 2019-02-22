@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Servers.Models
 {
-    public class GridWorld : IDisposable
+    public class GridWorld 
     {
         private readonly Region[][] worldRegions;
 
@@ -32,7 +32,6 @@ namespace Servers.Models
 
         ~GridWorld()
         {
-            this.Dispose(false);
         }
 
         public BoundingBox Area { get; private set; }
@@ -42,25 +41,7 @@ namespace Servers.Models
         public int TileX { get; private set; }
         public int TileY { get; private set; }
 
-        public void Dispose()
-        {
-            this.Dispose(true);
-            GC.SuppressFinalize(this);
-        }
 
-        protected virtual void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                foreach (Region[] regions in this.worldRegions)
-                {
-                    foreach (Region region in regions)
-                    {
-                        region.Dispose();
-                    }
-                }
-            }
-        }
 
         public Region GetRegion(Vector position)
         {
