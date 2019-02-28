@@ -72,6 +72,7 @@
     <Compile Include="Assets\ClientHandlers\Character\CharacterSelectedResponseHandler.cs" />
     <Compile Include="Assets\ClientHandlers\Character\ListCharacterResponseHandler.cs" />
     <Compile Include="Assets\ClientHandlers\GameMessageHandler.cs" />
+    <Compile Include="Assets\ClientHandlers\Loading\PlayerWorldEnterResponseHandler.cs" />
     <Compile Include="Assets\ClientViews\CharacterCreateView.cs" />
     <Compile Include="Assets\ClientViews\CharacterSelectView.cs" />
     <Compile Include="Assets\ClientViews\SceneView.cs" />
@@ -124,6 +125,13 @@
     <Compile Include="Assets\FromStore\Fantasy Lands\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\FromStore\Fantasy Lands\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\FromStore\Fantasy Lands\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\FromStore\loadingBar\scripts\Loading.cs" />
+    <Compile Include="Assets\FromStore\loadingBar\scripts\loadingbar.cs" />
+    <Compile Include="Assets\FromStore\loadingBar\scripts\loadingcolorful.cs" />
+    <Compile Include="Assets\FromStore\loadingBar\scripts\loadingtext.cs" />
+    <Compile Include="Assets\FromStore\loadingBar\scripts\rotatetotate.cs" />
+    <Compile Include="Assets\FromStore\loadingBar\scripts\SimpleLoading.cs" />
+    <Compile Include="Assets\FromStore\loadingBar\scripts\simplerotate.cs" />
     <Compile Include="Assets\FromStore\warrior\Code\IKHands.cs" />
     <Compile Include="Assets\FromStore\warrior\Code\SmoothFollow.cs" />
     <Compile Include="Assets\FromStore\warrior\Code\WarriorAnimationDemoFREE.cs" />
@@ -140,6 +148,7 @@
     <Compile Include="Assets\Scripts\GameSceneScripts\Movement.cs" />
     <Compile Include="Assets\Scripts\GameSceneScripts\Player.cs" />
     <Compile Include="Assets\Scripts\GameSceneScripts\World.cs" />
+    <Compile Include="Assets\Scripts\LoadingScene.cs" />
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\FromStore\Fantasy Lands\readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />

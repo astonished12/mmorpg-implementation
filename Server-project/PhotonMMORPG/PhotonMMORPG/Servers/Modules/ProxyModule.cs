@@ -28,6 +28,7 @@ namespace Servers.Modules
             builder.RegisterType<CharacterData>().AsImplementedInterfaces();
             builder.RegisterType<ClientLoginFowardingRequestHandler>().AsImplementedInterfaces();
             builder.RegisterType<LoginAuthenticationResponseHandler>().AsImplementedInterfaces();
+            builder.RegisterType<WorldOperationsResponseHandler>().AsImplementedInterfaces();
             builder.RegisterType<ClientWorldFowardingRequestHandler>().AsImplementedInterfaces();
 
             builder.Register<IRedisClientsManager>(c =>

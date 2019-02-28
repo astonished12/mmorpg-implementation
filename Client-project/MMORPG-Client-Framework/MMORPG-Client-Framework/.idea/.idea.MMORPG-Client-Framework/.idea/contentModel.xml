@@ -20,6 +20,9 @@
             <e p="ListCharacterResponseHandler.cs" t="Include" />
           </e>
           <e p="GameMessageHandler.cs" t="Include" />
+          <e p="Loading" t="Include">
+            <e p="PlayerWorldEnterResponseHandler.cs" t="Include" />
+          </e>
         </e>
         <e p="ClientViews" t="Include">
           <e p="CharacterCreateView.cs" t="Include" />
@@ -206,6 +209,17 @@
             </e>
             <e p="readme.txt" t="Include" />
           </e>
+          <e p="loadingBar" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Loading.cs" t="Include" />
+              <e p="loadingbar.cs" t="Include" />
+              <e p="loadingcolorful.cs" t="Include" />
+              <e p="loadingtext.cs" t="Include" />
+              <e p="rotatetotate.cs" t="Include" />
+              <e p="SimpleLoading.cs" t="Include" />
+              <e p="simplerotate.cs" t="Include" />
+            </e>
+          </e>
           <e p="warrior" t="Include">
             <e p="Code" t="Include">
               <e p="IKHands.cs" t="Include" />
@@ -244,6 +258,7 @@
             <e p="Player.cs" t="Include" />
             <e p="World.cs" t="Include" />
           </e>
+          <e p="LoadingScene.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="CrossPlatformInput" t="Include">

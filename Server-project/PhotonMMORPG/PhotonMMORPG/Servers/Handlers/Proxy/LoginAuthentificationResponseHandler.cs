@@ -71,7 +71,6 @@ namespace Servers.Handlers.Proxy
                         {
                             clientPeer.ClientData<CharacterData>().SelectedCharacter =
                                 MessageSerializerService.DeserializeObjectOfType<Character>(response.Parameters[(byte)MessageParameterCode.Object]);
-
                         }
 
                     }

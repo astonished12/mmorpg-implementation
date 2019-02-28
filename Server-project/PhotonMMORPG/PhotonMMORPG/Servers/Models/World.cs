@@ -13,9 +13,8 @@ namespace Servers.Models
 {
     public class World : IWorld
     {
-        public static readonly World Instance = new World();
         public List<IPlayer> Clients { get; set; }
-        public GridWorld GridWorld { get; set; }
+        public GridWorld GridWorld { get; }
 
         private readonly ReaderWriterLockSlim readerWriterLock;
         private readonly BoundingBox boundingBox;

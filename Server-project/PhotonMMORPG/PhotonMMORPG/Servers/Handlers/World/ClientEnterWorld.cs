@@ -68,16 +68,16 @@ namespace Servers.Handlers.World
 
                 if (returnCode == ReturnCode.WorldAddedNewPlayer)
                 {
-                    response = new Response(Code, SubCode, new Dictionary<byte, object>(), "New player on world", (short)returnCode);
+                    response = new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "New player on world", (short)returnCode);
                 }
                 else
                 {
-                    response = new Response(Code, SubCode, new Dictionary<byte, object>(), "Player is already in world", (short)returnCode);
+                    response = new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "Player is already in world", (short)returnCode);
                 }
             }
             else
             {
-                response = new Response(Code, SubCode, new Dictionary<byte, object>(), "Invalid operation", (short)ReturnCode.OperationInvalid);
+                response = new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "Invalid operation", (short)ReturnCode.OperationInvalid);
             }
 
             peer.SendMessage(response);

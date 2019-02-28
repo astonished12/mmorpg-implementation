@@ -11,5 +11,6 @@ namespace Servers.Services.Interfaces
     public interface IWorldService
     {
         ReturnCode AddNewPlayerToWorld(IPlayer player);
+        IRegion GetRegionForPlayer(IPlayer player);
     }
 }

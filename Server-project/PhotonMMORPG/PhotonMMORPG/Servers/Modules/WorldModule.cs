@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Autofac;
 using Servers.Handlers.World;
+using Servers.Models;
 using Servers.PubSubModels;
 using Servers.Services.WorldServices;
 using ServiceStack.Redis;
@@ -20,6 +21,11 @@ namespace Servers.Modules
 
             builder.RegisterType<WorldService>().AsImplementedInterfaces();
             builder.RegisterType<ClientEnterWorld>().AsImplementedInterfaces();
+            builder.RegisterType<ClientRequestRegion>().AsImplementedInterfaces();
+
+            builder.RegisterType<World>().AsSelf()
+                                         .AsImplementedInterfaces()
+                                         .SingleInstance();
 
 
             builder.Register<IRedisClientsManager>(c =>
