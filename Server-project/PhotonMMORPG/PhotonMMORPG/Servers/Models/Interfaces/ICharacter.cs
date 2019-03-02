@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GameServer.Model;
+using Photon.MmoDemo.Common;
 
 namespace Servers.Models.Interfaces
 {
     public interface ICharacter
     {
         int Health { get; set; }
-
+        Vector Position { get; set; }
         bool IsTeleporting { get; }
         bool IsDead { get; }
         IList<ICharacter> StatusListeners { get; }

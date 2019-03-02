@@ -52,11 +52,11 @@ namespace Servers.Handlers.World
                 {
                     UserId = playerData.UserId,
                     ServerPeer = peer,
-                    CharacterName = playerData.SelectedCharacter.Name,
+                    Name = playerData.SelectedCharacter.Name,
                     Client = ConnectionCollection.GetPeers<IClientPeer>().FirstOrDefault(clientPeer =>
                         clientPeer.PeerId == (Guid)message.Parameters[(byte)MessageParameterCode.PeerId])
                 };
-                Log.DebugFormat("On Client EnterWorld:    New player added to world server {0}", player.CharacterName);
+                Log.DebugFormat("On Client EnterWorld:    New player added to world server {0}", player.Name);
 
                 using (IRedisClient redis = ClientsManager.GetClient())
                 {

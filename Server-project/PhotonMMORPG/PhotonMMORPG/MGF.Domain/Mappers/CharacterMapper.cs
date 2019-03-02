@@ -49,6 +49,9 @@ namespace MGF.Mappers
                         characterEntity.Name,
                         characterEntity.Class,
                         characterEntity.Level,
+                        characterEntity.Loc_x,
+                        characterEntity.Loc_y,
+                        characterEntity.Loc_z,
                         characterEntity.ExperiencePoints)).ToList();
             }
         }
@@ -64,7 +67,7 @@ namespace MGF.Mappers
 
                 if (entity != null)
                 {
-                    characterObj = new Character(entity.Id, entity.Name, entity.Class, entity.Level, entity.ExperiencePoints);
+                    characterObj = new Character(entity.Id, entity.Name, entity.Class, entity.Level, entity.Loc_x, entity.Loc_y, entity.Loc_z, entity.ExperiencePoints);
                 }
             }
 
@@ -99,6 +102,9 @@ namespace MGF.Mappers
                         characterEntity.Name,
                         characterEntity.Class,
                         characterEntity.Level,
+                        characterEntity.Loc_x,
+                        characterEntity.Loc_y,
+                        characterEntity.Loc_z,
                         characterEntity.ExperiencePoints)).ToList();
             }
         }
@@ -125,6 +131,9 @@ namespace MGF.Mappers
             characterEntity.Name = domainObject.Name;
             characterEntity.Class = domainObject.Class;
             characterEntity.Level = domainObject.Level;
+            characterEntity.Loc_x = domainObject.Loc_X;
+            characterEntity.Loc_y = domainObject.Loc_Y;
+            characterEntity.Loc_z = domainObject.Loc_Z;
             characterEntity.ExperiencePoints = domainObject.ExperiencePoints;
             characterEntity.UserId = domainObject.UserId;
             foreach (var stat in domainObject.Stats)
@@ -204,7 +213,7 @@ namespace MGF.Mappers
 
                 if (entity != null)
                 {
-                    characterObject = new Character(entity.Id, entity.Name, entity.Class, entity.Level, entity.ExperiencePoints);
+                    characterObject = new Character(entity.Id, entity.Name, entity.Class, entity.Level, entity.Loc_x, entity.Loc_y, entity.Loc_z, entity.ExperiencePoints);
                 }
 
                 return characterObject;

@@ -165,6 +165,7 @@
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\ItemSnapshot.cs" />
     <Compile Include="Models\Quest.cs" />
+    <Compile Include="PubSubModels\Enums\WorldPubSubMessageType.cs" />
     <Compile Include="PubSubModels\WorldRedisPubSub.cs" />
     <Compile Include="Services\Interfaces\ICharacterService.cs" />
     <Compile Include="Models\Interfaces\ICharacter.cs" />

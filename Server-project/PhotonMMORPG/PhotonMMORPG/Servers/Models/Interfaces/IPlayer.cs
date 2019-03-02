@@ -14,6 +14,6 @@ namespace Servers.Models.Interfaces
         IClientPeer Client { get; set; }
         IServerPeer ServerPeer { get; set; }
         int UserId { get; set; }
-        string CharacterName { get; set; }
+        string Name { get; set; }
     }
 }

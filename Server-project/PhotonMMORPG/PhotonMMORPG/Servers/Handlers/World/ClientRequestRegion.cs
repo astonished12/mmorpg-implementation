@@ -37,9 +37,18 @@ namespace Servers.Handlers.World
         public bool HandleMessage(IMessage message, IServerPeer peer)
         {
             var playerData = MessageSerializerService.DeserializeObjectOfType<CharacterData>(message.Parameters[(byte)MessageParameterCode.Object]);
-            Log.DebugFormat("OnClientRequestRegion: Client {0} request region", playerData.SelectedCharacter);
+            Log.DebugFormat("OnClientRequestRegion: Client {0} request region", playerData.SelectedCharacter.Name);
 
-            //WorldService.GetRegionForPlayer('PALEYR');
+            var player = new Player()
+            {
+                UserId = playerData.UserId,
+                ServerPeer = peer,
+                World = WorldService.GetWorld(),
+                CharacterName = playerData.SelectedCharacter.Name,
+                Client = ConnectionCollection.GetPeers<IClientPeer>().FirstOrDefault(x => x.PeerId == new Guid((byte[])message.Parameters[(byte)MessageParameterCode.PeerId]))
+            };
+
+            WorldService.GetRegionForPlayer(player);
 
             return true;
         }

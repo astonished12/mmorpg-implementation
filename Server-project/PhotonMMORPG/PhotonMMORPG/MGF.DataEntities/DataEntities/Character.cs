@@ -18,5 +18,9 @@ namespace MGF.DataEntities
         public User User { get; set; }
 
         public ICollection<Stat> Stats { get; set; }
+
+        public float Loc_x { get; set; }
+        public float Loc_y { get; set; }
+        public float Loc_z { get; set; }
     }
 }

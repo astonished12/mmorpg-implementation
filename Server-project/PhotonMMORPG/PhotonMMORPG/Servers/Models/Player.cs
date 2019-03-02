@@ -14,9 +14,10 @@ namespace Servers.Models
         public IClientPeer Client { get; set; }
         public IServerPeer ServerPeer { get; set; }
         public int UserId { get; set; }
-        public string CharacterName { get; set; }
+        public string Name { get; set; }
 
         public IWorld World { get; set; }
+        public ICharacter Character { get; set; }
 
     }
 }
