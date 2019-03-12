@@ -52,15 +52,19 @@ namespace Servers.Handlers.Proxy
 
                     var response = message as Response;
 
-                   /* if (response.ReturnCode == (short)ReturnCode.Ok)
+                    if (response.ReturnCode == (short)ReturnCode.Ok)
                     {
                         // Good response, get the client data and look for the userId to set it for the future.
-                        if (message.SubCode == (int?) MessageSubCode.LoginUserPass)
+                        if (message.SubCode == (int?) MessageSubCode.EnterWorld)
                         {
-                            clientPeer.ClientData<CharacterData>().UserId =
-                                (int) response.Parameters[(byte) MessageParameterCode.UserId];
+                            //clientPeer.ClientData<CharacterData>().UserId =
+                            //    (int) response.Parameters[(byte) MessageParameterCode.UserId];
                         }
-                    }*/
+                        else if (message.SubCode == (int?) MessageSubCode.RequestRegion)
+                        {
+
+                        }
+                    }
 
                     // copy our response to a return response
                     Response returnResponse = new Response(Code, SubCode, message.Parameters);

@@ -397,6 +397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1874740746}
   - component: {fileID: 1874740747}
+  - component: {fileID: 1874740748}
   m_Layer: 0
   m_Name: LoadingSceneView
   m_TagString: Untagged
@@ -429,6 +430,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: {fileID: 11400000, guid: 5a3c1b59db01dc24cb5c1a6dc34ad046, type: 2}
+--- !u!114 &1874740748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1874740745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b0aaf2c6cf09b4c88d9f286f0fbfe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: {fileID: 11400000, guid: 306817482e767b642b52a7500f337a60, type: 2}
 --- !u!1 &1980499732 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1442137129787350, guid: 596106fdf77854444bfa849004f3ea79,

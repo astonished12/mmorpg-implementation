@@ -12,6 +12,7 @@ namespace ClientHandlers.Loading
             LoadingScene.imageComp.fillAmount = 0.25f;
             Debug.Log("Client was added to the world");
             SendGetRegion();
+            
         }
         
         

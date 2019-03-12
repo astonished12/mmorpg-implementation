@@ -144,3 +144,7 @@ D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-proje
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\obj\Debug\MGF-Photon.csproj.CopyComplete
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\obj\Debug\MGF-Photon.dll
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\obj\Debug\MGF-Photon.pdb
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\ExitGames.Logging.Log4Net.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\ExitGamesLibs.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\log4net.dll
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\Photon.SocketServer.dll

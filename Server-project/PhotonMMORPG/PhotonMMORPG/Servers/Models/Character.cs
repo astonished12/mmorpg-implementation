@@ -18,9 +18,10 @@ namespace Servers.Models
         public IList<IStat> Stats { get; }
         public int AttackCooldown { get; }
         public ICharacter AttackableTarget { get; }
-        public Vector Position { get => Position;
-            set => new Position(0,0,0);
-        }
+
+        public MGF.Domain.Character CharacterDataFromDb { get; set; } 
+
+        public Vector Position { get; set; }
 
         public void OffsetHealth(int offset, ICharacter attacker, bool notify = true)
         {

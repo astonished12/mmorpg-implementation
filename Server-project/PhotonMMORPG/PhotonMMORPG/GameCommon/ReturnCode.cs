@@ -18,6 +18,7 @@ namespace GameCommon
         DuplicateCharacterName,
         NoExistingCharacter,
         WorldAddedNewPlayer,
-        WorldContainsPlayer
+        WorldContainsPlayer,
+        NoRegion
     }
 }

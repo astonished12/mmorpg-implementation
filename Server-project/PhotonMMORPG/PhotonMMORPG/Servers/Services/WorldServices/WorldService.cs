@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using ExitGames.Logging;
 using GameCommon;
+using MGF.Mappers;
+using Photon.MmoDemo.Common;
 using Servers.Models;
 using Servers.Models.Interfaces;
 using Servers.Services.Interfaces;
@@ -12,7 +14,7 @@ using ServiceStack.Redis;
 
 namespace Servers.Services.WorldServices
 {
-    public class WorldService: IWorldService
+    public class WorldService : IWorldService
     {
         private IWorld World { get; set; }
         private IRedisPubSubServer WorldRedisPubSubServer { get; set; }
@@ -41,20 +43,30 @@ namespace Servers.Services.WorldServices
             then => emit to all world consumers that the player is here and is ready to join !!!!!!!!!!!!!!!!!!! (LATER)             
             */
 
+            Vector pos;
             using (IRedisClient redis = ClientsManager.GetClient())
             {
                 Log.DebugFormat("The redis client is working here on world server");
-                if (redis.Get<string>(nameof(player.Name)) == null)
+                if (redis.Get<Servers.Models.Character>(player.Name) == null)
                 {
                     Log.Debug("Player isn't in cache");
-                    redis.Set(nameof(player.Name), player.Name);
+                    var character = new Character()
+                    {
+                        CharacterDataFromDb = CharacterMapper.LoadByName(player.Name)
+                    };
+                    pos = new Vector() { X = character.CharacterDataFromDb.Loc_X, Y = character.CharacterDataFromDb.Loc_Y, Z = character.CharacterDataFromDb.Loc_Z };
+                    redis.Set(player.Name, character);
                     Log.Debug("Player added to cache");
                 }
-
-
+                else
+                {
+                    var character = redis.Get<Character>(player.Name);
+                    pos = new Vector() { X = character.CharacterDataFromDb.Loc_X, Y = character.CharacterDataFromDb.Loc_Y, Z = character.CharacterDataFromDb.Loc_Z };
+                    Log.DebugFormat("The position from cache of player {0} is {1}", player.Name, pos);
+                }
             }
 
-            return new Region(1,2);
+            return World.GetRegion(pos);
         }
 
         public IWorld GetWorld()

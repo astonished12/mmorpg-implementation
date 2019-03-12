@@ -211,7 +211,7 @@ namespace MGF.Domain
 
         public Character() : base() { }
 
-        public Character(int id, string name, string _class, int level, float loc_x, float loc_y, float loc_z, decimal experiencePoints)
+        public Character(int id, int userId, string name, string _class, int level, float loc_x, float loc_y, float loc_z, decimal experiencePoints)
         {
             this.id = id;
             this.name = name;
@@ -220,6 +220,7 @@ namespace MGF.Domain
             this.loc_x = loc_x;
             this.loc_y = loc_y;
             this.loc_z = loc_z;
+            this.userId = userId;
 
             this.experiencePoints = experiencePoints;
             base.MarkOld();

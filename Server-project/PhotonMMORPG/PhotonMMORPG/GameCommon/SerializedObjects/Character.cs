@@ -15,6 +15,5 @@ namespace GameCommon.SerializedObjects
         public int Level { get; set; }
         public decimal ExperiencePoints { get; set; }
 
-
     }
 }

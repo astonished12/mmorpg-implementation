@@ -20,9 +20,10 @@ namespace Servers.Models
         private readonly BoundingBox boundingBox;
 
         //Check how to get data from unity terrain
-        private readonly int maxWidthTerrain = 1000;
-        private readonly int maxLengthTerrain = 1000;
-        
+        private readonly int maxWidthTerrain = 500;
+        private readonly int maxLengthTerrain = 500;
+        private readonly int maxHeightTerrain = 600;
+        // PUT THEM INTO CONFIG
 
         public int WorldTick { get; }
 
@@ -34,6 +35,9 @@ namespace Servers.Models
 
             //4 region => the size of tile is the terrain width and length dive 2 
             GridWorld = new GridWorld(boundingBox, new Vector(maxWidthTerrain/2, maxLengthTerrain/2));
+
+            //ONE REGION JUST FOR TEST
+            //GridWorld = new GridWorld(boundingBox, new Vector(maxWidthTerrain, maxLengthTerrain));
         }
 
         public IRegion GetRegion(Vector pos)

@@ -40,22 +40,18 @@ namespace Servers.Models
         // grid cell Y (debug only)
         public int Y { get; private set; }
 
-        public string Name => throw new NotImplementedException();
+        public string Name { get; set; }
 
-        public Guid ZoneId => throw new NotImplementedException();
+        public Guid ZoneId { get; set; }
 
-        public IWorld World => throw new NotImplementedException();
+        public IWorld World { get; set; }
 
-        public int GameTick => throw new NotImplementedException();
+        public int GameTick { get; set; }
 
 
         public override string ToString()
         {
             return string.Format("Region({0},{1})", base.ToString(), X, Y);
-        }
-
-        public void Dispose()
-        {
         }
 
         public void AddObject(IObject obj)

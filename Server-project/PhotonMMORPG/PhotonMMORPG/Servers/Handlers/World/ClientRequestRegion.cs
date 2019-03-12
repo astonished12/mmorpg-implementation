@@ -44,11 +44,17 @@ namespace Servers.Handlers.World
                 UserId = playerData.UserId,
                 ServerPeer = peer,
                 World = WorldService.GetWorld(),
-                CharacterName = playerData.SelectedCharacter.Name,
+                Name = playerData.SelectedCharacter.Name,
                 Client = ConnectionCollection.GetPeers<IClientPeer>().FirstOrDefault(x => x.PeerId == new Guid((byte[])message.Parameters[(byte)MessageParameterCode.PeerId]))
             };
 
-            WorldService.GetRegionForPlayer(player);
+            var region = WorldService.GetRegionForPlayer(player);
+
+            Response response = region == null
+                ? new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "Region can't be determined ", (short)ReturnCode.NoRegion)
+                : new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] }, { (byte)MessageParameterCode.Object, MessageSerializerService.SerializeObjectOfType(region) } }, "Region of character", (short)ReturnCode.Ok);
+            
+            peer.SendMessage(response);
 
             return true;
         }

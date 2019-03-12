@@ -73,6 +73,7 @@
     <Compile Include="Assets\ClientHandlers\Character\ListCharacterResponseHandler.cs" />
     <Compile Include="Assets\ClientHandlers\GameMessageHandler.cs" />
     <Compile Include="Assets\ClientHandlers\Loading\PlayerWorldEnterResponseHandler.cs" />
+    <Compile Include="Assets\ClientHandlers\Loading\PlayerWorldRegionEnterResponseHandler.cs" />
     <Compile Include="Assets\ClientViews\CharacterCreateView.cs" />
     <Compile Include="Assets\ClientViews\CharacterSelectView.cs" />
     <Compile Include="Assets\ClientViews\SceneView.cs" />
@@ -145,6 +146,7 @@
     <Compile Include="Assets\Scripts\CharacterSceneScripts\CharacterSlot.cs" />
     <Compile Include="Assets\Scripts\CharacterSceneScripts\CharacterSlotController.cs" />
     <Compile Include="Assets\Scripts\GameMessage.cs" />
+    <Compile Include="Assets\Scripts\GameSceneScripts\ClientData.cs" />
     <Compile Include="Assets\Scripts\GameSceneScripts\Movement.cs" />
     <Compile Include="Assets\Scripts\GameSceneScripts\Player.cs" />
     <Compile Include="Assets\Scripts\GameSceneScripts\World.cs" />

@@ -20,12 +20,15 @@ namespace Servers.Models
             this.TileY = (int)Math.Ceiling(Area.Size.Y / (double)tileDimensions.Y);
 
             this.worldRegions = new Region[TileX][];
+            int totalRegion = 0;
             for (int x = 0; x < TileX; x++)
             {
                 this.worldRegions[x] = new Region[TileY];
                 for (int y = 0; y < TileY; y++)
                 {
-                    this.worldRegions[x][y] = new Region(x, y);
+                    this.worldRegions[x][y] = new Region(x, y) {Name = "Region "+totalRegion, ZoneId = Guid.NewGuid() };
+                    totalRegion += 1;
+                    //SET UP CACHE HERE?!
                 }
             }
         }
