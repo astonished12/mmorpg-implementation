@@ -2,19 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45280d6c-c493-4b3c-ab3a-e34521fa5ff1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/MGFClient/GameData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scripts/LoadingSceneScripts.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/.idea/.idea.MMORPG-Client-Framework/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/.idea/.idea.MMORPG-Client-Framework/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/.idea/.idea.MMORPG-Client-Framework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/.idea/.idea.MMORPG-Client-Framework/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientHandlers/Character/CharacterSelectedResponseHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientHandlers/Character/CharacterSelectedResponseHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientHandlers/Character/ListCharacterResponseHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientHandlers/Character/ListCharacterResponseHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientHandlers/Loading/PlayerWorldEnterResponseHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientHandlers/Loading/PlayerWorldEnterResponseHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientHandlers/Loading/PlayerWorldRegionEnterResponseHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientHandlers/Loading/PlayerWorldRequestRegionResponseHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientHandlers/Loading/PlayerWorldRegionEnterResponseHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientHandlers/Loading/PlayerWorldRequestRegionResponseHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientViews/CharacterCreateView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientViews/CharacterCreateView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientViews/CharacterSelectView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientViews/CharacterSelectView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientViews/SceneView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientViews/GameSceneView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientViews/SceneView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientViews/GameSceneView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientViews/TestView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/ClientViews/TestView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/MGFClient/PhotonEngine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/MGFClient/PhotonEngine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Resources/Hammer Warrior.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Resources/Hammer Warrior.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scenes/AuthenticationScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scenes/AuthenticationScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scripts/CharacterSceneScripts/CharacterSlotController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scripts/CharacterSceneScripts/CharacterSlotController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scripts/GameSceneScripts/ClientData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scripts/GameSceneScripts/ClientData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/MGFClient/GameData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scripts/GameSceneScripts/World.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scripts/GameSceneScripts/World.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scripts/LoadingScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scripts/LoadingSceneScripts/LoadingScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scripts/LoadingScene.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Scripts/LoadingSceneScripts/LoadingScene.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/ScriptMapper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/ShaderCache.db" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/ShaderCache.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/metadata/21/21eb8b27f10587b418ba33d95d171231" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/metadata/21/21eb8b27f10587b418ba33d95d171231" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/metadata/a1/a16db15eb4850fd49ba6ecf95bbc2b57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/metadata/a1/a16db15eb4850fd49ba6ecf95bbc2b57.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/MMORPG-Client-Framework.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/MMORPG-Client-Framework.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../MMORPG-Client-Framework/MMORPG-Client-Framework/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MMORPG-Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMORPG-Client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/.suo" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,26 +109,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PhotonServer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-131">
-              <caret line="241" column="34" selection-start-line="241" selection-start-column="17" selection-end-line="241" selection-end-column="34" />
+            <state relative-caret-position="-1">
+              <caret line="241" column="5" lean-forward="true" selection-start-line="241" selection-start-column="2" selection-end-line="261" selection-end-column="5" />
               <folding>
                 <marker date="1549311685027" expanded="false" signature="6:186" ph="..." />
                 <marker date="1549311685027" expanded="true" signature="250:12064" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="451:497" ph="{...}" />
-                <marker date="1549311685027" expanded="false" signature="804:1038" ph="{...}" />
+                <marker date="1549311685027" expanded="true" signature="804:1038" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="840:919" ph="{...}" />
-                <marker date="1549311685027" expanded="false" signature="1090:1375" ph="{...}" />
+                <marker date="1549311685027" expanded="true" signature="1090:1375" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="1279:1350" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="1433:1511" ph="{...}" />
-                <marker date="1549311685027" expanded="false" signature="1541:1605" ph="{...}" />
+                <marker date="1549311685027" expanded="true" signature="1541:1605" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="1633:1738" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="1769:1850" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="1913:1985" ph="{...}" />
-                <marker date="1549311685027" expanded="false" signature="2059:2519" ph="{...}" />
+                <marker date="1549311685027" expanded="true" signature="2059:2519" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="2114:2513" ph="{...}" />
-                <marker date="1549311685027" expanded="false" signature="2565:3300" ph="{...}" />
+                <marker date="1549311685027" expanded="true" signature="2565:3300" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="2603:3294" ph="{...}" />
-                <marker date="1549311685027" expanded="false" signature="3356:4464" ph="{...}" />
+                <marker date="1549311685027" expanded="true" signature="3356:4464" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="3390:4458" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="4470:9707" ph="handlers for response" />
                 <marker date="1549311685027" expanded="true" signature="4567:5257" ph="{...}" />
@@ -120,13 +144,13 @@
                 <marker date="1549311685027" expanded="true" signature="8888:9692" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="9044:9128" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="9166:9643" ph="{...}" />
-                <marker date="1549311685027" expanded="true" signature="9714:12062" ph="Up-level API" />
-                <marker date="1549311685027" expanded="false" signature="9789:9969" ph="{...}" />
+                <marker date="1549311685027" expanded="false" signature="9714:12062" ph="Up-level API" />
+                <marker date="1549311685027" expanded="true" signature="9789:9969" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="10018:10208" ph="{...}" />
-                <marker date="1549311685027" expanded="false" signature="10248:10370" ph="{...}" />
-                <marker date="1549311685027" expanded="false" signature="10458:11075" ph="{...}" />
+                <marker date="1549311685027" expanded="true" signature="10248:10370" ph="{...}" />
+                <marker date="1549311685027" expanded="true" signature="10458:11075" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="10608:11060" ph="{...}" />
-                <marker date="1549311685027" expanded="false" signature="11171:11596" ph="{...}" />
+                <marker date="1549311685027" expanded="true" signature="11171:11596" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="11295:11581" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="11636:11747" ph="{...}" />
                 <marker date="1549311685027" expanded="true" signature="11785:11895" ph="{...}" />
@@ -139,7 +163,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/World.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="160">
               <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
               <folding>
                 <marker date="1549311685028" expanded="false" signature="6:63" ph="..." />
@@ -184,6 +208,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -205,8 +231,6 @@
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,11 +278,13 @@
       <updated>1549626100230</updated>
       <workItem from="1549626101706" duration="893000" />
       <workItem from="1549634435629" duration="798000" />
+      <workItem from="1552402461903" duration="519000" />
+      <workItem from="1552405219739" duration="712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1691000" />
+    <option name="totallyTimeSpent" value="2922000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -273,7 +299,7 @@
     <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30582523" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31553397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -353,26 +379,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <marker date="1549311685026" expanded="true" signature="58:1470" ph="{...}" />
-            <marker date="1549311685026" expanded="true" signature="313:379" ph="{...}" />
-            <marker date="1549311685026" expanded="true" signature="441:1408" ph="{...}" />
-            <marker date="1549311685026" expanded="true" signature="561:1205" ph="{...}" />
-            <marker date="1549311685026" expanded="true" signature="858:944" ph="{...}" />
-            <marker date="1549311685026" expanded="true" signature="1061:1194" ph="{...}" />
-            <marker date="1549311685026" expanded="true" signature="1426:1438" ph="{...}" />
-            <marker date="1549311685026" expanded="true" signature="1456:1468" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/World.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
+        <state relative-caret-position="160">
           <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
           <folding>
             <marker date="1549311685028" expanded="false" signature="6:63" ph="..." />
@@ -392,28 +401,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <marker date="1549311685026" expanded="true" signature="58:1470" ph="{...}" />
+            <marker date="1549311685026" expanded="true" signature="313:379" ph="{...}" />
+            <marker date="1549311685026" expanded="true" signature="441:1408" ph="{...}" />
+            <marker date="1549311685026" expanded="true" signature="561:1205" ph="{...}" />
+            <marker date="1549311685026" expanded="true" signature="858:944" ph="{...}" />
+            <marker date="1549311685026" expanded="true" signature="1061:1194" ph="{...}" />
+            <marker date="1549311685026" expanded="true" signature="1426:1438" ph="{...}" />
+            <marker date="1549311685026" expanded="true" signature="1456:1468" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PhotonServer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="241" column="34" selection-start-line="241" selection-start-column="17" selection-end-line="241" selection-end-column="34" />
+        <state relative-caret-position="-1">
+          <caret line="241" column="5" lean-forward="true" selection-start-line="241" selection-start-column="2" selection-end-line="261" selection-end-column="5" />
           <folding>
             <marker date="1549311685027" expanded="false" signature="6:186" ph="..." />
             <marker date="1549311685027" expanded="true" signature="250:12064" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="451:497" ph="{...}" />
-            <marker date="1549311685027" expanded="false" signature="804:1038" ph="{...}" />
+            <marker date="1549311685027" expanded="true" signature="804:1038" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="840:919" ph="{...}" />
-            <marker date="1549311685027" expanded="false" signature="1090:1375" ph="{...}" />
+            <marker date="1549311685027" expanded="true" signature="1090:1375" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="1279:1350" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="1433:1511" ph="{...}" />
-            <marker date="1549311685027" expanded="false" signature="1541:1605" ph="{...}" />
+            <marker date="1549311685027" expanded="true" signature="1541:1605" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="1633:1738" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="1769:1850" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="1913:1985" ph="{...}" />
-            <marker date="1549311685027" expanded="false" signature="2059:2519" ph="{...}" />
+            <marker date="1549311685027" expanded="true" signature="2059:2519" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="2114:2513" ph="{...}" />
-            <marker date="1549311685027" expanded="false" signature="2565:3300" ph="{...}" />
+            <marker date="1549311685027" expanded="true" signature="2565:3300" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="2603:3294" ph="{...}" />
-            <marker date="1549311685027" expanded="false" signature="3356:4464" ph="{...}" />
+            <marker date="1549311685027" expanded="true" signature="3356:4464" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="3390:4458" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="4470:9707" ph="handlers for response" />
             <marker date="1549311685027" expanded="true" signature="4567:5257" ph="{...}" />
@@ -429,13 +455,13 @@
             <marker date="1549311685027" expanded="true" signature="8888:9692" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="9044:9128" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="9166:9643" ph="{...}" />
-            <marker date="1549311685027" expanded="true" signature="9714:12062" ph="Up-level API" />
-            <marker date="1549311685027" expanded="false" signature="9789:9969" ph="{...}" />
+            <marker date="1549311685027" expanded="false" signature="9714:12062" ph="Up-level API" />
+            <marker date="1549311685027" expanded="true" signature="9789:9969" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="10018:10208" ph="{...}" />
-            <marker date="1549311685027" expanded="false" signature="10248:10370" ph="{...}" />
-            <marker date="1549311685027" expanded="false" signature="10458:11075" ph="{...}" />
+            <marker date="1549311685027" expanded="true" signature="10248:10370" ph="{...}" />
+            <marker date="1549311685027" expanded="true" signature="10458:11075" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="10608:11060" ph="{...}" />
-            <marker date="1549311685027" expanded="false" signature="11171:11596" ph="{...}" />
+            <marker date="1549311685027" expanded="true" signature="11171:11596" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="11295:11581" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="11636:11747" ph="{...}" />
             <marker date="1549311685027" expanded="true" signature="11785:11895" ph="{...}" />

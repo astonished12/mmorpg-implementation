@@ -2,6 +2,8 @@
 using System.Linq;
 using Assets.Scripts;
 using GameCommon;
+using MGFClient;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 namespace ClientHandlers.Character
@@ -16,13 +18,13 @@ namespace ClientHandlers.Character
             {
                 var listChar =
                     MessageSerializerService.DeserializeObjectOfType<IEnumerable<GameCommon.SerializedObjects.Character>>(parameters[(byte) MessageParameterCode.Object]);
-                
-                controller.LoadCharacterListInScene(listChar.ToList());
+
+                var characters = listChar.ToList();
+                GameData.Instance.characters = characters.ToList();
+                controller.LoadCharacterListInScene(characters.ToList());
             }
             else
             {
-                //Show the error
-                //ShowError(response.DebugMessage);
                 Debug.LogFormat("{0}", debugMessage);
             }
         }

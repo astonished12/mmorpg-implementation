@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ExitGames.Logging;
 using GameCommon;
 using MultiplayerGameFramework.Implementation.Messaging;
 using MultiplayerGameFramework.Interfaces.Messaging;
@@ -13,25 +14,21 @@ namespace Servers.Handlers.Regions
     public class ClientEnterRegion: IHandler<IServerPeer>
     {
 
-        public MessageType Type
+        private ILogger Log { get; set; }
+
+        public ClientEnterRegion(ILogger log)
         {
-            get { return MessageType.Request; }
+            Log = log;
         }
 
-        public byte Code
-        {
-            get { return (byte) MessageOperationCode.Region; }
-        }
-        public int? SubCode
-        {
-            get
-            {
-                return  (int?) MessageSubCode.EnterRegion;
-            }
-        }
+        public MessageType Type => MessageType.Request;
+
+        public byte Code => (byte) MessageOperationCode.Region;
+        public int? SubCode => (int?) MessageSubCode.EnterRegion;
 
         public bool HandleMessage(IMessage message, IServerPeer peer)
         {
+            Log.DebugFormat("Here must be logged");   
             return true;
         }
     }

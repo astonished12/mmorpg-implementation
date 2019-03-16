@@ -4,6 +4,7 @@ using CharacterSceneScripts;
 using ExitGames.Client.Photon;
 using GameCommon;
 using GameCommon.SerializedObjects;
+using MGFClient;
 using UnityEngine;
 using UnityEngine.UI;
 

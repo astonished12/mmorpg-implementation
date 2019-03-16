@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using GameCommon;
+using MGFClient;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;

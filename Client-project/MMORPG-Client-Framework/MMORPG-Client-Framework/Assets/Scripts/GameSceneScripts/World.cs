@@ -1,21 +1,21 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using MGFClient;
+using UnityEngine;
 
 namespace GameSceneScripts
 {
     public class World : MonoBehaviour
     {
-        /*
-
         private Player LocalPlayer { get; set; }
         private float _step = 5f;
-
         private Vector3 OldPosition { get; set; }
         private const float SendRate = 0.05f;
         private float _lastSendTime = 0;
         // Use this for initialization
         void Start()
         {
-            PhotonEngine.Instance.WorldEnterOperation();
+            
         }
 
         // Update is called once per frame
@@ -37,15 +37,15 @@ namespace GameSceneScripts
         {
             if (LocalPlayer == null)
             {
-                var p = PhotonServer.Instance.Players.FirstOrDefault(
-                    n => n.CharacterName.Equals(PhotonServer.Instance.CharacterName));
+                var p = GameData.Instance.players.FirstOrDefault(
+                    n => n.CharacterName.Equals(GameData.Instance.selectedCharacter.Name));
 
-                if (p != null)
+                /*if (p != null)
                 {
                     LocalPlayer = p;
                     p.gameObject.transform.GetChild(2).gameObject.SetActive(true);
                     PhotonServer.Instance.ListPlayersOperation();
-                }
+                }*/
                 return;
             }
 
@@ -54,9 +54,9 @@ namespace GameSceneScripts
 
         private void MoveLogic()
         {
-            for (int i = 0; i < PhotonServer.Instance.Players.Count; i++)
+            for (int i = 0; i < GameData.Instance.players.Count; i++)
             {
-                var player = PhotonServer.Instance.Players[i];
+                var player = GameData.Instance.players[i];
                 if (player != LocalPlayer)
                 {
                     player.Position = Vector3.Lerp(player.Position, player.NewPosition, Time.fixedDeltaTime * 15f);
@@ -81,7 +81,7 @@ namespace GameSceneScripts
 
                 _lastSendTime = Time.time + SendRate;
 
-                PhotonServer.Instance.MoveOperation(OldPosition.x, OldPosition.y, OldPosition.z, oldRotation.x, oldRotation.y, oldRotation.z);
+                //PhotonEngine.Instance.MoveOperation(OldPosition.x, OldPosition.y, OldPosition.z, oldRotation.x, oldRotation.y, oldRotation.z);
                 Animator tmp = LocalPlayer.GetComponent<Animator>();
                 float speed = tmp.GetFloat("Speed");
                 bool jump = tmp.GetBool("Jumping");
@@ -89,9 +89,9 @@ namespace GameSceneScripts
                 bool respawn = tmp.GetBool("Respawn");
                 bool attack = tmp.GetBool("Attack");
                 //Debug.Log("PRTTEY DEBUG " + speed + " " + jump + " " + die + " " + respawn + " " + attack);
-                PhotonServer.Instance.AnimatorOperations(speed, jump, die, respawn, attack);
+                //PhotonEngine.Instance.AnimatorOperations(speed, jump, die, respawn, attack);
 
             }
-        }*/
+        }
     }
 }

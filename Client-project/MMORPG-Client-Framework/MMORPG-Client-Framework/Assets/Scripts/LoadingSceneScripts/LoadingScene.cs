@@ -1,12 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using GameCommon;
+﻿using GameCommon;
+using MGFClient;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LoadingScene : MonoBehaviour {
+namespace LoadingSceneScripts
+{
+    public class LoadingScene : MonoBehaviour {
 
-	 private RectTransform rectComponent;
+        private RectTransform rectComponent;
         public static Image imageComp;
     
         public float speed = 200f;
@@ -24,8 +26,8 @@ public class LoadingScene : MonoBehaviour {
             imageComp = transform.GetComponent<Image>();
         }
     	
-    	// Update is called once per frame
-    	void Update () {
+        // Update is called once per frame
+        void Update () {
             if (imageComp.fillAmount >= 0.5f && imageComp.fillAmount != 1f)
             {
                 imageComp.fillAmount = imageComp.fillAmount + Time.deltaTime * speed;
@@ -53,8 +55,9 @@ public class LoadingScene : MonoBehaviour {
             }
             else
             {
-                imageComp.fillAmount = 0.0f;
-                text.text = "0%";
+                imageComp.fillAmount = 1.0f;
+                textNormal.text = "Prepare game scene wait...";
+                SceneManager.LoadScene(4);
             }
         }
         
@@ -62,4 +65,5 @@ public class LoadingScene : MonoBehaviour {
             Debug.Log("Send message to world enter");
             PhotonEngine.Instance.SendRequest(MessageOperationCode.World, MessageSubCode.EnterWorld,null);
         }
+    }
 }

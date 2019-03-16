@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using GameCommon;
+using MGFClient;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,7 +17,7 @@ namespace ClientHandlers.Character
                         parameters[(byte) MessageParameterCode.Object]);
                 
                 Debug.LogFormat("Character selected successfully. Your character is {0}", selectedCharacter.Name);
-                
+                GameData.Instance.selectedCharacter = selectedCharacter;
                 SceneManager.LoadScene(3); // go back to select character scene
             }
             else

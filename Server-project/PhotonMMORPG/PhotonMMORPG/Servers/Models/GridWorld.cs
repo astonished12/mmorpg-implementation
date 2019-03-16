@@ -29,6 +29,7 @@ namespace Servers.Models
                     this.worldRegions[x][y] = new Region(x, y) {Name = "Region "+totalRegion, ZoneId = Guid.NewGuid() };
                     totalRegion += 1;
                     //SET UP CACHE HERE?!
+                    
                 }
             }
         }

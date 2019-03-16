@@ -22,14 +22,14 @@
           <e p="GameMessageHandler.cs" t="Include" />
           <e p="Loading" t="Include">
             <e p="PlayerWorldEnterResponseHandler.cs" t="Include" />
-            <e p="PlayerWorldRegionEnterResponseHandler.cs" t="Include" />
+            <e p="PlayerWorldRequestRegionResponseHandler.cs" t="Include" />
           </e>
         </e>
         <e p="ClientViews" t="Include">
           <e p="CharacterCreateView.cs" t="Include" />
           <e p="CharacterSelectView.cs" t="Include" />
-          <e p="SceneView.cs" t="Include" />
-          <e p="TestView.cs" t="Include" />
+          <e p="GameSceneView.cs" t="Include" />
+          <e p="LoginView.cs" t="Include" />
         </e>
         <e p="FromStore" t="Include">
           <e p="Fantasy Lands" t="Include">
@@ -231,6 +231,7 @@
         </e>
         <e p="MGFClient" t="Include">
           <e p="EngineState.cs" t="Include" />
+          <e p="GameData.cs" t="Include" />
           <e p="IMessageHandler.cs" t="Include" />
           <e p="Message" t="Include">
             <e p="Implementation" t="Include">
@@ -255,12 +256,13 @@
           </e>
           <e p="GameMessage.cs" t="Include" />
           <e p="GameSceneScripts" t="Include">
-            <e p="ClientData.cs" t="Include" />
             <e p="Movement.cs" t="Include" />
             <e p="Player.cs" t="Include" />
             <e p="World.cs" t="Include" />
           </e>
-          <e p="LoadingScene.cs" t="Include" />
+          <e p="LoadingSceneScripts" t="Include">
+            <e p="LoadingScene.cs" t="Include" />
+          </e>
         </e>
         <e p="Standard Assets" t="Include">
           <e p="CrossPlatformInput" t="Include">

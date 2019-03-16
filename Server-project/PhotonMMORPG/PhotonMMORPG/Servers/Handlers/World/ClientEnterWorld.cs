@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ExitGames.Logging;
 using GameCommon;
 using MultiplayerGameFramework.Implementation.Messaging;
@@ -13,7 +11,6 @@ using Servers.Data.Client;
 using Servers.Models;
 using Servers.Services.Interfaces;
 using ServiceStack.Redis;
-using ServiceStack.Text;
 
 namespace Servers.Handlers.World
 {

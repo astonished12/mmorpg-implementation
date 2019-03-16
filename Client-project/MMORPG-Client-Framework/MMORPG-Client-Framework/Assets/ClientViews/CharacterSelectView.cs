@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using ExitGames.Client.Photon;
 using GameCommon;
+using MGFClient;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

@@ -7,6 +7,7 @@ using Assets.Scripts;
 using ExitGames.Client.Photon;
 using GameCommon;
 using JetBrains.Annotations;
+using MGFClient;
 using UnityEngine;
 
 public class PhotonEngine : MonoBehaviour, IPhotonPeerListener

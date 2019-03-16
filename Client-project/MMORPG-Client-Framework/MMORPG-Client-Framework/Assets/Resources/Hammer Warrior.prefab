@@ -611,7 +611,7 @@ GameObject:
   - component: {fileID: 4953648232275936}
   - component: {fileID: 95848822676486832}
   - component: {fileID: 143899103427458890}
-  - component: {fileID: 114624926383727942}
+  - component: {fileID: 114589131515381272}
   m_Layer: 0
   m_Name: Hammer Warrior
   m_TagString: Untagged
@@ -1758,7 +1758,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114624926383727942
+--- !u!114 &114589131515381272
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1766,7 +1766,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1620084099045980}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de48f0d5310b2a146b07816f415991f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b1179d0e4378154fbc66273e2741d69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6

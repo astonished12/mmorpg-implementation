@@ -19,7 +19,10 @@ namespace MGFClient
 
 		[SerializeField]
 		public Region region;
-	
+
+		public List<Player> players;
+		
+		
 		void Awake()
 		{
 			if (Instance == null)
@@ -33,6 +36,11 @@ namespace MGFClient
 			}
 
 			DontDestroyOnLoad(gameObject);
+		}
+
+		void Start()
+		{
+			players = new List<Player>();
 		}
 		
 

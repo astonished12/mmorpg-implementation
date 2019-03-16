@@ -62,7 +62,7 @@ namespace Servers.Handlers.Proxy
                         }
                         else if (message.SubCode == (int?) MessageSubCode.RequestRegion)
                         {
-
+                            
                         }
                     }
 

@@ -173,6 +173,7 @@
     <Compile Include="Handlers\Proxy\WorldOperationsResponseHandler.cs" />
     <Compile Include="Handlers\Regions\ClientEnterRegion.cs" />
     <Compile Include="Handlers\World\ClientEnterWorld.cs" />
+    <Compile Include="Handlers\World\ClientOperationsRegion.cs" />
     <Compile Include="Handlers\World\ClientRequestRegion.cs" />
     <Compile Include="Models\Character.cs" />
     <Compile Include="Models\Factories\NpcFactory.cs" />
@@ -245,6 +246,10 @@
     <None Include="log4net.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
+    </None>
+    <None Include="RegionServer1.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="WorldServer.config">
       <SubType>Designer</SubType>

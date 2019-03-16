@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using ClientHandlers;
 using GameCommon;
+using LoadingSceneScripts;
+using MGFClient;
 using UnityEngine;
 
 namespace ClientHandlers.Loading
@@ -9,7 +11,7 @@ namespace ClientHandlers.Loading
     {
         protected override void OnHandleMessage(Dictionary<byte, object> parameters, string debugMessage, int returnCode)
         {
-            LoadingScene.imageComp.fillAmount = 0.25f;
+            LoadingScene.imageComp.fillAmount += 0.25f;
             Debug.Log("Client was added to the world");
             SendGetRegion();
             
