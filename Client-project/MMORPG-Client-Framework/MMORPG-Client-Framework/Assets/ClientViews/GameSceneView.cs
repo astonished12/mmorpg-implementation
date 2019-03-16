@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using GameCommon;
 using UnityEngine;
 
-public class SceneView : MonoBehaviour {
+public class GameSceneView : MonoBehaviour {
 
 	void Awake()
 	{
