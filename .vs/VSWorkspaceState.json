@@ -5,15 +5,13 @@
     "\\Server-project",
     "\\Server-project\\PhotonMMORPG",
     "\\Server-project\\PhotonMMORPG\\PhotonMMORPG",
-    "\\Server-project\\PhotonMMORPG\\PhotonMMORPG\\MultiplayerGameFramework",
     "\\Server-project\\PhotonMMORPG\\PhotonMMORPG\\MultiplayerGameFramework\\Interfaces",
     "\\Server-project\\PhotonMMORPG\\PhotonMMORPG\\MultiplayerGameFramework\\Interfaces\\Server",
     "\\Server-project\\PhotonMMORPG\\PhotonMMORPG\\Servers",
-    "\\Server-project\\PhotonMMORPG\\PhotonMMORPG\\Servers\\Handlers",
-    "\\Server-project\\PhotonMMORPG\\PhotonMMORPG\\Servers\\Handlers\\Proxy",
-    "\\Server-project\\PhotonMMORPG\\PhotonMMORPG\\Servers\\Handlers\\World",
-    "\\Server-project\\PhotonMMORPG\\PhotonMMORPG\\Servers\\Modules"
+    "\\Server-project\\PhotonMMORPG\\PhotonMMORPG\\Servers\\Data\\Server",
+    "\\Server-project\\PhotonMMORPG\\PhotonMMORPG\\Servers\\Models",
+    "\\Server-project\\PhotonMMORPG\\PhotonMMORPG\\Servers\\Models\\Factories"
   ],
-  "SelectedNode": "\\Server-project\\PhotonMMORPG\\PhotonMMORPG\\Servers\\Handlers\\World\\ClientOperationsRegion.cs",
+  "SelectedNode": "\\Server-project\\PhotonMMORPG\\PhotonMMORPG\\Servers\\Models\\Factories\\RegionFactory.cs",
   "PreviewInSolutionExplorer": false
 }

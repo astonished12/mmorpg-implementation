@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using ExitGames.Logging;
 using GameCommon;
+using MultiplayerGameFramework.Implementation.Config;
 using MultiplayerGameFramework.Implementation.Messaging;
 using MultiplayerGameFramework.Interfaces.Client;
 using MultiplayerGameFramework.Interfaces.Messaging;
 using MultiplayerGameFramework.Interfaces.Server;
+using MultiplayerGameFramework.Interfaces.Support;
 using Servers.Data.Client;
 using Servers.Models;
 using Servers.Services.Interfaces;
@@ -21,15 +23,18 @@ namespace Servers.Handlers.World
         private IConnectionCollection<IClientPeer> ConnectionCollection { get; set; }
         private IRedisClientsManager ClientsManager { get; set; }
         private IRedisPubSubServer RedisPubSub { get; set; }
-             
+        private IPeerFactory PeerFactory;
+
         public ClientEnterWorld(ILogger log, IWorldService worldService, IConnectionCollection<IClientPeer> connectionCollection,
-            IRedisClientsManager clientsManager, IRedisPubSubServer redisPubSubServer)
+            IRedisClientsManager clientsManager, IRedisPubSubServer redisPubSubServer,
+            IPeerFactory peerFactory)
         {
             Log = log;
             WorldService = worldService;
             ConnectionCollection = connectionCollection;
             ClientsManager = clientsManager;
             RedisPubSub = redisPubSubServer;
+            PeerFactory = peerFactory;
         }
 
         public MessageType Type => MessageType.Request;
@@ -42,6 +47,13 @@ namespace Servers.Handlers.World
         {
             var playerData = MessageSerializerService.DeserializeObjectOfType<CharacterData>(message.Parameters[(byte)MessageParameterCode.Object]);
 
+            var clientPeerGuid = new Guid((byte[])message.Parameters[(byte)MessageParameterCode.PeerId]);
+            var clientpeer = PeerFactory.CreatePeer<IClientPeer>(new PeerConfig());
+            clientpeer.PeerId = clientPeerGuid;
+            
+            // Add to connection collection
+            ConnectionCollection.Connect(clientpeer);
+
             Response response;
             if (playerData != null)
             {
@@ -50,9 +62,9 @@ namespace Servers.Handlers.World
                     UserId = playerData.UserId,
                     ServerPeer = peer,
                     Name = playerData.SelectedCharacter.Name,
-                    Client = ConnectionCollection.GetPeers<IClientPeer>().FirstOrDefault(clientPeer =>
-                        clientPeer.PeerId == (Guid)message.Parameters[(byte)MessageParameterCode.PeerId])
+                    ClientPeerId = clientPeerGuid
                 };
+
                 Log.DebugFormat("On Client EnterWorld:    New player added to world server {0}", player.Name);
 
                 using (IRedisClient redis = ClientsManager.GetClient())

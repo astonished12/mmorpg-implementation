@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Autofac;
 using Servers.Config;
+using Servers.Data.Client;
 using Servers.Handlers.World;
 using Servers.Models;
 using Servers.PubSubModels;
@@ -19,19 +20,22 @@ namespace Servers.Modules
         protected override void Load(ContainerBuilder builder)  
         {
             base.Load(builder);
+
             builder.RegisterType<ServerType>().AsImplementedInterfaces();
+            builder.RegisterType<CharacterData>().AsImplementedInterfaces();
 
             builder.RegisterType<ClientCodeRemove>().AsImplementedInterfaces();
+
+            builder.RegisterType<World>().AsSelf()
+                .AsImplementedInterfaces()
+                .SingleInstance();
 
             builder.RegisterType<WorldService>().AsImplementedInterfaces();
             builder.RegisterType<ClientEnterWorld>().AsImplementedInterfaces();
             builder.RegisterType<ClientRequestRegion>().AsImplementedInterfaces();
-            builder.RegisterType<ClientOperationsRegion>().AsImplementedInterfaces();
+            builder.RegisterType<ClientOperationsForwardRegion>().AsImplementedInterfaces();
 
-            builder.RegisterType<World>().AsSelf()
-                                         .AsImplementedInterfaces()
-                                         .SingleInstance();
-
+          
 
             builder.Register<IRedisClientsManager>(c =>
                 new BasicRedisClientManager("localhost:6379"));

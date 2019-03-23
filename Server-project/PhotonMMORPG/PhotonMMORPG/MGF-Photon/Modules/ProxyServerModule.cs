@@ -40,6 +40,8 @@ namespace MGF_Photon.Modules
 
             builder.RegisterType<HandleServerRegistration>().AsImplementedInterfaces();
             builder.RegisterType<ServerData>().AsImplementedInterfaces();
+            builder.RegisterType<RegisterSubServerResponseHandler>().AsImplementedInterfaces();
+
 
         }
     }

@@ -4,10 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MGF_Photon.Implementation.Data;
+using MultiplayerGameFramework.Interfaces.Config;
+using MultiplayerGameFramework.Interfaces.Server;
+using Servers.Config;
 
 namespace Servers.Models
 {
-    public class GridWorld 
+    public class GridWorld
     {
         private readonly Region[][] worldRegions;
 
@@ -26,10 +30,9 @@ namespace Servers.Models
                 this.worldRegions[x] = new Region[TileY];
                 for (int y = 0; y < TileY; y++)
                 {
-                    this.worldRegions[x][y] = new Region(x, y) {Name = "Region "+totalRegion, ZoneId = Guid.NewGuid() };
+                    this.worldRegions[x][y] = new Region(x, y) { Name = "Region " + totalRegion, ZoneId = Guid.NewGuid() };
                     totalRegion += 1;
-                    //SET UP CACHE HERE?!
-                    
+
                 }
             }
         }
@@ -85,6 +88,26 @@ namespace Servers.Models
             yield break;
         }
 
+        public Region[][] GetAllRegions()
+        {
+            return this.worldRegions;
+        }
+
+        public void SetRegionsToServers(IServerConnectionCollection<IServerType, IServerPeer> serverConnectionCollection)
+        {
+            var regionServers = serverConnectionCollection.GetServersByType<IServerPeer>(ServerType.RegionServer).ToList();
+            for (int i = 0; i <= worldRegions.GetUpperBound(0); i++)
+            {
+                var srvApplicationName = regionServers[i].ServerData<ServerData>().ApplicationName;
+           
+                foreach (var region in worldRegions[i])
+                {
+                    region.ApplicationServerName = srvApplicationName;
+                }
+            }
+
+
+        }
     }
 }
 

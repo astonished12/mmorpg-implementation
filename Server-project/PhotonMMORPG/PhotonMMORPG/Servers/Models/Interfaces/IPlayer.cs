@@ -11,7 +11,7 @@ namespace Servers.Models.Interfaces
 {
     public interface IPlayer
     {
-        IClientPeer Client { get; set; }
+        Guid ClientPeerId { get; set; }
         IServerPeer ServerPeer { get; set; }
         int UserId { get; set; }
         string Name { get; set; }

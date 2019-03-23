@@ -73,6 +73,8 @@ namespace Servers.Handlers.Proxy
                                 MessageSerializerService.DeserializeObjectOfType<Character>(response.Parameters[(byte)MessageParameterCode.Object]);
                         }
 
+                        clientPeer.ClientData<CharacterData>().PeerId =
+                            new Guid((byte[]) message.Parameters[(byte) MessageParameterCode.PeerId]);
                     }
                     // copy our response to a return response
                     Response returnResponse = new Response(Code, SubCode, message.Parameters);

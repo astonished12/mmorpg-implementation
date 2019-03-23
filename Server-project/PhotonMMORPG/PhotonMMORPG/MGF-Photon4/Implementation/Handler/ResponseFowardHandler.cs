@@ -45,7 +45,7 @@ namespace MGF_Photon.Implementation.Handler
 
         public override bool OnHandleMessage(IMessage message, IServerPeer serverPeer)
         {
-            Log.DebugFormat("Forwarding Response {0}-{1}", message.Code, message.SubCode);
+            Log.DebugFormat("Forwarding Response  {0}-{1}", message.Code, message.SubCode);
             if (message.Parameters.ContainsKey(_serverConfiguration.PeerIdCode))
             {
                 Log.DebugFormat("Looking for Peer Id {0}", new Guid((Byte[])message.Parameters[_serverConfiguration.PeerIdCode]));

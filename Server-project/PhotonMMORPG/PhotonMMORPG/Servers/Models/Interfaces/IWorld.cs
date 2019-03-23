@@ -11,6 +11,7 @@ namespace Servers.Models.Interfaces
     public interface IWorld
     {
         int WorldTick { get; }
+        GridWorld GridWorld { get; }
         IRegion GetRegion(Vector pos);
         ReturnCode AddPlayer(IPlayer player);
         ReturnCode RemovePlayer(IPlayer player);

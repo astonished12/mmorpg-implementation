@@ -11,7 +11,7 @@ namespace Servers.Models
 {
     public class Player : IPlayer
     {
-        public IClientPeer Client { get; set; }
+        public Guid ClientPeerId { get; set; }
         public IServerPeer ServerPeer { get; set; }
         public int UserId { get; set; }
         public string Name { get; set; }

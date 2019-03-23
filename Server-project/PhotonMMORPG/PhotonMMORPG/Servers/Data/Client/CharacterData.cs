@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GameCommon.SerializedObjects;
 using MultiplayerGameFramework.Interfaces.Client;
+using Servers.Models.Interfaces;
 
 namespace Servers.Data.Client
 {
@@ -14,5 +15,6 @@ namespace Servers.Data.Client
         public List<Character> Characters { get; set; }
         public Character SelectedCharacter { get; set; }
         public Guid PeerId { get; set; }
+        public IRegion Region { get; set; }
     }
 }

@@ -13,6 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GameCommon.SerializedObjects;
+using Servers.Models.Interfaces;
 
 namespace Servers.Handlers.Proxy
 {
@@ -57,11 +58,12 @@ namespace Servers.Handlers.Proxy
                         // Good response, get the client data and look for the userId to set it for the future.
                         if (message.SubCode == (int?) MessageSubCode.EnterWorld)
                         {
-                            //clientPeer.ClientData<CharacterData>().UserId =
-                            //    (int) response.Parameters[(byte) MessageParameterCode.UserId];
+                            
                         }
                         else if (message.SubCode == (int?) MessageSubCode.RequestRegion)
                         {
+                            clientPeer.ClientData<CharacterData>().Region =
+                                MessageSerializerService.DeserializeObjectOfType<Servers.Models.Region>(response.Parameters[(byte)MessageParameterCode.Object]);
                             
                         }
                     }

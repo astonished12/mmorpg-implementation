@@ -173,11 +173,12 @@
     <Compile Include="Handlers\Proxy\WorldOperationsResponseHandler.cs" />
     <Compile Include="Handlers\Regions\ClientEnterRegion.cs" />
     <Compile Include="Handlers\World\ClientEnterWorld.cs" />
-    <Compile Include="Handlers\World\ClientOperationsRegion.cs" />
+    <Compile Include="Handlers\World\ClientOperationsForwardRegion.cs" />
     <Compile Include="Handlers\World\ClientRequestRegion.cs" />
     <Compile Include="Models\Character.cs" />
     <Compile Include="Models\Factories\NpcFactory.cs" />
     <Compile Include="Models\Factories\QuestFactory.cs" />
+    <Compile Include="Models\Factories\RegionFactory.cs" />
     <Compile Include="Models\GridWorld.cs" />
     <Compile Include="Models\Interfaces\IFactory.cs" />
     <Compile Include="Models\Interfaces\IQuest.cs" />

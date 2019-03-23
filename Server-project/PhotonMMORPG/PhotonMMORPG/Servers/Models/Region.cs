@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MultiplayerGameFramework.Interfaces.Server;
 using Photon.SocketServer.Concurrency;
 using Servers.Models.Interfaces;
+using StackExchange.Redis;
 
 namespace Servers.Models
 {
@@ -47,6 +49,8 @@ namespace Servers.Models
         public IWorld World { get; set; }
 
         public int GameTick { get; set; }
+
+        public string ApplicationServerName { get; set; }
 
 
         public override string ToString()

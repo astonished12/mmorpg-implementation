@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 using ExitGames.Logging;
 using GameCommon;
 using MGF.Mappers;
+using MultiplayerGameFramework.Implementation.Server;
+using MultiplayerGameFramework.Interfaces.Config;
+using MultiplayerGameFramework.Interfaces.Server;
 using Photon.MmoDemo.Common;
+using Servers.Config;
 using Servers.Models;
 using Servers.Models.Interfaces;
 using Servers.Services.Interfaces;
@@ -20,13 +24,18 @@ namespace Servers.Services.WorldServices
         private IRedisPubSubServer WorldRedisPubSubServer { get; set; }
         private IRedisClientsManager ClientsManager { get; set; }
         private ILogger Log { get; set; }
+        private bool _regionWasAssignedToRegionServers;
+        private IServerConnectionCollection<IServerType, IServerPeer> ServerConnectionCollection { get; set; }
 
-        public WorldService(IWorld world, IRedisPubSubServer worldRedisPubSubServer, IRedisClientsManager clientsManager, ILogger log)
+        public WorldService(IWorld world, IRedisPubSubServer worldRedisPubSubServer, IRedisClientsManager clientsManager,
+            ILogger log, IServerConnectionCollection<IServerType, IServerPeer> serverConnectionCollection)
         {
             World = world;
             WorldRedisPubSubServer = worldRedisPubSubServer;
             ClientsManager = clientsManager;
             Log = log;
+            ServerConnectionCollection = serverConnectionCollection;
+
         }
 
         public ReturnCode AddNewPlayerToWorld(IPlayer player)
@@ -42,6 +51,8 @@ namespace Servers.Services.WorldServices
                 return the spawn Position on terrain A.K.A newPosition , add player to cache              
             then => emit to all world consumers that the player is here and is ready to join !!!!!!!!!!!!!!!!!!! (LATER)             
             */
+
+            this.AssignRegionServerToGameWorldRegion(ServerConnectionCollection);
 
             Vector pos;
             using (IRedisClient redis = ClientsManager.GetClient())
@@ -72,6 +83,16 @@ namespace Servers.Services.WorldServices
         public IWorld GetWorld()
         {
             return World;
+        }
+
+
+        public void AssignRegionServerToGameWorldRegion(IServerConnectionCollection<IServerType, IServerPeer> ServerConnectionCollection)
+        {
+            if (_regionWasAssignedToRegionServers == false)
+            {
+                World.GridWorld.SetRegionsToServers(ServerConnectionCollection);
+                _regionWasAssignedToRegionServers = true;
+            }
         }
     }
 }
