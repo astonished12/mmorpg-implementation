@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Autofac;
 using Servers.Handlers.Regions;
 using Servers.Models;
+using Servers.Services.RegionService;
+using Servers.Services.WorldServices;
 
 namespace Servers.Modules
 {
@@ -14,6 +16,9 @@ namespace Servers.Modules
         protected override void Load(ContainerBuilder builder)
         {
             base.Load(builder);
+            
+            builder.RegisterType<RegionService>().AsImplementedInterfaces();
+
             builder.RegisterType<ClientEnterRegion>().AsImplementedInterfaces();
 
             builder.RegisterType<World>().AsSelf()

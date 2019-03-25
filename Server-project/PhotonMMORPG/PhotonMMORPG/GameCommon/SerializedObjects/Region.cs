@@ -9,5 +9,7 @@ namespace GameCommon.SerializedObjects
     public class Region
     {
         public string Name { get; set; }
+        public string ApplicationServerName { get; set; }
+
     }
 }

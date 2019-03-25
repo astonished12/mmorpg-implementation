@@ -16,7 +16,8 @@ namespace Servers.Services.Interfaces
         IRegion GetRegionForPlayer(IPlayer player);
         IWorld GetWorld();
 
-        void AssignRegionServerToGameWorldRegion(
-            IServerConnectionCollection<IServerType, IServerPeer> ServerConnectionCollection);
+        //void AssignRegionServerToGameWorldRegion(
+        //    IServerConnectionCollection<IServerType, IServerPeer> ServerConnectionCollection);
+        void AssignRegionServerToGameWorldRegion();
     }
 }

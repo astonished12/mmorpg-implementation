@@ -105,8 +105,6 @@ namespace Servers.Models
                     region.ApplicationServerName = srvApplicationName;
                 }
             }
-
-
         }
     }
 }

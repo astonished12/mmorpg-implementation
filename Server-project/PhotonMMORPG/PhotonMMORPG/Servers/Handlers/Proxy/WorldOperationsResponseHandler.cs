@@ -63,7 +63,7 @@ namespace Servers.Handlers.Proxy
                         else if (message.SubCode == (int?) MessageSubCode.RequestRegion)
                         {
                             clientPeer.ClientData<CharacterData>().Region =
-                                MessageSerializerService.DeserializeObjectOfType<Servers.Models.Region>(response.Parameters[(byte)MessageParameterCode.Object]);
+                                MessageSerializerService.DeserializeObjectOfType<Region>(response.Parameters[(byte)MessageParameterCode.Object]);
                             
                         }
                     }

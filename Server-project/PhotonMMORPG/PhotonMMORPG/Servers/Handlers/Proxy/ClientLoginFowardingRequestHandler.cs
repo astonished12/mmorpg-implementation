@@ -40,8 +40,6 @@ namespace Servers.Handlers.Proxy
             Log.DebugFormat("Found {0} login servers", 
                 loginServer.Count);
 
-            
-
             //Add in any additional data we need before sending the message - the actual peer id of the client, any other data
             AddMessageData(message, peer);
             var login = loginServer.FirstOrDefault();

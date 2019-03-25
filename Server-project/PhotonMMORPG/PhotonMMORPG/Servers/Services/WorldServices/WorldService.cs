@@ -35,6 +35,7 @@ namespace Servers.Services.WorldServices
             ClientsManager = clientsManager;
             Log = log;
             ServerConnectionCollection = serverConnectionCollection;
+            //this.AssignRegionServerToGameWorldRegion();
 
         }
 
@@ -52,7 +53,7 @@ namespace Servers.Services.WorldServices
             then => emit to all world consumers that the player is here and is ready to join !!!!!!!!!!!!!!!!!!! (LATER)             
             */
 
-            this.AssignRegionServerToGameWorldRegion(ServerConnectionCollection);
+            //this.AssignRegionServerToGameWorldRegion(ServerConnectionCollection);
 
             Vector pos;
             using (IRedisClient redis = ClientsManager.GetClient())
@@ -86,7 +87,8 @@ namespace Servers.Services.WorldServices
         }
 
 
-        public void AssignRegionServerToGameWorldRegion(IServerConnectionCollection<IServerType, IServerPeer> ServerConnectionCollection)
+        //public void AssignRegionServerToGameWorldRegion(IServerConnectionCollection<IServerType, IServerPeer> ServerConnectionCollection)
+        public void AssignRegionServerToGameWorldRegion()
         {
             if (_regionWasAssignedToRegionServers == false)
             {

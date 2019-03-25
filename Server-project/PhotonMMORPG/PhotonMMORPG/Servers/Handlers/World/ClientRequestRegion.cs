@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ExitGames.Logging;
 using GameCommon;
+using GameCommon.SerializedObjects;
 using MultiplayerGameFramework.Implementation.Config;
 using MultiplayerGameFramework.Implementation.Messaging;
 using MultiplayerGameFramework.Interfaces.Client;
@@ -60,8 +61,11 @@ namespace Servers.Handlers.World
             var region = WorldService.GetRegionForPlayer(player);
 
             ConnectionCollection.GetPeers<IClientPeer>().FirstOrDefault(x => x.PeerId == clientPeerGuid)
-                .ClientData<CharacterData>().Region = region;
-
+                .ClientData<CharacterData>().Region = new GameCommon.SerializedObjects.Region()
+            {
+                Name = region.Name,
+                ApplicationServerName =  region.ApplicationServerName
+            };
 
             Response response = region == null
                 ? new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "Region can't be determined ", (short)ReturnCode.NoRegion)

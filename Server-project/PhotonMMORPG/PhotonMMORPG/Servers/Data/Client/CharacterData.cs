@@ -15,6 +15,6 @@ namespace Servers.Data.Client
         public List<Character> Characters { get; set; }
         public Character SelectedCharacter { get; set; }
         public Guid PeerId { get; set; }
-        public IRegion Region { get; set; }
+        public Region Region { get; set; }
     }
 }

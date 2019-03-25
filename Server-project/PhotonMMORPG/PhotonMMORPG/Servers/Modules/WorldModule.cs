@@ -4,11 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Autofac;
+using MultiplayerGameFramework.Interfaces.Config;
+using MultiplayerGameFramework.Interfaces.Server;
 using Servers.Config;
 using Servers.Data.Client;
 using Servers.Handlers.World;
 using Servers.Models;
 using Servers.PubSubModels;
+using Servers.Services.Interfaces;
 using Servers.Services.WorldServices;
 using Servers.Support;
 using ServiceStack.Redis;
@@ -41,6 +44,28 @@ namespace Servers.Modules
                 new BasicRedisClientManager("localhost:6379"));
 
             builder.RegisterType<WorldRedisPubSub>().As<IRedisPubSubServer>();
+
+            builder.RegisterBuildCallback(c =>
+            {
+                Task.Run(async () =>
+                {
+                    while (true)
+                    {
+                        // update the UI on the UI thread
+                        var x = c.Resolve<IServerConnectionCollection<IServerType, IServerPeer>>();
+                        var y = x.GetServersByType<IServerPeer>(ServerType.RegionServer);
+                        //TO DO ADD HERE CODITION TO BREAK MUST WORK IF NOT STOP THIS MADNESS:x
+                        if (y.Count == 2)
+                        {
+                            c.Resolve<IWorldService>().AssignRegionServerToGameWorldRegion();
+                            break;
+                        }
+                        // don't run again for at least 200 milliseconds
+                        await Task.Delay(200);
+                    }
+                });
+              
+            });
 
         }
     }

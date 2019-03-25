@@ -61,7 +61,7 @@ namespace Servers.Handlers.World
             var regionServerNameBasedOnClientRegion = clientData.Region;
 
             //Add in any additional data we need before sending the message - the actual peer id of the client, any other data
-            //AddMessageData(message, peer);
+            //AddMessageData(message, clientPeerGuid);
             var regServer = regionServers.FirstOrDefault(x=>x.ServerData<ServerData>().ApplicationName.Equals(regionServerNameBasedOnClientRegion.ApplicationServerName));
             if (regServer != null)
             {
@@ -69,7 +69,13 @@ namespace Servers.Handlers.World
                 Log.DebugFormat("Forwarded the message to region server {0} ", regServer.Server.ApplicationName);
                 messageForwarded = true;
             }
+
             return messageForwarded;
+        }
+
+        private void AddMessageData(IMessage message, Guid clientPeerGuid)
+        {
+            
         }
     }
 }
