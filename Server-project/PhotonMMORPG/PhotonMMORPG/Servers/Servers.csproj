@@ -171,6 +171,7 @@
     <Compile Include="Handlers\Login\LoginCharacterSelectionHandler.cs" />
     <Compile Include="Handlers\Proxy\ClientWorldFowardingRequestHandler.cs" />
     <Compile Include="Handlers\Proxy\WorldOperationsResponseHandler.cs" />
+    <Compile Include="Handlers\Regions\AssignAreaMapRegionHandler.cs" />
     <Compile Include="Handlers\Regions\ClientEnterRegion.cs" />
     <Compile Include="Handlers\World\ClientEnterWorld.cs" />
     <Compile Include="Handlers\World\ClientOperationsForwardRegion.cs" />

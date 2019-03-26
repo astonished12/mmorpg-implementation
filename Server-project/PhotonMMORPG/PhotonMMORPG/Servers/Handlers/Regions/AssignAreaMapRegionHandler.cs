@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,18 +8,17 @@ using GameCommon;
 using MultiplayerGameFramework.Implementation.Messaging;
 using MultiplayerGameFramework.Interfaces.Messaging;
 using MultiplayerGameFramework.Interfaces.Server;
-using Servers.Data.Client;
+using Servers.Models;
 using Servers.Services.Interfaces;
 
 namespace Servers.Handlers.Regions
 {
-    public class ClientEnterRegion : IHandler<IServerPeer>
+    public class AssignAreaMapRegionHandler : IHandler<IServerPeer>
     {
-
         private ILogger Log { get; set; }
         private IRegionService RegionService { get; set; }
 
-        public ClientEnterRegion(ILogger log, IRegionService regionService)
+        public AssignAreaMapRegionHandler(ILogger log, IRegionService regionService)
         {
             Log = log;
             RegionService = regionService;
@@ -28,21 +26,14 @@ namespace Servers.Handlers.Regions
 
         public MessageType Type => MessageType.Request;
 
-        public byte Code => (byte) MessageOperationCode.World;
-        public int? SubCode => (int?) MessageSubCode.EnterRegion;
+        public byte Code => (byte)MessageOperationCode.Region;
+
+        public int? SubCode => (int) MessageSubCode.AssignAreaMap;
 
         public bool HandleMessage(IMessage message, IServerPeer peer)
         {
-            var clientData =
-                MessageSerializerService.DeserializeObjectOfType<CharacterData>(
-                    message.Parameters[(byte) MessageParameterCode.Object]);
+            var regions = MessageSerializerService.DeserializeObjectOfType<Region[]>(message.Parameters[(byte) MessageParameterCode.Object]);
 
-           //var x =  WorldService.GetWorld().GridWorld.GetAllRegions();
-            //RegionService.AddPlayer();
-
-
-            Response response = new Response(Code, SubCode, new Dictionary<byte, object>()); 
-            peer.SendMessage(response);
             return true;
         }
     }

@@ -15,6 +15,7 @@ namespace GameCommon
         CreateCharacter,
         EnterRegion,
         EnterWorld,
-        RequestRegion
+        RequestRegion,
+        AssignAreaMap
     }
 }

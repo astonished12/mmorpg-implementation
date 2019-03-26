@@ -18,7 +18,6 @@ namespace Servers.Models
     {
         public List<IPlayer> Clients { get; set; }
         public GridWorld GridWorld { get; }
-        private IServerConnectionCollection<IServerType, IServerPeer> ServerConnectionCollection { get; set; }
 
         private readonly ReaderWriterLockSlim _readerWriterLock;
         private readonly BoundingBox _boundingBox;
@@ -30,8 +29,7 @@ namespace Servers.Models
         // PUT THEM INTO CONFIG
 
         public int WorldTick { get; }
-
-        public World(IServerConnectionCollection<IServerType, IServerPeer> serverConnectionCollection)
+        public World()
         {
             Clients = new List<IPlayer>();
 

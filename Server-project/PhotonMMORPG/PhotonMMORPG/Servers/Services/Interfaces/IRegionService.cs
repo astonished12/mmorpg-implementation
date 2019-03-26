@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Servers.Models.Interfaces;
 
 namespace Servers.Services.Interfaces
 {
     public interface IRegionService
     {
+        void AddPlayer(IPlayer player);
+        void DeletePlayer(IPlayer player);
+        void AssignAreaMapToServer();
 
     }
 }

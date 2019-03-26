@@ -4,9 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameCommon;
 using MGF_Photon.Implementation.Data;
+using MultiplayerGameFramework.Implementation.Messaging;
 using MultiplayerGameFramework.Interfaces.Config;
+using MultiplayerGameFramework.Interfaces.Messaging;
 using MultiplayerGameFramework.Interfaces.Server;
+using Photon.SocketServer;
 using Servers.Config;
 
 namespace Servers.Models
@@ -99,12 +103,23 @@ namespace Servers.Models
             for (int i = 0; i <= worldRegions.GetUpperBound(0); i++)
             {
                 var srvApplicationName = regionServers[i].ServerData<ServerData>().ApplicationName;
-           
+
                 foreach (var region in worldRegions[i])
                 {
                     region.ApplicationServerName = srvApplicationName;
                 }
+
+                IMessage message = new Request((byte)MessageOperationCode.Region,
+                    null,
+                    new Dictionary<byte, object>()
+                    {
+                        { regionServers[i].Server.SubCodeParameterCode,(int) MessageSubCode.AssignAreaMap},
+                        { (byte)MessageParameterCode.Object , MessageSerializerService.SerializeObjectOfType(worldRegions[i]) }
+                    });
+
+                regionServers[i].SendMessage(message);
             }
+
         }
     }
 }

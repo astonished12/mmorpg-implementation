@@ -34,11 +34,10 @@ namespace Servers.Modules
                 .SingleInstance();
 
             builder.RegisterType<WorldService>().AsImplementedInterfaces();
+
             builder.RegisterType<ClientEnterWorld>().AsImplementedInterfaces();
             builder.RegisterType<ClientRequestRegion>().AsImplementedInterfaces();
             builder.RegisterType<ClientOperationsForwardRegion>().AsImplementedInterfaces();
-
-          
 
             builder.Register<IRedisClientsManager>(c =>
                 new BasicRedisClientManager("localhost:6379"));
@@ -53,9 +52,7 @@ namespace Servers.Modules
                     {
                         // update the UI on the UI thread
                         var x = c.Resolve<IServerConnectionCollection<IServerType, IServerPeer>>();
-                        var y = x.GetServersByType<IServerPeer>(ServerType.RegionServer);
-                        //TO DO ADD HERE CODITION TO BREAK MUST WORK IF NOT STOP THIS MADNESS:x
-                        if (y.Count == 2)
+                        if (x.GetServersByType<IServerPeer>(ServerType.RegionServer).Count == 2)
                         {
                             c.Resolve<IWorldService>().AssignRegionServerToGameWorldRegion();
                             break;
