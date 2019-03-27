@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using ExitGames.Logging;
 using GameCommon;
@@ -51,6 +52,7 @@ namespace Servers.Handlers.World
             var clientpeer = PeerFactory.CreatePeer<IClientPeer>(new PeerConfig());
             clientpeer.PeerId = clientPeerGuid;
             
+            Log.DebugFormat("Register client peer in world server {0}", clientPeerGuid);
             // Add to connection collection
             ConnectionCollection.Connect(clientpeer);
 

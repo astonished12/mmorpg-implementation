@@ -16,7 +16,7 @@ namespace Servers.Models.Interfaces
         string Name { get; set; }
         String Description { get; set; }
         Position Position { get; set; }
-        IRegion Region { get; set; }
+        IAreaRegion AreaRegion { get; set; }
         ObjectType Type { get; }
 
         string Prefab { get; set; }

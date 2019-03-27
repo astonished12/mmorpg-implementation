@@ -60,6 +60,10 @@ namespace Servers.Handlers.Proxy
                         {
                             
                         }
+                        else if (message.SubCode == (int?)MessageSubCode.EnterRegion)
+                        {
+
+                        }
                         else if (message.SubCode == (int?) MessageSubCode.RequestRegion)
                         {
                             clientPeer.ClientData<CharacterData>().Region =

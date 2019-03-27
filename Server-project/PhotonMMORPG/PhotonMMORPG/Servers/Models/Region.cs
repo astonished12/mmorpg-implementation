@@ -2,70 +2,53 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
-using MultiplayerGameFramework.Interfaces.Server;
-using Photon.SocketServer.Concurrency;
+using ExitGames.Threading;
+using GameCommon;
 using Servers.Models.Interfaces;
-using StackExchange.Redis;
 
 namespace Servers.Models
 {
-
-    /// <summary>
-    /// Item notifies interest areas via regions this item exits and enters.
-    /// </summary>
-    public class ItemRegionChangedMessage
-    {
-        public ItemRegionChangedMessage(Region r0, Region r1, ItemSnapshot snaphot)
-        {
-            this.Region0 = r0;
-            this.Region1 = r1;
-            this.ItemSnapshot = snaphot;
-        }
-        public Region Region0 { get; private set; }
-        public Region Region1 { get; private set; }
-        public ItemSnapshot ItemSnapshot { get; private set; }
-    };
-
-
     public class Region : IRegion
     {
-        public Region(int x, int y)
+        public List<IPlayer> ClientsInRegion { get; set; }
+        public AreaRegion[] AreaRegions { get; set; }
+        private readonly ReaderWriterLockSlim _readerWriterLock;
+
+        public Region()
         {
-            this.X = x;
-            this.Y = y;
+            ClientsInRegion = new List<IPlayer>();
+            _readerWriterLock = new ReaderWriterLockSlim();
+
         }
 
-        // grid cell X (debug only)
-        public int X { get; private set; }
-
-        // grid cell Y (debug only)
-        public int Y { get; private set; }
-
-        public string Name { get; set; }
-
-        public Guid ZoneId { get; set; }
-
-        public IWorld World { get; set; }
-
-        public int GameTick { get; set; }
-
-        public string ApplicationServerName { get; set; }
-
-
-        public override string ToString()
+        public ReturnCode AddPlayer(IPlayer player)
         {
-            return string.Format("Region({0},{1})", base.ToString(), X, Y);
+            using (ReadLock.TryEnter(this._readerWriterLock, 1000))
+            {
+                var newPlayer = ClientsInRegion.FirstOrDefault(pl => pl.UserId == player.UserId);
+                ReturnCode returnCode;
+                if (null == newPlayer)
+                {
+                    ClientsInRegion.Add(player);
+                    returnCode = ReturnCode.RegionAddedNewPlayer;
+                }
+                else
+                {
+                    returnCode = ReturnCode.RegionContainsPlayer;
+                }
+
+                return returnCode;
+            }
         }
 
-        public void AddObject(IObject obj)
+        public ReturnCode RemovePlayer(IPlayer player)
         {
-            throw new NotImplementedException();
+            ClientsInRegion.Remove(player);
+            return ReturnCode.Ok;
         }
 
-        public void RemoveObject(IObject obj)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }

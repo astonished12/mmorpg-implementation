@@ -15,17 +15,17 @@ namespace Servers.Modules
 {
     public class RegionModule: Module
     {
-        protected bool WorldModuleWasWorldServiceWasLoaded { get; set; }
-
         protected override void Load(ContainerBuilder builder)
         {
             base.Load(builder);
-            
+
+            builder.RegisterType<Region>().AsSelf()
+                .AsImplementedInterfaces()
+                .SingleInstance();
+
             builder.RegisterType<RegionService>().AsImplementedInterfaces();
             builder.RegisterType<AssignAreaMapRegionHandler>().AsImplementedInterfaces();
             builder.RegisterType<ClientEnterRegion>().AsImplementedInterfaces();
-            
-
         }
     }
 }

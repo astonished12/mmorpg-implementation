@@ -42,7 +42,7 @@ namespace Servers.Services.WorldServices
             return World.AddPlayer(player);
         }
 
-        public IRegion GetRegionForPlayer(IPlayer player)
+        public IAreaRegion GetRegionForPlayer(IPlayer player)
         {
             /*to do: Check if player was in the world cache!!!!!!!!!!!!!!! 
                 if it is get position from there and return region by the position !!!!!!!

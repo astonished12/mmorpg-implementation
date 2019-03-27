@@ -239,6 +239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1339995249}
   - component: {fileID: 1339995250}
+  - component: {fileID: 1339995251}
   m_Layer: 0
   m_Name: GameView
   m_TagString: Untagged
@@ -270,6 +271,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d6c594097b5ac4f8a260091527131a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1339995251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1339995248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68cd1ced6aca40a40ad6cd433f74722f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: {fileID: 11400000, guid: 002b5d89b4fb48645832bcc1d0b34f59, type: 2}
 --- !u!1 &1721448899
 GameObject:
   m_ObjectHideFlags: 0

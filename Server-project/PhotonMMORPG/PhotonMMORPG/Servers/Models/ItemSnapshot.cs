@@ -9,7 +9,7 @@ namespace Servers.Models
 {
     public class ItemSnapshot
     {
-        public ItemSnapshot(Item source, Vector position, Vector rotation, Region worldRegion, int propertiesRevision)
+        public ItemSnapshot(Item source, Vector position, Vector rotation, AreaRegion worldAreaRegion, int propertiesRevision)
         {
             this.Source = source;
             this.Position = position;

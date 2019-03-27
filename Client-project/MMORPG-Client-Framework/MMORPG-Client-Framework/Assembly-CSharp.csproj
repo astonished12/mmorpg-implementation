@@ -71,6 +71,7 @@
     <Compile Include="Assets\ClientHandlers\Character\CharacterCreateResponseHandler.cs" />
     <Compile Include="Assets\ClientHandlers\Character\CharacterSelectedResponseHandler.cs" />
     <Compile Include="Assets\ClientHandlers\Character\ListCharacterResponseHandler.cs" />
+    <Compile Include="Assets\ClientHandlers\Game\PlayerEnterRegionHandler.cs" />
     <Compile Include="Assets\ClientHandlers\GameMessageHandler.cs" />
     <Compile Include="Assets\ClientHandlers\Loading\PlayerWorldEnterResponseHandler.cs" />
     <Compile Include="Assets\ClientHandlers\Loading\PlayerWorldRequestRegionResponseHandler.cs" />

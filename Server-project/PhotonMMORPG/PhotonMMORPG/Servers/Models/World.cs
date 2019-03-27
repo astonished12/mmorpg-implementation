@@ -28,7 +28,6 @@ namespace Servers.Models
         private readonly int maxHeightTerrain = 600;
         // PUT THEM INTO CONFIG
 
-        public int WorldTick { get; }
         public World()
         {
             Clients = new List<IPlayer>();
@@ -45,7 +44,7 @@ namespace Servers.Models
 
         }
 
-        public IRegion GetRegion(Vector pos)
+        public IAreaRegion GetRegion(Vector pos)
         {
             return GridWorld.GetRegion(pos);
         }

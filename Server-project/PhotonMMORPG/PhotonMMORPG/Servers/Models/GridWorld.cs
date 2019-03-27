@@ -12,12 +12,13 @@ using MultiplayerGameFramework.Interfaces.Messaging;
 using MultiplayerGameFramework.Interfaces.Server;
 using Photon.SocketServer;
 using Servers.Config;
+using Servers.Models.Interfaces;
 
 namespace Servers.Models
 {
     public class GridWorld
     {
-        private readonly Region[][] worldRegions;
+        private readonly AreaRegion[][] _worldAreaRegions;
 
         public GridWorld(BoundingBox area, Vector tileDimensions)
         {
@@ -27,14 +28,14 @@ namespace Servers.Models
             this.TileX = (int)Math.Ceiling(Area.Size.X / (double)tileDimensions.X);
             this.TileY = (int)Math.Ceiling(Area.Size.Y / (double)tileDimensions.Y);
 
-            this.worldRegions = new Region[TileX][];
+            this._worldAreaRegions = new AreaRegion[TileX][];
             int totalRegion = 0;
             for (int x = 0; x < TileX; x++)
             {
-                this.worldRegions[x] = new Region[TileY];
+                this._worldAreaRegions[x] = new AreaRegion[TileY];
                 for (int y = 0; y < TileY; y++)
                 {
-                    this.worldRegions[x][y] = new Region(x, y) { Name = "Region " + totalRegion, ZoneId = Guid.NewGuid() };
+                    this._worldAreaRegions[x][y] = new AreaRegion(x, y) { Name = "AreaRegion " + totalRegion, ZoneId = Guid.NewGuid() };
                     totalRegion += 1;
 
                 }
@@ -54,14 +55,14 @@ namespace Servers.Models
 
 
 
-        public Region GetRegion(Vector position)
+        public AreaRegion GetRegion(Vector position)
         {
             Vector p = position - this.Area.Min;
             if (p.X >= 0 && p.X < Area.Size.X && p.Y >= 0 && p.Y < Area.Size.Y)
             {
                 int x = (int)(p.X / this.TileDimensions.X);
                 int y = (int)(p.Y / this.TileDimensions.Y);
-                return this.worldRegions[x][y];
+                return this._worldAreaRegions[x][y];
             }
             else
             {
@@ -69,12 +70,12 @@ namespace Servers.Models
             }
         }
 
-        public IEnumerable<Region> GetRegions(BoundingBox area)
+        public IEnumerable<AreaRegion> GetRegions(BoundingBox area)
         {
             return GetRegionsEnumerable(area).ToArray();
         }
 
-        private IEnumerable<Region> GetRegionsEnumerable(BoundingBox area)
+        private IEnumerable<AreaRegion> GetRegionsEnumerable(BoundingBox area)
         {
             BoundingBox overlap = this.Area.IntersectWith(area);
             var min = overlap.Min - this.Area.Min;
@@ -87,24 +88,24 @@ namespace Servers.Models
             for (int x = x0; x < x1; x++)
                 for (int y = y0; y < y1; y++)
                 {
-                    yield return this.worldRegions[x][y];
+                    yield return this._worldAreaRegions[x][y];
                 }
             yield break;
         }
 
-        public Region[][] GetAllRegions()
+        public AreaRegion[][] GetAllRegions()
         {
-            return this.worldRegions;
+            return this._worldAreaRegions;
         }
 
         public void SetRegionsToServers(IServerConnectionCollection<IServerType, IServerPeer> serverConnectionCollection)
         {
             var regionServers = serverConnectionCollection.GetServersByType<IServerPeer>(ServerType.RegionServer).ToList();
-            for (int i = 0; i <= worldRegions.GetUpperBound(0); i++)
+            for (int i = 0; i <= _worldAreaRegions.GetUpperBound(0); i++)
             {
                 var srvApplicationName = regionServers[i].ServerData<ServerData>().ApplicationName;
 
-                foreach (var region in worldRegions[i])
+                foreach (var region in _worldAreaRegions[i])
                 {
                     region.ApplicationServerName = srvApplicationName;
                 }
@@ -114,7 +115,7 @@ namespace Servers.Models
                     new Dictionary<byte, object>()
                     {
                         { regionServers[i].Server.SubCodeParameterCode,(int) MessageSubCode.AssignAreaMap},
-                        { (byte)MessageParameterCode.Object , MessageSerializerService.SerializeObjectOfType(worldRegions[i]) }
+                        { (byte)MessageParameterCode.Object , MessageSerializerService.SerializeObjectOfType(_worldAreaRegions[i]) }
                     });
 
                 regionServers[i].SendMessage(message);

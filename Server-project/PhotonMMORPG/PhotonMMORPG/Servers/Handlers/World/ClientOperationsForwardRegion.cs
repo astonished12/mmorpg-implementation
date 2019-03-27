@@ -47,7 +47,7 @@ namespace Servers.Handlers.World
 
         public bool HandleMessage(IMessage message, IServerPeer peer)
         {
-            Log.DebugFormat("Received Region operations message to forward");
+            Log.DebugFormat("Received AreaRegion operations message to forward");
             var messageForwarded = false;
 
             var regionServers = ServerConnectionCollection.GetServersByType<IServerPeer>(ServerType.RegionServer);

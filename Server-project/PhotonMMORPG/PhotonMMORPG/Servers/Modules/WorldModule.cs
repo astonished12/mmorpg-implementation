@@ -38,6 +38,7 @@ namespace Servers.Modules
             builder.RegisterType<ClientEnterWorld>().AsImplementedInterfaces();
             builder.RegisterType<ClientRequestRegion>().AsImplementedInterfaces();
             builder.RegisterType<ClientOperationsForwardRegion>().AsImplementedInterfaces();
+            builder.RegisterType<RegionOperationsResponseHandler>().AsImplementedInterfaces();
 
             builder.Register<IRedisClientsManager>(c =>
                 new BasicRedisClientManager("localhost:6379"));

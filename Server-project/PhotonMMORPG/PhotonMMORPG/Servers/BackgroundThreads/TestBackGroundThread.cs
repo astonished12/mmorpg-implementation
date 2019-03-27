@@ -19,7 +19,7 @@ namespace Servers.BackgroundThreads
         public ILogger Log { get; set; }
         public IConnectionCollection<IClientPeer> ConnectionCollection { get; set; }
 
-        public TestBackGroundThread(IConnectionCollection<IClientPeer> connectionCollection, ILogger log) // Include IoC objects this thread needs i.e : IRegion, IStats etc
+        public TestBackGroundThread(IConnectionCollection<IClientPeer> connectionCollection, ILogger log) // Include IoC objects this thread needs i.e : IAreaRegion, IStats etc
         {
             ConnectionCollection = connectionCollection;
             Log = log;

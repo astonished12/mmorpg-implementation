@@ -18,7 +18,7 @@ namespace Servers.Models
         public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public Position Position { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public IRegion Region { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public IAreaRegion AreaRegion { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public ObjectType Type => throw new NotImplementedException();
 

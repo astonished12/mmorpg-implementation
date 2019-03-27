@@ -13,7 +13,7 @@ namespace Servers.Services.Interfaces
     public interface IWorldService
     {
         ReturnCode AddNewPlayerToWorld(IPlayer player);
-        IRegion GetRegionForPlayer(IPlayer player);
+        IAreaRegion GetRegionForPlayer(IPlayer player);
         IWorld GetWorld();
 
         //void AssignRegionServerToGameWorldRegion(

@@ -19,6 +19,9 @@
             <e p="CharacterSelectedResponseHandler.cs" t="Include" />
             <e p="ListCharacterResponseHandler.cs" t="Include" />
           </e>
+          <e p="Game" t="Include">
+            <e p="PlayerEnterRegionHandler.cs" t="Include" />
+          </e>
           <e p="GameMessageHandler.cs" t="Include" />
           <e p="Loading" t="Include">
             <e p="PlayerWorldEnterResponseHandler.cs" t="Include" />

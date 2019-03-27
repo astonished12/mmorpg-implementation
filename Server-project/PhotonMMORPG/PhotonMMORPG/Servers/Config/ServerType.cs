@@ -12,7 +12,7 @@ namespace Servers.Config
         public static ServerType LoginServer = new ServerType() { Name = "Login" };
         public static ServerType ProxyServer = new ServerType() { Name = "Proxy" };
         public static ServerType WorldServer = new ServerType() { Name = "World" };
-        public static ServerType RegionServer = new ServerType() { Name = "Region" };
+        public static ServerType RegionServer = new ServerType() { Name = "AreaRegion" };
         public string Name { get; set; }
 
         public IServerType GetServerType(int serverType)

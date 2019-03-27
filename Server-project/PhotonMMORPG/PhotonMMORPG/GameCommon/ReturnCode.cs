@@ -19,6 +19,8 @@ namespace GameCommon
         NoExistingCharacter,
         WorldAddedNewPlayer,
         WorldContainsPlayer,
-        NoRegion
+        NoRegion,
+        RegionAddedNewPlayer,
+        RegionContainsPlayer
     }
 }

@@ -32,8 +32,8 @@ namespace Servers.Handlers.Regions
 
         public bool HandleMessage(IMessage message, IServerPeer peer)
         {
-            var regions = MessageSerializerService.DeserializeObjectOfType<Region[]>(message.Parameters[(byte) MessageParameterCode.Object]);
-
+            var regions = MessageSerializerService.DeserializeObjectOfType<AreaRegion[]>(message.Parameters[(byte) MessageParameterCode.Object]);
+            RegionService.AssignRegionToHandle(regions);
             return true;
         }
     }
