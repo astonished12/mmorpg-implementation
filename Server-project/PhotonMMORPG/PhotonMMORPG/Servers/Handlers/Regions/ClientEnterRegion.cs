@@ -9,9 +9,11 @@ using GameCommon;
 using MultiplayerGameFramework.Implementation.Messaging;
 using MultiplayerGameFramework.Interfaces.Messaging;
 using MultiplayerGameFramework.Interfaces.Server;
+using Omu.ValueInjecter;
 using Servers.Data.Client;
 using Servers.Models;
 using Servers.Services.Interfaces;
+using ServiceStack.Redis;
 
 namespace Servers.Handlers.Regions
 {
@@ -20,11 +22,13 @@ namespace Servers.Handlers.Regions
 
         private ILogger Log { get; set; }
         private IRegionService RegionService { get; set; }
+        private ICacheService CacheService { get; set; }
 
-        public ClientEnterRegion(ILogger log, IRegionService regionService)
+        public ClientEnterRegion(ILogger log, IRegionService regionService, ICacheService cacheService)
         {
             Log = log;
             RegionService = regionService;
+            CacheService = cacheService;
         }
 
         public MessageType Type => MessageType.Request;
@@ -47,23 +51,40 @@ namespace Servers.Handlers.Regions
                     UserId = playerData.UserId,
                     ServerPeer = peer,
                     Name = playerData.SelectedCharacter.Name,
-                    ClientPeerId = clientPeerGuid
-                };
+                    ClientPeerId = clientPeerGuid,
+                    Character = CacheService.GetCharacterByName(playerData.SelectedCharacter.Name)
+                 };
 
                 var returnCode  = RegionService.AddPlayer(player);
                 if (returnCode == ReturnCode.RegionAddedNewPlayer)
                 {
-                    response = new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "New player on region", (short)returnCode);
+                    // in service
+                    response = new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode },
+                        { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } ,
+                        { (byte)MessageParameterCode.Object,
+                            MessageSerializerService.SerializeObjectOfType((GameCommon.SerializedObjects.Character)new GameCommon.SerializedObjects.Character().InjectFrom(player.Character.CharacterDataFromDb))
+                        }
+                    }, "New player on region", (short)returnCode);
                 }
                 else
                 {
-                    response = new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "Player is already in region", (short)returnCode);
+                    player = RegionService.GetPlayer(playerData.SelectedCharacter.Name) as Player;
+                    // in service
+                    response = new Response(Code, SubCode, new Dictionary<byte, object>()
+                    {
+                        { (byte)MessageParameterCode.SubCodeParameterCode, SubCode },
+                        { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] },
+                        { (byte)MessageParameterCode.Object,
+                            MessageSerializerService.SerializeObjectOfType((GameCommon.SerializedObjects.Character)new GameCommon.SerializedObjects.Character().InjectFrom(player.Character.CharacterDataFromDb))
+                        }
+                    }, "Player is already in region", (short)returnCode);
                 }
             }
             else
             {
                 response = new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "Invalid operation", (short)ReturnCode.OperationInvalid);
             }
+
             peer.SendMessage(response);
             return true;
         }

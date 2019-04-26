@@ -49,6 +49,7 @@ namespace Servers.Handlers.World
             // Got a response back from the World - might be successful, might not.
             if (message.Parameters.ContainsKey(_serverConfiguration.PeerIdCode))
             {
+                //the key to obtain the current server with null:)) good framework 100cc;))
                 var worldServer = ServerConnectionCollection.GetServersByType<IServerPeer>(null).FirstOrDefault();
 
                 if (worldServer != null)
@@ -57,13 +58,9 @@ namespace Servers.Handlers.World
 
                     var response = message as Response;
 
-                    if (response.ReturnCode == (short)ReturnCode.Ok)
+                    if (response.ReturnCode == (short)ReturnCode.RegionAddedNewPlayer)
                     {
-                        // Good response, get the client data and look for the userId to set it for the future.
-                        if (message.SubCode == (int?)MessageSubCode.EnterRegion)
-                        {
-
-                        }
+                       
                     }
 
                     // make one call to send the message back - One "exit point" for the message.

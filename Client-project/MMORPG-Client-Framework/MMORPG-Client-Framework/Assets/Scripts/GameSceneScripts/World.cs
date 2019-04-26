@@ -9,6 +9,8 @@ namespace GameSceneScripts
     {
         private Player LocalPlayer { get; set; }
         private float _step = 5f;
+
+        public bool testMode;
         private Vector3 OldPosition { get; set; }
         private const float SendRate = 0.05f;
         private float _lastSendTime = 0;
@@ -21,6 +23,13 @@ namespace GameSceneScripts
         // Update is called once per frame
         void Update()
         {
+            if (testMode)
+            {
+                GameObject.FindWithTag("Player").GetComponent<Movement>().Move();
+                GameObject.FindWithTag("Player").GetComponent<Movement>().transform.Find("Camera").gameObject.SetActive(true);
+                Camera.main.gameObject.SetActive(false);
+            }
+            
             if(LocalPlayer)
                 LocalPlayer.GetComponent<Movement>().Move();
 
@@ -40,12 +49,12 @@ namespace GameSceneScripts
                 var p = GameData.Instance.players.FirstOrDefault(
                     n => n.CharacterName.Equals(GameData.Instance.selectedCharacter.Name));
 
-                /*if (p != null)
+                if (p != null)
                 {
                     LocalPlayer = p;
                     p.gameObject.transform.GetChild(2).gameObject.SetActive(true);
-                    PhotonServer.Instance.ListPlayersOperation();
-                }*/
+                    //GameData.Instance.ListPlayersOperation();
+                }
                 return;
             }
 

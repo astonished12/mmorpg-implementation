@@ -189,8 +189,12 @@
     <Compile Include="Models\ItemSnapshot.cs" />
     <Compile Include="Models\Quest.cs" />
     <Compile Include="Models\Region.cs" />
+    <Compile Include="PubSubModels\Enums\RegionPubMessageType.cs" />
     <Compile Include="PubSubModels\Enums\WorldPubSubMessageType.cs" />
+    <Compile Include="PubSubModels\RegionRedisPubSub.cs" />
     <Compile Include="PubSubModels\WorldRedisPubSub.cs" />
+    <Compile Include="Services\CacheService\CacheService.cs" />
+    <Compile Include="Services\Interfaces\ICacheService.cs" />
     <Compile Include="Services\Interfaces\ICharacterService.cs" />
     <Compile Include="Models\Interfaces\ICharacter.cs" />
     <Compile Include="Models\Interfaces\IObject.cs" />

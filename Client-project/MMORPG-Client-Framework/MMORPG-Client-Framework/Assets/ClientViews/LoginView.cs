@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using ExitGames.Client.Photon;
 using GameCommon;
+using Models;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,14 @@ public class LoginView : MonoBehaviour {
     public InputField LoginUserName;
     public InputField LoginPassword;
 
+    void Awake()
+    {
+        if (Environment.IsTestEnvironment())
+        {
+            LoginPassword.text = "test";
+            LoginUserName.text = "test";
+        }
+    }
     public void SendLoginRequest()
     {
         OperationRequest request = new OperationRequest() { OperationCode = (byte)MessageOperationCode.Login, Parameters = new Dictionary<byte, object>() { { (byte)PhotonEngine.Instance.SubCodeParameterCode, MessageSubCode.LoginUserPass } } };

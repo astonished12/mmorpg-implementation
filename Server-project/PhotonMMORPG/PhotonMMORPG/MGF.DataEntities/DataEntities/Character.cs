@@ -13,6 +13,8 @@ namespace MGF.DataEntities
         public string Class { get; set; }
         public int Level { get; set; }
         public decimal ExperiencePoints { get; set; }
+        public float LifePoints { get; set; }
+        public float ManaPoints { get; set; }
 
         public int UserId { get; set; }
         public User User { get; set; }

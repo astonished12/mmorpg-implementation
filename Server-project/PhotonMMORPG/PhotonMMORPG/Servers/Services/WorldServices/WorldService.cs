@@ -83,7 +83,6 @@ namespace Servers.Services.WorldServices
         }
 
 
-        //public void AssignRegionServerToGameWorldRegion(IServerConnectionCollection<IServerType, IServerPeer> ServerConnectionCollection)
         public void AssignRegionServerToGameWorldRegion()
         {
             if (RegionWasAssignedToRegionServers == false)

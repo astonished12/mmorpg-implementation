@@ -266,6 +266,9 @@
           <e p="LoadingSceneScripts" t="Include">
             <e p="LoadingScene.cs" t="Include" />
           </e>
+          <e p="Models" t="Include">
+            <e p="Environment.cs" t="Include" />
+          </e>
         </e>
         <e p="Standard Assets" t="Include">
           <e p="CrossPlatformInput" t="Include">

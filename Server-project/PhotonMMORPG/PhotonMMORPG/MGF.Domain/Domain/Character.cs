@@ -21,6 +21,8 @@ namespace MGF.Domain
         private float loc_x;
         private float loc_y;
         private float loc_z;
+        private float lifePoints;
+        private float manaPoints;
 
         private int userId;
         private User user;
@@ -123,6 +125,43 @@ namespace MGF.Domain
             }
         }
 
+        public float LifePoints
+        {
+            get { return lifePoints; }
+            set
+            {
+                if (null == value)
+                {
+                    value = 0;
+                }
+
+                if (lifePoints != value)
+                {
+                    lifePoints = value;
+                    PropertyHasChanged(nameof(LifePoints));
+                }
+            }
+        }
+
+        public float ManaPoints
+        {
+            get { return manaPoints; }
+            set
+            {
+                if (null == value)
+                {
+                    value = 0;
+                }
+
+                if (manaPoints != value)
+                {
+                    manaPoints = value;
+                    PropertyHasChanged(nameof(ManaPoints));
+                }
+            }
+        }
+        
+
 
         public float Loc_X
         {
@@ -211,7 +250,9 @@ namespace MGF.Domain
 
         public Character() : base() { }
 
-        public Character(int id, int userId, string name, string _class, int level, float loc_x, float loc_y, float loc_z, decimal experiencePoints)
+        public Character(int id, int userId, string name, 
+            string _class, int level, float loc_x, float loc_y, float loc_z,
+            decimal experiencePoints, float lifePoints, float manaPoints)
         {
             this.id = id;
             this.name = name;
@@ -221,8 +262,10 @@ namespace MGF.Domain
             this.loc_y = loc_y;
             this.loc_z = loc_z;
             this.userId = userId;
-
             this.experiencePoints = experiencePoints;
+            this.lifePoints = lifePoints;
+            this.manaPoints = manaPoints;
+
             base.MarkOld();
         }
 

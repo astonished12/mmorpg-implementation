@@ -33,7 +33,10 @@ namespace Servers.Services.RegionService
         {
             return Region.RemovePlayer(player);
         }
-        
-       
+
+        public IPlayer GetPlayer(string name)
+        {
+            return Region.ClientsInRegion.FirstOrDefault(x => x.Name == name);
+        }
     }
 }

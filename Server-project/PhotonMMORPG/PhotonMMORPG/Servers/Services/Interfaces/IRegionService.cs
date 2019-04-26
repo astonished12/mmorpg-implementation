@@ -14,6 +14,6 @@ namespace Servers.Services.Interfaces
         void AssignRegionToHandle(AreaRegion[] areaRegions);
         ReturnCode AddPlayer(IPlayer player);
         ReturnCode DeletePlayer(IPlayer player);
-
+        IPlayer GetPlayer(string name);
     }
 }

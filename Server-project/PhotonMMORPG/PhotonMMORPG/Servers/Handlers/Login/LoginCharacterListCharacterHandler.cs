@@ -44,7 +44,7 @@ namespace Servers.Handlers.Login
 
             var charList = new CharacterMapper().LoadByUserId(userId).Select(x => new Character
             {
-                CharacterId = x.Id,
+                Id = x.Id,
                 Name = x.Name,
                 Class = x.Class,
                 Level = x.Level,

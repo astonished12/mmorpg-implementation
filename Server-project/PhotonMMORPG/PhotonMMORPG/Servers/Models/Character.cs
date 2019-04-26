@@ -9,19 +9,9 @@ using Servers.Models.Interfaces;
 
 namespace Servers.Models
 {
-    public class Character: ICharacter
+    public class Character : ICharacter
     {
-        public int Health { get; set; }
-        public bool IsTeleporting { get; }
-        public bool IsDead { get; }
-        public IList<ICharacter> StatusListeners { get; }
-        public IList<IStat> Stats { get; }
-        public int AttackCooldown { get; }
-        public ICharacter AttackableTarget { get; }
-
-        public MGF.Domain.Character CharacterDataFromDb { get; set; } 
-
-        public Vector Position { get; set; }
+        public MGF.Domain.Character CharacterDataFromDb { get; set; }
 
         public void OffsetHealth(int offset, ICharacter attacker, bool notify = true)
         {

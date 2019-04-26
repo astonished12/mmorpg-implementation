@@ -53,7 +53,9 @@ namespace MGF.Mappers
                         characterEntity.Loc_x,
                         characterEntity.Loc_y,
                         characterEntity.Loc_z,
-                        characterEntity.ExperiencePoints)).ToList();
+                        characterEntity.ExperiencePoints,
+                        characterEntity.LifePoints,
+                        characterEntity.ManaPoints)).ToList();
             }
         }
 
@@ -68,7 +70,7 @@ namespace MGF.Mappers
 
                 if (entity != null)
                 {
-                    characterObj = new Character(entity.Id, entity.UserId, entity.Name, entity.Class, entity.Level, entity.Loc_x, entity.Loc_y, entity.Loc_z, entity.ExperiencePoints);
+                    characterObj = new Character(entity.Id, entity.UserId, entity.Name, entity.Class, entity.Level, entity.Loc_x, entity.Loc_y, entity.Loc_z, entity.ExperiencePoints, entity.LifePoints, entity.ManaPoints);
                 }
             }
 
@@ -107,7 +109,9 @@ namespace MGF.Mappers
                         characterEntity.Loc_x,
                         characterEntity.Loc_y,
                         characterEntity.Loc_z,
-                        characterEntity.ExperiencePoints)).ToList();
+                        characterEntity.ExperiencePoints,
+                        characterEntity.LifePoints,
+                        characterEntity.ManaPoints)).ToList();
             }
         }
 
@@ -215,7 +219,7 @@ namespace MGF.Mappers
 
                 if (entity != null)
                 {
-                    characterObject = new Character(entity.Id, entity.UserId, entity.Name, entity.Class, entity.Level, entity.Loc_x, entity.Loc_y, entity.Loc_z, entity.ExperiencePoints);
+                    characterObject = new Character(entity.Id, entity.UserId, entity.Name, entity.Class, entity.Level, entity.Loc_x, entity.Loc_y, entity.Loc_z, entity.ExperiencePoints, entity.LifePoints, entity.ManaPoints);
                 }
 
                 return characterObject;

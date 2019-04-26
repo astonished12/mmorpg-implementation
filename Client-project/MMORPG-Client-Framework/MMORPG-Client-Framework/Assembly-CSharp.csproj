@@ -152,6 +152,7 @@
     <Compile Include="Assets\Scripts\GameSceneScripts\Player.cs" />
     <Compile Include="Assets\Scripts\GameSceneScripts\World.cs" />
     <Compile Include="Assets\Scripts\LoadingSceneScripts\LoadingScene.cs" />
+    <Compile Include="Assets\Scripts\Models\Environment.cs" />
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\FromStore\Fantasy Lands\readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />

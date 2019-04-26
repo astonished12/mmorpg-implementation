@@ -10,16 +10,8 @@ namespace Servers.Models.Interfaces
 {
     public interface ICharacter
     {
-        int Health { get; set; }
-        Vector Position { get; set; }
-        bool IsTeleporting { get; }
-        bool IsDead { get; }
-        IList<ICharacter> StatusListeners { get; }
-        IList<IStat> Stats { get; }
-        int AttackCooldown { get; }
-        ICharacter AttackableTarget { get; }
-        void OffsetHealth(int offset, ICharacter attacker, bool notify = true);
-        
+        MGF.Domain.Character CharacterDataFromDb { get; }
+
         RelationshipType RelationshipWith(ICharacter character);
 
         // Cooldowns
