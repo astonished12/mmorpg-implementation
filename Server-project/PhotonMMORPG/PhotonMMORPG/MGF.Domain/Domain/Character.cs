@@ -21,6 +21,9 @@ namespace MGF.Domain
         private float loc_x;
         private float loc_y;
         private float loc_z;
+        private float rot_x;
+        private float rot_y;
+        private float rot_z;
         private float lifePoints;
         private float manaPoints;
 
@@ -30,6 +33,62 @@ namespace MGF.Domain
         private List<Stat> stats;
 
         private static Character nullValue = new Character();
+      
+
+        public float Loc_X
+        {
+            get { return loc_x; }
+            set
+            {
+                if (null == value)
+                {
+                    value = 0;
+                }
+
+                if (loc_x != value)
+                {
+                    loc_x = value;
+                    PropertyHasChanged(nameof(Loc_X));
+                }
+            }
+        }
+
+        public float Loc_Y
+        {
+            get { return loc_y; }
+            set
+            {
+                if (null == value)
+                {
+                    value = 0;
+                }
+
+                if (loc_y != value)
+                {
+                    loc_y = value;
+                    PropertyHasChanged(nameof(Loc_Y));
+                }
+            }
+        }
+
+        public float Loc_Z
+        {
+            get { return loc_z; }
+            set
+            {
+                if (null == value)
+                {
+                    value = 0;
+                }
+
+                if (loc_z != value)
+                {
+                    loc_z = value;
+                    PropertyHasChanged(nameof(Loc_Z));
+                }
+            }
+        }
+
         #endregion
 
         #region Properties
@@ -163,9 +222,9 @@ namespace MGF.Domain
         
 
 
-        public float Loc_X
+        public float Rot_X
         {
-            get { return loc_x; }
+            get { return rot_x; }
             set
             {
                 if (null == value)
@@ -173,17 +232,17 @@ namespace MGF.Domain
                     value = 0;
                 }
 
-                if (loc_x != value)
+                if (rot_x != value)
                 {
-                    loc_x = value;
-                    PropertyHasChanged(nameof(Loc_X));
+                    rot_x = value;
+                    PropertyHasChanged(nameof(Rot_X));
                 }
             }
         }
 
-        public float Loc_Y
+        public float Rot_Y
         {
-            get { return loc_y; }
+            get { return rot_y; }
             set
             {
                 if (null == value)
@@ -191,17 +250,17 @@ namespace MGF.Domain
                     value = 0;
                 }
 
-                if (loc_y != value)
+                if (rot_y != value)
                 {
-                    loc_y = value;
-                    PropertyHasChanged(nameof(Loc_Y));
+                    rot_y = value;
+                    PropertyHasChanged(nameof(Rot_Y));
                 }
             }
         }
 
-        public float Loc_Z
+        public float Rot_Z
         {
-            get { return loc_z; }
+            get { return rot_z; }
             set
             {
                 if (null == value)
@@ -209,14 +268,13 @@ namespace MGF.Domain
                     value = 0;
                 }
 
-                if (loc_z != value)
+                if (rot_z != value)
                 {
-                    loc_z = value;
-                    PropertyHasChanged(nameof(Loc_Z));
+                    rot_z = value;
+                    PropertyHasChanged(nameof(Rot_Z));
                 }
             }
         }
-
         public int UserId
         {
             get { return userId; }
@@ -252,6 +310,7 @@ namespace MGF.Domain
 
         public Character(int id, int userId, string name, 
             string _class, int level, float loc_x, float loc_y, float loc_z,
+            float rot_x, float rot_y, float rot_z,
             decimal experiencePoints, float lifePoints, float manaPoints)
         {
             this.id = id;
@@ -261,6 +320,9 @@ namespace MGF.Domain
             this.loc_x = loc_x;
             this.loc_y = loc_y;
             this.loc_z = loc_z;
+            this.rot_x = rot_x;
+            this.rot_y = rot_y;
+            this.rot_z = rot_z;
             this.userId = userId;
             this.experiencePoints = experiencePoints;
             this.lifePoints = lifePoints;

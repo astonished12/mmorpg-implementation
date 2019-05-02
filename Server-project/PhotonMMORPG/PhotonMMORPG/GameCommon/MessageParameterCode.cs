@@ -15,6 +15,12 @@ namespace GameCommon
         UserId,
         Object,
         CharacterName,
-        CharacterClass
+        CharacterClass,
+        PosX,
+        PosY,
+        PosZ,
+        RotX,
+        RotY,
+        RotZ
     }
 }

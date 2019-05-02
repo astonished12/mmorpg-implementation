@@ -53,6 +53,9 @@ namespace MGF.Mappers
                         characterEntity.Loc_x,
                         characterEntity.Loc_y,
                         characterEntity.Loc_z,
+                        characterEntity.Rot_x,
+                        characterEntity.Rot_y,
+                        characterEntity.Rot_z,
                         characterEntity.ExperiencePoints,
                         characterEntity.LifePoints,
                         characterEntity.ManaPoints)).ToList();
@@ -70,7 +73,9 @@ namespace MGF.Mappers
 
                 if (entity != null)
                 {
-                    characterObj = new Character(entity.Id, entity.UserId, entity.Name, entity.Class, entity.Level, entity.Loc_x, entity.Loc_y, entity.Loc_z, entity.ExperiencePoints, entity.LifePoints, entity.ManaPoints);
+                    characterObj = new Character(entity.Id, entity.UserId, entity.Name, entity.Class, entity.Level, 
+                        entity.Loc_x, entity.Loc_y, entity.Loc_z, entity.Rot_x, entity.Rot_y, entity.Rot_z,
+                        entity.ExperiencePoints, entity.LifePoints, entity.ManaPoints);
                 }
             }
 
@@ -109,7 +114,7 @@ namespace MGF.Mappers
                         characterEntity.Loc_x,
                         characterEntity.Loc_y,
                         characterEntity.Loc_z,
-                        characterEntity.ExperiencePoints,
+                        characterEntity.Rot_x, characterEntity.Rot_y, characterEntity.Rot_z, characterEntity.ExperiencePoints,
                         characterEntity.LifePoints,
                         characterEntity.ManaPoints)).ToList();
             }
@@ -140,6 +145,9 @@ namespace MGF.Mappers
             characterEntity.Loc_x = domainObject.Loc_X;
             characterEntity.Loc_y = domainObject.Loc_Y;
             characterEntity.Loc_z = domainObject.Loc_Z;
+            characterEntity.Rot_x = domainObject.Rot_X;
+            characterEntity.Rot_y = domainObject.Rot_Y;
+            characterEntity.Rot_z = domainObject.Rot_Z;
             characterEntity.ExperiencePoints = domainObject.ExperiencePoints;
             characterEntity.UserId = domainObject.UserId;
             foreach (var stat in domainObject.Stats)
@@ -219,7 +227,9 @@ namespace MGF.Mappers
 
                 if (entity != null)
                 {
-                    characterObject = new Character(entity.Id, entity.UserId, entity.Name, entity.Class, entity.Level, entity.Loc_x, entity.Loc_y, entity.Loc_z, entity.ExperiencePoints, entity.LifePoints, entity.ManaPoints);
+                    characterObject = new Character(entity.Id, entity.UserId, entity.Name, entity.Class, entity.Level,
+                        entity.Loc_x, entity.Loc_y, entity.Loc_z, entity.Rot_x, entity.Rot_y, entity.Rot_z,
+                        entity.ExperiencePoints, entity.LifePoints, entity.ManaPoints);
                 }
 
                 return characterObject;

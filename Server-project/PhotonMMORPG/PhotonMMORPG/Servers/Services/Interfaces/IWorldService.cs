@@ -15,9 +15,8 @@ namespace Servers.Services.Interfaces
         ReturnCode AddNewPlayerToWorld(IPlayer player);
         IAreaRegion GetRegionForPlayer(IPlayer player);
         IWorld GetWorld();
-
-        //void AssignRegionServerToGameWorldRegion(
-        //    IServerConnectionCollection<IServerType, IServerPeer> ServerConnectionCollection);
         void AssignRegionServerToGameWorldRegion();
+        ReturnCode UpdatePositionAndRotation(IPlayer player, params object[] data);
+        IPlayer GetPlayer(string name);
     }
 }

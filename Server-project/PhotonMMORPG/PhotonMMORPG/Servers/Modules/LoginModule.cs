@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using Autofac;
 using Servers.Data.Client;
 using Servers.Handlers.Login;
+using Servers.Services;
 using Servers.Services.AuthorizationServices;
-using Servers.Services.CharacterService;
 
 namespace Servers.Modules
 {

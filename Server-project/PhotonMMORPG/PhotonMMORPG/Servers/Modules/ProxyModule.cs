@@ -22,7 +22,7 @@ namespace Servers.Modules
             base.Load(builder);
             //Normal builder.RegisterType class
             //builder.RegisterType<TestRequestEventHandler>().AsImplementedInterfaces();
-            //builder.RegisterType<TestBackGroundThread>().AsImplementedInterfaces();
+            //builder.RegisterType<AreaOfInterestThread>().AsImplementedInterfaces();
             builder.RegisterType<ClientCodeRemove>().AsImplementedInterfaces();
             builder.RegisterType<ServerType>().AsImplementedInterfaces();
             builder.RegisterType<CharacterData>().AsImplementedInterfaces();

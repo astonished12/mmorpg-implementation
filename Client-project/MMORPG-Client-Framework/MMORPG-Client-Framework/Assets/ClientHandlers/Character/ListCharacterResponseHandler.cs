@@ -3,7 +3,6 @@ using System.Linq;
 using Assets.Scripts;
 using GameCommon;
 using MGFClient;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 namespace ClientHandlers.Character

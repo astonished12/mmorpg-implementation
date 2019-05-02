@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ExitGames.Logging;
 using GameCommon;
+using MultiplayerGameFramework.Implementation.Config;
 using MultiplayerGameFramework.Implementation.Messaging;
+using MultiplayerGameFramework.Interfaces.Client;
 using MultiplayerGameFramework.Interfaces.Messaging;
 using MultiplayerGameFramework.Interfaces.Server;
+using MultiplayerGameFramework.Interfaces.Support;
 using Omu.ValueInjecter;
 using Servers.Data.Client;
 using Servers.Models;
 using Servers.Services.Interfaces;
-using ServiceStack.Redis;
 
 namespace Servers.Handlers.Regions
 {
@@ -23,12 +21,17 @@ namespace Servers.Handlers.Regions
         private ILogger Log { get; set; }
         private IRegionService RegionService { get; set; }
         private ICacheService CacheService { get; set; }
+        private IConnectionCollection<IClientPeer> ConnectionCollection { get; set; }
+        private IPeerFactory PeerFactory { get; set; }
 
-        public ClientEnterRegion(ILogger log, IRegionService regionService, ICacheService cacheService)
+        public ClientEnterRegion(ILogger log, IRegionService regionService, ICacheService cacheService, 
+            IConnectionCollection<IClientPeer> connectionCollection, IPeerFactory peerFactory)
         {
             Log = log;
             RegionService = regionService;
             CacheService = cacheService;
+            ConnectionCollection = connectionCollection;
+            PeerFactory = peerFactory;
         }
 
         public MessageType Type => MessageType.Request;
@@ -42,6 +45,12 @@ namespace Servers.Handlers.Regions
                 MessageSerializerService.DeserializeObjectOfType<CharacterData>(
                     message.Parameters[(byte) MessageParameterCode.Object]);
             var clientPeerGuid = new Guid((byte[])message.Parameters[(byte)MessageParameterCode.PeerId]);
+            var clientPeer = PeerFactory.CreatePeer<IClientPeer>(new PeerConfig());
+            clientPeer.PeerId = clientPeerGuid;
+
+            Log.DebugFormat($"Register client peer in region server {clientPeerGuid}");
+            // Add to connection collection
+            ConnectionCollection.Connect(clientPeer);
 
             Response response;
             if (playerData != null)

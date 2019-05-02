@@ -1,18 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ExitGames.Logging;
 using GameCommon;
-using GameCommon.SerializedObjects;
-using MultiplayerGameFramework.Implementation.Config;
 using MultiplayerGameFramework.Implementation.Messaging;
 using MultiplayerGameFramework.Interfaces.Client;
 using MultiplayerGameFramework.Interfaces.Config;
 using MultiplayerGameFramework.Interfaces.Messaging;
 using MultiplayerGameFramework.Interfaces.Server;
-using MultiplayerGameFramework.Interfaces.Support;
 using Servers.Data.Client;
 using Servers.Models;
 using Servers.Services.Interfaces;
@@ -67,7 +62,7 @@ namespace Servers.Handlers.World
                 ApplicationServerName =  region.ApplicationServerName
             };
 
-            Response response = region == null
+            var response = region == null
                 ? new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "AreaRegion can't be determined ", (short)ReturnCode.NoRegion)
                 : new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] }, { (byte)MessageParameterCode.Object, MessageSerializerService.SerializeObjectOfType(region) } }, "AreaRegion of character", (short)ReturnCode.Ok);
             

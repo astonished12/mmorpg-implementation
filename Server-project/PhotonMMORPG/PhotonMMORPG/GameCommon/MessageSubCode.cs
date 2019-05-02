@@ -16,6 +16,7 @@ namespace GameCommon
         EnterRegion,
         EnterWorld,
         RequestRegion,
-        AssignAreaMap
+        AssignAreaMap,
+        Move
     }
 }

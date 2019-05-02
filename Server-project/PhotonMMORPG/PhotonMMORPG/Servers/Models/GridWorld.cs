@@ -29,8 +29,8 @@ namespace Servers.Models
             this.TileY = (int)Math.Ceiling(Area.Size.Y / (double)tileDimensions.Y);
 
             this._worldAreaRegions = new AreaRegion[TileX][];
-            int totalRegion = 0;
-            for (int x = 0; x < TileX; x++)
+            var totalRegion = 0;
+            for (var x = 0; x < TileX; x++)
             {
                 this._worldAreaRegions[x] = new AreaRegion[TileY];
                 for (int y = 0; y < TileY; y++)

@@ -69,13 +69,37 @@ namespace Servers.Models
             }
         }
 
+        public IPlayer GetPlayer(string name)
+        {
+            using (ReadLock.TryEnter(this._readerWriterLock, 1000))
+            {
+                return Clients.FirstOrDefault(pl => pl.Name == name);
+            }
+        }
+
         public ReturnCode RemovePlayer(IPlayer player)
         {
             Clients.Remove(player);
             return ReturnCode.Ok;
         }
 
-       
+        public ReturnCode UpdatePlayerPositionAndRotation(IPlayer player, params object[] data)
+        {
+            var playerCharacter = Clients.FirstOrDefault(x => x.Name == player.Name)?.Character.CharacterDataFromDb;
+            if (data.Length != 6)
+            {
+                return ReturnCode.OperationInvalid;
+            }
+            
+            playerCharacter.Loc_X = (float)data[0];
+            playerCharacter.Loc_Y = (float)data[0];
+            playerCharacter.Loc_Z = (float)data[0];
+            playerCharacter.Rot_X = (float)data[0];
+            playerCharacter.Rot_Y = (float)data[0];
+            playerCharacter.Rot_Z = (float)data[0];
+
+            return ReturnCode.Ok;
+        }
     }
 
 }

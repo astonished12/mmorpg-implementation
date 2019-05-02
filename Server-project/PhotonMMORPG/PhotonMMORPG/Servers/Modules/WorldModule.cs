@@ -11,8 +11,8 @@ using Servers.Data.Client;
 using Servers.Handlers.World;
 using Servers.Models;
 using Servers.PubSubModels;
+using Servers.Services;
 using Servers.Services.Interfaces;
-using Servers.Services.WorldServices;
 using Servers.Support;
 using ServiceStack.Redis;
 
@@ -36,6 +36,7 @@ namespace Servers.Modules
             builder.RegisterType<WorldService>().AsImplementedInterfaces();
 
             builder.RegisterType<ClientEnterWorld>().AsImplementedInterfaces();
+            builder.RegisterType<ClientMove>().AsImplementedInterfaces();
             builder.RegisterType<ClientRequestRegion>().AsImplementedInterfaces();
             builder.RegisterType<ClientOperationsForwardRegion>().AsImplementedInterfaces();
             builder.RegisterType<RegionOperationsResponseHandler>().AsImplementedInterfaces();
@@ -44,6 +45,7 @@ namespace Servers.Modules
                 new BasicRedisClientManager("localhost:6379"));
 
             builder.RegisterType<WorldRedisPubSub>().As<IRedisPubSubServer>();
+            builder.RegisterType<CacheService>().AsImplementedInterfaces().SingleInstance();
 
             builder.RegisterBuildCallback(c =>
             {

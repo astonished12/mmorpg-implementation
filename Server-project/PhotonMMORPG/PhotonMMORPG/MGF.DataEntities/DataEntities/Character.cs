@@ -24,5 +24,8 @@ namespace MGF.DataEntities
         public float Loc_x { get; set; }
         public float Loc_y { get; set; }
         public float Loc_z { get; set; }
+        public float Rot_x { get; set; }
+        public float Rot_y { get; set; }
+        public float Rot_z { get; set; }
     }
 }

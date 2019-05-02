@@ -68,7 +68,10 @@ namespace Servers.Handlers.Proxy
                         {
                             clientPeer.ClientData<CharacterData>().Region =
                                 MessageSerializerService.DeserializeObjectOfType<Region>(response.Parameters[(byte)MessageParameterCode.Object]);
-                            
+                        }
+                        else if (message.SubCode == (int?) MessageSubCode.Move)
+                        {
+
                         }
                     }
 

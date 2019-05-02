@@ -6,6 +6,7 @@ using MGFClient;
 using UnityEngine;
 
 public class PlayerEnterRegionHandler : GameMessageHandler {
+	
 	protected override void OnHandleMessage(Dictionary<byte, object> parameters, string debugMessage, int returnCode)
 	{
 		Debug.LogFormat("Here I receive data from server player's object's and my character. Need to instantiate");
@@ -19,20 +20,23 @@ public class PlayerEnterRegionHandler : GameMessageHandler {
 			
 			var characterName = selectedCharacter.Name;
 			var posX = selectedCharacter.Loc_X;
-			var posZ = selectedCharacter.Loc_Y;
+			var posZ = selectedCharacter.Loc_Z;
 			var posY = Terrain.activeTerrain.terrainData.GetHeight((int)posX, (int)posZ);
 
 			Debug.Log(posX + " " + posY + " " + posZ);
 			Vector3 characterPosition = new Vector3(posX, posY, posZ);
 			characterPosition.y = Terrain.activeTerrain.SampleHeight(characterPosition);
 
-			var obj = Instantiate(Resources.Load("Hammer Warrior")) as GameObject;
-			obj.transform.position = new Vector3(posX, posY, posZ);
+			var characterPrefab = Resources.Load("Hammer Warrior") as GameObject;
+			var obj = Instantiate(characterPrefab, characterPosition, Quaternion.identity);
+			Debug.Log(obj.transform.position);
+			if (obj != null)
+			{
+				var player = obj.AddComponent<Player>();
+				player.CharacterName = characterName;
 
-			var player = obj.AddComponent<Player>();
-			player.CharacterName = characterName;
-
-			GameData.Instance.players.Add(player);
+				GameData.Instance.players.Add(player);
+			}
 
 			Debug.Log("WorldEnterHandler charName:" + characterName);
 		}

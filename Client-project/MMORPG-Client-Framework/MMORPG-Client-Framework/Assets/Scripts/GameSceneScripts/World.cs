@@ -23,12 +23,12 @@ namespace GameSceneScripts
         // Update is called once per frame
         void Update()
         {
-            if (testMode)
-            {
-                GameObject.FindWithTag("Player").GetComponent<Movement>().Move();
-                GameObject.FindWithTag("Player").GetComponent<Movement>().transform.Find("Camera").gameObject.SetActive(true);
-                Camera.main.gameObject.SetActive(false);
-            }
+//            if (testMode)
+//            {
+//                GameObject.FindWithTag("Player").GetComponent<Movement>().Move();
+//                GameObject.FindWithTag("Player").GetComponent<Movement>().transform.Find("Camera").gameObject.SetActive(true);
+//                Camera.main.gameObject.SetActive(false);
+//            }
             
             if(LocalPlayer)
                 LocalPlayer.GetComponent<Movement>().Move();
@@ -83,14 +83,15 @@ namespace GameSceneScripts
 
         private void TrySend()
         {
-            if (LocalPlayer.Position != OldPosition && _lastSendTime < Time.time)
+            if (Vector3.SqrMagnitude(LocalPlayer.Position-OldPosition)>0.1f && _lastSendTime < Time.time)
             {
+                Debug.Log(LocalPlayer.Position+" si "+OldPosition);
                 OldPosition = LocalPlayer.Position;
                 Vector3 oldRotation = LocalPlayer.transform.eulerAngles;
 
                 _lastSendTime = Time.time + SendRate;
 
-                //PhotonEngine.Instance.MoveOperation(OldPosition.x, OldPosition.y, OldPosition.z, oldRotation.x, oldRotation.y, oldRotation.z);
+                GameObject.Find("GameView").GetComponent<GameSceneView>().SendMoveRquest(OldPosition, oldRotation);
                 Animator tmp = LocalPlayer.GetComponent<Animator>();
                 float speed = tmp.GetFloat("Speed");
                 bool jump = tmp.GetBool("Jumping");

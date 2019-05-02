@@ -11,23 +11,6 @@ using StackExchange.Redis;
 namespace Servers.Models
 {
 
-    /// <summary>
-    /// Item notifies interest areas via regions this item exits and enters.
-    /// </summary>
-    public class ItemRegionChangedMessage
-    {
-        public ItemRegionChangedMessage(AreaRegion r0, AreaRegion r1, ItemSnapshot snaphot)
-        {
-            this.Region0 = r0;
-            this.Region1 = r1;
-            this.ItemSnapshot = snaphot;
-        }
-        public AreaRegion Region0 { get; private set; }
-        public AreaRegion Region1 { get; private set; }
-        public ItemSnapshot ItemSnapshot { get; private set; }
-    };
-
-
     public class AreaRegion : IAreaRegion
     {
         public AreaRegion(int x, int y)
@@ -60,12 +43,10 @@ namespace Servers.Models
 
         public void AddObject(IObject obj)
         {
-            throw new NotImplementedException();
         }
 
         public void RemoveObject(IObject obj)
         {
-            throw new NotImplementedException();
         }
     }
 }

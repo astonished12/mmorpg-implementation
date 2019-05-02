@@ -13,7 +13,9 @@ namespace Servers.Models.Interfaces
         GridWorld GridWorld { get; }
         IAreaRegion GetRegion(Vector pos);
         ReturnCode AddPlayer(IPlayer player);
+        IPlayer GetPlayer(string name);
         ReturnCode RemovePlayer(IPlayer player);
+        ReturnCode UpdatePlayerPositionAndRotation(IPlayer player, params object[] data);
     }
 
 }

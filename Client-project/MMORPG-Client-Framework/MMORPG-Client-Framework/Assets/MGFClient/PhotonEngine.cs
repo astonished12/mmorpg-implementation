@@ -203,7 +203,7 @@ public class PhotonEngine : MonoBehaviour, IPhotonPeerListener
                 // 
                 if (!(parameters[i] is MessageParameterCode))
                 {
-                    throw new ArgumentException(string.Format("Paramter {0} is not a MessageParamterCode", i));
+                      throw new ArgumentException(string.Format("Paramter {0} is not a MessageParamterCode", i));
                 }
 
                 //add the pairs

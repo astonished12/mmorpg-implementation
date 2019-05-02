@@ -24,7 +24,7 @@ namespace Servers.Handlers.World
         private IConnectionCollection<IClientPeer> ConnectionCollection { get; set; }
         private IRedisClientsManager ClientsManager { get; set; }
         private IRedisPubSubServer RedisPubSub { get; set; }
-        private IPeerFactory PeerFactory;
+        private IPeerFactory PeerFactory { get; set; }
 
         public ClientEnterWorld(ILogger log, IWorldService worldService, IConnectionCollection<IClientPeer> connectionCollection,
             IRedisClientsManager clientsManager, IRedisPubSubServer redisPubSubServer,
@@ -68,13 +68,6 @@ namespace Servers.Handlers.World
                 };
 
                 Log.DebugFormat("On Client EnterWorld:    New player added to world server {0}", player.Name);
-
-                using (IRedisClient redis = ClientsManager.GetClient())
-                {
-                    Log.DebugFormat("The redis client is working here on world server");
-                    //TO DO
-                }
-
                 var returnCode = WorldService.AddNewPlayerToWorld(player);
 
                 if (returnCode == ReturnCode.WorldAddedNewPlayer)
@@ -85,6 +78,7 @@ namespace Servers.Handlers.World
                 {
                     response = new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "Player is already in world", (short)returnCode);
                 }
+
             }
             else
             {
