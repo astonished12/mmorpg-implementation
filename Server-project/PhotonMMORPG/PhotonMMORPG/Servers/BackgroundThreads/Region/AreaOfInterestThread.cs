@@ -10,20 +10,26 @@ using MultiplayerGameFramework.Interfaces;
 using MultiplayerGameFramework.Interfaces.Client;
 using MultiplayerGameFramework.Interfaces.Support;
 using Servers.Models.Interfaces;
+using Servers.Services.Interfaces;
 
 namespace Servers.BackgroundThreads.Region
 {
     public class AreaOfInterestThread : IBackgroundThread
     {
         private bool _isRunning;
-        public ILogger Log { get; set; }
-        public IConnectionCollection<IClientPeer> ConnectionCollection { get; set; }
-        public IRegion Region { get; set; }
+        private ILogger Log { get; set; }
+        private IConnectionCollection<IClientPeer> ConnectionCollection { get; set; }
+        private IInterestManagementService InterestManagementService { get; set; }
+        private IRegion Region { get; set; }
+        private ICacheService CacheService { get; set; }
 
-        public AreaOfInterestThread(IConnectionCollection<IClientPeer> connectionCollection, ILogger log, IRegion region) // Include IoC objects this thread needs i.e : IAreaRegion, IStats etc
+        public AreaOfInterestThread(IConnectionCollection<IClientPeer> connectionCollection, ILogger log,
+            IInterestManagementService interestManagementService, ICacheService cacheService, IRegion region) // Include IoC objects this thread needs i.e : IAreaRegion, IStats etc
         {
             ConnectionCollection = connectionCollection;
             Log = log;
+            InterestManagementService = interestManagementService;
+            CacheService = cacheService;
             Region = region;
         }
 
@@ -76,17 +82,20 @@ namespace Servers.BackgroundThreads.Region
 
         public void Update(TimeSpan elapsed)
         {
+            foreach (var client in Region.ClientsInRegion)
+            {
+                client.Character = CacheService.GetCharacterByName(client.Character.CharacterDataFromDb.Name);
+            }
+
             Parallel.ForEach(ConnectionCollection.GetPeers<IClientPeer>(), SendUpdate);
         }
 
-        public void SendUpdate(IClientPeer instance)
+        public void SendUpdate(IClientPeer peer)
         {
-            var regionClient = Region.ClientsInRegion.FirstOrDefault(x => x.ClientPeerId == instance.PeerId);
-            if (instance != null && regionClient != null)
+            var regionClient = Region.ClientsInRegion.FirstOrDefault(x => x.ClientPeerId == peer.PeerId);
+            if (peer != null && regionClient != null)
             {
-                Log.DebugFormat($"Sendig text message to peer {instance.PeerId} and {regionClient.Name}");
-                
-                //instance.SendMessage(new Event(1,2,new Dictionary<byte, object>()));
+                InterestManagementService.ComputeAreaOfInterest(peer, regionClient);
             }
         }
     }

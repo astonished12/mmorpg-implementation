@@ -18,6 +18,8 @@ namespace Servers.Modules
                 .SingleInstance();
 
             builder.RegisterType<RegionService>().AsImplementedInterfaces();
+            builder.RegisterType<InterestManagementService>().AsImplementedInterfaces();
+
             builder.RegisterType<AssignAreaMapRegionHandler>().AsImplementedInterfaces();
             builder.RegisterType<ClientEnterRegion>().AsImplementedInterfaces();
 
