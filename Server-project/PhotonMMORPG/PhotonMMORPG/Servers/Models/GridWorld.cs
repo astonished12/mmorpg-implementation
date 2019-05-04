@@ -12,7 +12,9 @@ using MultiplayerGameFramework.Interfaces.Messaging;
 using MultiplayerGameFramework.Interfaces.Server;
 using Photon.SocketServer;
 using Servers.Config;
+using Servers.Models.Factories;
 using Servers.Models.Interfaces;
+using ServiceStack;
 
 namespace Servers.Models
 {
@@ -28,18 +30,8 @@ namespace Servers.Models
             this.TileX = (int)Math.Ceiling(Area.Size.X / (double)tileDimensions.X);
             this.TileY = (int)Math.Ceiling(Area.Size.Y / (double)tileDimensions.Y);
 
-            this._worldAreaRegions = new AreaRegion[TileX][];
-            var totalRegion = 0;
-            for (var x = 0; x < TileX; x++)
-            {
-                this._worldAreaRegions[x] = new AreaRegion[TileY];
-                for (int y = 0; y < TileY; y++)
-                {
-                    this._worldAreaRegions[x][y] = new AreaRegion(x, y) { Name = "AreaRegion " + totalRegion, ZoneId = Guid.NewGuid() };
-                    totalRegion += 1;
-
-                }
-            }
+            this._worldAreaRegions = new AreaFactory().Create(this.TileX, this.TileY);
+            
         }
 
         ~GridWorld()

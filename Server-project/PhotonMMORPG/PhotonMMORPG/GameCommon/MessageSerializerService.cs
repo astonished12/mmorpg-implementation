@@ -11,6 +11,7 @@ namespace GameCommon
 {
     public class MessageSerializerService
     {
+       
         public static object SerializeObjectOfType<T>(T objectToSerialize) where T : class
         {
             object retrunValue = null;
@@ -42,8 +43,13 @@ namespace GameCommon
 
         public static T DeserializeJson<T>(object objectToDeserialize) where T : class
         {
-            return JsonConvert.DeserializeObject<T>((string)objectToDeserialize);
+            return JsonConvert.DeserializeObject<T>((string)objectToDeserialize, new JsonSerializerSettings()
+            {
+                MaxDepth = 5
+            });
         }
+
+      
         #endregion
 
         #region Bson

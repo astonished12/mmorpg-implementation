@@ -15,9 +15,9 @@ namespace Servers.Models.Factories
         protected ILogger Log = LogManager.GetCurrentClassLogger();
 
 
-        public QuestFactory(NpcFactory npcFactory, IEnumerable<Quest> quests)
+        public QuestFactory(NpcFactory npcTemplateFactory, IEnumerable<Quest> quests)
         {
-            NpcFactory = npcFactory;
+            NpcFactory = npcTemplateFactory;
 
             Quests = new Dictionary<int, Quest>();
 

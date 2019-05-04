@@ -17,7 +17,7 @@ namespace Servers.Models
         public string Name { get; set; }
 
         public IWorld World { get; set; }
-        public ICharacter Character { get; set; }
+        public Character Character { get; set; }
 
     }
 }

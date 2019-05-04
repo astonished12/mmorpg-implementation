@@ -20,7 +20,9 @@ namespace Servers.Modules
             builder.RegisterType<RegionService>().AsImplementedInterfaces();
             builder.RegisterType<AssignAreaMapRegionHandler>().AsImplementedInterfaces();
             builder.RegisterType<ClientEnterRegion>().AsImplementedInterfaces();
+
             builder.RegisterType<AreaOfInterestThread>().AsImplementedInterfaces();
+            builder.RegisterType<MobSpawnerThread>().AsImplementedInterfaces();
 
             builder.Register<IRedisClientsManager>(c =>
                 new BasicRedisClientManager("localhost:6379"));

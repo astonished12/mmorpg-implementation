@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GameServer.Model;
+using Photon.MmoDemo.Common;
 
 namespace Servers.Models.Interfaces
 {
@@ -15,7 +15,7 @@ namespace Servers.Models.Interfaces
         bool IsVisible { get; set; }
         string Name { get; set; }
         String Description { get; set; }
-        Position Position { get; set; }
+        Vector Position { get; set; }
         IAreaRegion AreaRegion { get; set; }
         ObjectType Type { get; }
 

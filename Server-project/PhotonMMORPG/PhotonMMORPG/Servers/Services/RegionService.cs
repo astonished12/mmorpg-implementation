@@ -34,5 +34,13 @@ namespace Servers.Services
         {
             return Region.ClientsInRegion.FirstOrDefault(x => x.Name == name);
         }
+
+        public void AssignCharactersFromTemplate()
+        {
+            foreach (var regionAreaRegion in Region.AreaRegions)
+            {
+                regionAreaRegion.AssignCharactersFromNpcTemplate();
+            }
+        }
     }
 }

@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using ExitGames.Logging;
 using GameCommon;
-using GameServer.Model;
 using MultiplayerGameFramework.Implementation.Client;
 using MultiplayerGameFramework.Implementation.Messaging;
 using MultiplayerGameFramework.Interfaces.Client;

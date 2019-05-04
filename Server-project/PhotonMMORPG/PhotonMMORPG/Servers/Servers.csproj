@@ -168,7 +168,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackgroundThreads\Region\CheatPrevention.cs" />
+    <Compile Include="BackgroundThreads\Region\MobSpawnerThread.cs" />
+    <Compile Include="BackgroundThreads\Region\CheatPreventionThread.cs" />
     <Compile Include="Handlers\Login\LoginCharacterSelectionHandler.cs" />
     <Compile Include="Handlers\Proxy\ClientWorldFowardingRequestHandler.cs" />
     <Compile Include="Handlers\Proxy\WorldOperationsResponseHandler.cs" />
@@ -179,16 +180,21 @@
     <Compile Include="Handlers\World\ClientOperationsForwardRegion.cs" />
     <Compile Include="Handlers\World\ClientRequestRegion.cs" />
     <Compile Include="Handlers\World\RegionOperationsResponseHandler.cs" />
+    <Compile Include="Models\AreaRegionEntityDetail.cs" />
+    <Compile Include="Models\ItemDrop.cs" />
+    <Compile Include="Models\NpcCharacter.cs" />
+    <Compile Include="Models\Templates\NpcTemplate.cs" />
+    <Compile Include="Models\Templates\MapTemplate.cs" />
     <Compile Include="Models\Character.cs" />
     <Compile Include="Models\Factories\NpcFactory.cs" />
     <Compile Include="Models\Factories\QuestFactory.cs" />
-    <Compile Include="Models\Factories\RegionFactory.cs" />
+    <Compile Include="Models\Factories\AreaFactory.cs" />
     <Compile Include="Models\GridWorld.cs" />
     <Compile Include="Models\Interfaces\IFactory.cs" />
     <Compile Include="Models\Interfaces\IQuest.cs" />
     <Compile Include="Models\Interfaces\IRegion.cs" />
     <Compile Include="Models\Item.cs" />
-    <Compile Include="Models\ItemSnapshot.cs" />
+    <Compile Include="Models\Templates\ItemSnapshot.cs" />
     <Compile Include="Models\Quest.cs" />
     <Compile Include="Models\Region.cs" />
     <Compile Include="PubSubModels\Enums\RegionPubMessageType.cs" />
@@ -207,7 +213,6 @@
     <Compile Include="Models\Interfaces\IWorld.cs" />
     <Compile Include="Models\ObjectType.cs" />
     <Compile Include="Models\Player.cs" />
-    <Compile Include="Models\Position.cs" />
     <Compile Include="Models\AreaRegion.cs" />
     <Compile Include="Models\RegionObject.cs" />
     <Compile Include="Models\RelationshipType.cs" />

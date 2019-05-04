@@ -1,10 +1,10 @@
-﻿using GameServer.Model;
-using Servers.Models.Interfaces;
+﻿using Servers.Models.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Photon.MmoDemo.Common;
 
 namespace Servers.Models
 {
@@ -17,7 +17,7 @@ namespace Servers.Models
         public bool IsVisible { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Position Position { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public Vector Position { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public IAreaRegion AreaRegion { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public ObjectType Type => throw new NotImplementedException();

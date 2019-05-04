@@ -34,6 +34,7 @@ namespace Servers.Handlers.Regions
         {
             var regions = MessageSerializerService.DeserializeObjectOfType<AreaRegion[]>(message.Parameters[(byte) MessageParameterCode.Object]);
             RegionService.AssignRegionToHandle(regions);
+            RegionService.AssignCharactersFromTemplate();
             return true;
         }
     }

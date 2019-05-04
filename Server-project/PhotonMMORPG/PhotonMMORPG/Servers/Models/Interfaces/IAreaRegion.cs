@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MultiplayerGameFramework.Interfaces.Server;
+using Photon.MmoDemo.Common;
 
 namespace Servers.Models.Interfaces
 {
@@ -15,8 +16,9 @@ namespace Servers.Models.Interfaces
         int GameTick { get; }
         string ApplicationServerName { get; }
 
-        void AddObject(IObject obj);
-        void RemoveObject(IObject obj);
+        void AddNpcCharacter(Vector pos, NpcCharacter obj);
+        void RemoveNpcCharacter(Vector pos, NpcCharacter obj);
 
+        void SpawnMobs(Vector spawnPosition);
     }
 }

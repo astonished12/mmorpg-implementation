@@ -113,6 +113,26 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &323241051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1696092328900582, guid: ae70264b8e658354b994ceee2ced83cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 2088815744}
+--- !u!208 &323241052
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 323241051}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 100, y: 50, z: 100}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 100, y: 0, z: 150}
+  m_TimeToStationary: 0.5
 --- !u!1 &1011318633
 GameObject:
   m_ObjectHideFlags: 0

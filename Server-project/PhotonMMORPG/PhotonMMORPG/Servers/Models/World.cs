@@ -10,6 +10,7 @@ using MultiplayerGameFramework.Interfaces.Config;
 using MultiplayerGameFramework.Interfaces.Server;
 using Photon.MmoDemo.Common;
 using Servers.Config;
+using Servers.Models.Factories;
 using Servers.Models.Interfaces;
 
 namespace Servers.Models
@@ -25,7 +26,6 @@ namespace Servers.Models
         //Check how to get data from unity terrain
         private readonly int maxWidthTerrain = 500;
         private readonly int maxLengthTerrain = 500;
-        private readonly int maxHeightTerrain = 600;
         // PUT THEM INTO CONFIG
 
         public World()

@@ -23,12 +23,12 @@ namespace GameSceneScripts
         // Update is called once per frame
         void Update()
         {
-//            if (testMode)
-//            {
-//                GameObject.FindWithTag("Player").GetComponent<Movement>().Move();
-//                GameObject.FindWithTag("Player").GetComponent<Movement>().transform.Find("Camera").gameObject.SetActive(true);
-//                Camera.main.gameObject.SetActive(false);
-//            }
+            if (testMode)
+            {
+                GameObject.FindWithTag("Player").GetComponent<Movement>().Move();
+                GameObject.FindWithTag("Player").GetComponent<Movement>().transform.Find("Camera").gameObject.SetActive(true);
+                Camera.main.gameObject.SetActive(false);
+            }
             
             if(LocalPlayer)
                 LocalPlayer.GetComponent<Movement>().Move();

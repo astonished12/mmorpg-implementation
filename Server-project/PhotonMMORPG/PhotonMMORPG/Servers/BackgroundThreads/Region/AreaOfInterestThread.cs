@@ -85,6 +85,7 @@ namespace Servers.BackgroundThreads.Region
             if (instance != null && regionClient != null)
             {
                 Log.DebugFormat($"Sendig text message to peer {instance.PeerId} and {regionClient.Name}");
+                
                 //instance.SendMessage(new Event(1,2,new Dictionary<byte, object>()));
             }
         }

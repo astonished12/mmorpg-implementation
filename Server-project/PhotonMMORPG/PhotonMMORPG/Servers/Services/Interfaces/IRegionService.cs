@@ -15,5 +15,6 @@ namespace Servers.Services.Interfaces
         ReturnCode AddPlayer(IPlayer player);
         ReturnCode DeletePlayer(IPlayer player);
         IPlayer GetPlayer(string name);
+        void AssignCharactersFromTemplate();
     }
 }
