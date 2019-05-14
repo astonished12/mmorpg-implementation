@@ -134,6 +134,7 @@
     <Compile Include="Assets\FromStore\loadingBar\scripts\rotatetotate.cs" />
     <Compile Include="Assets\FromStore\loadingBar\scripts\SimpleLoading.cs" />
     <Compile Include="Assets\FromStore\loadingBar\scripts\simplerotate.cs" />
+    <Compile Include="Assets\FromStore\SimpleSkeletonFree\Script\Character\PlayerController.cs" />
     <Compile Include="Assets\FromStore\warrior\Code\IKHands.cs" />
     <Compile Include="Assets\FromStore\warrior\Code\SmoothFollow.cs" />
     <Compile Include="Assets\FromStore\warrior\Code\WarriorAnimationDemoFREE.cs" />
@@ -145,6 +146,9 @@
     <Compile Include="Assets\MGFClient\Message\Interfaces\IMessage.cs" />
     <Compile Include="Assets\MGFClient\Message\MessageType.cs" />
     <Compile Include="Assets\MGFClient\PhotonEngine.cs" />
+    <Compile Include="Assets\Packages\PubComp.NoSql.ServiceStackRedis.4.1.0\src\NoSql.ServiceStackRedis\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\Packages\PubComp.NoSql.ServiceStackRedis.4.1.0\src\NoSql.ServiceStackRedis\RedisConnectionInfo.cs" />
+    <Compile Include="Assets\Packages\PubComp.NoSql.ServiceStackRedis.4.1.0\src\NoSql.ServiceStackRedis\RedisContext.cs" />
     <Compile Include="Assets\Scripts\CharacterSceneScripts\CharacterSlot.cs" />
     <Compile Include="Assets\Scripts\CharacterSceneScripts\CharacterSlotController.cs" />
     <Compile Include="Assets\Scripts\GameMessage.cs" />
@@ -153,6 +157,8 @@
     <Compile Include="Assets\Scripts\GameSceneScripts\World.cs" />
     <Compile Include="Assets\Scripts\LoadingSceneScripts\LoadingScene.cs" />
     <Compile Include="Assets\Scripts\Models\Environment.cs" />
+    <Compile Include="Assets\Scripts\PubSub\NpcChannel.cs" />
+    <Compile Include="Assets\Scripts\PubSub\PlayerChannel.cs" />
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\FromStore\Fantasy Lands\readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -183,6 +189,7 @@
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Resources\Shaders\Common.cginc" />
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+    <None Include="Assets\Packages\ServiceStack.Common.3.9.70\lib\net35\ServiceStack.Interfaces.xml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Editor Resources\UI\Trackball.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -194,6 +201,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Resources\Shaders\GrainGen.shader" />
+    <None Include="Assets\NuGet\LICENSE.txt" />
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Resources\Shaders\FXAA.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
@@ -426,6 +434,24 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="PubComp.NoSql.Core">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/PubComp.NoSql.Core.4.0.0/lib/net45/PubComp.NoSql.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PubComp.NoSql.ServiceStackRedis">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/PubComp.NoSql.ServiceStackRedis.4.1.0/lib/net45/PubComp.NoSql.ServiceStackRedis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/ServiceStack.Common.3.9.70/lib/net35/ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/ServiceStack.Common.3.9.70/lib/net35/ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/ServiceStack.Redis.3.9.71/lib/net35/ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/ServiceStack.Text.3.9.70/lib/net35/ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="GameCommon">
       <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/GameCommon.dll</HintPath>

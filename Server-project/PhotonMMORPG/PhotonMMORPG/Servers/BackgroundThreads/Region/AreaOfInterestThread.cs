@@ -9,6 +9,7 @@ using MultiplayerGameFramework.Implementation.Messaging;
 using MultiplayerGameFramework.Interfaces;
 using MultiplayerGameFramework.Interfaces.Client;
 using MultiplayerGameFramework.Interfaces.Support;
+using Servers.Models;
 using Servers.Models.Interfaces;
 using Servers.Services.Interfaces;
 
@@ -22,15 +23,18 @@ namespace Servers.BackgroundThreads.Region
         private IInterestManagementService InterestManagementService { get; set; }
         private IRegion Region { get; set; }
         private ICacheService CacheService { get; set; }
+        private IRegionService RegionService { get; set; }
 
         public AreaOfInterestThread(IConnectionCollection<IClientPeer> connectionCollection, ILogger log,
-            IInterestManagementService interestManagementService, ICacheService cacheService, IRegion region) // Include IoC objects this thread needs i.e : IAreaRegion, IStats etc
+            IInterestManagementService interestManagementService, ICacheService cacheService,
+            IRegionService regionService, IRegion region) // Include IoC objects this thread needs i.e : IAreaRegion, IStats etc
         {
             ConnectionCollection = connectionCollection;
             Log = log;
             InterestManagementService = interestManagementService;
             CacheService = cacheService;
             Region = region;
+            RegionService = regionService;
         }
 
         public void Setup(IServerApplication server)

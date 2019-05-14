@@ -373,6 +373,30 @@
     <Reference Include="UnityEditor.Facebook.Extensions">
       <HintPath>D:/Unity/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="DotNetZip">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/NuGet/Editor/DotNetZip.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGetForUnity">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/NuGet/Editor/NuGetForUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="PubComp.NoSql.Core">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/PubComp.NoSql.Core.4.0.0/lib/net45/PubComp.NoSql.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PubComp.NoSql.ServiceStackRedis">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/PubComp.NoSql.ServiceStackRedis.4.1.0/lib/net45/PubComp.NoSql.ServiceStackRedis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/ServiceStack.Common.3.9.70/lib/net35/ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/ServiceStack.Common.3.9.70/lib/net35/ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/ServiceStack.Redis.3.9.71/lib/net35/ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/ServiceStack.Text.3.9.70/lib/net35/ServiceStack.Text.dll</HintPath>
+    </Reference>
     <Reference Include="GameCommon">
       <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/GameCommon.dll</HintPath>
     </Reference>

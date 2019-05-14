@@ -2,6 +2,7 @@
 using Servers.BackgroundThreads.Region;
 using Servers.Handlers.Regions;
 using Servers.Models;
+using Servers.PubSubModels;
 using Servers.Services;
 using ServiceStack.Redis;
 
@@ -17,7 +18,8 @@ namespace Servers.Modules
                 .AsImplementedInterfaces()
                 .SingleInstance();
 
-            builder.RegisterType<RegionService>().AsImplementedInterfaces();
+            builder.RegisterType<RegionService>().AsImplementedInterfaces().SingleInstance();
+            ;
             builder.RegisterType<InterestManagementService>().AsImplementedInterfaces();
 
             builder.RegisterType<AssignAreaMapRegionHandler>().AsImplementedInterfaces();
@@ -25,6 +27,7 @@ namespace Servers.Modules
 
             builder.RegisterType<AreaOfInterestThread>().AsImplementedInterfaces();
             builder.RegisterType<MobSpawnerThread>().AsImplementedInterfaces();
+            builder.RegisterType<PlayerCommunicationThread>().AsImplementedInterfaces();
 
             builder.Register<IRedisClientsManager>(c =>
                 new BasicRedisClientManager("localhost:6379"));

@@ -21,6 +21,7 @@ namespace GameCommon
         PosZ,
         RotX,
         RotY,
-        RotZ
+        RotZ,
+        PlayerChannel
     }
 }

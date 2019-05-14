@@ -27,14 +27,13 @@ namespace Servers.Handlers.World
         private IPeerFactory PeerFactory { get; set; }
 
         public ClientEnterWorld(ILogger log, IWorldService worldService, IConnectionCollection<IClientPeer> connectionCollection,
-            IRedisClientsManager clientsManager, IRedisPubSubServer redisPubSubServer,
+            IRedisClientsManager clientsManager,
             IPeerFactory peerFactory)
         {
             Log = log;
             WorldService = worldService;
             ConnectionCollection = connectionCollection;
             ClientsManager = clientsManager;
-            RedisPubSub = redisPubSubServer;
             PeerFactory = peerFactory;
         }
 
@@ -72,6 +71,7 @@ namespace Servers.Handlers.World
 
                 if (returnCode == ReturnCode.WorldAddedNewPlayer)
                 {
+
                     response = new Response(Code, SubCode, new Dictionary<byte, object>() { { (byte)MessageParameterCode.SubCodeParameterCode, SubCode }, { (byte)MessageParameterCode.PeerId, message.Parameters[(byte)MessageParameterCode.PeerId] } }, "New player on world", (short)returnCode);
                 }
                 else

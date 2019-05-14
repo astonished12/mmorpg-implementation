@@ -85,7 +85,6 @@ namespace GameSceneScripts
         {
             if (Vector3.SqrMagnitude(LocalPlayer.Position-OldPosition)>0.1f && _lastSendTime < Time.time)
             {
-                Debug.Log(LocalPlayer.Position+" si "+OldPosition);
                 OldPosition = LocalPlayer.Position;
                 Vector3 oldRotation = LocalPlayer.transform.eulerAngles;
 

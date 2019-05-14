@@ -20,12 +20,6 @@ namespace Servers.Models.Factories
 
         public Dictionary<int, NpcTemplate> Templates { get; set; }
 
-        public NpcTemplate GetTemplate(int templateId)
-        {
-            NpcTemplate template;
-            Templates.TryGetValue(templateId, out template);
-            return template;
-        }
 
         public void LoadTemplates()
         {

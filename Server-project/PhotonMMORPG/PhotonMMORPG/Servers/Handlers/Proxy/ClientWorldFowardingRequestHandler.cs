@@ -18,16 +18,14 @@ namespace Servers.Handlers.Proxy
         private IClientCodeRemover CodeRemove { get; set; }
         private ILogger Log { get; set; }
         private IServerConnectionCollection<IServerType, IServerPeer> ConnectionCollection { get; set; }
-        private IRedisPubSubServer RedisPubSub { get; set; }
 
         public ClientWorldFowardingRequestHandler(ILogger log, IClientCodeRemover codeRemover, 
-            IServerConnectionCollection<IServerType, IServerPeer> connectionCollection,
-            IRedisPubSubServer redisPubSubServer)
+            IServerConnectionCollection<IServerType, IServerPeer> connectionCollection
+            )
         {
             CodeRemove = codeRemover;
             Log = log;
             ConnectionCollection = connectionCollection;
-            RedisPubSub = redisPubSubServer;
         }
 
         public MessageType Type => MessageType.Async | MessageType.Request | MessageType.Response;

@@ -14,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GameCommon.SerializedObjects;
 using Servers.Models.Interfaces;
+using Servers.PubSubModels;
 
 namespace Servers.Handlers.Proxy
 {
@@ -55,12 +56,7 @@ namespace Servers.Handlers.Proxy
 
                     if (response.ReturnCode == (short)ReturnCode.Ok)
                     {
-                        // Good response, get the client data and look for the userId to set it for the future.
-                        if (message.SubCode == (int?) MessageSubCode.EnterWorld)
-                        {
-                            
-                        }
-                        else if (message.SubCode == (int?)MessageSubCode.EnterRegion)
+                       if (message.SubCode == (int?)MessageSubCode.EnterRegion)
                         {
 
                         }
@@ -75,6 +71,14 @@ namespace Servers.Handlers.Proxy
                         }
                     }
 
+                    else if (response.ReturnCode == (short) ReturnCode.WorldAddedNewPlayer)
+                    {
+                        // Good response, get the client data and look for the userId to set it for the future.
+                        if (message.SubCode == (int?)MessageSubCode.EnterWorld)
+                        {
+                            message.Parameters.Add((byte)MessageParameterCode.PlayerChannel, clientPeer.ClientData<CharacterData>().SelectedCharacter.Name);
+                        }
+                    }
                     // copy our response to a return response
                     Response returnResponse = new Response(Code, SubCode, message.Parameters);
                     // remove any unnecessary codes from the returning packet

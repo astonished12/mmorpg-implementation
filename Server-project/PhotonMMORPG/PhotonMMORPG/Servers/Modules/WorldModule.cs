@@ -45,7 +45,6 @@ namespace Servers.Modules
             builder.Register<IRedisClientsManager>(c =>
                 new BasicRedisClientManager("localhost:6379"));
 
-            builder.RegisterType<WorldRedisPubSub>().As<IRedisPubSubServer>();
             builder.RegisterType<CacheService>().AsImplementedInterfaces().SingleInstance();
 
             builder.RegisterBuildCallback(c =>
@@ -54,7 +53,7 @@ namespace Servers.Modules
                 {
                     while (true)
                     {
-                        // update the UI on the UI thread
+                        // update the UI on the UI ChannelThread
                         var x = c.Resolve<IServerConnectionCollection<IServerType, IServerPeer>>();
                         if (x.GetServersByType<IServerPeer>(ServerType.RegionServer).Count == 2)
                         {

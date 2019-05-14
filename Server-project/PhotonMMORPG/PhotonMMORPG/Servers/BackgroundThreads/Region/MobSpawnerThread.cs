@@ -20,7 +20,7 @@ namespace Servers.BackgroundThreads.Region
         public IConnectionCollection<IClientPeer> ConnectionCollection { get; set; }
         public IRegion Region { get; set; }
 
-        public MobSpawnerThread(IConnectionCollection<IClientPeer> connectionCollection, ILogger log, IRegion region) // Include IoC objects this thread needs i.e : I
+        public MobSpawnerThread(IConnectionCollection<IClientPeer> connectionCollection, ILogger log, IRegion region) // Include IoC objects this ChannelThread needs i.e : I
                                                                                                                       // , IStats etc
         {
             ConnectionCollection = connectionCollection;
@@ -30,7 +30,7 @@ namespace Servers.BackgroundThreads.Region
 
         public void Setup(IServerApplication server)
         {
-            //DO nothing in this setup. Normall used for setting up before thread start
+            //DO nothing in this setup. Normall used for setting up before ChannelThread start
         }
 
         public void Run(object threadContext)

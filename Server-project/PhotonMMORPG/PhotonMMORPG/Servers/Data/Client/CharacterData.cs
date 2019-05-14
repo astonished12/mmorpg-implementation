@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using GameCommon.SerializedObjects;
 using MultiplayerGameFramework.Interfaces.Client;
 using Servers.Models.Interfaces;
+using Servers.PubSubModels;
 
 namespace Servers.Data.Client
 {
@@ -16,5 +17,6 @@ namespace Servers.Data.Client
         public Character SelectedCharacter { get; set; }
         public Guid PeerId { get; set; }
         public Region Region { get; set; }
+        public PlayerChannel Channel { get; set; }
     }
 }

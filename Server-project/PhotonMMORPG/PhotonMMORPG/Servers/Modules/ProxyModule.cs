@@ -34,7 +34,6 @@ namespace Servers.Modules
             builder.Register<IRedisClientsManager>(c =>
                 new BasicRedisClientManager("localhost:6379"));
 
-            builder.RegisterType<WorldRedisPubSub>().As<IRedisPubSubServer>();
 
         }
     }

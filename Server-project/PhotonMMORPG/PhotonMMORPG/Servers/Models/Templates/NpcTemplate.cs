@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Servers.Models.Interfaces;
+using Servers.PubSubModels;
 
 namespace Servers.Models.Templates
 {
@@ -14,5 +15,7 @@ namespace Servers.Models.Templates
         public List<ItemDrop> DropList { get; set; }
         public Dictionary<IStat, float> Stats { get; set; }
         public float WidthRadius { get; set; }
+
+        public NpcChannel Channel { get; set; }
     }
 }

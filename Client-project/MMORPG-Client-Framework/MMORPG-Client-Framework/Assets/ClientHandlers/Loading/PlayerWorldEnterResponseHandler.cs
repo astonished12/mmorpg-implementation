@@ -3,6 +3,7 @@ using ClientHandlers;
 using GameCommon;
 using LoadingSceneScripts;
 using MGFClient;
+using PubSub;
 using UnityEngine;
 
 namespace ClientHandlers.Loading
@@ -13,6 +14,8 @@ namespace ClientHandlers.Loading
         {
             LoadingScene.imageComp.fillAmount += 0.25f;
             Debug.Log("Client was added to the world");
+            var playerChannel = new PlayerChannel(parameters[(byte) MessageParameterCode.PlayerChannel].ToString());
+            //playerChannel.SendNotification("SALUT COI");
             SendGetRegion();
             
         }

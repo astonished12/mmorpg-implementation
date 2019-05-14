@@ -43,7 +43,7 @@ namespace Servers.Services.AuthorizationServices
 
         private async Task<bool> AsyncIsAuthorized(string username, string password)
         {
-            //Create a task to actually run in a separte thread in order to do OAuth authorization
+            //Create a task to actually run in a separte ChannelThread in order to do OAuth authorization
             var isAuthorized = await Task.Run( () => OAuthIsAuthorized(username, password));
             return isAuthorized;
         }

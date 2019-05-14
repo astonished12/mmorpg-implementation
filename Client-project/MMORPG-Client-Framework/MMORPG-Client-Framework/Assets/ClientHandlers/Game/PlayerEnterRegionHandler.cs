@@ -23,7 +23,7 @@ public class PlayerEnterRegionHandler : GameMessageHandler {
 			var posZ = selectedCharacter.Loc_Z;
 			var posY = Terrain.activeTerrain.terrainData.GetHeight((int)posX, (int)posZ);
 
-			Debug.Log(posX + " " + posY + " " + posZ);
+				Debug.Log(posX + " " + posY + " " + posZ);
 			Vector3 characterPosition = new Vector3(posX, posY, posZ);
 			characterPosition.y = Terrain.activeTerrain.SampleHeight(characterPosition);
 

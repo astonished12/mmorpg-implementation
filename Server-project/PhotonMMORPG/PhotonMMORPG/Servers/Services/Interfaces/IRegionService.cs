@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using GameCommon;
 using Servers.Models;
 using Servers.Models.Interfaces;
+using Servers.PubSubModels;
 
 namespace Servers.Services.Interfaces
 {
@@ -16,5 +17,7 @@ namespace Servers.Services.Interfaces
         ReturnCode DeletePlayer(IPlayer player);
         IPlayer GetPlayer(string name);
         void AssignCharactersFromTemplate();
+        PlayerChannel GetPlayerChannel(string name);
+
     }
 }

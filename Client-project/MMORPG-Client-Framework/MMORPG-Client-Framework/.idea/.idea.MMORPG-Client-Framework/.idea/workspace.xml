@@ -5,9 +5,101 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5b0925d-b9db-4e0c-9364-247c9b63de1a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MMORPG-Client-Framework/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMORPG-Client-Framework/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MMORPG-Client-Framework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMORPG-Client-Framework/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor-firstpass.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClientHandlers/Game/PlayerEnterRegionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ClientHandlers/Game/PlayerEnterRegionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerWorldEnterResponseHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerWorldEnterResponseHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/GameCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/GameCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CharacterSlot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CharacterSlot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CharacterSelect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CharacterSelect.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/MessageParameterCode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/MessageParameterCode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/obj/Debug/MGF-Photon4.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/obj/Debug/MGF-Photon4.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/BackgroundThreads/Region/AreaOfInterestThread.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/BackgroundThreads/Region/AreaOfInterestThread.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/BackgroundThreads/Region/CheatPreventionThread.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/BackgroundThreads/Region/CheatPreventionThread.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/BackgroundThreads/Region/MobSpawnerThread.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/BackgroundThreads/Region/MobSpawnerThread.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Data/Client/CharacterData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Data/Client/CharacterData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Handlers/Proxy/ClientWorldFowardingRequestHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Handlers/Proxy/ClientWorldFowardingRequestHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Handlers/Proxy/WorldOperationsResponseHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Handlers/Proxy/WorldOperationsResponseHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Handlers/World/ClientEnterWorld.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Handlers/World/ClientEnterWorld.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Models/Factories/NpcFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Models/Factories/NpcFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Models/Templates/NpcTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Models/Templates/NpcTemplate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Modules/ProxyModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Modules/ProxyModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Modules/RegionModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Modules/RegionModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Modules/WorldModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Modules/WorldModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/PubSubModels/Enums/RegionPubMessageType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/PubSubModels/Enums/WorldPubSubMessageType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/PubSubModels/RegionRedisPubSub.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/PubSubModels/WorldRedisPubSub.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Servers.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Servers.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Services/AuthorizationServices/AsyncAuthorizationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Services/AuthorizationServices/AsyncAuthorizationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Services/InterestManagementService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Services/InterestManagementService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Services/Interfaces/IInterestManagementService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Services/Interfaces/IInterestManagementService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Services/Interfaces/IRegionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Services/Interfaces/IRegionService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Services/RegionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Services/RegionService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Services/WorldService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Services/WorldService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/app.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Common.5.4.0/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Common.5.4.0/ServiceStack.Common.5.4.0.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Common.5.4.0/lib/net45/ServiceStack.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Common.5.4.0/lib/net45/ServiceStack.Common.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Common.5.4.0/lib/netstandard2.0/ServiceStack.Common.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Common.5.4.0/lib/netstandard2.0/ServiceStack.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Common.5.4.0/lib/netstandard2.0/ServiceStack.Common.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Interfaces.5.4.0/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Interfaces.5.4.0/ServiceStack.Interfaces.5.4.0.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Interfaces.5.4.0/lib/net45/ServiceStack.Interfaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Interfaces.5.4.0/lib/net45/ServiceStack.Interfaces.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Interfaces.5.4.0/lib/netstandard2.0/ServiceStack.Interfaces.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Interfaces.5.4.0/lib/netstandard2.0/ServiceStack.Interfaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Interfaces.5.4.0/lib/netstandard2.0/ServiceStack.Interfaces.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.5.4.0/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.5.4.0/ServiceStack.Redis.5.4.0.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.5.4.0/lib/net45/ServiceStack.Redis.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.5.4.0/lib/net45/ServiceStack.Redis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.5.4.0/lib/netstandard2.0/ServiceStack.Redis.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.5.4.0/lib/netstandard2.0/ServiceStack.Redis.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.5.4.0/lib/netstandard2.0/ServiceStack.Redis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Text.5.4.0/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Text.5.4.0/ServiceStack.Text.5.4.0.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Text.5.4.0/lib/net45/ServiceStack.Text.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Text.5.4.0/lib/net45/ServiceStack.Text.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Text.5.4.0/lib/netcoreapp2.1/ServiceStack.Text.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Text.5.4.0/lib/netcoreapp2.1/ServiceStack.Text.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Text.5.4.0/lib/netcoreapp2.1/ServiceStack.Text.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Text.5.4.0/lib/netstandard2.0/ServiceStack.Text.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Text.5.4.0/lib/netstandard2.0/ServiceStack.Text.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Text.5.4.0/lib/netstandard2.0/ServiceStack.Text.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,43 +112,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/ClientViews/GameSceneView.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-              <folding>
-                <marker date="1556782767491" expanded="false" signature="6:101" ph="..." />
-                <marker date="1556782767491" expanded="true" signature="146:1015" ph="{...}" />
-                <marker date="1556782767491" expanded="true" signature="162:196" ph="{...}" />
-                <marker date="1556782767491" expanded="true" signature="235:574" ph="{...}" />
-                <marker date="1556782767491" expanded="true" signature="291:469" ph="{...}" />
-                <marker date="1556782767491" expanded="true" signature="645:1011" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Movement.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-              <folding>
-                <marker date="1556731024890" expanded="true" signature="46:1679" ph="{...}" />
-                <marker date="1556731024890" expanded="true" signature="90:1677" ph="{...}" />
-                <marker date="1556731024890" expanded="true" signature="377:455" ph="{...}" />
-                <marker date="1556731024890" expanded="true" signature="525:1587" ph="{...}" />
-                <marker date="1556731024890" expanded="true" signature="656:1364" ph="{...}" />
-                <marker date="1556731024890" expanded="true" signature="977:1075" ph="{...}" />
-                <marker date="1556731024890" expanded="true" signature="1200:1349" ph="{...}" />
-                <marker date="1556731024890" expanded="true" signature="1609:1629" ph="{...}" />
-                <marker date="1556731024890" expanded="true" signature="1651:1671" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/MGFClient/GameData.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -78,8 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlotController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+            <state relative-caret-position="448">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <marker date="1552403426046" expanded="false" signature="6:231" ph="..." />
                 <marker date="1552403426046" expanded="true" signature="257:1823" ph="{...}" />
@@ -95,29 +150,130 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/LoadingSceneScripts/LoadingScene.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="880">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
+              <folding>
+                <marker date="1552402089228" expanded="false" signature="6:110" ph="..." />
+                <marker date="1552402089228" expanded="true" signature="141:2025" ph="{...}" />
+                <marker date="1552402089228" expanded="true" signature="190:2023" ph="{...}" />
+                <marker date="1552402089228" expanded="true" signature="429:479" ph="{...}" />
+                <marker date="1552402089228" expanded="true" signature="541:668" ph="{...}" />
+                <marker date="1552402089228" expanded="true" signature="741:1799" ph="{...}" />
+                <marker date="1552402089228" expanded="true" signature="818:932" ph="{...}" />
+                <marker date="1552402089228" expanded="true" signature="977:1592" ph="{...}" />
+                <marker date="1552402089228" expanded="true" signature="1105:1193" ph="{...}" />
+                <marker date="1552402089228" expanded="true" signature="1251:1337" ph="{...}" />
+                <marker date="1552402089228" expanded="true" signature="1396:1488" ph="{...}" />
+                <marker date="1552402089228" expanded="true" signature="1488:1534" ph="{...}" />
+                <marker date="1552402089228" expanded="true" signature="1609:1789" ph="{...}" />
+                <marker date="1552402089228" expanded="true" signature="1845:2017" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="31" column="14" selection-start-line="25" selection-start-column="12" selection-end-line="31" selection-end-column="14" />
+            <state relative-caret-position="1296">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
               <folding>
-                <marker date="1556977180089" expanded="false" signature="6:88" ph="..." />
-                <marker date="1556977180089" expanded="true" signature="116:3692" ph="{...}" />
-                <marker date="1556977180089" expanded="true" signature="157:3690" ph="{...}" />
-                <marker date="1556977180089" expanded="true" signature="474:507" ph="{...}" />
-                <marker date="1556977180089" expanded="true" signature="573:1143" ph="{...}" />
-                <marker date="1556977180089" expanded="true" signature="584:930" ph="/* if (testMode) ... */" />
-                <marker date="1556977180089" expanded="true" signature="1036:1109" ph="{...}" />
-                <marker date="1556977180089" expanded="true" signature="1171:1714" ph="{...}" />
-                <marker date="1556977180089" expanded="true" signature="1218:1680" ph="{...}" />
-                <marker date="1556977180089" expanded="true" signature="1422:1642" ph="{...}" />
-                <marker date="1556977180089" expanded="true" signature="1748:2591" ph="{...}" />
-                <marker date="1556977180089" expanded="true" signature="1828:2581" ph="{...}" />
-                <marker date="1556977180089" expanded="true" signature="1944:2567" ph="{...}" />
-                <marker date="1556977180089" expanded="true" signature="2630:3684" ph="{...}" />
-                <marker date="1556977180089" expanded="true" signature="2746:3674" ph="{...}" />
-                <marker date="1556977180089" expanded="true" signature="3471:3659" ph="/* Debug.Log(&quot;PRTTEY DEBUG &quot; + speed + &quot; &quot; + jump + &quot; &quot; + die + &quot; &quot; + respawn + &quot; &quot; + attack); ... */" />
+                <marker date="1557769684116" expanded="false" signature="6:88" ph="..." />
+                <marker date="1557769684116" expanded="true" signature="116:3624" ph="{...}" />
+                <marker date="1557769684116" expanded="true" signature="157:3622" ph="{...}" />
+                <marker date="1557769684116" expanded="true" signature="474:507" ph="{...}" />
+                <marker date="1557769684116" expanded="true" signature="573:1143" ph="{...}" />
+                <marker date="1557769684116" expanded="true" signature="584:930" ph="/* if (testMode) ... */" />
+                <marker date="1557769684116" expanded="true" signature="1036:1109" ph="{...}" />
+                <marker date="1557769684116" expanded="true" signature="1171:1714" ph="{...}" />
+                <marker date="1557769684116" expanded="true" signature="1218:1680" ph="{...}" />
+                <marker date="1557769684116" expanded="true" signature="1422:1642" ph="{...}" />
+                <marker date="1557769684116" expanded="true" signature="1748:2591" ph="{...}" />
+                <marker date="1557769684116" expanded="true" signature="1828:2581" ph="{...}" />
+                <marker date="1557769684116" expanded="true" signature="1944:2567" ph="{...}" />
+                <marker date="1557769684116" expanded="true" signature="2630:3616" ph="{...}" />
+                <marker date="1557769684116" expanded="true" signature="2746:3606" ph="{...}" />
+                <marker date="1557769684116" expanded="true" signature="3403:3591" ph="/* Debug.Log(&quot;PRTTEY DEBUG &quot; + speed + &quot; &quot; + jump + &quot; &quot; + die + &quot; &quot; + respawn + &quot; &quot; + attack); ... */" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+              <folding>
+                <marker date="1557816127016" expanded="false" signature="6:98" ph="..." />
+                <marker date="1557816127016" expanded="true" signature="116:1218" ph="{...}" />
+                <marker date="1557816127016" expanded="true" signature="146:1216" ph="{...}" />
+                <marker date="1557816127016" expanded="true" signature="316:1032" ph="{...}" />
+                <marker date="1557816127016" expanded="true" signature="581:990" ph="{...}" />
+                <marker date="1557816127016" expanded="true" signature="837:925" ph="{...}" />
+                <marker date="1557816127016" expanded="true" signature="1081:1211" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Game/PlayerEnterRegionHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="25" column="34" selection-start-line="25" selection-end-line="26" />
+              <folding>
+                <marker date="1557810592795" expanded="false" signature="6:135" ph="..." />
+                <marker date="1557810592795" expanded="true" signature="196:1525" ph="{...}" />
+                <marker date="1557810592795" expanded="true" signature="314:1523" ph="{...}" />
+                <marker date="1557810592795" expanded="true" signature="634:1520" ph="{...}" />
+                <marker date="1557810592795" expanded="true" signature="1313:1454" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerWorldEnterResponseHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="17" column="42" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="42" />
+              <folding>
+                <marker date="1557769517033" expanded="false" signature="6:150" ph="..." />
+                <marker date="1557769517033" expanded="true" signature="184:970" ph="{...}" />
+                <marker date="1557769517033" expanded="true" signature="255:968" ph="{...}" />
+                <marker date="1557769517033" expanded="true" signature="383:731" ph="{...}" />
+                <marker date="1557769517033" expanded="true" signature="785:962" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/GameMessageHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+              <folding>
+                <marker date="1549560635155" expanded="false" signature="6:74" ph="..." />
+                <marker date="1549560635155" expanded="true" signature="100:746" ph="{...}" />
+                <marker date="1549560635155" expanded="true" signature="162:744" ph="{...}" />
+                <marker date="1549560635155" expanded="true" signature="247:304" ph="{...}" />
+                <marker date="1549560635155" expanded="true" signature="348:407" ph="{...}" />
+                <marker date="1549560635155" expanded="true" signature="516:601" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/packages.config">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -143,12 +299,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/ClientViews/CharacterSelectView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadingSceneScripts/LoadingScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FA0567D2-84A6-40DE-9AD6-835669DAE052/9d/41d69840/BuildPipelineInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Authentication/LoginUserHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Character/CharacterCreateResponseHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Character/ListCharacterResponseHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Character/CharacterSelectedResponseHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FA0567D2-84A6-40DE-9AD6-835669DAE052/32/cddff48f/InspectorWindow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Authentication/AccountCreationHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/packages.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/GameMessageHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Game/PlayerEnterRegionHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C53FD6A3-0F3A-48DF-8726-A5828F86721F/5a/7e71c148/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
@@ -159,6 +317,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C53FD6A3-0F3A-48DF-8726-A5828F86721F/bf/45ef8e07/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClientViews/GameSceneView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8FE73BF9-4D30-411D-B183-231B1AF1CD06/ca/ae7b568b/IRedisClientsManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlotController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../MMORPG-Client/Assets/Scripts/World.cs" root0="SKIP_HIGHLIGHTING" />
@@ -167,6 +326,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerWorldEnterResponseHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MGFClient/EngineState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EBCAC15D-653D-481C-8A1A-118F7937C2B4/50/fcd7e587/RedisNativeClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BB42DF45-89EF-4002-949B-54CD610DB0BD/2/BasicRedisClientManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClientViews/LoginView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C27ADEB3-BE51-4463-8985-AC3969A065CB/b9/1a52cd6d/EnetPeer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs" root0="FORCE_HIGHLIGHTING" />
@@ -194,7 +355,6 @@
         <option value="$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerRegionEnterResponseHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/ClientData.cs" />
         <option value="$PROJECT_DIR$/Assets/MGFClient/ClientData.cs" />
-        <option value="$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerWorldEnterResponseHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadingSceneScripts/LoadingScene.cs" />
         <option value="$PROJECT_DIR$/Assets/MGFClient/EngineState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlotController.cs" />
@@ -208,11 +368,15 @@
         <option value="$PROJECT_DIR$/Assets/ClientViews/LoginView.cs" />
         <option value="$PROJECT_DIR$/Assets/MGFClient/PhotonEngine.cs" />
         <option value="$PROJECT_DIR$/Assets/ClientHandlers/Character/ListCharacterResponseHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/ClientHandlers/Game/PlayerEnterRegionHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/ClientViews/GameSceneView.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/ExportTerrain.cs" />
+        <option value="$PROJECT_DIR$/Assets/packages.config" />
+        <option value="$PROJECT_DIR$/Assets/mcs.rsp" />
+        <option value="$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerWorldEnterResponseHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs" />
+        <option value="$PROJECT_DIR$/Assets/ClientHandlers/Game/PlayerEnterRegionHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs" />
       </list>
     </option>
   </component>
@@ -229,6 +393,9 @@
     </navigator>
     <panes>
       <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -256,7 +423,8 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="MGFClient" type="1045f7f1:UnityExplorerNode" />
+              <item name="ClientHandlers" type="1045f7f1:UnityExplorerNode" />
+              <item name="Loading" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -272,9 +440,6 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
-      </pane>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
       </pane>
       <pane id="AssemblyExplorer" />
     </panes>
@@ -305,10 +470,10 @@
       <option name="pid" value="12596" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="8808">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="13680">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="8808" />
+      <option name="pid" value="13680" />
       <method v="2" />
     </configuration>
   </component>
@@ -353,11 +518,16 @@
       <workItem from="1556259749745" duration="5435000" />
       <workItem from="1556692680051" duration="10988000" />
       <workItem from="1556946090403" duration="1991000" />
+      <workItem from="1557120220060" duration="4561000" />
+      <workItem from="1557166984818" duration="4301000" />
+      <workItem from="1557204849551" duration="7807000" />
+      <workItem from="1557427647231" duration="3281000" />
+      <workItem from="1557767498645" duration="5073000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96960000" />
+    <option name="totallyTimeSpent" value="121983000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -372,11 +542,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.19798657" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.21140939" />
       <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.24966443" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.5021097" side_tool="true" weight="0.24966443" />
+      <window_info anchor="bottom" id="Stacktrace" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -384,14 +555,14 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.09457901" />
-      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" weight="0.3286119" />
       <window_info anchor="bottom" id="Performance Profiler" order="8" sideWeight="0.49932885" weight="0.32756633" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49932885" weight="0.32756633" />
       <window_info anchor="bottom" id="Unity" order="11" sideWeight="0.49932885" weight="0.32756633" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Unit Tests" order="13" weight="0.3298731" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49932885" weight="0.32756633" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49932885" weight="0.32719547" />
       <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.50067115" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Build" order="16" weight="0.32719547" />
       <window_info anchor="bottom" id="Messages" order="17" />
@@ -452,11 +623,11 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+        <breakpoint suspend="NONE" type="DotNet Exception Breakpoints">
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+        <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlotController.cs</url>
           <line>20</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlotController.cs" initialLine="19">
@@ -469,7 +640,7 @@
           </properties>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+        <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlotController.cs</url>
           <line>22</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlotController.cs" initialLine="21">
@@ -482,7 +653,7 @@
           </properties>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+        <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlotController.cs</url>
           <line>19</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlotController.cs" initialLine="18">
@@ -495,11 +666,37 @@
           </properties>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+        <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/MGFClient/GameData.cs</url>
           <line>26</line>
           <properties documentPath="$PROJECT_DIR$/Assets/MGFClient/ClientData.cs" initialLine="26" />
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerWorldEnterResponseHandler.cs</url>
+          <line>13</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerWorldEnterResponseHandler.cs" initialLine="13">
+            <startOffsets>
+              <option value="392" />
+            </startOffsets>
+            <endOffsets>
+              <option value="393" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs</url>
+          <line>15</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs" initialLine="20">
+            <startOffsets>
+              <option value="319" />
+            </startOffsets>
+            <endOffsets>
+              <option value="320" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -510,7 +707,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/TestHandler.cs" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C27ADEB3-BE51-4463-8985-AC3969A065CB/b9/1a52cd6d/EnetPeer.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -610,44 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LoadingSceneScripts/LoadingScene.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="944">
-          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-          <folding>
-            <marker date="1552402089228" expanded="true" signature="6:110" ph="..." />
-            <marker date="1552402089228" expanded="true" signature="141:2025" ph="{...}" />
-            <marker date="1552402089228" expanded="true" signature="190:2023" ph="{...}" />
-            <marker date="1552402089228" expanded="true" signature="429:479" ph="{...}" />
-            <marker date="1552402089228" expanded="true" signature="541:668" ph="{...}" />
-            <marker date="1552402089228" expanded="true" signature="741:1799" ph="{...}" />
-            <marker date="1552402089228" expanded="true" signature="818:932" ph="{...}" />
-            <marker date="1552402089228" expanded="true" signature="977:1592" ph="{...}" />
-            <marker date="1552402089228" expanded="true" signature="1105:1193" ph="{...}" />
-            <marker date="1552402089228" expanded="true" signature="1251:1337" ph="{...}" />
-            <marker date="1552402089228" expanded="true" signature="1396:1488" ph="{...}" />
-            <marker date="1552402089228" expanded="true" signature="1488:1534" ph="{...}" />
-            <marker date="1552402089228" expanded="true" signature="1609:1789" ph="{...}" />
-            <marker date="1552402089228" expanded="true" signature="1845:2017" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/GameMessageHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="19" selection-start-line="18" selection-end-line="19" />
-          <folding>
-            <marker date="1549560635155" expanded="false" signature="6:74" ph="..." />
-            <marker date="1549560635155" expanded="true" signature="100:746" ph="{...}" />
-            <marker date="1549560635155" expanded="true" signature="162:744" ph="{...}" />
-            <marker date="1549560635155" expanded="true" signature="247:304" ph="{...}" />
-            <marker date="1549560635155" expanded="true" signature="348:407" ph="{...}" />
-            <marker date="1549560635155" expanded="true" signature="516:601" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts 1/World.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/MGFClient/EngineState.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -661,20 +819,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ClientViews/TestView.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerWorldEnterResponseHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <marker date="1552402089220" expanded="false" signature="6:136" ph="..." />
-            <marker date="1552402089220" expanded="true" signature="170:782" ph="{...}" />
-            <marker date="1552402089220" expanded="true" signature="241:780" ph="{...}" />
-            <marker date="1552402089220" expanded="true" signature="369:543" ph="{...}" />
-            <marker date="1552402089220" expanded="true" signature="597:774" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C27ADEB3-BE51-4463-8985-AC3969A065CB/13/0425c739/OperationRequest.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -753,21 +897,6 @@
             <marker date="1549560662271" expanded="true" signature="378:511" ph="{...}" />
             <marker date="1549560662271" expanded="true" signature="528:694" ph="{...}" />
             <marker date="1549560662271" expanded="true" signature="559:627" ph="/* Show the error ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ClientViews/CharacterSelectView.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <marker date="1552403433414" expanded="false" signature="6:179" ph="..." />
-            <marker date="1552403433414" expanded="true" signature="230:861" ph="{...}" />
-            <marker date="1552403433414" expanded="true" signature="256:300" ph="{...}" />
-            <marker date="1552403433414" expanded="true" signature="340:758" ph="{...}" />
-            <marker date="1552403433414" expanded="true" signature="413:642" ph="{...}" />
-            <marker date="1552403433414" expanded="true" signature="796:859" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -885,20 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Game/PlayerEnterRegionHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="30" column="90" selection-start-line="30" selection-start-column="90" selection-end-line="30" selection-end-column="90" />
-          <folding>
-            <marker date="1556730326264" expanded="false" signature="6:135" ph="..." />
-            <marker date="1556730326264" expanded="true" signature="196:1524" ph="{...}" />
-            <marker date="1556730326264" expanded="true" signature="314:1522" ph="{...}" />
-            <marker date="1556730326264" expanded="true" signature="634:1519" ph="{...}" />
-            <marker date="1556730326264" expanded="true" signature="1312:1453" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C53FD6A3-0F3A-48DF-8726-A5828F86721F/5a/7e71c148/Vector3.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55">
@@ -907,6 +1022,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Editor/ExportTerrain.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/SimpleSkeletonFree/Script/Character/PlayerController.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8FE73BF9-4D30-411D-B183-231B1AF1CD06/ca/ae7b568b/IRedisClientsManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ClientViews/GameSceneView.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -924,7 +1047,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Movement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
+        <state relative-caret-position="320">
           <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
           <folding>
             <marker date="1556731024890" expanded="true" signature="46:1679" ph="{...}" />
@@ -937,6 +1060,102 @@
             <marker date="1556731024890" expanded="true" signature="1609:1629" ph="{...}" />
             <marker date="1556731024890" expanded="true" signature="1651:1671" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NuGet.config">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/mcs.rsp" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BB42DF45-89EF-4002-949B-54CD610DB0BD/2/BasicRedisClientManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ClientViews/CharacterSelectView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding>
+            <marker date="1552403433414" expanded="false" signature="6:179" ph="..." />
+            <marker date="1552403433414" expanded="true" signature="230:861" ph="{...}" />
+            <marker date="1552403433414" expanded="true" signature="256:300" ph="{...}" />
+            <marker date="1552403433414" expanded="true" signature="340:758" ph="{...}" />
+            <marker date="1552403433414" expanded="true" signature="413:642" ph="{...}" />
+            <marker date="1552403433414" expanded="true" signature="796:859" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EBCAC15D-653D-481C-8A1A-118F7937C2B4/50/fcd7e587/RedisNativeClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="1747" column="6" selection-start-line="1747" selection-start-column="6" selection-end-line="1747" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlotController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <marker date="1552403426046" expanded="false" signature="6:231" ph="..." />
+            <marker date="1552403426046" expanded="true" signature="257:1823" ph="{...}" />
+            <marker date="1552403426046" expanded="true" signature="316:1820" ph="{...}" />
+            <marker date="1552403426046" expanded="true" signature="516:981" ph="{...}" />
+            <marker date="1552403426046" expanded="true" signature="576:971" ph="{...}" />
+            <marker date="1552403426046" expanded="true" signature="1028:1626" ph="{...}" />
+            <marker date="1552403426046" expanded="true" signature="1113:1484" ph="{...}" />
+            <marker date="1552403426046" expanded="true" signature="1257:1470" ph="{...}" />
+            <marker date="1552403426046" expanded="true" signature="1689:1814" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LoadingSceneScripts/LoadingScene.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <marker date="1552402089228" expanded="false" signature="6:110" ph="..." />
+            <marker date="1552402089228" expanded="true" signature="141:2025" ph="{...}" />
+            <marker date="1552402089228" expanded="true" signature="190:2023" ph="{...}" />
+            <marker date="1552402089228" expanded="true" signature="429:479" ph="{...}" />
+            <marker date="1552402089228" expanded="true" signature="541:668" ph="{...}" />
+            <marker date="1552402089228" expanded="true" signature="741:1799" ph="{...}" />
+            <marker date="1552402089228" expanded="true" signature="818:932" ph="{...}" />
+            <marker date="1552402089228" expanded="true" signature="977:1592" ph="{...}" />
+            <marker date="1552402089228" expanded="true" signature="1105:1193" ph="{...}" />
+            <marker date="1552402089228" expanded="true" signature="1251:1337" ph="{...}" />
+            <marker date="1552402089228" expanded="true" signature="1396:1488" ph="{...}" />
+            <marker date="1552402089228" expanded="true" signature="1488:1534" ph="{...}" />
+            <marker date="1552402089228" expanded="true" signature="1609:1789" ph="{...}" />
+            <marker date="1552402089228" expanded="true" signature="1845:2017" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/GameMessageHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <folding>
+            <marker date="1549560635155" expanded="false" signature="6:74" ph="..." />
+            <marker date="1549560635155" expanded="true" signature="100:746" ph="{...}" />
+            <marker date="1549560635155" expanded="true" signature="162:744" ph="{...}" />
+            <marker date="1549560635155" expanded="true" signature="247:304" ph="{...}" />
+            <marker date="1549560635155" expanded="true" signature="348:407" ph="{...}" />
+            <marker date="1549560635155" expanded="true" signature="516:601" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/packages.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -956,45 +1175,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlotController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        <state relative-caret-position="1296">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
           <folding>
-            <marker date="1552403426046" expanded="false" signature="6:231" ph="..." />
-            <marker date="1552403426046" expanded="true" signature="257:1823" ph="{...}" />
-            <marker date="1552403426046" expanded="true" signature="316:1820" ph="{...}" />
-            <marker date="1552403426046" expanded="true" signature="516:981" ph="{...}" />
-            <marker date="1552403426046" expanded="true" signature="576:971" ph="{...}" />
-            <marker date="1552403426046" expanded="true" signature="1028:1626" ph="{...}" />
-            <marker date="1552403426046" expanded="true" signature="1113:1484" ph="{...}" />
-            <marker date="1552403426046" expanded="true" signature="1257:1470" ph="{...}" />
-            <marker date="1552403426046" expanded="true" signature="1689:1814" ph="{...}" />
+            <marker date="1557769684116" expanded="false" signature="6:88" ph="..." />
+            <marker date="1557769684116" expanded="true" signature="116:3624" ph="{...}" />
+            <marker date="1557769684116" expanded="true" signature="157:3622" ph="{...}" />
+            <marker date="1557769684116" expanded="true" signature="474:507" ph="{...}" />
+            <marker date="1557769684116" expanded="true" signature="573:1143" ph="{...}" />
+            <marker date="1557769684116" expanded="true" signature="584:930" ph="/* if (testMode) ... */" />
+            <marker date="1557769684116" expanded="true" signature="1036:1109" ph="{...}" />
+            <marker date="1557769684116" expanded="true" signature="1171:1714" ph="{...}" />
+            <marker date="1557769684116" expanded="true" signature="1218:1680" ph="{...}" />
+            <marker date="1557769684116" expanded="true" signature="1422:1642" ph="{...}" />
+            <marker date="1557769684116" expanded="true" signature="1748:2591" ph="{...}" />
+            <marker date="1557769684116" expanded="true" signature="1828:2581" ph="{...}" />
+            <marker date="1557769684116" expanded="true" signature="1944:2567" ph="{...}" />
+            <marker date="1557769684116" expanded="true" signature="2630:3616" ph="{...}" />
+            <marker date="1557769684116" expanded="true" signature="2746:3606" ph="{...}" />
+            <marker date="1557769684116" expanded="true" signature="3403:3591" ph="/* Debug.Log(&quot;PRTTEY DEBUG &quot; + speed + &quot; &quot; + jump + &quot; &quot; + die + &quot; &quot; + respawn + &quot; &quot; + attack); ... */" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Game/PlayerEnterRegionHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="31" column="14" selection-start-line="25" selection-start-column="12" selection-end-line="31" selection-end-column="14" />
+        <state relative-caret-position="272">
+          <caret line="25" column="34" selection-start-line="25" selection-end-line="26" />
           <folding>
-            <marker date="1556977180089" expanded="false" signature="6:88" ph="..." />
-            <marker date="1556977180089" expanded="true" signature="116:3692" ph="{...}" />
-            <marker date="1556977180089" expanded="true" signature="157:3690" ph="{...}" />
-            <marker date="1556977180089" expanded="true" signature="474:507" ph="{...}" />
-            <marker date="1556977180089" expanded="true" signature="573:1143" ph="{...}" />
-            <marker date="1556977180089" expanded="true" signature="584:930" ph="/* if (testMode) ... */" />
-            <marker date="1556977180089" expanded="true" signature="1036:1109" ph="{...}" />
-            <marker date="1556977180089" expanded="true" signature="1171:1714" ph="{...}" />
-            <marker date="1556977180089" expanded="true" signature="1218:1680" ph="{...}" />
-            <marker date="1556977180089" expanded="true" signature="1422:1642" ph="{...}" />
-            <marker date="1556977180089" expanded="true" signature="1748:2591" ph="{...}" />
-            <marker date="1556977180089" expanded="true" signature="1828:2581" ph="{...}" />
-            <marker date="1556977180089" expanded="true" signature="1944:2567" ph="{...}" />
-            <marker date="1556977180089" expanded="true" signature="2630:3684" ph="{...}" />
-            <marker date="1556977180089" expanded="true" signature="2746:3674" ph="{...}" />
-            <marker date="1556977180089" expanded="true" signature="3471:3659" ph="/* Debug.Log(&quot;PRTTEY DEBUG &quot; + speed + &quot; &quot; + jump + &quot; &quot; + die + &quot; &quot; + respawn + &quot; &quot; + attack); ... */" />
+            <marker date="1557810592795" expanded="false" signature="6:135" ph="..." />
+            <marker date="1557810592795" expanded="true" signature="196:1525" ph="{...}" />
+            <marker date="1557810592795" expanded="true" signature="314:1523" ph="{...}" />
+            <marker date="1557810592795" expanded="true" signature="634:1520" ph="{...}" />
+            <marker date="1557810592795" expanded="true" signature="1313:1454" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerWorldEnterResponseHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="42" />
+          <folding>
+            <marker date="1557769517033" expanded="false" signature="6:150" ph="..." />
+            <marker date="1557769517033" expanded="true" signature="184:970" ph="{...}" />
+            <marker date="1557769517033" expanded="true" signature="255:968" ph="{...}" />
+            <marker date="1557769517033" expanded="true" signature="383:731" ph="{...}" />
+            <marker date="1557769517033" expanded="true" signature="785:962" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+          <folding>
+            <marker date="1557816127016" expanded="false" signature="6:98" ph="..." />
+            <marker date="1557816127016" expanded="true" signature="116:1218" ph="{...}" />
+            <marker date="1557816127016" expanded="true" signature="146:1216" ph="{...}" />
+            <marker date="1557816127016" expanded="true" signature="316:1032" ph="{...}" />
+            <marker date="1557816127016" expanded="true" signature="581:990" ph="{...}" />
+            <marker date="1557816127016" expanded="true" signature="837:925" ph="{...}" />
+            <marker date="1557816127016" expanded="true" signature="1081:1211" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -17,7 +17,7 @@ namespace Servers.BackgroundThreads.Region
         public ILogger Log { get; set; }
         public IConnectionCollection<IClientPeer> ConnectionCollection { get; set; }
 
-        public CheatPreventionThread(IConnectionCollection<IClientPeer> connectionCollection, ILogger log) // Include IoC objects this thread needs i.e : IAreaRegion, IStats etc
+        public CheatPreventionThread(IConnectionCollection<IClientPeer> connectionCollection, ILogger log) // Include IoC objects this ChannelThread needs i.e : IAreaRegion, IStats etc
         {
             ConnectionCollection = connectionCollection;
             Log = log;
@@ -25,7 +25,7 @@ namespace Servers.BackgroundThreads.Region
 
         public void Setup(IServerApplication server)
         {
-            //DO nothing in this setup. Normall used for setting up before thread start
+            //DO nothing in this setup. Normall used for setting up before ChannelThread start
         }
 
         public void Run(object threadContext)

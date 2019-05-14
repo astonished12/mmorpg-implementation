@@ -14,18 +14,16 @@ namespace Servers.Services
     public class WorldService : IWorldService
     {
         private IWorld World { get; set; }
-        private IRedisPubSubServer WorldRedisPubSubServer { get; set; }
         private IRedisClientsManager ClientsManager { get; set; }
         private ILogger Log { get; set; }
         public bool RegionWasAssignedToRegionServers;
         private IServerConnectionCollection<IServerType, IServerPeer> ServerConnectionCollection { get; set; }
         private ICacheService CacheService { get; set; }
 
-        public WorldService(IWorld world, IRedisPubSubServer worldRedisPubSubServer, IRedisClientsManager clientsManager,
+        public WorldService(IWorld world, IRedisClientsManager clientsManager,
             ILogger log, IServerConnectionCollection<IServerType, IServerPeer> serverConnectionCollection, ICacheService cacheService)
         {
             World = world;
-            WorldRedisPubSubServer = worldRedisPubSubServer;
             ClientsManager = clientsManager;
             Log = log;
             ServerConnectionCollection = serverConnectionCollection;
