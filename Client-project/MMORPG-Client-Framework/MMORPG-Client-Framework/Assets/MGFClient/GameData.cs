@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using GameCommon.SerializedObjects;
+using PubSub;
 using UnityEngine;
 
 namespace MGFClient
@@ -20,6 +21,8 @@ namespace MGFClient
 		[SerializeField]
 		public Region region;
 
+		[SerializeField] public PlayerChannel channel;
+		
 		public List<Player> players;
 		
 		

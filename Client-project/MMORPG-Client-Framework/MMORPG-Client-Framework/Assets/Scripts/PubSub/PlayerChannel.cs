@@ -29,8 +29,9 @@ namespace PubSub
 						subscription.OnMessage = (channel, msg) =>
 						{
 							Debug.Log($"Client  Received '{msg}' from channel '{channel}'");
+							this.SendNotification("get object message");
 						};
-						subscription.SubscribeToChannels(Name);
+						subscription.SubscribeToChannels($"Client_{Name}");
 
 					}
 				}
@@ -42,8 +43,8 @@ namespace PubSub
 
 		public void SendNotification(string message)
 		{
-			Debug.Log("you dont have the guts to be what you wnat to be : a publish");
-			ClientPub.PublishMessage(Name, message);
+			Debug.Log("Get object info");
+			ClientPub.PublishMessage($"Server_{Name}", message);
 		}
 
 

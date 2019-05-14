@@ -14,10 +14,8 @@ namespace ClientHandlers.Loading
         {
             LoadingScene.imageComp.fillAmount += 0.25f;
             Debug.Log("Client was added to the world");
-            var playerChannel = new PlayerChannel(parameters[(byte) MessageParameterCode.PlayerChannel].ToString());
-            //playerChannel.SendNotification("SALUT COI");
+            GameData.Instance.channel = new PlayerChannel(parameters[(byte) MessageParameterCode.PlayerChannel].ToString());
             SendGetRegion();
-            
         }
         
         

@@ -13,16 +13,14 @@ namespace Servers.PubSubModels
     public class PlayerChannel
     {
         public string Name { get; set; }
-        private RedisClient ClientSub { get; set; }
-        private RedisClient ClientPub { get; set; }
+        private RedisClient Client { get; set; }
         public Thread ChannelThread = null;
         private ILogger Log { get; set; }
 
         public PlayerChannel(ILogger log)
         {
             Log = log;
-            ClientSub = new RedisClient("localhost: 6379");
-            ClientPub = new RedisClient("localhost: 6379");
+            Client = new RedisClient("localhost: 6379");
         }
 
         public void SetChannel(string name)
@@ -30,7 +28,9 @@ namespace Servers.PubSubModels
             Name = name;
             ChannelThread = new Thread(delegate ()
             {
-                using (var subscription = ClientSub.CreateSubscription())
+                IRedisSubscription subscription = null;
+
+                using (subscription = Client.CreateSubscription())
                 {
                     subscription.OnSubscribe = channel => { Log.DebugFormat("Client Subscribed to '{0}'", channel); };
                     subscription.OnUnSubscribe = channel =>
@@ -42,13 +42,19 @@ namespace Servers.PubSubModels
                         Log.DebugFormat("Client  Received '{0}' from channel '{1}'", msg, channel);
                     };
                 }
+
+                subscription.SubscribeToChannels($"Server_{Name}");
             });
             ChannelThread.Start();
         }
 
         public void SendNotification(string message)
         {
-            ClientPub.PublishMessage(Name, message);
+            using (var client = new RedisClient("localhost: 6379"))
+            {
+                client.PublishMessage($"Client_{Name}", message);
+                client.Dispose();
+            }
         }
 
 
