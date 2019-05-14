@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using log4net;
 using log4net.Core;
+using ServiceStack;
 using ServiceStack.Redis;
 using ILogger = ExitGames.Logging.ILogger;
 using LogManager = ExitGames.Logging.LogManager;
@@ -48,15 +49,12 @@ namespace Servers.PubSubModels
             ChannelThread.Start();
         }
 
-        public void SendNotification(string message)
+        public void SendNotification(object message)
         {
             using (var client = new RedisClient("localhost: 6379"))
             {
-                client.PublishMessage($"Client_{Name}", message);
-                client.Dispose();
+                client.PublishMessage($"Client_{Name}", message.ToJson());
             }
         }
-
-
     }
 }

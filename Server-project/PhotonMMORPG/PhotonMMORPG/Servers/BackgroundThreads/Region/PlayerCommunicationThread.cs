@@ -5,13 +5,18 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using ExitGames.Logging;
+using GameCommon;
+using GameCommon.SerializedObjects;
 using MultiplayerGameFramework.Implementation.Messaging;
 using MultiplayerGameFramework.Interfaces;
 using MultiplayerGameFramework.Interfaces.Client;
 using MultiplayerGameFramework.Interfaces.Support;
+using Omu.ValueInjecter;
 using Servers.Models;
 using Servers.Models.Interfaces;
 using Servers.Services.Interfaces;
+using ServiceStack;
+using ItemDrop = GameCommon.SerializedObjects.ItemDrop;
 
 namespace Servers.BackgroundThreads.Region
 {
@@ -105,8 +110,34 @@ namespace Servers.BackgroundThreads.Region
                     return;
                 }
 
-                playerChannel.SendNotification("test");
 
+                var entitiesAoi = InterestManagementService.GetAreaOfInterest(peer);
+                if (entitiesAoi != null && entitiesAoi.Count > 0)
+                {
+                    var entitiesAoiCommon = new List<GameCommon.SerializedObjects.NpcCharacter>();
+                    foreach (var entity in entitiesAoi)
+                    {
+                        entitiesAoiCommon.Add(new GameCommon.SerializedObjects.NpcCharacter
+                        {
+                            Position = entity.Position,
+                            StartPosition = entity.StartPosition,
+                            NpcTemplate = new NpcTemplate
+                            {
+                                Name = entity.NpcTemplate.Name,
+                                Stats = new Dictionary<Stat, float>(), // vezi mai incolo e grav:))
+                                Id = entity.NpcTemplate.Id,
+                                Type = entity.NpcTemplate.Type,
+                                Respawn = entity.NpcTemplate.Respawn,
+                                AiType = entity.NpcTemplate.AiType,
+                                DropList = new List<ItemDrop>(), // same here
+                                Prefab = entity.NpcTemplate.Prefab,
+                                WidthRadius = entity.NpcTemplate.WidthRadius
+                            }
+                        });
+                    }
+
+                    playerChannel.SendNotification(entitiesAoiCommon);
+                }
             }
         }
     }

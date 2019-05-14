@@ -51,7 +51,8 @@ namespace Servers.Models.Factories
                 npcCharacters.Add(new NpcCharacter()
                 {
                     NpcTemplate = Templates[0],
-                    Position = spawnPoint
+                    Position = spawnPoint,
+                    StartPosition = spawnPoint
                 });
             }
 

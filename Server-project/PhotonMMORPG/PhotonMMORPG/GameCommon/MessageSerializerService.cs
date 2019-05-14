@@ -36,7 +36,7 @@ namespace GameCommon
         }
 
         #region Json
-        protected static object SerializeJson<T>(T objectToSerialize) where T : class
+        public static object SerializeJson<T>(T objectToSerialize) where T : class
         {
             return JsonConvert.SerializeObject(objectToSerialize);
         }

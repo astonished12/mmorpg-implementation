@@ -55,7 +55,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReturnCode.cs" />
     <Compile Include="SerializedObjects\Character.cs" />
+    <Compile Include="SerializedObjects\ItemDrop.cs" />
+    <Compile Include="SerializedObjects\NpcCharacter.cs" />
+    <Compile Include="SerializedObjects\NpcTemplate.cs" />
     <Compile Include="SerializedObjects\Region.cs" />
+    <Compile Include="SerializedObjects\Stat.cs" />
     <Compile Include="Vector.cs" />
   </ItemGroup>
   <ItemGroup>

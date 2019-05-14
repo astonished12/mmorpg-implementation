@@ -13,6 +13,6 @@ namespace Servers.Models
     {
         public NpcTemplate NpcTemplate { get; set; }
         public Vector Position { get; set; }
-
+        public Vector StartPosition { get; set; }
     }
 }

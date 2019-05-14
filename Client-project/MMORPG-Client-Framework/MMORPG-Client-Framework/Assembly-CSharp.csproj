@@ -152,6 +152,7 @@
     <Compile Include="Assets\Scripts\CharacterSceneScripts\CharacterSlot.cs" />
     <Compile Include="Assets\Scripts\CharacterSceneScripts\CharacterSlotController.cs" />
     <Compile Include="Assets\Scripts\GameMessage.cs" />
+    <Compile Include="Assets\Scripts\GameSceneScripts\Entity.cs" />
     <Compile Include="Assets\Scripts\GameSceneScripts\Movement.cs" />
     <Compile Include="Assets\Scripts\GameSceneScripts\Player.cs" />
     <Compile Include="Assets\Scripts\GameSceneScripts\World.cs" />
