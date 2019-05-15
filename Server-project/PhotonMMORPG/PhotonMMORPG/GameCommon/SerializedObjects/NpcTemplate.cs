@@ -13,5 +13,8 @@ namespace GameCommon.SerializedObjects
         public List<ItemDrop> DropList { get; set; }
         public Dictionary<Stat, float> Stats { get; set; }
         public float WidthRadius { get; set; }
+
+        public Vector3Net Position { get; set; }
+        public Vector3Net StartPosition { get; set; }
     }
 }

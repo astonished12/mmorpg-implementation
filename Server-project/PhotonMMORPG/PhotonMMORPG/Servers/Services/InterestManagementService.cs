@@ -2,8 +2,8 @@
 using System.Diagnostics;
 using System.Linq;
 using ExitGames.Logging;
+using GameCommon;
 using MultiplayerGameFramework.Interfaces.Client;
-using Photon.MmoDemo.Common;
 using Servers.Models;
 using Servers.Models.Interfaces;
 using Servers.Services.Interfaces;

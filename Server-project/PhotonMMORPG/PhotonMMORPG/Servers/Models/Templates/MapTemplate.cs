@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Photon.MmoDemo.Common;
+using GameCommon;
 
 namespace Servers.Models.Templates
 {

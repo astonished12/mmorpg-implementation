@@ -37,11 +37,10 @@ namespace PubSub
                     subscription.OnMessage = (channel, msg) =>
                     {
                         var npcCharactersAoi = msg.FromJson<List<NpcCharacter>>();
-                        GameData.Instance.npcCharacters = npcCharactersAoi;
                         foreach (var npcCharacter in npcCharactersAoi)
                         {
                             if (GameData.Instance.npcCharacters.FirstOrDefault(x =>
-                                x.StartPosition.Equals(npcCharacter.StartPosition)) != null)
+                                x.NpcTemplate.StartPosition.Equals(npcCharacter.NpcTemplate.StartPosition)) != null)
                             {
                                 continue;
                             }

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameCommon;
 using MultiplayerGameFramework.Interfaces.Server;
-using Photon.MmoDemo.Common;
 
 namespace Servers.Models.Interfaces
 {

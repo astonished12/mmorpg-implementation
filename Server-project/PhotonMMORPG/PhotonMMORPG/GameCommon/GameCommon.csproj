@@ -61,6 +61,7 @@
     <Compile Include="SerializedObjects\Region.cs" />
     <Compile Include="SerializedObjects\Stat.cs" />
     <Compile Include="Vector.cs" />
+    <Compile Include="Vector3Net.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

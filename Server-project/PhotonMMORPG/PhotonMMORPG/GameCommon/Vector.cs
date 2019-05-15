@@ -9,7 +9,7 @@
 
 using System;
 
-namespace Photon.MmoDemo.Common
+namespace GameCommon
 {
     /// <summary>
     /// The 3D floating point vector.

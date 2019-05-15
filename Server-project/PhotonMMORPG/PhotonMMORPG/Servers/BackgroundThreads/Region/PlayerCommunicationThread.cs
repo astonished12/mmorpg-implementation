@@ -119,8 +119,6 @@ namespace Servers.BackgroundThreads.Region
                     {
                         entitiesAoiCommon.Add(new GameCommon.SerializedObjects.NpcCharacter
                         {
-                            Position = entity.Position,
-                            StartPosition = entity.StartPosition,
                             NpcTemplate = new NpcTemplate
                             {
                                 Name = entity.NpcTemplate.Name,
@@ -131,7 +129,9 @@ namespace Servers.BackgroundThreads.Region
                                 AiType = entity.NpcTemplate.AiType,
                                 DropList = new List<ItemDrop>(), // same here
                                 Prefab = entity.NpcTemplate.Prefab,
-                                WidthRadius = entity.NpcTemplate.WidthRadius
+                                WidthRadius = entity.NpcTemplate.WidthRadius,
+                                Position = new Vector3Net(entity.Position.X, entity.Position.Y, entity.Position.Z),
+                                StartPosition = new Vector3Net(entity.StartPosition.X, entity.StartPosition.Y, entity.StartPosition.Z)
                             }
                         });
                     }

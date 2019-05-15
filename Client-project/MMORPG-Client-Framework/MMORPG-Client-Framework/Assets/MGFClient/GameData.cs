@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using GameCommon.SerializedObjects;
-using Photon.MmoDemo.Common;
+using GameSceneScripts;
 using PubSub;
 using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
@@ -59,22 +59,21 @@ namespace MGFClient
 
         private void SpawnNpc(NpcCharacter npcCharacter)
         {
-            if (entities.FirstOrDefault(x => x.startPosition.Equals(npcCharacter.StartPosition)) != null)
+            if (entities.FirstOrDefault(x => x.StartPosition.Equals(npcCharacter.NpcTemplate.StartPosition)) != null)
                 return;
 
-            Vector3 npcPosition =
-                new Vector3(npcCharacter.Position.X, npcCharacter.Position.Y, npcCharacter.Position.Z);
+            Vector3 npcPosition = new Vector3(npcCharacter.NpcTemplate.Position.X, npcCharacter.NpcTemplate.Position.Y, npcCharacter.NpcTemplate.Position.Z);
             npcPosition.y = Terrain.activeTerrain.SampleHeight(npcPosition);
-
+            Debug.Log(npcPosition);
             var characterPrefab = Resources.Load(npcCharacter.NpcTemplate.Prefab) as GameObject;
             var obj = Instantiate(characterPrefab, npcPosition, Quaternion.identity);
             if (obj != null)
             {
                 var entity = obj.AddComponent<Entity>();
                 
-                entity.Position = npcPosition;
-                entity.startPosition = npcCharacter.StartPosition;
-                entity.EntityName = npcCharacter.NpcTemplate.Name;
+               entity.Position = npcPosition;
+               entity.StartPosition = npcCharacter.NpcTemplate.StartPosition;
+               entity.EntityName = npcCharacter.NpcTemplate.Name;
                 
                 entities.Add(entity);
             }

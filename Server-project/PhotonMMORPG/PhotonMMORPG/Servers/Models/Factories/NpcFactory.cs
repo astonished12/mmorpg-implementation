@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Servers.Models.Interfaces;
 using Servers.Models.Templates;
-using Vector = Photon.MmoDemo.Common.Vector;
+using Vector = GameCommon.Vector;
 
 namespace Servers.Models.Factories
 {

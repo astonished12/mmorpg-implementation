@@ -7,10 +7,10 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Photon.MmoDemo.Common
-{
-    using System;
+using System;
 
+namespace GameCommon
+{
     /// <summary>
     /// The 3D floating point bounding box.
     /// </summary>
