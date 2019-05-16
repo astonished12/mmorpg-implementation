@@ -52,7 +52,9 @@ namespace Servers.Models.Factories
                 {
                     NpcTemplate = Templates[0],
                     Position = spawnPoint,
-                    StartPosition = spawnPoint
+                    StartPosition = spawnPoint,
+                    Rotation = new Vector { X = 0, Y = 180, Z= 0},
+                    StartRotation = new Vector { X = 0, Y = 180, Z= 0}
                 });
             }
 

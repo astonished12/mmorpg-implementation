@@ -17,6 +17,7 @@ using Servers.Models.Interfaces;
 using Servers.Services.Interfaces;
 using ServiceStack;
 using ItemDrop = GameCommon.SerializedObjects.ItemDrop;
+using NpcCharacter = GameCommon.SerializedObjects.NpcCharacter;
 
 namespace Servers.BackgroundThreads.Region
 {
@@ -66,9 +67,9 @@ namespace Servers.BackgroundThreads.Region
 
                     if (timer.Elapsed < TimeSpan.FromMilliseconds(1000)) //run every 5s
                     {
-                        if (5000 - timer.ElapsedMilliseconds > 0) // no cpu fries:))
+                        if (1000 - timer.ElapsedMilliseconds > 0) // no cpu fries:))
                         {
-                            Thread.Sleep(5000 - (int)timer.ElapsedMilliseconds);
+                            Thread.Sleep(1000 - (int)timer.ElapsedMilliseconds);
                         }
                         continue;
                     }
@@ -111,33 +112,44 @@ namespace Servers.BackgroundThreads.Region
                 }
 
 
-                var entitiesAoi = InterestManagementService.GetAreaOfInterest(peer);
+                var entitiesAoi = InterestManagementService.GetAreaOfInterest(peer)?.ToList();
+                var entitiesAoiCommon = new List<GameCommon.SerializedObjects.NpcCharacter>();
+
                 if (entitiesAoi != null && entitiesAoi.Count > 0)
                 {
-                    var entitiesAoiCommon = new List<GameCommon.SerializedObjects.NpcCharacter>();
                     foreach (var entity in entitiesAoi)
                     {
-                        entitiesAoiCommon.Add(new GameCommon.SerializedObjects.NpcCharacter
+                        if (entity is Servers.Models.NpcCharacter character)
                         {
-                            NpcTemplate = new NpcTemplate
+                            entitiesAoiCommon.Add(new GameCommon.SerializedObjects.NpcCharacter
                             {
-                                Name = entity.NpcTemplate.Name,
-                                Stats = new Dictionary<Stat, float>(), // vezi mai incolo e grav:))
-                                Id = entity.NpcTemplate.Id,
-                                Type = entity.NpcTemplate.Type,
-                                Respawn = entity.NpcTemplate.Respawn,
-                                AiType = entity.NpcTemplate.AiType,
-                                DropList = new List<ItemDrop>(), // same here
-                                Prefab = entity.NpcTemplate.Prefab,
-                                WidthRadius = entity.NpcTemplate.WidthRadius,
-                                Position = new Vector3Net(entity.Position.X, entity.Position.Y, entity.Position.Z),
-                                StartPosition = new Vector3Net(entity.StartPosition.X, entity.StartPosition.Y, entity.StartPosition.Z)
-                            }
-                        });
-                    }
+                                NpcTemplate = new NpcTemplate
+                                {
+                                    Name = character.NpcTemplate.Name,
+                                    Stats = new Dictionary<Stat, float>(), // vezi mai incolo e grav:))
+                                    Id = character.NpcTemplate.Id,
+                                    Type = character.NpcTemplate.Type,
+                                    Respawn = character.NpcTemplate.Respawn,
+                                    AiType = character.NpcTemplate.AiType,
+                                    DropList = new List<ItemDrop>(), // same here
+                                    Prefab = character.NpcTemplate.Prefab,
+                                    WidthRadius = character.NpcTemplate.WidthRadius,
+                                    Position = new Vector3Net(character.Position.X, character.Position.Y, character.Position.Z),
+                                    StartPosition = new Vector3Net(character.StartPosition.X, character.StartPosition.Y, character.StartPosition.Z),
+                                    Rotation = new Vector3Net(character.Rotation.X, character.Rotation.Y, character.Rotation.Z),
+                                    StartRotation = new Vector3Net(character.StartRotation.X, character.StartRotation.Y, character.StartRotation.Z)
+                                }
+                            });
+                        }
 
+                    }
+                }
+
+                if (entitiesAoiCommon.Count > 0)
+                {
                     playerChannel.SendNotification(entitiesAoiCommon);
                 }
+
             }
         }
     }

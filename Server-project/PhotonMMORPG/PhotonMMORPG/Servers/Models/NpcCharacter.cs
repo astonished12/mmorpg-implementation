@@ -14,5 +14,7 @@ namespace Servers.Models
         public NpcTemplate NpcTemplate { get; set; }
         public Vector Position { get; set; }
         public Vector StartPosition { get; set; }
+        public Vector Rotation { get; set; }
+        public Vector StartRotation { get; set; }
     }
 }

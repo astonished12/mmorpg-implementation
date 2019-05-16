@@ -61,9 +61,9 @@ namespace Servers.BackgroundThreads.Region
 
                     if (timer.Elapsed < TimeSpan.FromMilliseconds(1000)) //run every 5s
                     {
-                        if (5000 - timer.ElapsedMilliseconds > 0) // no cpu fries:))
+                        if (1000 - timer.ElapsedMilliseconds > 0) // no cpu fries:))
                         {
-                            Thread.Sleep(5000 - (int)timer.ElapsedMilliseconds);
+                            Thread.Sleep(1000 - (int)timer.ElapsedMilliseconds);
                         }
                         continue;
                     }

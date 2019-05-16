@@ -14,15 +14,16 @@ namespace Servers.Services
     {
         private IRegion Region { get; set; }
         private IRegionService RegionService { get; set; }
-        private readonly Vector _aoiLengthOfPlayers = new Vector(20f, 0f, 20f);
+        private readonly Vector _aoiLengthOfPlayers = new Vector(30f, 0f, 30f);
         private ILogger Log { get; set; }
-        private Dictionary<IClientPeer, List<NpcCharacter>> _playerAreaOfInterest;
+        private Dictionary<IClientPeer, List<ICharacter>> _playerAreaOfInterest;
+        
 
         public InterestManagementService(IRegion region, ILogger log)
         {
             Region = region;
             Log = log;
-            _playerAreaOfInterest = new Dictionary<IClientPeer, List<NpcCharacter>>();
+            _playerAreaOfInterest = new Dictionary<IClientPeer, List<ICharacter>>();
         }
 
         public void ComputeAreaOfInterest(IClientPeer peer, IPlayer player)
@@ -36,13 +37,13 @@ namespace Servers.Services
             {
                 foreach (var entity in areaRegion.Entities)
                 {
-                    _playerAreaOfInterest.TryGetValue(peer, out List<NpcCharacter> npcCharactersAreaOfInterestList);
+                    _playerAreaOfInterest.TryGetValue(peer, out List<ICharacter> npcCharactersAreaOfInterestList);
                     if (null == npcCharactersAreaOfInterestList)
                     {
-                        _playerAreaOfInterest.Add(peer, new List<NpcCharacter>());
+                        _playerAreaOfInterest.Add(peer, new List<ICharacter>());
                     }
 
-                    NpcCharacter entityInPlayerAoi = npcCharactersAreaOfInterestList?.FirstOrDefault(x => x.Equals(entity.NpcCharacters[0]));
+                    ICharacter entityInPlayerAoi = npcCharactersAreaOfInterestList?.FirstOrDefault(x => x.Equals(entity.NpcCharacters[0]));
                     //JUST ONE NPC CHARCTER REMEBER THAT
                     if (playerBox.Contains(entity.NpcCharacters[0].Position))
                     {
@@ -64,9 +65,9 @@ namespace Servers.Services
 
         }
 
-        public List<NpcCharacter> GetAreaOfInterest(IClientPeer peer)
+        public IEnumerable<ICharacter> GetAreaOfInterest(IClientPeer peer)
         {
-            _playerAreaOfInterest.TryGetValue(peer, out List<NpcCharacter> npcCharacters);
+            _playerAreaOfInterest.TryGetValue(peer, out List<ICharacter> npcCharacters);
             return npcCharacters;
         }
     }

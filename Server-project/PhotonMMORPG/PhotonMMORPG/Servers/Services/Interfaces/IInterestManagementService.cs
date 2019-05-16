@@ -12,6 +12,6 @@ namespace Servers.Services.Interfaces
     public interface IInterestManagementService
     {
         void ComputeAreaOfInterest(IClientPeer peer, IPlayer player);
-        List<NpcCharacter> GetAreaOfInterest(IClientPeer peer);
+        IEnumerable<ICharacter> GetAreaOfInterest(IClientPeer peer);
     }
 }

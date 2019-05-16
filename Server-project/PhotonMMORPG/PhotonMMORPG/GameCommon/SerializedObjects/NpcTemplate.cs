@@ -16,5 +16,8 @@ namespace GameCommon.SerializedObjects
 
         public Vector3Net Position { get; set; }
         public Vector3Net StartPosition { get; set; }
+        public Vector3Net Rotation { get; set; }
+        public Vector3Net StartRotation { get; set; }
+
     }
 }
