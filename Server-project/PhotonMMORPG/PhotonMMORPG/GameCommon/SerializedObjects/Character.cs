@@ -7,17 +7,21 @@ using System.Threading.Tasks;
 namespace GameCommon.SerializedObjects
 {
     [Serializable]
-    public class Character
+    public class Character:ICharacter
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Class { get; set; }
         public int Level { get; set; }
         public decimal ExperiencePoints { get; set; }
-        public int LifePoints { get; set; }
-        public int ManaPoints { get; set; }
+        public float LifePoints { get; set; }
+        public float ManaPoints { get; set; }
         public float Loc_X { get; set; }
         public float Loc_Y { get; set; }
         public float Loc_Z { get; set; }
+    }
+
+    public interface ICharacter
+    {
     }
 }

@@ -20,9 +20,7 @@ namespace Servers.Models
         public List<AreaRegionEntityDetail> Entities;
         private List<NpcCharacter> _npcCharactersFromTemplate;
         public MapTemplate MapTemplate;
-
-
-        private readonly ILogger Log = LogManager.GetCurrentClassLogger();
+        
         private readonly NpcFactory _npcFactory = new NpcFactory();
 
         public AreaRegion(int x, int y, MapTemplate mapTemplate)
@@ -75,7 +73,7 @@ namespace Servers.Models
         {
             return string.Format("AreaAreaRegion({0},{1})", base.ToString(), X, Y);
         }
-        
+
         public void SpawnMobs(Vector spawnPosition)
         {
             var npcCharacter = _npcCharactersFromTemplate.FirstOrDefault(x => x.Position.Equals(spawnPosition));

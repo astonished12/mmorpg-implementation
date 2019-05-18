@@ -7,17 +7,12 @@ using System.Threading.Tasks;
 using ExitGames.Logging;
 using GameCommon;
 using GameCommon.SerializedObjects;
-using MultiplayerGameFramework.Implementation.Messaging;
 using MultiplayerGameFramework.Interfaces;
 using MultiplayerGameFramework.Interfaces.Client;
 using MultiplayerGameFramework.Interfaces.Support;
-using Omu.ValueInjecter;
-using Servers.Models;
 using Servers.Models.Interfaces;
 using Servers.Services.Interfaces;
-using ServiceStack;
 using ItemDrop = GameCommon.SerializedObjects.ItemDrop;
-using NpcCharacter = GameCommon.SerializedObjects.NpcCharacter;
 
 namespace Servers.BackgroundThreads.Region
 {
@@ -113,32 +108,48 @@ namespace Servers.BackgroundThreads.Region
 
 
                 var entitiesAoi = InterestManagementService.GetAreaOfInterest(peer)?.ToList();
-                var entitiesAoiCommon = new List<GameCommon.SerializedObjects.NpcCharacter>();
+                var entitiesAoiCommon = new List<GameCommon.SerializedObjects.ICharacter>();
 
                 if (entitiesAoi != null && entitiesAoi.Count > 0)
                 {
                     foreach (var entity in entitiesAoi)
                     {
-                        if (entity is Servers.Models.NpcCharacter character)
+                        if (entity is Servers.Models.NpcCharacter npcCharacter)
                         {
                             entitiesAoiCommon.Add(new GameCommon.SerializedObjects.NpcCharacter
                             {
                                 NpcTemplate = new NpcTemplate
                                 {
-                                    Name = character.NpcTemplate.Name,
+                                    Name = npcCharacter.NpcTemplate.Name,
                                     Stats = new Dictionary<Stat, float>(), // vezi mai incolo e grav:))
-                                    Id = character.NpcTemplate.Id,
-                                    Type = character.NpcTemplate.Type,
-                                    Respawn = character.NpcTemplate.Respawn,
-                                    AiType = character.NpcTemplate.AiType,
+                                    Id = npcCharacter.NpcTemplate.Id,
+                                    Type = npcCharacter.NpcTemplate.Type,
+                                    Respawn = npcCharacter.NpcTemplate.Respawn,
+                                    AiType = npcCharacter.NpcTemplate.AiType,
                                     DropList = new List<ItemDrop>(), // same here
-                                    Prefab = character.NpcTemplate.Prefab,
-                                    WidthRadius = character.NpcTemplate.WidthRadius,
-                                    Position = new Vector3Net(character.Position.X, character.Position.Y, character.Position.Z),
-                                    StartPosition = new Vector3Net(character.StartPosition.X, character.StartPosition.Y, character.StartPosition.Z),
-                                    Rotation = new Vector3Net(character.Rotation.X, character.Rotation.Y, character.Rotation.Z),
-                                    StartRotation = new Vector3Net(character.StartRotation.X, character.StartRotation.Y, character.StartRotation.Z)
+                                    Prefab = npcCharacter.NpcTemplate.Prefab,
+                                    WidthRadius = npcCharacter.NpcTemplate.WidthRadius,
+                                    Position = new Vector3Net(npcCharacter.Position.X, npcCharacter.Position.Y, npcCharacter.Position.Z),
+                                    StartPosition = new Vector3Net(npcCharacter.StartPosition.X, npcCharacter.StartPosition.Y, npcCharacter.StartPosition.Z),
+                                    Rotation = new Vector3Net(npcCharacter.Rotation.X, npcCharacter.Rotation.Y, npcCharacter.Rotation.Z),
+                                    StartRotation = new Vector3Net(npcCharacter.StartRotation.X, npcCharacter.StartRotation.Y, npcCharacter.StartRotation.Z)
                                 }
+                            });
+                        }
+                        else if (entity is Servers.Models.Character character)
+                        {
+                            entitiesAoiCommon.Add(new GameCommon.SerializedObjects.Character
+                            {
+                                Name = character.CharacterDataFromDb.Name,
+                                Loc_X = character.CharacterDataFromDb.Loc_X,
+                                Loc_Y = character.CharacterDataFromDb.Loc_Y,
+                                Loc_Z = character.CharacterDataFromDb.Loc_Z,
+                                ExperiencePoints = character.CharacterDataFromDb.ExperiencePoints,
+                                Level = character.CharacterDataFromDb.Level,
+                                Class = character.CharacterDataFromDb.Class,
+                                LifePoints = character.CharacterDataFromDb.LifePoints,
+                                ManaPoints = character.CharacterDataFromDb.ManaPoints
+
                             });
                         }
 

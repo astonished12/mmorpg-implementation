@@ -36,13 +36,6 @@ namespace Servers.Services
 
         public IAreaRegion GetRegionForPlayer(IPlayer player)
         {
-            /*to do: Check if player was in the world cache!!!!!!!!!!!!!!! 
-                if it is get position from there and return region by the position !!!!!!!
-                    else
-                return the spawn Position on terrain A.K.A newPosition , add player to cache              
-            then => emit to all world consumers that the player is here and is ready to join !!!!!!!!!!!!!!!!!!! (LATER)             
-            */
-
             Vector pos;
             var characterFromCache = CacheService.GetCharacterByName(player.Name);
             if (null == characterFromCache)
@@ -86,12 +79,12 @@ namespace Servers.Services
             if (World.UpdatePlayerPositionAndRotation(player, data) == ReturnCode.Ok)
             {
                 var character = CacheService.GetCharacterByName(player.Name);
-                character.CharacterDataFromDb.Loc_X = (float) data[0];
-                character.CharacterDataFromDb.Loc_Y = (float) data[1];
-                character.CharacterDataFromDb.Loc_Z = (float) data[2];
-                character.CharacterDataFromDb.Rot_X = (float) data[3];
-                character.CharacterDataFromDb.Rot_Y = (float) data[4];
-                character.CharacterDataFromDb.Rot_Z = (float) data[5];
+                character.CharacterDataFromDb.Loc_X = (float)data[0];
+                character.CharacterDataFromDb.Loc_Y = (float)data[1];
+                character.CharacterDataFromDb.Loc_Z = (float)data[2];
+                character.CharacterDataFromDb.Rot_X = (float)data[3];
+                character.CharacterDataFromDb.Rot_Y = (float)data[4];
+                character.CharacterDataFromDb.Rot_Z = (float)data[5];
 
                 CacheService.AddOrUpdateCharacter(player.Name, character);
                 return ReturnCode.Ok;

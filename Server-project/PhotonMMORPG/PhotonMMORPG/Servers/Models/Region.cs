@@ -20,7 +20,6 @@ namespace Servers.Models
         {
             ClientsInRegion = new List<IPlayer>();
             _readerWriterLock = new ReaderWriterLockSlim();
-
         }
 
         public ReturnCode AddPlayer(IPlayer player)

@@ -1,6 +1,6 @@
 ﻿namespace GameCommon.SerializedObjects
 {
-    public class NpcCharacter
+    public class NpcCharacter:ICharacter
     {
         public NpcTemplate NpcTemplate { get; set; }
     }

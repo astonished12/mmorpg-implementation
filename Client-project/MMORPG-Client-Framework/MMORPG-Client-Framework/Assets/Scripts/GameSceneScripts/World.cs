@@ -53,7 +53,6 @@ namespace GameSceneScripts
                 {
                     LocalPlayer = p;
                     p.gameObject.transform.GetChild(2).gameObject.SetActive(true);
-                    //GameData.Instance.ListPlayersOperation();
                 }
                 return;
             }

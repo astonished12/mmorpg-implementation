@@ -14,10 +14,10 @@ namespace Servers.Services
     {
         private IRegion Region { get; set; }
         private IRegionService RegionService { get; set; }
-        private readonly Vector _aoiLengthOfPlayers = new Vector(30f, 0f, 30f);
+        private readonly Vector _aoiLengthOfPlayers = new Vector(70f, 0f, 70f);
         private ILogger Log { get; set; }
         private Dictionary<IClientPeer, List<ICharacter>> _playerAreaOfInterest;
-        
+
 
         public InterestManagementService(IRegion region, ILogger log)
         {
@@ -43,22 +43,67 @@ namespace Servers.Services
                         _playerAreaOfInterest.Add(peer, new List<ICharacter>());
                     }
 
-                    ICharacter entityInPlayerAoi = npcCharactersAreaOfInterestList?.FirstOrDefault(x => x.Equals(entity.NpcCharacters[0]));
+                    var entityInPlayerAoi =
+                        npcCharactersAreaOfInterestList?.FirstOrDefault(x => x.Equals(entity.NpcCharacters[0]));
                     //JUST ONE NPC CHARCTER REMEBER THAT
-                    if (playerBox.Contains(entity.NpcCharacters[0].Position))
+                    if (entity.NpcCharacters.Count > 0)
                     {
-                        if (null != entityInPlayerAoi) continue;
-                        _playerAreaOfInterest[peer].Add(entity.NpcCharacters[0]);
-                        Log.DebugFormat("Player {0} discovered new object {1}", player.Name,
-                            entity.NpcCharacters[0].Position);
+                        if (playerBox.Contains(entity.NpcCharacters[0].Position))
+                        {
+                            if (null != entityInPlayerAoi) continue;
+                            _playerAreaOfInterest[peer].Add(entity.NpcCharacters[0]);
+                            Log.DebugFormat("Player {0} discovered new object {1}", player.Name,
+                                entity.NpcCharacters[0].Position);
+                        }
+                        else
+                        {
+                            if (null == entityInPlayerAoi) continue;
+                            _playerAreaOfInterest[peer].Remove(entity.NpcCharacters[0]);
+                            Log.DebugFormat("Player {0} drop object {1} from his AreaOfInterest", player.Name,
+                                entity.NpcCharacters[0].Position);
+                        }
+                    }
+                }
+
+                foreach (var playerInRegion in Region.ClientsInRegion)
+                {
+                    if (playerInRegion.Name.Equals(player.Name))
+                        continue;
+
+                    var playerInRegionPosition = new Vector
+                    {
+                        X = playerInRegion.Character.CharacterDataFromDb.Loc_X,
+                        Y = 0,
+                        Z = playerInRegion.Character.CharacterDataFromDb.Loc_Z
+                    };
+
+                    _playerAreaOfInterest.TryGetValue(peer, out List<ICharacter> entititiesAoi);
+                    if (null == entititiesAoi)
+                    {
+                        _playerAreaOfInterest.Add(peer, new List<ICharacter>());
                     }
                     else
                     {
-                        if (null == entityInPlayerAoi) continue;
-                        _playerAreaOfInterest[peer].Remove(entity.NpcCharacters[0]);
-                        Log.DebugFormat("Player {0} drop object {1} from his AreaOfInterest", player.Name,
-                            entity.NpcCharacters[0].Position);
+                        var charactersAoi = entititiesAoi.Where(x => x is Character);
+                        var entityInPlayerAoi = charactersAoi?.FirstOrDefault(x => ((Character)x).CharacterDataFromDb.Name.Equals(playerInRegion.Name));
+                        if (playerBox.Contains(playerInRegionPosition))
+                        {
+                            if (null != entityInPlayerAoi) continue;
+                            _playerAreaOfInterest[peer].Add(playerInRegion.Character);
+                            Log.DebugFormat("Player {0} discovered new player {1} at {2}", player.Name, playerInRegion.Name, playerInRegionPosition);
+                        }
+                        else
+                        {
+                            if (null == entityInPlayerAoi) continue;
+                            var character = _playerAreaOfInterest[peer].Where(x => x is Character).SingleOrDefault(x =>
+                                  ((Character)x).CharacterDataFromDb.Name.Equals(playerInRegion.Name));
+                            if (null == character) continue;
+                            _playerAreaOfInterest[peer].Remove(character);
+                            Log.DebugFormat("Player {0} drop player {1} from his AreaOfInterest at {2}", player.Name, playerInRegion.Name,
+                                playerInRegionPosition);
+                        }
                     }
+
 
                 }
             }

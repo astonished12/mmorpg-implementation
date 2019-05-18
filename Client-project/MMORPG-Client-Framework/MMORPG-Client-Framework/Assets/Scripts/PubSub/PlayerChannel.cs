@@ -36,17 +36,33 @@ namespace PubSub
                     subscription.OnUnSubscribe = channel => { Debug.Log($"Client #{channel} UnSubscribed from "); };
                     subscription.OnMessage = (channel, msg) =>
                     {
-                        var npcCharactersAoi = msg.FromJson<List<NpcCharacter>>();
+                        var entitiesAoi = msg.FromJson<List<ICharacter>>();
+                        var npcCharactersAoi = entitiesAoi.OfType<NpcCharacter>();
+                        var charactersAoi = entitiesAoi.OfType<Character>();
                         foreach (var npcCharacter in npcCharactersAoi)
                         {
                             if (GameData.Instance.npcCharacters.FirstOrDefault(x =>
-                                x.NpcTemplate.StartPosition.Equals(npcCharacter.NpcTemplate.StartPosition)) != null)
+                                    x.NpcTemplate.StartPosition.Equals(npcCharacter.NpcTemplate.StartPosition)) == null)
                             {
-                                continue;
+                                lock (GameData.Instance.npcCharacters)
+                                {
+                                    GameData.Instance.npcCharacters.Add(npcCharacter);
+                                }
                             }
-                            
-                            GameData.Instance.npcCharacters.Add(npcCharacter);
                         }
+
+                        foreach (var character in charactersAoi)
+                        {
+                            if (GameData.Instance.playersCharacters.FirstOrDefault(x =>
+                                    x.Name.Equals(character.Name)) == null)
+                            {
+                                lock (GameData.Instance.characters)
+                                {
+                                    GameData.Instance.playersCharacters.Add(character);
+                                }
+                            }
+                        }
+
                         //this.SendNotification("get object message");
                     };
                 }
@@ -61,7 +77,5 @@ namespace PubSub
         {
             ClientPub.PublishMessage($"Server_{Name}", message);
         }
-
-      
     }
 }
