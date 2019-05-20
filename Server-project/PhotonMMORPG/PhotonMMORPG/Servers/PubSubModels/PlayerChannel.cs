@@ -48,11 +48,19 @@ namespace Servers.PubSubModels
             ChannelThread.Start();
         }
 
-        public void SendNotification(object message)
+        public void SendInfoToMainClient(object message)
         {
             using (var client = new RedisClient("localhost: 6379"))
             {
                 client.PublishMessage($"Client_{Name}", message.ToJson());
+            }
+        }
+
+        public void SendInfoToOthersClients(object message)
+        {
+            using (var client = new RedisClient("localhost: 6379"))
+            {
+                client.PublishMessage($"Entity_{Name}", message.ToJson());
             }
         }
     }

@@ -5,42 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5b0925d-b9db-4e0c-9364-247c9b63de1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MMORPG-Client-Framework/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMORPG-Client-Framework/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMORPG-Client-Framework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMORPG-Client-Framework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MGFClient/GameData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MGFClient/GameData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/GameCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/GameCommon.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/GameCommon.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/GameCommon.dll.mdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/GameCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/GameCommon.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PubSub/NpcChannel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PubSub/NpcChannel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/SerializedObjects/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/SerializedObjects/Character.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/SerializedObjects/NpcTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/SerializedObjects/NpcTemplate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/obj/Debug/MGF-Photon4.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/obj/Debug/MGF-Photon4.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/BackgroundThreads/Region/PlayerCommunicationThread.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/BackgroundThreads/Region/PlayerCommunicationThread.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Models/AreaRegion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Models/AreaRegion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Models/Factories/NpcFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Models/Factories/NpcFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Models/NpcCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Models/NpcCharacter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Models/Templates/NpcTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Models/Templates/NpcTemplate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/PubSubModels/NpcChannel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Handlers/Regions/ClientMoveRegion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Handlers/Regions/ClientMoveRegion.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/PubSubModels/PlayerChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/PubSubModels/PlayerChannel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Servers.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Servers.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.pdb" afterDir="false" />
     </list>
@@ -91,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+            <state relative-caret-position="214">
+              <caret line="34" column="45" selection-start-line="34" selection-end-line="35" />
               <folding>
                 <marker date="1558376051343" expanded="false" signature="6:273" ph="..." />
                 <marker date="1558376051343" expanded="true" signature="291:4030" ph="{...}" />
@@ -108,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/MGFClient/GameData.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1050">
-              <caret line="54" column="25" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="25" />
+            <state relative-caret-position="119">
+              <caret line="117" column="56" lean-forward="true" selection-start-line="117" selection-start-column="56" selection-end-line="117" selection-end-column="56" />
               <folding>
                 <marker date="1558375322928" expanded="false" signature="6:232" ph="..." />
                 <marker date="1558375322928" expanded="true" signature="253:5055" ph="{...}" />
@@ -146,16 +122,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="368">
+              <caret line="27" selection-start-line="26" selection-end-line="27" />
               <folding>
-                <marker date="1558373518432" expanded="false" signature="6:128" ph="..." />
-                <marker date="1558373518432" expanded="true" signature="172:1093" ph="{...}" />
-                <marker date="1558373518432" expanded="true" signature="326:1091" ph="{...}" />
-                <marker date="1558373518432" expanded="true" signature="634:966" ph="{...}" />
+                <marker date="1558380758573" expanded="false" signature="6:128" ph="..." />
+                <marker date="1558380758573" expanded="true" signature="172:1199" ph="{...}" />
+                <marker date="1558380758573" expanded="true" signature="326:1197" ph="{...}" />
+                <marker date="1558380758573" expanded="true" signature="634:1072" ph="{...}" />
+                <marker date="1558380758573" expanded="true" signature="943:1053" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -265,11 +242,11 @@
         <option value="$PROJECT_DIR$/Assets/ClientHandlers/Game/PlayerEnterRegionHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PubSub/NpcChannel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs" />
         <option value="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/SerializedObjects/NpcCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Entity.cs" />
         <option value="$PROJECT_DIR$/Assets/MGFClient/GameData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs" />
       </list>
     </option>
   </component>
@@ -401,12 +378,12 @@
       <workItem from="1557204849551" duration="7807000" />
       <workItem from="1557427647231" duration="3281000" />
       <workItem from="1557767498645" duration="21290000" />
-      <workItem from="1558360626649" duration="8039000" />
+      <workItem from="1558360626649" duration="8883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157204000" />
+    <option name="totallyTimeSpent" value="158048000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1078,41 +1055,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <marker date="1558373518432" expanded="false" signature="6:128" ph="..." />
-            <marker date="1558373518432" expanded="true" signature="172:1093" ph="{...}" />
-            <marker date="1558373518432" expanded="true" signature="326:1091" ph="{...}" />
-            <marker date="1558373518432" expanded="true" signature="634:966" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-          <folding>
-            <marker date="1558376051343" expanded="false" signature="6:273" ph="..." />
-            <marker date="1558376051343" expanded="true" signature="291:4030" ph="{...}" />
-            <marker date="1558376051343" expanded="true" signature="340:4028" ph="{...}" />
-            <marker date="1558376051343" expanded="true" signature="486:4014" ph="{...}" />
-            <marker date="1558376051343" expanded="true" signature="1461:2020" ph="{...}" />
-            <marker date="1558376051343" expanded="true" signature="1708:1994" ph="{...}" />
-            <marker date="1558376051343" expanded="true" signature="2086:2586" ph="{...}" />
-            <marker date="1558376051343" expanded="true" signature="2276:2560" ph="{...}" />
-            <marker date="1558376051343" expanded="true" signature="2612:3849" ph="/* var entitiesThatMustBeDestroyed = ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/MGFClient/GameData.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1050">
-          <caret line="54" column="25" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="25" />
+        <state relative-caret-position="119">
+          <caret line="117" column="56" lean-forward="true" selection-start-line="117" selection-start-column="56" selection-end-line="117" selection-end-column="56" />
           <folding>
             <marker date="1558375322928" expanded="false" signature="6:232" ph="..." />
             <marker date="1558375322928" expanded="true" signature="253:5055" ph="{...}" />
@@ -1128,6 +1074,38 @@
             <marker date="1558375322928" expanded="true" signature="3382:3902" ph="{...}" />
             <marker date="1558375322928" expanded="true" signature="3970:5047" ph="{...}" />
             <marker date="1558375322928" expanded="true" signature="4775:5037" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="34" column="45" selection-start-line="34" selection-end-line="35" />
+          <folding>
+            <marker date="1558376051343" expanded="false" signature="6:273" ph="..." />
+            <marker date="1558376051343" expanded="true" signature="291:4030" ph="{...}" />
+            <marker date="1558376051343" expanded="true" signature="340:4028" ph="{...}" />
+            <marker date="1558376051343" expanded="true" signature="486:4014" ph="{...}" />
+            <marker date="1558376051343" expanded="true" signature="1461:2020" ph="{...}" />
+            <marker date="1558376051343" expanded="true" signature="1708:1994" ph="{...}" />
+            <marker date="1558376051343" expanded="true" signature="2086:2586" ph="{...}" />
+            <marker date="1558376051343" expanded="true" signature="2276:2560" ph="{...}" />
+            <marker date="1558376051343" expanded="true" signature="2612:3849" ph="/* var entitiesThatMustBeDestroyed = ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="27" selection-start-line="26" selection-end-line="27" />
+          <folding>
+            <marker date="1558380758573" expanded="false" signature="6:128" ph="..." />
+            <marker date="1558380758573" expanded="true" signature="172:1199" ph="{...}" />
+            <marker date="1558380758573" expanded="true" signature="326:1197" ph="{...}" />
+            <marker date="1558380758573" expanded="true" signature="634:1072" ph="{...}" />
+            <marker date="1558380758573" expanded="true" signature="943:1053" ph="{...}" />
           </folding>
         </state>
       </provider>

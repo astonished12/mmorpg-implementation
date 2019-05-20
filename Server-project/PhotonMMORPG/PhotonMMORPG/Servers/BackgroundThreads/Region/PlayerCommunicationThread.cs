@@ -158,10 +158,12 @@ namespace Servers.BackgroundThreads.Region
 
                 if (entitiesAoiCommon.Count > 0)
                 {
-                    playerChannel.SendNotification(entitiesAoiCommon);
+                    playerChannel.SendInfoToMainClient(entitiesAoiCommon);
                 }
 
             }
+
+
         }
     }
 }
