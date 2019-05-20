@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace GameCommon.SerializedObjects
 {
@@ -18,6 +19,7 @@ namespace GameCommon.SerializedObjects
         public Vector3Net StartPosition { get; set; }
         public Vector3Net Rotation { get; set; }
         public Vector3Net StartRotation { get; set; }
+        public Guid Identifier { get; set; }
 
     }
 }

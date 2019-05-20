@@ -20,7 +20,7 @@ namespace Servers.Models
         public List<AreaRegionEntityDetail> Entities;
         private List<NpcCharacter> _npcCharactersFromTemplate;
         public MapTemplate MapTemplate;
-        
+
         private readonly NpcFactory _npcFactory = new NpcFactory();
 
         public AreaRegion(int x, int y, MapTemplate mapTemplate)

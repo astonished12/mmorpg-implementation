@@ -7,7 +7,6 @@ using log4net.Core;
 using ServiceStack;
 using ServiceStack.Redis;
 using ILogger = ExitGames.Logging.ILogger;
-using LogManager = ExitGames.Logging.LogManager;
 
 namespace Servers.PubSubModels
 {

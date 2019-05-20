@@ -42,8 +42,7 @@ namespace Servers.Handlers.World
             var playerData = MessageSerializerService.DeserializeObjectOfType<CharacterData>(message.Parameters[(byte)MessageParameterCode.Object]);
             var player = WorldService.GetPlayer(playerData.SelectedCharacter.Name);
             player.Character = CacheService.GetCharacterByName(playerData.SelectedCharacter.Name);
-
-
+            
             var returnCode = WorldService.UpdatePositionAndRotation(player,
                 message.Parameters[(byte)MessageParameterCode.PosX], message.Parameters[(byte)MessageParameterCode.PosY], message.Parameters[(byte)MessageParameterCode.PosZ],
                 message.Parameters[(byte)MessageParameterCode.RotX], message.Parameters[(byte)MessageParameterCode.RotY], message.Parameters[(byte)MessageParameterCode.RotZ]);

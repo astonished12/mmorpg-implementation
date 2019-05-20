@@ -16,6 +16,6 @@ namespace Servers.Models.Templates
         public Dictionary<IStat, float> Stats { get; set; }
         public float WidthRadius { get; set; }
 
-        public NpcChannel Channel { get; set; }
+        public EntityChannel Channel { get; set; }
     }
 }

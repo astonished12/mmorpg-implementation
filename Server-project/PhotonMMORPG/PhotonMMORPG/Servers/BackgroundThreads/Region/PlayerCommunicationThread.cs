@@ -105,8 +105,7 @@ namespace Servers.BackgroundThreads.Region
                 {
                     return;
                 }
-
-
+                
                 var entitiesAoi = InterestManagementService.GetAreaOfInterest(peer)?.ToList();
                 var entitiesAoiCommon = new List<GameCommon.SerializedObjects.ICharacter>();
 
@@ -132,7 +131,8 @@ namespace Servers.BackgroundThreads.Region
                                     Position = new Vector3Net(npcCharacter.Position.X, npcCharacter.Position.Y, npcCharacter.Position.Z),
                                     StartPosition = new Vector3Net(npcCharacter.StartPosition.X, npcCharacter.StartPosition.Y, npcCharacter.StartPosition.Z),
                                     Rotation = new Vector3Net(npcCharacter.Rotation.X, npcCharacter.Rotation.Y, npcCharacter.Rotation.Z),
-                                    StartRotation = new Vector3Net(npcCharacter.StartRotation.X, npcCharacter.StartRotation.Y, npcCharacter.StartRotation.Z)
+                                    StartRotation = new Vector3Net(npcCharacter.StartRotation.X, npcCharacter.StartRotation.Y, npcCharacter.StartRotation.Z),
+                                    Identifier = npcCharacter.Identifier
                                 }
                             });
                         }

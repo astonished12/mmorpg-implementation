@@ -1,4 +1,5 @@
-﻿using GameCommon;
+﻿using System;
+using GameCommon;
 using UnityEngine;
 
 namespace GameSceneScripts
@@ -7,7 +8,9 @@ namespace GameSceneScripts
 		protected Transform transform { get; set; }
 
 		public string EntityName { get; set; }
-	
+		public Guid Identifier { get; set; }
+		public bool mustBeDestroyed { get; set; }
+		
 		public Vector3 Position
 		{
 			get { return transform.position; }

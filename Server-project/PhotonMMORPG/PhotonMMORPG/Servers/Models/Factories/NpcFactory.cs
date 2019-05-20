@@ -51,6 +51,7 @@ namespace Servers.Models.Factories
                 npcCharacters.Add(new NpcCharacter()
                 {
                     NpcTemplate = Templates[0],
+                    Identifier = Guid.NewGuid(),
                     Position = spawnPoint,
                     StartPosition = spawnPoint,
                     Rotation = new Vector { X = 0, Y = 180, Z= 0},

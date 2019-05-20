@@ -14,35 +14,31 @@ namespace PubSub
 {
     public class PlayerChannel : MonoBehaviour
     {
-        public string Name { get; set; }
-        private RedisClient ClientSub { get; set; }
-        private RedisClient ClientPub { get; set; }
-
+        private string Name { get; set; }
+        private RedisClient ClientPubSub { get; set; }
 
         public PlayerChannel(string name)
         {
-            ClientSub = new RedisClient("localhost: 6379");
-            ClientPub = new RedisClient("localhost: 6379");
+            ClientPubSub = new RedisClient("localhost: 6379");
             Name = name;
 
-            Thread thread = new Thread(delegate()
+            var thread = new Thread(delegate()
             {
                 //Here is a new thread
                 IRedisSubscription subscription = null;
-
-                using (subscription = ClientSub.CreateSubscription())
+                using (subscription = ClientPubSub.CreateSubscription())
                 {
                     subscription.OnSubscribe = channel => { Debug.Log($"Client Subscribed to '{channel}'"); };
                     subscription.OnUnSubscribe = channel => { Debug.Log($"Client #{channel} UnSubscribed from "); };
                     subscription.OnMessage = (channel, msg) =>
                     {
                         var entitiesAoi = msg.FromJson<List<ICharacter>>();
-                        var npcCharactersAoi = entitiesAoi.OfType<NpcCharacter>();
+                        var npcCharactersAoi = entitiesAoi.OfType<NpcCharacter>().ToList();
                         var charactersAoi = entitiesAoi.OfType<Character>();
                         foreach (var npcCharacter in npcCharactersAoi)
                         {
                             if (GameData.Instance.npcCharacters.FirstOrDefault(x =>
-                                    x.NpcTemplate.StartPosition.Equals(npcCharacter.NpcTemplate.StartPosition)) == null)
+                                    x.NpcTemplate.Identifier.ToString().Equals(npcCharacter.NpcTemplate.Identifier.ToString())) == null)
                             {
                                 lock (GameData.Instance.npcCharacters)
                                 {
@@ -63,7 +59,26 @@ namespace PubSub
                             }
                         }
 
-                        //this.SendNotification("get object message");
+                        //TO DO UNSUBSCRIBE AND DESTROY OBJECT OR MARK THEM INVISIBLE RAU TARE TARE MERGE CHALLENGING
+                        
+//                        var entitiesThatMustBeDestroyed =
+//                            GameData.Instance.npcCharacters.Except(npcCharactersAoi).ToList();
+//                      
+//                        foreach (var entity in entitiesThatMustBeDestroyed)
+//                        {
+//                            var entityInEntitiesList =
+//                                GameData.Instance.entities.SingleOrDefault(x =>
+//                                    x.EntityName.Equals(entity.NpcTemplate.Identifier.ToString()));
+//                            if (entityInEntitiesList != null) entityInEntitiesList.mustBeDestroyed = true;
+//
+//                            var channelInChannelList =
+//                                GameData.Instance.pubSubActorsEntities.SingleOrDefault(x =>
+//                                    x.Name.Equals(entity.NpcTemplate.Identifier.ToString()));
+//                            GameData.Instance.pubSubActorsEntities.Remove(channelInChannelList);
+//
+//                            if (channelInChannelList != null) channelInChannelList.thread.Abort();
+//                        }
+
                     };
                 }
 
@@ -71,11 +86,6 @@ namespace PubSub
             });
             thread.Start();
         }
-
-
-        public void SendNotification(string message)
-        {
-            ClientPub.PublishMessage($"Server_{Name}", message);
-        }
+       
     }
 }

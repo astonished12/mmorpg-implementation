@@ -1,8 +1,13 @@
-﻿using ExitGames.Logging;
+﻿using System.Collections.Generic;
+using System.Linq;
+using ExitGames.Logging;
 using GameCommon;
 using MGF.Mappers;
+using MultiplayerGameFramework.Implementation.Messaging;
 using MultiplayerGameFramework.Interfaces.Config;
+using MultiplayerGameFramework.Interfaces.Messaging;
 using MultiplayerGameFramework.Interfaces.Server;
+using Servers.Config;
 using Servers.Models;
 using Servers.Models.Interfaces;
 using Servers.Services.Interfaces;
@@ -87,6 +92,23 @@ namespace Servers.Services
                 character.CharacterDataFromDb.Rot_Z = (float)data[5];
 
                 CacheService.AddOrUpdateCharacter(player.Name, character);
+
+                var regionServers = ServerConnectionCollection.GetServersByType<IServerPeer>(ServerType.RegionServer).ToList();
+                // here must done for region cross 
+                    // must call al servers
+                foreach (var regionServer in regionServers)
+                {
+                    var message = new Request((byte)MessageOperationCode.Region,
+                        (byte)MessageOperationCode.Region,
+                        new Dictionary<byte, object>()
+                        {
+                            { regionServer.Server.SubCodeParameterCode,(int) MessageSubCode.Move},
+                            { (byte)MessageParameterCode.Object , MessageSerializerService.SerializeObjectOfType(character) }
+                        });
+
+                    regionServer.SendMessage(message);
+                }
+
                 return ReturnCode.Ok;
             }
             else

@@ -24,6 +24,7 @@ namespace Servers.Modules
 
             builder.RegisterType<AssignAreaMapRegionHandler>().AsImplementedInterfaces();
             builder.RegisterType<ClientEnterRegion>().AsImplementedInterfaces();
+            builder.RegisterType<ClientMoveRegion>().AsImplementedInterfaces();
 
             builder.RegisterType<AreaOfInterestThread>().AsImplementedInterfaces();
             builder.RegisterType<MobSpawnerThread>().AsImplementedInterfaces();

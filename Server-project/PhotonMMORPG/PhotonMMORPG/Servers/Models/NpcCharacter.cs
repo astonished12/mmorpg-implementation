@@ -16,5 +16,6 @@ namespace Servers.Models
         public Vector StartPosition { get; set; }
         public Vector Rotation { get; set; }
         public Vector StartRotation { get; set; }
+        public Guid Identifier { get; set; }
     }
 }

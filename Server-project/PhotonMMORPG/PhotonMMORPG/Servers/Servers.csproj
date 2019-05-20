@@ -177,6 +177,7 @@
     <Compile Include="Handlers\Login\LoginCharacterSelectionHandler.cs" />
     <Compile Include="Handlers\Proxy\ClientWorldFowardingRequestHandler.cs" />
     <Compile Include="Handlers\Proxy\WorldOperationsResponseHandler.cs" />
+    <Compile Include="Handlers\Regions\ClientMoveRegion.cs" />
     <Compile Include="Handlers\Regions\AssignAreaMapRegionHandler.cs" />
     <Compile Include="Handlers\Regions\ClientEnterRegion.cs" />
     <Compile Include="Handlers\World\ClientEnterWorld.cs" />
@@ -198,7 +199,7 @@
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Quest.cs" />
     <Compile Include="Models\Region.cs" />
-    <Compile Include="PubSubModels\NpcChannel.cs" />
+    <Compile Include="PubSubModels\EntityChannel.cs" />
     <Compile Include="PubSubModels\PlayerChannel.cs" />
     <Compile Include="Services\CacheService.cs" />
     <Compile Include="Services\InterestManagementService.cs" />

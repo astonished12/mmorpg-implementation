@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace GameCommon.SerializedObjects
 {
     [Serializable]
-    public class Character:ICharacter
+    public class Character : ICharacter
     {
         public int Id { get; set; }
         public string Name { get; set; }

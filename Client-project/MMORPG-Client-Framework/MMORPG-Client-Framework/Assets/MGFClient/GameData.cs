@@ -23,11 +23,15 @@ namespace MGFClient
 
         [SerializeField] public PlayerChannel channel;
 
+        // data structure for subscription on message
         public List<NpcCharacter> npcCharacters;
         public List<Character> playersCharacters;
+
+        //data for render entities and players
         public List<Entity> entities;
         public List<Player> players;
-
+        public List<EntityChannel> pubSubActorsEntities;
+        
         void Awake()
         {
             if (Instance == null)
@@ -46,14 +50,22 @@ namespace MGFClient
         void Start()
         {
             players = new List<Player>();
+            entities = new List<Entity>();
+            
             npcCharacters = new List<NpcCharacter>();
             playersCharacters = new List<Character>();
-            entities = new List<Entity>();
+            
+            pubSubActorsEntities = new List<EntityChannel>();
         }
 
 
         void FixedUpdate()
         {
+            lock (entities)
+            {
+                entities.RemoveAll(x => x.mustBeDestroyed);
+            }
+            
             lock (npcCharacters)
             {
                 foreach (var npcCharacter in npcCharacters)
@@ -88,6 +100,7 @@ namespace MGFClient
 
 
             var obj = Instantiate(characterPrefab, npcPosition, Quaternion.Euler(npcRotation));
+            obj.name = npcCharacter.NpcTemplate.Identifier.ToString();    
             if (obj != null)
             {
                 var entity = obj.AddComponent<Entity>();
@@ -95,7 +108,9 @@ namespace MGFClient
                 entity.Position = npcPosition;
                 entity.StartPosition = npcCharacter.NpcTemplate.StartPosition;
                 entity.EntityName = npcCharacter.NpcTemplate.Name;
-
+                entity.Identifier = npcCharacter.NpcTemplate.Identifier;    
+                
+                pubSubActorsEntities.Add(new EntityChannel(npcCharacter.NpcTemplate.Identifier.ToString()));
                 entities.Add(entity);
             }
         }
@@ -120,8 +135,8 @@ namespace MGFClient
             {
                 var player = obj.AddComponent<Player>();
                 player.CharacterName = characterName;
-
-                GameData.Instance.players.Add(player);
+                pubSubActorsEntities.Add(new EntityChannel(character.Name));
+                Instance.players.Add(player);
             }
         }
     }
