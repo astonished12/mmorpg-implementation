@@ -85,18 +85,11 @@ namespace Servers.Models
         public ReturnCode UpdatePlayerPositionAndRotation(IPlayer player, params object[] data)
         {
             var playerCharacter = Clients.FirstOrDefault(x => x.Name == player.Name)?.Character.CharacterDataFromDb;
-            if (data.Length != 6)
+            if (data.Length != 11)
             {
                 return ReturnCode.OperationInvalid;
             }
-            
-            playerCharacter.Loc_X = (float)data[0];
-            playerCharacter.Loc_Y = (float)data[0];
-            playerCharacter.Loc_Z = (float)data[0];
-            playerCharacter.Rot_X = (float)data[0];
-            playerCharacter.Rot_Y = (float)data[0];
-            playerCharacter.Rot_Z = (float)data[0];
-
+          
             return ReturnCode.Ok;
         }
     }

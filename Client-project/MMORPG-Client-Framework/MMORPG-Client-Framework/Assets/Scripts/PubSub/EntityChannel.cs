@@ -31,6 +31,12 @@ public class EntityChannel : MonoBehaviour
                         var entitiesAoi = msg.FromJson<Character>();
                         var player = GameData.Instance.players.FirstOrDefault(x => x.CharacterName.Equals(entitiesAoi.Name));
                         player.NewPosition = new Vector3(entitiesAoi.Loc_X, entitiesAoi.Loc_Y, entitiesAoi.Loc_Z);
+                        player.NewRotation = Quaternion.Euler(entitiesAoi.Rot_X, entitiesAoi.Rot_Y, entitiesAoi.Rot_Z );
+                        player.die = entitiesAoi.Die;
+                        player.jump = entitiesAoi.Jump;
+                        player.attack = entitiesAoi.Attack;
+                        player.speed = entitiesAoi.Speed;
+                        player.respawn = entitiesAoi.Respawn;
                     };
                 }
 

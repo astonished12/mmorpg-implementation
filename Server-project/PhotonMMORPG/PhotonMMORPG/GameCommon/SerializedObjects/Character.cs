@@ -19,6 +19,15 @@ namespace GameCommon.SerializedObjects
         public float Loc_X { get; set; }
         public float Loc_Y { get; set; }
         public float Loc_Z { get; set; }
+
+        public float Rot_X { get; set; }
+        public float Rot_Y { get; set; }
+        public float Rot_Z { get; set; }
+        public float Speed { get; set; }
+        public bool Jump { get; set; }
+        public bool Die { get; set; }
+        public bool Respawn { get; set; }
+        public bool Attack { get; set; }
     }
 
     public interface ICharacter

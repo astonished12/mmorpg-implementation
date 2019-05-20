@@ -42,11 +42,19 @@ namespace Servers.Handlers.Regions
                     Loc_X = character.CharacterDataFromDb.Loc_X,
                     Loc_Y = character.CharacterDataFromDb.Loc_Y,
                     Loc_Z = character.CharacterDataFromDb.Loc_Z,
+                    Rot_X = character.CharacterDataFromDb.Rot_X,
+                    Rot_Y = character.CharacterDataFromDb.Rot_Y,
+                    Rot_Z = character.CharacterDataFromDb.Rot_Z,
                     ExperiencePoints = character.CharacterDataFromDb.ExperiencePoints,
                     Level = character.CharacterDataFromDb.Level,
                     Class = character.CharacterDataFromDb.Class,
                     LifePoints = character.CharacterDataFromDb.LifePoints,
-                    ManaPoints = character.CharacterDataFromDb.ManaPoints
+                    ManaPoints = character.CharacterDataFromDb.ManaPoints,
+                    Attack = character.Attack,
+                    Die = character.Die,
+                    Jump = character.Jump,
+                    Respawn = character.Respawn,
+                    Speed = character.Speed
                 });
             }
             return true;

@@ -79,7 +79,7 @@ namespace Servers.Services
             }
         }
 
-        public ReturnCode UpdatePositionAndRotation(IPlayer player, params object[] data)
+        public ReturnCode UpdatePositionAndRotationAndAnimation(IPlayer player, params object[] data)
         {
             if (World.UpdatePlayerPositionAndRotation(player, data) == ReturnCode.Ok)
             {
@@ -90,6 +90,13 @@ namespace Servers.Services
                 character.CharacterDataFromDb.Rot_X = (float)data[3];
                 character.CharacterDataFromDb.Rot_Y = (float)data[4];
                 character.CharacterDataFromDb.Rot_Z = (float)data[5];
+                character.Speed = (float) data[6];
+                character.Jump = (bool) data[7];
+                character.Die = (bool) data[8];
+                character.Respawn = (bool) data[9];
+                character.Attack = (bool) data[10];
+
+
 
                 CacheService.AddOrUpdateCharacter(player.Name, character);
 

@@ -22,6 +22,11 @@ namespace GameCommon
         RotX,
         RotY,
         RotZ,
+        Speed,
+        Jump,
+        Die,
+        Respawn,
+        Attack,
         PlayerChannel
     }
 }

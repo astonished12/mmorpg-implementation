@@ -43,9 +43,12 @@ namespace Servers.Handlers.World
             var player = WorldService.GetPlayer(playerData.SelectedCharacter.Name);
             player.Character = CacheService.GetCharacterByName(playerData.SelectedCharacter.Name);
             
-            var returnCode = WorldService.UpdatePositionAndRotation(player,
+            var returnCode = WorldService.UpdatePositionAndRotationAndAnimation(player,
                 message.Parameters[(byte)MessageParameterCode.PosX], message.Parameters[(byte)MessageParameterCode.PosY], message.Parameters[(byte)MessageParameterCode.PosZ],
-                message.Parameters[(byte)MessageParameterCode.RotX], message.Parameters[(byte)MessageParameterCode.RotY], message.Parameters[(byte)MessageParameterCode.RotZ]);
+                message.Parameters[(byte)MessageParameterCode.RotX], message.Parameters[(byte)MessageParameterCode.RotY], message.Parameters[(byte)MessageParameterCode.RotZ],
+                message.Parameters[(byte)MessageParameterCode.Speed], message.Parameters[(byte)MessageParameterCode.Jump], message.Parameters[(byte)MessageParameterCode.Die],
+                message.Parameters[(byte)MessageParameterCode.Respawn], message.Parameters[(byte)MessageParameterCode.Attack]);
+
 
 
             var response = new Response((byte)MessageOperationCode.World, (byte)MessageSubCode.Move, new Dictionary<byte, object> {

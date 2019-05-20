@@ -29,7 +29,7 @@ namespace GameSceneScripts
 //                GameObject.FindWithTag("Player").GetComponent<Movement>().transform.Find("Camera").gameObject.SetActive(true);
 //                Camera.main.gameObject.SetActive(false);
 //            }
-//            
+            
             if(LocalPlayer)
                 LocalPlayer.GetComponent<Movement>().Move();
 
@@ -88,14 +88,15 @@ namespace GameSceneScripts
                 Vector3 oldRotation = LocalPlayer.transform.eulerAngles;
 
                 _lastSendTime = Time.time + SendRate;
-
-                GameObject.Find("GameView").GetComponent<GameSceneView>().SendMoveRquest(OldPosition, oldRotation);
                 Animator tmp = LocalPlayer.GetComponent<Animator>();
                 float speed = tmp.GetFloat("Speed");
                 bool jump = tmp.GetBool("Jumping");
                 bool die = tmp.GetBool("Die");
                 bool respawn = tmp.GetBool("Respawn");
                 bool attack = tmp.GetBool("Attack");
+                
+                GameObject.Find("GameView").GetComponent<GameSceneView>().SendMoveRquest(OldPosition, oldRotation, speed, jump, die, respawn, attack);
+
                 //Debug.Log("PRTTEY DEBUG " + speed + " " + jump + " " + die + " " + respawn + " " + attack);
                 //PhotonEngine.Instance.AnimatorOperations(speed, jump, die, respawn, attack);
 

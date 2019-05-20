@@ -43,11 +43,12 @@ namespace Servers.Services
                         _playerAreaOfInterest.Add(peer, new List<ICharacter>());
                     }
 
-                    var entityInPlayerAoi =
-                        npcCharactersAreaOfInterestList?.FirstOrDefault(x => x.Equals(entity.NpcCharacters[0]));
-                    //JUST ONE NPC CHARCTER REMEBER THAT
                     if (entity.NpcCharacters.Count > 0)
                     {
+                        var entityInPlayerAoi =
+                        npcCharactersAreaOfInterestList?.FirstOrDefault(x => x.Equals(entity.NpcCharacters[0]));
+                        //JUST ONE NPC CHARCTER REMEBER THAT
+
                         if (playerBox.Contains(entity.NpcCharacters[0].Position))
                         {
                             if (null != entityInPlayerAoi) continue;

@@ -16,7 +16,7 @@ namespace Servers.Services.Interfaces
         IAreaRegion GetRegionForPlayer(IPlayer player);
         IWorld GetWorld();
         void AssignRegionServerToGameWorldRegion();
-        ReturnCode UpdatePositionAndRotation(IPlayer player, params object[] data);
+        ReturnCode UpdatePositionAndRotationAndAnimation(IPlayer player, params object[] data);
         IPlayer GetPlayer(string name);
     }
 }
