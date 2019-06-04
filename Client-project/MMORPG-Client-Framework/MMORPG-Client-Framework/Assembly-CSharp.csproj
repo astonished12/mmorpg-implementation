@@ -146,9 +146,6 @@
     <Compile Include="Assets\MGFClient\Message\Interfaces\IMessage.cs" />
     <Compile Include="Assets\MGFClient\Message\MessageType.cs" />
     <Compile Include="Assets\MGFClient\PhotonEngine.cs" />
-    <Compile Include="Assets\Packages\PubComp.NoSql.ServiceStackRedis.4.1.0\src\NoSql.ServiceStackRedis\Properties\AssemblyInfo.cs" />
-    <Compile Include="Assets\Packages\PubComp.NoSql.ServiceStackRedis.4.1.0\src\NoSql.ServiceStackRedis\RedisConnectionInfo.cs" />
-    <Compile Include="Assets\Packages\PubComp.NoSql.ServiceStackRedis.4.1.0\src\NoSql.ServiceStackRedis\RedisContext.cs" />
     <Compile Include="Assets\Scripts\CharacterSceneScripts\CharacterSlot.cs" />
     <Compile Include="Assets\Scripts\CharacterSceneScripts\CharacterSlotController.cs" />
     <Compile Include="Assets\Scripts\GameMessage.cs" />
@@ -190,7 +187,6 @@
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Resources\Shaders\Common.cginc" />
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
-    <None Include="Assets\Packages\ServiceStack.Common.3.9.70\lib\net35\ServiceStack.Interfaces.xml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\FromStore\Fantasy Lands\PostProcessing\Editor Resources\UI\Trackball.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -436,26 +432,14 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="PubComp.NoSql.Core">
-      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/PubComp.NoSql.Core.4.0.0/lib/net45/PubComp.NoSql.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="PubComp.NoSql.ServiceStackRedis">
-      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/PubComp.NoSql.ServiceStackRedis.4.1.0/lib/net45/PubComp.NoSql.ServiceStackRedis.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Common">
-      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/ServiceStack.Common.3.9.70/lib/net35/ServiceStack.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Interfaces">
-      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/ServiceStack.Common.3.9.70/lib/net35/ServiceStack.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Redis">
-      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/ServiceStack.Redis.3.9.71/lib/net35/ServiceStack.Redis.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Text">
-      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Packages/ServiceStack.Text.3.9.70/lib/net35/ServiceStack.Text.dll</HintPath>
-    </Reference>
     <Reference Include="GameCommon">
       <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/GameCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/netstandard.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json.Bson">
       <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/Newtonsoft.Json.Bson.dll</HintPath>
@@ -465,6 +449,312 @@
     </Reference>
     <Reference Include="Photon3Unity3D">
       <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/dance/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>

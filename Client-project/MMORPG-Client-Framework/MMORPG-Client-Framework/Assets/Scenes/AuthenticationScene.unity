@@ -2698,7 +2698,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characters: []
+  channel: {fileID: 0}
+  playersCharacters: []
+  entities: []
   players: []
+  pubSubActorsEntities: []
 --- !u!4 &1520543247
 Transform:
   m_ObjectHideFlags: 0

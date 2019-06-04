@@ -113,8 +113,8 @@ namespace Servers.Services
 
         public IEnumerable<ICharacter> GetAreaOfInterest(IClientPeer peer)
         {
-            _playerAreaOfInterest.TryGetValue(peer, out List<ICharacter> npcCharacters);
-            return npcCharacters;
+            _playerAreaOfInterest.TryGetValue(peer, out List<ICharacter> characters);
+            return characters;
         }
     }
 }

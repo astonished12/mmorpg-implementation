@@ -67,7 +67,7 @@ namespace GameSceneScripts
                 var player = GameData.Instance.players[i];
                 if (player != LocalPlayer)
                 {
-                    player.Position = Vector3.Lerp(player.Position, player.NewPosition, Time.fixedDeltaTime * 15f);
+                    player.Position = Vector3.Lerp(player.Position, player.NewPosition, Time.fixedDeltaTime);
                     player.Rotation = Quaternion.Slerp(player.Rotation, player.NewRotation, Time.fixedDeltaTime * 3f);
                     Animator tmp = player.GetComponent<Animator>();
                     tmp.SetFloat("Speed", player.speed);

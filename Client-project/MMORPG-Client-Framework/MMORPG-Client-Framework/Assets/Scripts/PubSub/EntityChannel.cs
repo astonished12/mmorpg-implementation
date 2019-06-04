@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading;
 using GameCommon.SerializedObjects;
 using MGFClient;
+using ServiceStack;
 using ServiceStack.Redis;
 using ServiceStack.Text;
 using UnityEngine;
@@ -28,6 +29,7 @@ public class EntityChannel : MonoBehaviour
                     subscription.OnUnSubscribe = channel => { Debug.Log($"Client #{channel} UnSubscribed from "); };
                     subscription.OnMessage = (channel, msg) =>
                     {
+                        Debug.Log("New message from channel "+channel);
                         var entitiesAoi = msg.FromJson<Character>();
                         var player = GameData.Instance.players.FirstOrDefault(x => x.CharacterName.Equals(entitiesAoi.Name));
                         player.NewPosition = new Vector3(entitiesAoi.Loc_X, entitiesAoi.Loc_Y, entitiesAoi.Loc_Z);

@@ -258,29 +258,17 @@
         <e p="NuGet" t="Include">
           <e p="LICENSE.txt" t="Include" />
         </e>
-        <e p="packages" t="Include">
-          <e p="PubComp.NoSql.ServiceStackRedis.4.1.0" t="Include">
-            <e p="src" t="Include">
-              <e p="NoSql.ServiceStackRedis" t="Include">
-                <e p="Properties" t="Include">
-                  <e p="AssemblyInfo.cs" t="Include" />
-                </e>
-                <e p="RedisConnectionInfo.cs" t="Include" />
-                <e p="RedisContext.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="ServiceStack.Common.3.9.70" t="Include">
-            <e p="lib" t="Include">
-              <e p="net35" t="Include">
-                <e p="ServiceStack.Interfaces.xml" t="Include" />
-              </e>
-            </e>
-          </e>
-        </e>
         <e p="Plugins" t="Include">
           <e p="Newtonsoft.Json.Bson.xml" t="Include" />
           <e p="Newtonsoft.Json.xml" t="Include" />
+          <e p="ServiceStack.Common.xml" t="Include" />
+          <e p="ServiceStack.Interfaces.xml" t="Include" />
+          <e p="ServiceStack.Redis.xml" t="Include" />
+          <e p="ServiceStack.Text.xml" t="Include" />
+          <e p="System.Buffers.xml" t="Include" />
+          <e p="System.Memory.xml" t="Include" />
+          <e p="System.Numerics.Vectors.xml" t="Include" />
+          <e p="System.Runtime.CompilerServices.Unsafe.xml" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="CharacterSceneScripts" t="Include">

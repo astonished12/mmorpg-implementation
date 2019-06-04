@@ -59,7 +59,7 @@ namespace MGFClient
         }
 
 
-        void FixedUpdate()
+        void Update()
         {
             lock (entities)
             {
@@ -138,6 +138,12 @@ namespace MGFClient
                 pubSubActorsEntities.Add(new EntityChannel(character.Name));
                 Instance.players.Add(player);
             }
+        }
+        
+        void OnGUI()
+        {
+            GUI.Label(new Rect(0, 0, 100, 100), (Convert.ToString((int)(1.0f / Time.smoothDeltaTime)+" FPS")));
+            GUI.Label(new Rect(0, 15, 100, 100), PhotonEngine.Instance.Peer.RoundTripTime.ToString()+" RTT");
         }
     }
 }

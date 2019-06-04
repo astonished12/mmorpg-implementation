@@ -9,3 +9,4 @@ D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-proje
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MultiplayerGameFramework\obj\Debug\MultiplayerGameFramework.csproj.CoreCompileInputs.cache
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MultiplayerGameFramework\obj\Debug\MultiplayerGameFramework.dll
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MultiplayerGameFramework\obj\Debug\MultiplayerGameFramework.pdb
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MultiplayerGameFramework\obj\Debug\MultiplayerGameFramework.csprojAssemblyReference.cache

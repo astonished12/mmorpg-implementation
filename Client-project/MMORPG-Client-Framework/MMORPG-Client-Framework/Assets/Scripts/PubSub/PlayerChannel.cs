@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using GameCommon;
 using GameCommon.SerializedObjects;
 using MGFClient;
+using ServiceStack;
 using ServiceStack.Redis;
 using ServiceStack.Text;
 using UnityEngine;
