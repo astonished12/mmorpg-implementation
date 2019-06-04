@@ -52,7 +52,10 @@ namespace Servers.PubSubModels
         {
             using (var client = new RedisClient("localhost: 6379"))
             {
-                client.PublishMessage($"Client_{Name}", message.ToJson());
+                ThreadPool.QueueUserWorkItem(_ =>
+                {
+                    client.PublishMessage($"Client_{Name}", message.ToJson());
+                });
             }
         }
 
@@ -60,8 +63,13 @@ namespace Servers.PubSubModels
         {
             using (var client = new RedisClient("localhost: 6379"))
             {
-                client.PublishMessage($"Entity_{Name}", message.ToJson());
+                ThreadPool.QueueUserWorkItem(_ =>
+                {
+                    client.PublishMessage($"Entity_{Name}", message.ToJson());
+                });
             }
         }
+
+
     }
 }
