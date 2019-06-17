@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using GameCommon;
 using GameCommon.SerializedObjects;
 using MGFClient;
+using Models;
 using Newtonsoft.Json;
 using ServiceStack;
 using ServiceStack.Redis;
@@ -22,7 +23,7 @@ namespace PubSub
 
         public PlayerChannel(string name)
         {
-            Client =  ConnectionMultiplexer.Connect("127.0.0.1");
+            Client =  ConnectionMultiplexer.Connect(Environment.LocalHost());
             Name = name;
 
             var thread = new Thread(delegate()

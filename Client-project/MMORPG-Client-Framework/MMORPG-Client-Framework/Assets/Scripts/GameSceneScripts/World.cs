@@ -12,7 +12,7 @@ namespace GameSceneScripts
 
         public bool testMode;
         private Vector3 OldPosition { get; set; }
-        private const float SendRate = 0.10f;
+        private const float SendRate = 0.05f;
         private float _lastSendTime = 0;
         // Use this for initialization
         void Start()
@@ -35,7 +35,7 @@ namespace GameSceneScripts
 
             try
             {
-                MoveLogic(); //other clients
+              MoveLogic(); //other clients
             }
             catch { }
 
@@ -96,9 +96,6 @@ namespace GameSceneScripts
                 bool attack = tmp.GetBool("Attack");
                 
                 GameObject.Find("GameView").GetComponent<GameSceneView>().SendMoveRquest(OldPosition, oldRotation, speed, jump, die, respawn, attack);
-
-                //Debug.Log("PRTTEY DEBUG " + speed + " " + jump + " " + die + " " + respawn + " " + attack);
-                //PhotonEngine.Instance.AnimatorOperations(speed, jump, die, respawn, attack);
 
             }
         }

@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using Boo.Lang;
+using UnityEngine;
+using UnityEngine.AI;
+using System;
 
 namespace GameSceneScripts
 {
@@ -15,6 +18,7 @@ namespace GameSceneScripts
         {
             characterAnimator = GetComponent<Animator>();
         }
+
         // Update is called once per frame
         public void Move()
         {
@@ -38,14 +42,13 @@ namespace GameSceneScripts
                     moveDirection.y = jumpSpeed;
                     characterAnimator.SetBool("Jumping", true);
                 }
-
             }
+
             moveDirection.y -= gravity * Time.deltaTime;
             controller.Move(moveDirection * Time.deltaTime);
 
             //Rotate Player
             transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
-
         }
 
         void FootR()

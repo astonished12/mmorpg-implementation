@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading;
 using GameCommon.SerializedObjects;
 using MGFClient;
+using Models;
 using Newtonsoft.Json;
 using ServiceStack;
 using ServiceStack.Redis;
@@ -18,7 +19,7 @@ public class EntityChannel : MonoBehaviour
     public Thread thread;
     public EntityChannel(string name)
     {
-        Client =  ConnectionMultiplexer.Connect("127.0.0.1");
+        Client =  ConnectionMultiplexer.Connect(Environment.LocalHost());
         Name = name;
 
         thread = new Thread(delegate()

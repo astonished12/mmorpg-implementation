@@ -7,279 +7,23 @@
     <list default="true" id="c5b0925d-b9db-4e0c-9364-247c9b63de1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMORPG-Client-Framework/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMORPG-Client-Framework/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMORPG-Client-Framework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMORPG-Client-Framework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor-firstpass.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Newtonsoft.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Newtonsoft.Json.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Newtonsoft.Json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Newtonsoft.Json.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animators/PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animators/PlayerAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Hammer Warrior.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Hammer Warrior.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Movement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/Environment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/Environment.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MMORPG-Client/Assets/Plugins/PhotonMMORPG.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../MMORPG-Client/Assets/Plugins/PhotonMMORPG.Common.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MMORPG-Client/Assets/Plugins/PhotonMMORPG.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../MMORPG-Client/Assets/Plugins/PhotonMMORPG.Common.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/.vs/PhotonMMORPG/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/DataBaseCreation/bin/Debug/DataBaseCreation.exe.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/DataBaseCreation/bin/Debug/DataBaseCreation.exe.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/DataBaseCreation/obj/Debug/DataBaseCreation.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/DataBaseCreation/obj/Debug/DataBaseCreation.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/GameCommon.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/GameCommon.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/obj/Debug/GameCommon.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/MGF-Photon.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/MGF-Photon.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/app.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/ExitGames.Logging.Log4Net.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/ExitGames.Logging.Log4Net.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/ExitGamesLibs.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/ExitGamesLibs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/MGF-Photon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/MGF-Photon.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/MGF-Photon.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/MGF-Photon.dll.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/MGF-Photon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/MGF-Photon.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/MultiplayerGameFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/MultiplayerGameFramework.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/MultiplayerGameFramework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/MultiplayerGameFramework.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/Photon.SocketServer.dll.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/Photon.SocketServer.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/Photon.SocketServer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/System.Memory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/System.Memory.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/System.Security.Principal.Windows.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/bin/Debug/System.Security.Principal.Windows.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/obj/Debug/MGF-Photon.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/MGF-Photon4.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/MGF-Photon4.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/app.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/obj/Debug/MGF-Photon4.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/obj/Debug/MGF-Photon4.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/obj/Debug/MGF-Photon4.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/obj/Debug/MGF-Photon4.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF-Photon4/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.DataEntities/obj/Debug/MGF.DataEntities.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.DataEntities/obj/Debug/MGF.DataEntities.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/obj/Debug/MGF.Domain.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MGF.Domain/obj/Debug/MGF.Domain.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/MultiplayerGameFramework.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/MultiplayerGameFramework.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/obj/Debug/MultiplayerGameFramework.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/obj/Debug/MultiplayerGameFramework.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/obj/Debug/MultiplayerGameFramework.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/obj/Debug/MultiplayerGameFramework.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/obj/Debug/MultiplayerGameFramework.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/obj/Debug/MultiplayerGameFramework.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/obj/Debug/MultiplayerGameFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/obj/Debug/MultiplayerGameFramework.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/obj/Debug/MultiplayerGameFramework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/obj/Debug/MultiplayerGameFramework.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/MultiplayerGameFramework/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/PhotonMMORPG.Common/obj/Debug/PhotonMMORPG.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/PhotonMMORPG.Common/obj/Debug/PhotonMMORPG.Common.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/PhotonMMORPG.Common/obj/Debug/PhotonMMORPG.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/PhotonMMORPG.Common/obj/Debug/PhotonMMORPG.Common.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/PhotonMMORPG/obj/Debug/GameServer.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/PhotonMMORPG/obj/Debug/GameServer.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/PhotonMMORPG/obj/Debug/GameServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/PhotonMMORPG/obj/Debug/GameServer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/PhotonMMORPG/obj/Debug/GameServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/PhotonMMORPG/obj/Debug/GameServer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/BackgroundThreads/Region/MobSpawnerThread.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/BackgroundThreads/Region/MobSpawnerThread.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/BackgroundThreads/Region/PlayerCommunicationThread.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/BackgroundThreads/Region/PlayerCommunicationThread.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/PubSubModels/EntityChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/PubSubModels/EntityChannel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/PubSubModels/PlayerChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/PubSubModels/PlayerChannel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Servers.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/Servers.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/app.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/obj/Debug/Servers.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/Servers/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/Newtonsoft.Json.12.0.1.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/net20/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/net20/Newtonsoft.Json.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/net20/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/net35/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/net35/Newtonsoft.Json.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/net35/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/net40/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/net40/Newtonsoft.Json.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/net40/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/net45/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/net45/Newtonsoft.Json.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/net45/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/netstandard1.0/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/netstandard1.0/Newtonsoft.Json.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/netstandard1.0/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/netstandard1.3/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/netstandard1.3/Newtonsoft.Json.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/netstandard1.3/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/netstandard2.0/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/netstandard2.0/Newtonsoft.Json.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/netstandard2.0/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Newtonsoft.Json.12.0.1/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Pipelines.Sockets.Unofficial.1.0.7/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Pipelines.Sockets.Unofficial.1.0.7/Pipelines.Sockets.Unofficial.1.0.7.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Pipelines.Sockets.Unofficial.1.0.7/lib/net461/Pipelines.Sockets.Unofficial.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Pipelines.Sockets.Unofficial.1.0.7/lib/net461/Pipelines.Sockets.Unofficial.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Pipelines.Sockets.Unofficial.1.0.7/lib/net472/Pipelines.Sockets.Unofficial.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Pipelines.Sockets.Unofficial.1.0.7/lib/net472/Pipelines.Sockets.Unofficial.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Pipelines.Sockets.Unofficial.1.0.7/lib/netcoreapp2.1/Pipelines.Sockets.Unofficial.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Pipelines.Sockets.Unofficial.1.0.7/lib/netcoreapp2.1/Pipelines.Sockets.Unofficial.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Pipelines.Sockets.Unofficial.1.0.7/lib/netstandard2.0/Pipelines.Sockets.Unofficial.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/Pipelines.Sockets.Unofficial.1.0.7/lib/netstandard2.0/Pipelines.Sockets.Unofficial.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.Complete.1.0.0/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.Complete.1.0.0/ServiceStack.Redis.Complete.1.0.0.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.Complete.1.0.0/lib/net35/ServiceStack.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.Complete.1.0.0/lib/net35/ServiceStack.Interfaces.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.Complete.1.0.0/lib/net35/ServiceStack.OrmLite.SqlServer.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.Complete.1.0.0/lib/net35/ServiceStack.OrmLite.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.Complete.1.0.0/lib/net35/ServiceStack.Redis.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.Complete.1.0.0/lib/net35/ServiceStack.ServiceInterface.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.Complete.1.0.0/lib/net35/ServiceStack.Text.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/ServiceStack.Redis.Complete.1.0.0/lib/net35/ServiceStack.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/StackExchange.Redis.1.2.6/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/StackExchange.Redis.1.2.6/StackExchange.Redis.1.2.6.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/StackExchange.Redis.1.2.6/lib/net45/StackExchange.Redis.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/StackExchange.Redis.1.2.6/lib/net45/StackExchange.Redis.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/StackExchange.Redis.1.2.6/lib/net46/StackExchange.Redis.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/StackExchange.Redis.1.2.6/lib/net46/StackExchange.Redis.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/StackExchange.Redis.1.2.6/lib/netstandard1.5/StackExchange.Redis.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/StackExchange.Redis.1.2.6/lib/netstandard1.5/StackExchange.Redis.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/LICENSE.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/System.Buffers.4.4.0.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/THIRD-PARTY-NOTICES.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/lib/netcoreapp2.0/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/lib/netstandard1.1/System.Buffers.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/lib/netstandard1.1/System.Buffers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/lib/netstandard2.0/System.Buffers.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/lib/netstandard2.0/System.Buffers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/ref/netcoreapp2.0/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/ref/netstandard1.1/System.Buffers.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/ref/netstandard1.1/System.Buffers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/ref/netstandard2.0/System.Buffers.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/ref/netstandard2.0/System.Buffers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/useSharedDesignerContext.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Buffers.4.4.0/version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/LICENSE.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/System.Memory.4.5.1.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/THIRD-PARTY-NOTICES.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/lib/netcoreapp2.1/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/lib/netstandard1.1/System.Memory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/lib/netstandard1.1/System.Memory.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/lib/netstandard2.0/System.Memory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/lib/netstandard2.0/System.Memory.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/ref/netcoreapp2.1/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/ref/netstandard1.1/System.Memory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/ref/netstandard1.1/System.Memory.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/ref/netstandard2.0/System.Memory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/ref/netstandard2.0/System.Memory.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/useSharedDesignerContext.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.1/version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.2/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.2/LICENSE.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.2/System.Memory.4.5.2.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.2/THIRD-PARTY-NOTICES.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.2/lib/netcoreapp2.1/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.2/lib/netstandard1.1/System.Memory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.2/lib/netstandard1.1/System.Memory.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.2/lib/netstandard2.0/System.Memory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.2/lib/netstandard2.0/System.Memory.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.2/ref/netcoreapp2.1/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.2/useSharedDesignerContext.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Memory.4.5.2/version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/LICENSE.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/System.Numerics.Vectors.4.4.0.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/THIRD-PARTY-NOTICES.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/MonoAndroid10/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/MonoTouch10/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/net46/System.Numerics.Vectors.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/net46/System.Numerics.Vectors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/netcoreapp2.0/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/netstandard1.0/System.Numerics.Vectors.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/netstandard1.0/System.Numerics.Vectors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/netstandard2.0/System.Numerics.Vectors.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/netstandard2.0/System.Numerics.Vectors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/xamarinios10/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/xamarinmac20/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/xamarintvos10/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/lib/xamarinwatchos10/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/ref/MonoAndroid10/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/ref/MonoTouch10/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/ref/net46/System.Numerics.Vectors.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/ref/net46/System.Numerics.Vectors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/ref/netcoreapp2.0/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/ref/netstandard1.0/System.Numerics.Vectors.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/ref/netstandard1.0/System.Numerics.Vectors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/ref/netstandard2.0/System.Numerics.Vectors.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/ref/netstandard2.0/System.Numerics.Vectors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/ref/xamarinios10/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/ref/xamarinmac20/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/ref/xamarintvos10/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/ref/xamarinwatchos10/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/useSharedDesignerContext.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Numerics.Vectors.4.4.0/version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/LICENSE.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/System.Runtime.CompilerServices.Unsafe.4.5.1.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/THIRD-PARTY-NOTICES.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/useSharedDesignerContext.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Runtime.CompilerServices.Unsafe.4.5.1/version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/LICENSE.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/System.Security.Principal.Windows.4.5.0.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/THIRD-PARTY-NOTICES.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/lib/net46/System.Security.Principal.Windows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/lib/net461/System.Security.Principal.Windows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/lib/netstandard1.3/System.Security.Principal.Windows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/lib/netstandard2.0/System.Security.Principal.Windows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/lib/uap10.0.16299/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/net46/System.Security.Principal.Windows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/net461/System.Security.Principal.Windows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/net461/System.Security.Principal.Windows.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/netstandard1.3/System.Security.Principal.Windows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/netstandard1.3/System.Security.Principal.Windows.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/netstandard1.3/de/System.Security.Principal.Windows.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/netstandard1.3/es/System.Security.Principal.Windows.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/netstandard1.3/fr/System.Security.Principal.Windows.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/netstandard1.3/it/System.Security.Principal.Windows.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/netstandard1.3/ja/System.Security.Principal.Windows.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/netstandard1.3/ko/System.Security.Principal.Windows.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/netstandard1.3/ru/System.Security.Principal.Windows.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/netstandard2.0/System.Security.Principal.Windows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/netstandard2.0/System.Security.Principal.Windows.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/ref/uap10.0.16299/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/runtimes/win/lib/net46/System.Security.Principal.Windows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/runtimes/win/lib/net461/System.Security.Principal.Windows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/runtimes/win/lib/uap10.0.16299/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/useSharedDesignerContext.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/packages/System.Security.Principal.Windows.4.5.0/version.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -295,85 +39,176 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+            <state relative-caret-position="57">
+              <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
               <folding>
-                <marker date="1560613069158" expanded="false" signature="6:270" ph="..." />
-                <marker date="1560613069158" expanded="true" signature="314:1735" ph="{...}" />
-                <marker date="1560613069158" expanded="true" signature="472:1733" ph="{...}" />
-                <marker date="1560613069158" expanded="true" signature="788:1675" ph="{...}" />
+                <marker date="1560802034772" expanded="false" signature="6:284" ph="..." />
+                <marker date="1560802034772" expanded="true" signature="328:1761" ph="{...}" />
+                <marker date="1560802034772" expanded="true" signature="486:1759" ph="{...}" />
+                <marker date="1560802034772" expanded="true" signature="814:1701" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/MGFClient/PhotonEngine.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1872">
+              <caret line="133" column="9" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
+              <folding>
+                <marker date="1556284214823" expanded="false" signature="6:288" ph="..." />
+                <marker date="1556284214823" expanded="true" signature="352:6882" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="898:1178" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="934:983" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="1018:1110" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="1211:1432" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="1451:1656" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="1680:1788" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="1826:1885" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="1915:2098" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="1993:2044" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="2176:2372" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="2234:2366" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="2413:2790" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="2487:2784" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="2555:2630" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="2696:2774" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="2796:5827" ph="IPhotonPeerListner" />
+                <marker date="1556284214823" expanded="true" signature="2884:2973" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="3019:3651" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="3360:3534" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="3577:3645" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="3725:4464" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="4128:4305" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="4348:4458" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="4520:5812" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="4638:5806" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="4720:4861" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="4882:4974" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="5882:5954" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="6074:6880" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="6134:6306" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="6437:6811" ph="{...}" />
+                <marker date="1556284214823" expanded="true" signature="6533:6683" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlot.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <marker date="1549617448850" expanded="false" signature="6:62" ph="..." />
+                <marker date="1549617448850" expanded="true" signature="95:442" ph="{...}" />
+                <marker date="1549617448850" expanded="true" signature="144:440" ph="{...}" />
+                <marker date="1549617448850" expanded="true" signature="271:434" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Models/Environment.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding>
+                <marker date="1560802044488" expanded="true" signature="35:366" ph="{...}" />
+                <marker date="1560802044488" expanded="true" signature="74:364" ph="{...}" />
+                <marker date="1560802044488" expanded="true" signature="123:168" ph="{...}" />
+                <marker date="1560802044488" expanded="true" signature="210:262" ph="{...}" />
+                <marker date="1560802044488" expanded="true" signature="301:358" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Player.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="21" />
+              <folding>
+                <marker date="1549311685027" expanded="false" signature="6:44" ph="..." />
+                <marker date="1549311685027" expanded="true" signature="81:930" ph="{...}" />
+                <marker date="1549311685027" expanded="true" signature="263:362" ph="{...}" />
+                <marker date="1549311685027" expanded="true" signature="394:493" ph="{...}" />
+                <marker date="1549311685027" expanded="true" signature="789:927" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="97" column="150" selection-start-line="97" selection-start-column="150" selection-end-line="97" selection-end-column="150" />
+              <folding>
+                <marker date="1560802800564" expanded="false" signature="6:88" ph="..." />
+                <marker date="1560802800564" expanded="true" signature="116:3391" ph="{...}" />
+                <marker date="1560802800564" expanded="true" signature="157:3389" ph="{...}" />
+                <marker date="1560802800564" expanded="true" signature="474:507" ph="{...}" />
+                <marker date="1560802800564" expanded="true" signature="573:1139" ph="{...}" />
+                <marker date="1560802800564" expanded="true" signature="584:915" ph="/* if (testMode) ... */" />
+                <marker date="1560802800564" expanded="true" signature="1034:1105" ph="{...}" />
+                <marker date="1560802800564" expanded="true" signature="1167:1646" ph="{...}" />
+                <marker date="1560802800564" expanded="true" signature="1214:1612" ph="{...}" />
+                <marker date="1560802800564" expanded="true" signature="1418:1574" ph="{...}" />
+                <marker date="1560802800564" expanded="true" signature="1680:2512" ph="{...}" />
+                <marker date="1560802800564" expanded="true" signature="1760:2502" ph="{...}" />
+                <marker date="1560802800564" expanded="true" signature="1876:2488" ph="{...}" />
+                <marker date="1560802800564" expanded="true" signature="2551:3383" ph="{...}" />
+                <marker date="1560802800564" expanded="true" signature="2667:3373" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state relative-caret-position="48">
+              <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
               <folding>
-                <marker date="1560763072569" expanded="true" signature="6:343" ph="..." />
-                <marker date="1560763072569" expanded="true" signature="361:3850" ph="{...}" />
-                <marker date="1560763072569" expanded="true" signature="410:3848" ph="{...}" />
-                <marker date="1560763072569" expanded="true" signature="559:3834" ph="{...}" />
-                <marker date="1560763072569" expanded="true" signature="895:3777" ph="{...}" />
-                <marker date="1560763072569" expanded="true" signature="1054:1142" ph="{...}" />
-                <marker date="1560763072569" expanded="true" signature="1445:2001" ph="{...}" />
-                <marker date="1560763072569" expanded="true" signature="1717:1979" ph="{...}" />
-                <marker date="1560763072569" expanded="true" signature="2063:2523" ph="{...}" />
-                <marker date="1560763072569" expanded="true" signature="2241:2501" ph="{...}" />
-                <marker date="1560763072569" expanded="true" signature="2545:3758" ph="/* TO DO UNSUBSCRIBE AND DESTROY OBJECT OR MARK THEM INVISIBLE RAU TARE TARE MERGE CHALLENGING ... */" />
+                <marker date="1560802026443" expanded="false" signature="6:357" ph="..." />
+                <marker date="1560802026443" expanded="true" signature="375:3824" ph="{...}" />
+                <marker date="1560802026443" expanded="true" signature="424:3822" ph="{...}" />
+                <marker date="1560802026443" expanded="true" signature="573:3808" ph="{...}" />
+                <marker date="1560802026443" expanded="true" signature="921:3751" ph="{...}" />
+                <marker date="1560802026443" expanded="true" signature="1080:1168" ph="{...}" />
+                <marker date="1560802026443" expanded="true" signature="1419:1975" ph="{...}" />
+                <marker date="1560802026443" expanded="true" signature="1691:1953" ph="{...}" />
+                <marker date="1560802026443" expanded="true" signature="2037:2497" ph="{...}" />
+                <marker date="1560802026443" expanded="true" signature="2215:2475" ph="{...}" />
+                <marker date="1560802026443" expanded="true" signature="2519:3732" ph="/* TO DO UNSUBSCRIBE AND DESTROY OBJECT OR MARK THEM INVISIBLE RAU TARE TARE MERGE CHALLENGING ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7277E33F-A80E-4511-98A1-C4A6CC7E93EA/33/f822e632/MessageCompletable.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/AIData.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7277E33F-A80E-4511-98A1-C4A6CC7E93EA/03/9a652146/CompletionManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="123" column="10" selection-start-line="123" selection-start-column="10" selection-end-line="123" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Movement.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="832">
+              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
               <folding>
-                <marker date="1558384875792" expanded="true" signature="46:1679" ph="{...}" />
-                <marker date="1558384875792" expanded="true" signature="90:1677" ph="{...}" />
-                <marker date="1558384875792" expanded="true" signature="377:455" ph="{...}" />
-                <marker date="1558384875792" expanded="true" signature="525:1587" ph="{...}" />
-                <marker date="1558384875792" expanded="true" signature="656:1364" ph="{...}" />
-                <marker date="1558384875792" expanded="true" signature="977:1075" ph="{...}" />
-                <marker date="1558384875792" expanded="true" signature="1200:1349" ph="{...}" />
-                <marker date="1558384875792" expanded="true" signature="1609:1629" ph="{...}" />
-                <marker date="1558384875792" expanded="true" signature="1651:1671" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8A687AD7-D268-4D07-BE73-B677CB47215B/20/dab9e4ef/ConnectionMultiplexer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2461">
-              <caret line="1154" column="30" selection-start-line="1154" selection-start-column="30" selection-end-line="1154" selection-end-column="30" />
-              <folding>
-                <element signature="e#418#775#0" expanded="true" />
+                <marker date="1560803069323" expanded="true" signature="6:100" ph="..." />
+                <marker date="1560803069323" expanded="true" signature="138:1615" ph="{...}" />
+                <marker date="1560803069323" expanded="true" signature="480:947" ph="{...}" />
+                <marker date="1560803069323" expanded="true" signature="837:940" ph="{...}" />
+                <marker date="1560803069323" expanded="true" signature="962:1274" ph="{...}" />
+                <marker date="1560803069323" expanded="true" signature="1000:1216" ph="{...}" />
+                <marker date="1560803069323" expanded="true" signature="1043:1138" ph="{...}" />
+                <marker date="1560803069323" expanded="true" signature="1146:1212" ph="{...}" />
+                <marker date="1560803069323" expanded="true" signature="1250:1271" ph="{...}" />
+                <marker date="1560803069323" expanded="true" signature="1290:1438" ph="{...}" />
+                <marker date="1560803069323" expanded="true" signature="1471:1611" ph="{...}" />
+                <marker date="1560803069323" expanded="true" signature="1524:1591" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -382,14 +217,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/ClientViews/GameSceneView.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+            <state relative-caret-position="137">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
+                <marker date="1558382634229" expanded="false" signature="6:101" ph="..." />
                 <marker date="1558382634229" expanded="true" signature="146:1265" ph="{...}" />
                 <marker date="1558382634229" expanded="true" signature="162:196" ph="{...}" />
                 <marker date="1558382634229" expanded="true" signature="235:574" ph="{...}" />
                 <marker date="1558382634229" expanded="true" signature="291:469" ph="{...}" />
                 <marker date="1558382634229" expanded="true" signature="705:1261" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Movement.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+              <folding>
+                <marker date="1560802413321" expanded="false" signature="6:70" ph="..." />
+                <marker date="1560802413321" expanded="true" signature="98:1731" ph="{...}" />
+                <marker date="1560802413321" expanded="true" signature="142:1729" ph="{...}" />
+                <marker date="1560802413321" expanded="true" signature="429:507" ph="{...}" />
+                <marker date="1560802413321" expanded="true" signature="578:1639" ph="{...}" />
+                <marker date="1560802413321" expanded="true" signature="709:1416" ph="{...}" />
+                <marker date="1560802413321" expanded="true" signature="1030:1128" ph="{...}" />
+                <marker date="1560802413321" expanded="true" signature="1253:1402" ph="{...}" />
+                <marker date="1560802413321" expanded="true" signature="1661:1681" ph="{...}" />
+                <marker date="1560802413321" expanded="true" signature="1703:1723" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -423,6 +280,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Authentication/LoginUserHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Character/CharacterCreateResponseHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Character/ListCharacterResponseHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/AIData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/Authentication/AccountCreationHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/packages.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClientHandlers/GameMessageHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -491,7 +349,6 @@
         <option value="$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerWorldRegionEnterResponseHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/ClientViews/TestView.cs" />
         <option value="$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerWorldRequestRegionResponseHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Models/Environment.cs" />
         <option value="$PROJECT_DIR$/Assets/ClientViews/LoginView.cs" />
         <option value="$PROJECT_DIR$/Assets/MGFClient/PhotonEngine.cs" />
         <option value="$PROJECT_DIR$/Assets/ClientHandlers/Character/ListCharacterResponseHandler.cs" />
@@ -503,13 +360,15 @@
         <option value="$PROJECT_DIR$/../../../Server-project/PhotonMMORPG/PhotonMMORPG/GameCommon/SerializedObjects/NpcCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Entity.cs" />
         <option value="$PROJECT_DIR$/Assets/ClientViews/GameSceneView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Packages/PubComp.NoSql.ServiceStackRedis.4.1.0/src/NoSql.ServiceStackRedis/RedisContext.cs" />
         <option value="$PROJECT_DIR$/Assets/MGFClient/GameData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs" />
         <option value="$PROJECT_DIR$/Assets/packages.config" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/Environment.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/AIData.cs" />
       </list>
     </option>
   </component>
@@ -524,6 +383,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
         <subPane>
@@ -531,6 +394,11 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="MGFClient" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -553,6 +421,12 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Models" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
               <item name="PubSub" type="1045f7f1:UnityExplorerNode" />
             </path>
           </expand>
@@ -560,10 +434,6 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
-      </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
       </pane>
     </panes>
   </component>
@@ -657,12 +527,13 @@
       <workItem from="1560590173525" duration="2781000" />
       <workItem from="1560604472267" duration="2444000" />
       <workItem from="1560608055182" duration="1699000" />
-      <workItem from="1560610760633" duration="3925000" />
+      <workItem from="1560610760633" duration="5113000" />
+      <workItem from="1560797295865" duration="5719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193703000" />
+    <option name="totallyTimeSpent" value="200610000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -676,7 +547,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.16778524" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.16979866" />
       <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.24966443" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -688,7 +559,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.09457901" />
-      <window_info anchor="bottom" id="NuGet" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" weight="0.3286119" />
       <window_info anchor="bottom" id="Performance Profiler" order="8" sideWeight="0.49932885" weight="0.32756633" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49932885" weight="0.32719547" />
@@ -815,13 +686,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs</url>
-          <line>33</line>
+          <line>34</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs" initialLine="33">
             <startOffsets>
-              <option value="934" />
+              <option value="960" />
             </startOffsets>
             <endOffsets>
-              <option value="1144" />
+              <option value="1170" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="25" />
@@ -835,20 +706,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlot.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <marker date="1549617448850" expanded="false" signature="6:62" ph="..." />
-            <marker date="1549617448850" expanded="true" signature="95:442" ph="{...}" />
-            <marker date="1549617448850" expanded="true" signature="144:440" ph="{...}" />
-            <marker date="1549617448850" expanded="true" signature="271:434" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/loadingBar/scripts/loadingtext.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerWorldEnter.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/ClientHandlers/Loading/PlayerRegionEnterResponseHandler.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameMessage.cs">
@@ -995,18 +852,6 @@
             <marker date="1555085274931" expanded="true" signature="423:525" ph="{...}" />
             <marker date="1555085274931" expanded="true" signature="566:1102" ph="{...}" />
             <marker date="1555085274931" expanded="true" signature="1143:1688" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Models/Environment.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <marker date="1555085161521" expanded="true" signature="16:158" ph="{...}" />
-            <marker date="1555085161521" expanded="true" signature="55:156" ph="{...}" />
-            <marker date="1555085161521" expanded="true" signature="104:149" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1159,63 +1004,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Packages/PubComp.NoSql.ServiceStackRedis.4.1.0/src/NoSql.ServiceStackRedis/RedisContext.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Player.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="21" />
-          <folding>
-            <marker date="1549311685027" expanded="false" signature="6:44" ph="..." />
-            <marker date="1549311685027" expanded="true" signature="81:930" ph="{...}" />
-            <marker date="1549311685027" expanded="true" signature="263:362" ph="{...}" />
-            <marker date="1549311685027" expanded="true" signature="394:493" ph="{...}" />
-            <marker date="1549311685027" expanded="true" signature="789:927" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/MGFClient/PhotonEngine.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="133" column="9" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
-          <folding>
-            <marker date="1556284214823" expanded="false" signature="6:288" ph="..." />
-            <marker date="1556284214823" expanded="true" signature="352:6882" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="898:1178" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="934:983" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="1018:1110" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="1211:1432" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="1451:1656" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="1680:1788" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="1826:1885" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="1915:2098" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="1993:2044" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="2176:2372" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="2234:2366" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="2413:2790" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="2487:2784" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="2555:2630" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="2696:2774" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="2796:5827" ph="IPhotonPeerListner" />
-            <marker date="1556284214823" expanded="true" signature="2884:2973" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="3019:3651" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="3360:3534" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="3577:3645" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="3725:4464" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="4128:4305" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="4348:4458" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="4520:5812" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="4638:5806" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="4720:4861" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="4882:4974" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="5882:5954" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="6074:6880" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="6134:6306" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="6437:6811" ph="{...}" />
-            <marker date="1556284214823" expanded="true" signature="6533:6683" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/packages.config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -1232,31 +1020,6 @@
             <marker date="1557826187094" expanded="true" signature="255:906" ph="{...}" />
             <marker date="1557826187094" expanded="true" signature="383:669" ph="{...}" />
             <marker date="1557826187094" expanded="true" signature="723:900" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <marker date="1560592533044" expanded="false" signature="6:88" ph="..." />
-            <marker date="1560592533044" expanded="true" signature="116:3599" ph="{...}" />
-            <marker date="1560592533044" expanded="true" signature="157:3597" ph="{...}" />
-            <marker date="1560592533044" expanded="true" signature="474:507" ph="{...}" />
-            <marker date="1560592533044" expanded="true" signature="573:1141" ph="{...}" />
-            <marker date="1560592533044" expanded="true" signature="584:915" ph="/* if (testMode) ... */" />
-            <marker date="1560592533044" expanded="true" signature="1034:1107" ph="{...}" />
-            <marker date="1560592533044" expanded="true" signature="1169:1648" ph="{...}" />
-            <marker date="1560592533044" expanded="true" signature="1216:1614" ph="{...}" />
-            <marker date="1560592533044" expanded="true" signature="1420:1576" ph="{...}" />
-            <marker date="1560592533044" expanded="true" signature="1682:2514" ph="{...}" />
-            <marker date="1560592533044" expanded="true" signature="1762:2504" ph="{...}" />
-            <marker date="1560592533044" expanded="true" signature="1878:2490" ph="{...}" />
-            <marker date="1560592533044" expanded="true" signature="2553:3591" ph="{...}" />
-            <marker date="1560592533044" expanded="true" signature="2669:3581" ph="{...}" />
-            <marker date="1560592533044" expanded="true" signature="3378:3566" ph="/* Debug.Log(&quot;PRTTEY DEBUG &quot; + speed + &quot; &quot; + jump + &quot; &quot; + die + &quot; &quot; + respawn + &quot; &quot; + attack); ... */" />
           </folding>
         </state>
       </provider>
@@ -1318,11 +1081,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7277E33F-A80E-4511-98A1-C4A6CC7E93EA/33/f822e632/MessageCompletable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7277E33F-A80E-4511-98A1-C4A6CC7E93EA/03/9a652146/CompletionManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1920">
+          <caret line="123" column="10" selection-start-line="123" selection-start-column="10" selection-end-line="123" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8A687AD7-D268-4D07-BE73-B677CB47215B/20/dab9e4ef/ConnectionMultiplexer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18256">
+          <caret line="1154" column="30" selection-start-line="1154" selection-start-column="30" selection-end-line="1154" selection-end-column="30" />
+          <folding>
+            <element signature="e#418#775#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="21" />
+          <folding>
+            <marker date="1549311685027" expanded="false" signature="6:44" ph="..." />
+            <marker date="1549311685027" expanded="true" signature="81:930" ph="{...}" />
+            <marker date="1549311685027" expanded="true" signature="263:362" ph="{...}" />
+            <marker date="1549311685027" expanded="true" signature="394:493" ph="{...}" />
+            <marker date="1549311685027" expanded="true" signature="789:927" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ClientViews/GameSceneView.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+        <state relative-caret-position="137">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
+            <marker date="1558382634229" expanded="false" signature="6:101" ph="..." />
             <marker date="1558382634229" expanded="true" signature="146:1265" ph="{...}" />
             <marker date="1558382634229" expanded="true" signature="162:196" ph="{...}" />
             <marker date="1558382634229" expanded="true" signature="235:574" ph="{...}" />
@@ -1332,77 +1134,169 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8A687AD7-D268-4D07-BE73-B677CB47215B/20/dab9e4ef/ConnectionMultiplexer.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterSceneScripts/CharacterSlot.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2461">
-          <caret line="1154" column="30" selection-start-line="1154" selection-start-column="30" selection-end-line="1154" selection-end-column="30" />
+        <state relative-caret-position="256">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <element signature="e#418#775#0" expanded="true" />
+            <marker date="1549617448850" expanded="false" signature="6:62" ph="..." />
+            <marker date="1549617448850" expanded="true" signature="95:442" ph="{...}" />
+            <marker date="1549617448850" expanded="true" signature="144:440" ph="{...}" />
+            <marker date="1549617448850" expanded="true" signature="271:434" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Movement.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/MGFClient/PhotonEngine.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="1872">
+          <caret line="133" column="9" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
           <folding>
-            <marker date="1558384875792" expanded="true" signature="46:1679" ph="{...}" />
-            <marker date="1558384875792" expanded="true" signature="90:1677" ph="{...}" />
-            <marker date="1558384875792" expanded="true" signature="377:455" ph="{...}" />
-            <marker date="1558384875792" expanded="true" signature="525:1587" ph="{...}" />
-            <marker date="1558384875792" expanded="true" signature="656:1364" ph="{...}" />
-            <marker date="1558384875792" expanded="true" signature="977:1075" ph="{...}" />
-            <marker date="1558384875792" expanded="true" signature="1200:1349" ph="{...}" />
-            <marker date="1558384875792" expanded="true" signature="1609:1629" ph="{...}" />
-            <marker date="1558384875792" expanded="true" signature="1651:1671" ph="{...}" />
+            <marker date="1556284214823" expanded="false" signature="6:288" ph="..." />
+            <marker date="1556284214823" expanded="true" signature="352:6882" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="898:1178" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="934:983" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="1018:1110" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="1211:1432" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="1451:1656" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="1680:1788" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="1826:1885" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="1915:2098" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="1993:2044" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="2176:2372" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="2234:2366" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="2413:2790" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="2487:2784" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="2555:2630" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="2696:2774" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="2796:5827" ph="IPhotonPeerListner" />
+            <marker date="1556284214823" expanded="true" signature="2884:2973" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="3019:3651" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="3360:3534" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="3577:3645" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="3725:4464" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="4128:4305" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="4348:4458" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="4520:5812" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="4638:5806" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="4720:4861" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="4882:4974" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="5882:5954" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="6074:6880" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="6134:6306" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="6437:6811" ph="{...}" />
+            <marker date="1556284214823" expanded="true" signature="6533:6683" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Models/Environment.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <marker date="1560802044488" expanded="true" signature="35:366" ph="{...}" />
+            <marker date="1560802044488" expanded="true" signature="74:364" ph="{...}" />
+            <marker date="1560802044488" expanded="true" signature="123:168" ph="{...}" />
+            <marker date="1560802044488" expanded="true" signature="210:262" ph="{...}" />
+            <marker date="1560802044488" expanded="true" signature="301:358" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+          <folding>
+            <marker date="1560802026443" expanded="false" signature="6:357" ph="..." />
+            <marker date="1560802026443" expanded="true" signature="375:3824" ph="{...}" />
+            <marker date="1560802026443" expanded="true" signature="424:3822" ph="{...}" />
+            <marker date="1560802026443" expanded="true" signature="573:3808" ph="{...}" />
+            <marker date="1560802026443" expanded="true" signature="921:3751" ph="{...}" />
+            <marker date="1560802026443" expanded="true" signature="1080:1168" ph="{...}" />
+            <marker date="1560802026443" expanded="true" signature="1419:1975" ph="{...}" />
+            <marker date="1560802026443" expanded="true" signature="1691:1953" ph="{...}" />
+            <marker date="1560802026443" expanded="true" signature="2037:2497" ph="{...}" />
+            <marker date="1560802026443" expanded="true" signature="2215:2475" ph="{...}" />
+            <marker date="1560802026443" expanded="true" signature="2519:3732" ph="/* TO DO UNSUBSCRIBE AND DESTROY OBJECT OR MARK THEM INVISIBLE RAU TARE TARE MERGE CHALLENGING ... */" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PubSub/EntityChannel.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        <state relative-caret-position="57">
+          <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
           <folding>
-            <marker date="1560613069158" expanded="false" signature="6:270" ph="..." />
-            <marker date="1560613069158" expanded="true" signature="314:1735" ph="{...}" />
-            <marker date="1560613069158" expanded="true" signature="472:1733" ph="{...}" />
-            <marker date="1560613069158" expanded="true" signature="788:1675" ph="{...}" />
+            <marker date="1560802034772" expanded="false" signature="6:284" ph="..." />
+            <marker date="1560802034772" expanded="true" signature="328:1761" ph="{...}" />
+            <marker date="1560802034772" expanded="true" signature="486:1759" ph="{...}" />
+            <marker date="1560802034772" expanded="true" signature="814:1701" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7277E33F-A80E-4511-98A1-C4A6CC7E93EA/33/f822e632/MessageCompletable.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/World.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7277E33F-A80E-4511-98A1-C4A6CC7E93EA/03/9a652146/CompletionManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="123" column="10" selection-start-line="123" selection-start-column="10" selection-end-line="123" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PubSub/PlayerChannel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        <state relative-caret-position="361">
+          <caret line="97" column="150" selection-start-line="97" selection-start-column="150" selection-end-line="97" selection-end-column="150" />
           <folding>
-            <marker date="1560763072569" expanded="true" signature="6:343" ph="..." />
-            <marker date="1560763072569" expanded="true" signature="361:3850" ph="{...}" />
-            <marker date="1560763072569" expanded="true" signature="410:3848" ph="{...}" />
-            <marker date="1560763072569" expanded="true" signature="559:3834" ph="{...}" />
-            <marker date="1560763072569" expanded="true" signature="895:3777" ph="{...}" />
-            <marker date="1560763072569" expanded="true" signature="1054:1142" ph="{...}" />
-            <marker date="1560763072569" expanded="true" signature="1445:2001" ph="{...}" />
-            <marker date="1560763072569" expanded="true" signature="1717:1979" ph="{...}" />
-            <marker date="1560763072569" expanded="true" signature="2063:2523" ph="{...}" />
-            <marker date="1560763072569" expanded="true" signature="2241:2501" ph="{...}" />
-            <marker date="1560763072569" expanded="true" signature="2545:3758" ph="/* TO DO UNSUBSCRIBE AND DESTROY OBJECT OR MARK THEM INVISIBLE RAU TARE TARE MERGE CHALLENGING ... */" />
+            <marker date="1560802800564" expanded="false" signature="6:88" ph="..." />
+            <marker date="1560802800564" expanded="true" signature="116:3391" ph="{...}" />
+            <marker date="1560802800564" expanded="true" signature="157:3389" ph="{...}" />
+            <marker date="1560802800564" expanded="true" signature="474:507" ph="{...}" />
+            <marker date="1560802800564" expanded="true" signature="573:1139" ph="{...}" />
+            <marker date="1560802800564" expanded="true" signature="584:915" ph="/* if (testMode) ... */" />
+            <marker date="1560802800564" expanded="true" signature="1034:1105" ph="{...}" />
+            <marker date="1560802800564" expanded="true" signature="1167:1646" ph="{...}" />
+            <marker date="1560802800564" expanded="true" signature="1214:1612" ph="{...}" />
+            <marker date="1560802800564" expanded="true" signature="1418:1574" ph="{...}" />
+            <marker date="1560802800564" expanded="true" signature="1680:2512" ph="{...}" />
+            <marker date="1560802800564" expanded="true" signature="1760:2502" ph="{...}" />
+            <marker date="1560802800564" expanded="true" signature="1876:2488" ph="{...}" />
+            <marker date="1560802800564" expanded="true" signature="2551:3383" ph="{...}" />
+            <marker date="1560802800564" expanded="true" signature="2667:3373" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/AIData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <marker date="1560803069323" expanded="true" signature="6:100" ph="..." />
+            <marker date="1560803069323" expanded="true" signature="138:1615" ph="{...}" />
+            <marker date="1560803069323" expanded="true" signature="480:947" ph="{...}" />
+            <marker date="1560803069323" expanded="true" signature="837:940" ph="{...}" />
+            <marker date="1560803069323" expanded="true" signature="962:1274" ph="{...}" />
+            <marker date="1560803069323" expanded="true" signature="1000:1216" ph="{...}" />
+            <marker date="1560803069323" expanded="true" signature="1043:1138" ph="{...}" />
+            <marker date="1560803069323" expanded="true" signature="1146:1212" ph="{...}" />
+            <marker date="1560803069323" expanded="true" signature="1250:1271" ph="{...}" />
+            <marker date="1560803069323" expanded="true" signature="1290:1438" ph="{...}" />
+            <marker date="1560803069323" expanded="true" signature="1471:1611" ph="{...}" />
+            <marker date="1560803069323" expanded="true" signature="1524:1591" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneScripts/Movement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <marker date="1560802413321" expanded="false" signature="6:70" ph="..." />
+            <marker date="1560802413321" expanded="true" signature="98:1731" ph="{...}" />
+            <marker date="1560802413321" expanded="true" signature="142:1729" ph="{...}" />
+            <marker date="1560802413321" expanded="true" signature="429:507" ph="{...}" />
+            <marker date="1560802413321" expanded="true" signature="578:1639" ph="{...}" />
+            <marker date="1560802413321" expanded="true" signature="709:1416" ph="{...}" />
+            <marker date="1560802413321" expanded="true" signature="1030:1128" ph="{...}" />
+            <marker date="1560802413321" expanded="true" signature="1253:1402" ph="{...}" />
+            <marker date="1560802413321" expanded="true" signature="1661:1681" ph="{...}" />
+            <marker date="1560802413321" expanded="true" signature="1703:1723" ph="{...}" />
           </folding>
         </state>
       </provider>

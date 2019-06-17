@@ -278,6 +278,7 @@
           </e>
           <e p="GameMessage.cs" t="Include" />
           <e p="GameSceneScripts" t="Include">
+            <e p="AIData.cs" t="Include" />
             <e p="Entity.cs" t="Include" />
             <e p="Movement.cs" t="Include" />
             <e p="Player.cs" t="Include" />
