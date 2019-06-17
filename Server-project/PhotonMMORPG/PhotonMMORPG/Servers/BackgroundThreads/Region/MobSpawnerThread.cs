@@ -50,7 +50,7 @@ namespace Servers.BackgroundThreads.Region
                         timer.Restart();
                     }
 
-                    if (timer.Elapsed < TimeSpan.FromMilliseconds(1000)) //run every 5s
+                    if (timer.Elapsed < TimeSpan.FromMilliseconds(5000)) //run every 5s
                     {
                         if (5000 - timer.ElapsedMilliseconds > 0) // no cpu fries:))
                         {

@@ -60,11 +60,11 @@ namespace Servers.BackgroundThreads.Region
                         timer.Restart();
                     }
 
-                    if (timer.Elapsed < TimeSpan.FromMilliseconds(1000)) //run every 5s
+                    if (timer.Elapsed < TimeSpan.FromMilliseconds(100)) //run every 5s
                     {
-                        if (1000 - timer.ElapsedMilliseconds > 0) // no cpu fries:))
+                        if (100 - timer.ElapsedMilliseconds > 0) // no cpu fries:))
                         {
-                            Thread.Sleep(1000 - (int)timer.ElapsedMilliseconds);
+                            Thread.Sleep(100 - (int)timer.ElapsedMilliseconds);
                         }
                         continue;
                     }

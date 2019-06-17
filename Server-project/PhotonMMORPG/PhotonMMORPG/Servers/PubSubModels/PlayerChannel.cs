@@ -1,11 +1,6 @@
-﻿using System;
-using System.Reflection;
-using System.Threading;
-using System.Threading.Tasks;
-using log4net;
-using log4net.Core;
-using ServiceStack;
-using ServiceStack.Redis;
+﻿using System.Threading;
+using Newtonsoft.Json;
+using StackExchange.Redis;
 using ILogger = ExitGames.Logging.ILogger;
 
 namespace Servers.PubSubModels
@@ -13,14 +8,14 @@ namespace Servers.PubSubModels
     public class PlayerChannel
     {
         public string Name { get; set; }
-        private RedisClient Client { get; set; }
         public Thread ChannelThread = null;
         private ILogger Log { get; set; }
+        public ConnectionMultiplexer Client { get; set; }
 
         public PlayerChannel(ILogger log)
         {
             Log = log;
-            Client = new RedisClient("localhost: 6379");
+            Client = ConnectionMultiplexer.Connect("localhost");
         }
 
         public void SetChannel(string name)
@@ -28,46 +23,32 @@ namespace Servers.PubSubModels
             Name = name;
             ChannelThread = new Thread(delegate ()
             {
-                IRedisSubscription subscription = null;
-
-                using (subscription = Client.CreateSubscription())
+                var subscription = Client.GetSubscriber();
+                subscription.Subscribe(Name, (channel, msg) =>
                 {
-                    subscription.OnSubscribe = channel => { Log.DebugFormat("Client Subscribed to '{0}'", channel); };
-                    subscription.OnUnSubscribe = channel =>
-                    {
-                        Log.DebugFormat("Client #{0} UnSubscribed from ", channel);
-                    };
-                    subscription.OnMessage = (channel, msg) =>
-                    {
-                        Log.DebugFormat("Client  Received '{0}' from channel '{1}'", msg, channel);
-                    };
-                }
+                    Log.DebugFormat("Client  Received '{0}' from channel '{1}'", msg, channel);
 
-                subscription.SubscribeToChannels($"Server_{Name}");
+                });
             });
             ChannelThread.Start();
         }
 
         public void SendInfoToMainClient(object message)
         {
-            using (var client = new RedisClient("localhost: 6379"))
+            var publisher = Client.GetSubscriber();
+            publisher.PublishAsync($"Client_{Name}", JsonConvert.SerializeObject(message, new JsonSerializerSettings()
             {
-                ThreadPool.QueueUserWorkItem(_ =>
-                {
-                    client.PublishMessage($"Client_{Name}", message.ToJson());
-                });
-            }
+                TypeNameHandling = TypeNameHandling.Auto
+            }));
         }
 
         public void SendInfoToOthersClients(object message)
         {
-            using (var client = new RedisClient("localhost: 6379"))
+            var publisher = Client.GetSubscriber();
+            publisher.PublishAsync($"Entity_{Name}", JsonConvert.SerializeObject(message, new JsonSerializerSettings()
             {
-                ThreadPool.QueueUserWorkItem(_ =>
-                {
-                    client.PublishMessage($"Entity_{Name}", message.ToJson());
-                });
-            }
+                TypeNameHandling = TypeNameHandling.Auto
+            }));
         }
 
 

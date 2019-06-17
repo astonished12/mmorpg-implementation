@@ -462,6 +462,9 @@
     <Reference Include="ServiceStack.Text">
       <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/ServiceStack.Text.dll</HintPath>
     </Reference>
+    <Reference Include="StackExchange.Redis">
+      <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/StackExchange.Redis.dll</HintPath>
+    </Reference>
     <Reference Include="System.AppContext">
       <HintPath>D:/workspace/Facultate-Master/Dizertatie/mmorpg-implementation-sem2/Client-project/MMORPG-Client-Framework/MMORPG-Client-Framework/Assets/Plugins/System.AppContext.dll</HintPath>
     </Reference>

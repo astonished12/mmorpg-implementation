@@ -117,13 +117,10 @@ D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-proje
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\System.Security.Permissions.dll
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\System.Security.Principal.Windows.dll
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\MultiplayerGameFramework.pdb
+D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\MultiplayerGameFramework.dll.config
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\Autofac.xml
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\Autofac.Configuration.pdb
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\Autofac.Configuration.xml
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\ExitGames.Logging.Log4Net.pdb
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\ExitGames.Logging.Log4Net.xml
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\ExitGamesLibs.pdb
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\ExitGamesLibs.xml
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\Microsoft.Extensions.Configuration.xml
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
@@ -132,9 +129,6 @@ D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-proje
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\Microsoft.Extensions.Primitives.xml
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\Photon.SocketServer.pdb
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\Photon.SocketServer.xml
-D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\Photon.SocketServer.dll.config
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\System.Buffers.xml
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\System.Memory.xml
 D:\workspace\Facultate-Master\Dizertatie\mmorpg-implementation-sem2\Server-project\PhotonMMORPG\PhotonMMORPG\MGF-Photon\bin\Debug\System.Numerics.Vectors.xml

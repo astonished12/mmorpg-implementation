@@ -12,7 +12,7 @@ namespace GameSceneScripts
 
         public bool testMode;
         private Vector3 OldPosition { get; set; }
-        private const float SendRate = 0.05f;
+        private const float SendRate = 0.10f;
         private float _lastSendTime = 0;
         // Use this for initialization
         void Start()
@@ -67,8 +67,8 @@ namespace GameSceneScripts
                 var player = GameData.Instance.players[i];
                 if (player != LocalPlayer)
                 {
-                    player.Position = Vector3.Lerp(player.Position, player.NewPosition, Time.deltaTime);
-                    player.Rotation = Quaternion.Slerp(player.Rotation, player.NewRotation, Time.deltaTime * 3f);
+                    player.Position = Vector3.Lerp(player.Position, player.NewPosition, Time.fixedDeltaTime);
+                    player.Rotation = Quaternion.Slerp(player.Rotation, player.NewRotation, Time.fixedDeltaTime);
                     Animator tmp = player.GetComponent<Animator>();
                     tmp.SetFloat("Speed", player.speed);
                     tmp.SetBool("Jumping", player.jump);

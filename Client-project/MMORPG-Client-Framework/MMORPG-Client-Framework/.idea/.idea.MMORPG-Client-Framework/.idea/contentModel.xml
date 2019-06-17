@@ -265,6 +265,7 @@
           <e p="ServiceStack.Interfaces.xml" t="Include" />
           <e p="ServiceStack.Redis.xml" t="Include" />
           <e p="ServiceStack.Text.xml" t="Include" />
+          <e p="StackExchange.Redis.xml" t="Include" />
           <e p="System.Buffers.xml" t="Include" />
           <e p="System.Memory.xml" t="Include" />
           <e p="System.Numerics.Vectors.xml" t="Include" />
